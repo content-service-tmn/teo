@@ -1,28 +1,39 @@
-<section class="header header_green">
-  <div class="container container_center">
-    <div class="header__grid">
-      <div class="header__cell">
-        <a href="" class="header__logo logo">
-          <img src="http://ecoteo.ru/wp-content/uploads/2015/02/logoteo-350x90.png" class="logo__img" alt="">
-        </a>
-      </div>
-      <div class="header__cell">
-        <div class="header__nav nav">
-          <a href="" class="nav__phone">8-800-250-73-26</a>
-          <ul class="nav__items">
-            <li class="nav__item"><a href="" class="nav__link">о нас</a></li>
-            <li class="nav__item"><a href="" class="nav__link">клиентам</a></li>
-            <li class="nav__item"><a href="" class="nav__link">важная информация</a></li>
-            <li class="nav__item"><a href="" class="nav__link">пресс-центр</a></li>
-            <li class="nav__item"><a href="" class="nav__link">контакты</a></li>
-          </ul>
+<section class="header">
+  <div class="menu">
+    <div class="container container_center">
+      <div class="menu__grid">
+        <div class="menu__cell">
+          <a href="" class="menu__logo logo">
+            <img src="http://ecoteo.ru/wp-content/uploads/2015/02/logoteo-350x90.png" class="logo__img" alt="">
+          </a>
+        </div>
+        <div class="menu__cell">
+          <div class="menu__nav nav">
+            <a href="" class="nav__phone">8-800-250-73-26</a>
+            <ul class="nav__items">
+              <li class="nav__item"><a href="" class="nav__link">о нас</a></li>
+              <li class="nav__item"><a href="" class="nav__link">клиентам</a></li>
+              <li class="nav__item"><a href="" class="nav__link">важная информация</a></li>
+              <li class="nav__item"><a href="" class="nav__link">пресс-центр</a></li>
+              <li class="nav__item"><a href="" class="nav__link">контакты</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</section>
-<section class="map">
-
+  <div class="container container_center">
+    <div class="header__wrapper">
+      <img src="<?=$config->urls->templates.'assets/img/map.png'?>" alt="" class="header__map">
+      <h3 class="header__name header__name_tmn">Тюмень</h3>
+      <h3 class="header__name header__name_tob">Тобольск</h3>
+      <h3 class="header__name header__name_ish">Ишим</h3>
+      <div class="header__content content">
+        <h1 class="content__heading">Тюменское экологическое объединение</h1>
+        <p class="content__text">После падения Хазарии в степях господствовали, сменяя друг друга, тюркоязычные народы: печенеги, огузы и половцы. Их племена не обладали политическим единством</p>
+      </div>
+    </div>
+  </div>
 </section>
 <section class="home">
   <div class="container container_center">
@@ -108,6 +119,7 @@
           <p class="news-block__date">20 июня</p>
           <h3 class="news-block__heading">гравитационный парадокс как интеллигибельный знак.</h3>
           <p class="news-block__text">Гедонизм осмысляет дедуктивный метод. Согласно мнению известных философов, дедуктивный метод естественно порождает и обеспечивает мир</p>
+          <a href="" class="news-block__link">Подробнее</a>
         </div>
       </div>
       <div class="news__cell">
@@ -115,6 +127,7 @@
           <p class="news-block__date">20 июня</p>
           <h3 class="news-block__heading">Надстройка нетривиальна. Дискретность амбивалентно транспонирует гравитационный парадокс.</h3>
           <p class="news-block__text">Гедонизм осмысляет дедуктивный метод. Согласно мнению известных философов, дедуктивный метод естественно порождает и обеспечивает мир</p>
+          <a href="" class="news-block__link">Подробнее</a>
         </div>
       </div>
       <div class="news__cell">
@@ -122,6 +135,7 @@
           <p class="news-block__date">20 июня</p>
           <h3 class="news-block__heading">ЕВРОПЕЙСКИЙ МИКРОРАЙОН СКОРО начнёт озеленение</h3>
           <p class="news-block__text">Гедонизм осмысляет дедуктивный метод. Согласно мнению известных философов, дедуктивный метод естественно порождает и обеспечивает мир</p>
+          <a href="" class="news-block__link">Подробнее</a>
         </div>
       </div>
     </div>

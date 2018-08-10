@@ -20,6 +20,8 @@
     background-color:@green;
     padding:2px 20px;
     color:white;
+    text-transform: uppercase;
+    font-weight: 900;
   }
   &__grid {
     margin-left:-50px;
@@ -49,5 +51,16 @@
   }
   &__text {
     margin-top:20px;
+  }
+  &__link {
+    display:inline-block;
+    margin-top:20px;
+    font-size:16px;
+    font-weight: 700;
+    &:after {
+      content:"\f101";
+      padding-left: 10px;
+      font-family: "FontAwesome";
+    }
   }
 }
