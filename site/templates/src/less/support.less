@@ -1,0 +1,38 @@
+.support {
+  padding:60px 0;
+  &__header {
+    display:flex;
+    align-items: flex-end;
+  }
+  &__heading {
+    display:inline-block;
+    line-height: 62px;
+  }
+  &__line {
+    margin-left:25px;
+    height:11px;
+    flex-grow: 1;
+    border-top:1px solid black;
+  }
+  &__grid {
+    margin-left:-30px;
+    margin-top:40px;
+    display:flex;
+    flex-wrap: wrap;
+  }
+  &__cell {
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-top: 30px;
+    width:33.3333%;
+    &_big {
+      width:66.6667%;
+    }
+  }
+  &__image {
+    height:200px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: 50% 50%;
+  }
+}
