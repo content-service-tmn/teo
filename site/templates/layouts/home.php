@@ -145,7 +145,9 @@
     </div>
   </div>
 </section>
-
+<section class="empty">
+  
+</section>
 <section class="footer">
   <div class="container container_center">
     <a href="" class="footer__logo logo">
