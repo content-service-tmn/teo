@@ -99,7 +99,11 @@
           <div class="proposal">
             <h3 class="proposal__heading">увидели свалку?</h3>
             <p class="proposal__text">Многие люди, работа которых связана с компьютерами жалуются на проблемы со здоровьем, такие как головная боль, заболевания кисти, боли в спине, плохое зрение.</p>
-            <a href="" class="proposal__button button">сообщить о свалке</a>
+            <div class="proposal__grid">
+              <div class="proposal__button">
+                <a href="" class="button">сообщить о свалке</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
