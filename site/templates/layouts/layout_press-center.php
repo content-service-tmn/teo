@@ -173,10 +173,10 @@
 <section class="photos">
   <div class="container container_center">
     <h3 class="photos__heading">фотогалерея</h3>
-    <div class="photos__grid photos__grid_main">
+    <div class="photos__grid">
       <div class="photos__cell">
         <div class="photos__item">
-          <a href="" class="photos__link" style="background-image:url(https://www.w3schools.com/w3css/img_lights.jpg);" data-uk-lightbox></a>
+          <a href="https://www.w3schools.com/w3css/img_lights.jpg" class="photos__link" style="background-image:url(https://www.w3schools.com/w3css/img_lights.jpg);" data-uk-lightbox></a>
         </div>
       </div>
       <div class="photos__cell">
@@ -188,7 +188,13 @@
             </div>
             <div class="photos__cell">
               <div class="photos__item">
-                <a href="" class="photos__link" style="background-image:url(https://www.w3schools.com/w3css/img_lights.jpg);"></a>
+                <div class="photos-more">
+                  <h3 class="photos-more__heading">все галереи</h3>
+                  <div class="photos-more__more">
+                    <h3 class="photos-more__text">перейти в раздел</h3>
+                    <a href="" class="photos-more__link"></a>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="photos__cell">
