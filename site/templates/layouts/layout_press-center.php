@@ -51,7 +51,6 @@
     </div>
   </div>
 </section>
-
 <section class="news">
   <div class="container container_center">
     <div class="news__header">
@@ -87,46 +86,148 @@
     </div>
   </div>
 </section>
-<section class="support">
+<section class="smi">
+  <img src="<?=$config->urls->templates.'assets/img/wave.jpg'?>" alt="" class="smi__img">
   <div class="container container_center">
-    <div class="support__header">
-      <h1 class="support__heading">при поддержке</h1>
-      <div class="support__line"></div>
-    </div>
-    <div class="support__grid">
-      <div class="support__cell">
-        <div class="support__image" style="background-image:url(https://previews.123rf.com/images/alekss/alekss1412/alekss141200404/34431214-background-of-a-green-grass-texture-green-lawn.jpg)"></div>
+    <h3 class="smi__heading">сми о нас</h3>
+    <div class="smi__grid">
+      <div class="smi__cell">
+        <div class="smi__item">
+          <h3 class="smi__subheading">заголовок статьи по тко</h3>
+          <p class="smi__text">После падения Хазарии в степях господствовали, сменяя друг друга, тюркоязычные народы: печенеги, огузы и половцы.</p>
+          <a href="" class="smi__source">www.tyumen72.ru</a>
+        </div>
       </div>
-      <div class="support__cell">
-        <div class="support__image" style="background-image:url(https://previews.123rf.com/images/alekss/alekss1412/alekss141200404/34431214-background-of-a-green-grass-texture-green-lawn.jpg)"></div>
+      <div class="smi__cell">
+        <div class="smi__item">
+          <h3 class="smi__subheading">заголовок статьи по тко</h3>
+          <p class="smi__text">После падения Хазарии в степях господствовали, сменяя друг друга, тюркоязычные народы: печенеги, огузы и половцы.</p>
+          <a href="" class="smi__source">www.tyumen72.ru</a>
+        </div>
       </div>
-      <div class="support__cell">
-        <div class="support__image" style="background-image:url(https://previews.123rf.com/images/alekss/alekss1412/alekss141200404/34431214-background-of-a-green-grass-texture-green-lawn.jpg)"></div>
+      <div class="smi__cell">
+        <div class="smi__item">
+          <h3 class="smi__subheading">заголовок статьи по тко</h3>
+          <p class="smi__text">После падения Хазарии в степях господствовали, сменяя друг друга, тюркоязычные народы: печенеги, огузы и половцы.</p>
+          <a href="" class="smi__source">www.tyumen72.ru</a>
+        </div>
       </div>
-      <div class="support__cell support__cell_big">
-        <div class="support__image" style="background-image:url(https://previews.123rf.com/images/alekss/alekss1412/alekss141200404/34431214-background-of-a-green-grass-texture-green-lawn.jpg)"></div>
+      <div class="smi__cell">
+        <div class="smi__item">
+          <h3 class="smi__subheading">заголовок статьи по тко</h3>
+          <p class="smi__text">После падения Хазарии в степях господствовали, сменяя друг друга, тюркоязычные народы: печенеги, огузы и половцы.</p>
+          <a href="" class="smi__source">www.tyumen72.ru</a>
+        </div>
       </div>
-      <div class="support__cell">
-        <div class="support__image" style="background-image:url(https://previews.123rf.com/images/alekss/alekss1412/alekss141200404/34431214-background-of-a-green-grass-texture-green-lawn.jpg)"></div>
+      <div class="smi__cell">
+        <div class="smi__item">
+          <h3 class="smi__subheading">заголовок статьи по тко</h3>
+          <p class="smi__text">После падения Хазарии в степях господствовали, сменяя друг друга, тюркоязычные народы: печенеги, огузы и половцы.</p>
+          <a href="" class="smi__source">www.tyumen72.ru</a>
+        </div>
       </div>
-      <div class="support__cell">
-        <div class="support__image" style="background-image:url(https://previews.123rf.com/images/alekss/alekss1412/alekss141200404/34431214-background-of-a-green-grass-texture-green-lawn.jpg)"></div>
+      <div class="smi__cell">
+        <div class="smi__item">
+          <h3 class="smi__subheading">заголовок статьи по тко</h3>
+          <p class="smi__text">После падения Хазарии в степях господствовали, сменяя друг друга, тюркоязычные народы: печенеги, огузы и половцы.</p>
+          <a href="" class="smi__source">www.tyumen72.ru</a>
+        </div>
       </div>
-      <div class="support__cell">
-        <div class="support__image" style="background-image:url(https://previews.123rf.com/images/alekss/alekss1412/alekss141200404/34431214-background-of-a-green-grass-texture-green-lawn.jpg)"></div>
+      <div class="smi__cell">
+        <div class="smi__item">
+          <h3 class="smi__subheading">заголовок статьи по тко</h3>
+          <p class="smi__text">После падения Хазарии в степях господствовали, сменяя друг друга, тюркоязычные народы: печенеги, огузы и половцы.</p>
+          <a href="" class="smi__source">www.tyumen72.ru</a>
+        </div>
       </div>
-      <div class="support__cell">
-        <div class="support__image" style="background-image:url(https://previews.123rf.com/images/alekss/alekss1412/alekss141200404/34431214-background-of-a-green-grass-texture-green-lawn.jpg)"></div>
+      <div class="smi__cell">
+        <div class="smi__item">
+          <h3 class="smi__subheading">заголовок статьи по тко</h3>
+          <p class="smi__text">После падения Хазарии в степях господствовали, сменяя друг друга, тюркоязычные народы: печенеги, огузы и половцы.</p>
+          <a href="" class="smi__source">www.tyumen72.ru</a>
+        </div>
+      </div>
+      <div class="smi__cell">
+        <div class="smi__item">
+          <h3 class="smi__subheading">заголовок статьи по тко</h3>
+          <p class="smi__text">После падения Хазарии в степях господствовали, сменяя друг друга, тюркоязычные народы: печенеги, огузы и половцы.</p>
+          <a href="" class="smi__source">www.tyumen72.ru</a>
+        </div>
       </div>
     </div>
   </div>
 </section>
-<section class="wave">
-  <img src="<?=$config->urls->templates.'assets/img/wave.jpg'?>" alt="" class="wave__img">
+
+<section class="videos">
+  <div class="container container_center">
+    <h3 class="videos__heading">видеоматериалы</h3>
+    <div class="videos__grid">
+      <div class="videos__cell"><a href="https://www.youtube.com/watch?v=UcRtFYAz2Yo" class="videos__link" style="background-image:url(https://holographica.space/wp-content/uploads/2015/06/youtube-logo2.jpg)" data-uk-lightbox></a></div>
+      <div class="videos__cell"><a href="https://www.youtube.com/watch?v=UcRtFYAz2Yo" class="videos__link" style="background-image:url(https://holographica.space/wp-content/uploads/2015/06/youtube-logo2.jpg)" data-uk-lightbox></a></div>
+      <div class="videos__cell"><a href="https://www.youtube.com/watch?v=UcRtFYAz2Yo" class="videos__link" style="background-image:url(https://holographica.space/wp-content/uploads/2015/06/youtube-logo2.jpg)" data-uk-lightbox></a></div>
+    </div>
+    <div class="videos__footer"><a href="" class="videos__more">перейти в раздел</a></div>
+  </div>
 </section>
 
-section.
-<div class="proposal"></div>
+<section class="photos">
+  <div class="container container_center">
+    <h3 class="photos__heading">фотогалерея</h3>
+    <div class="photos__grid photos__grid_main">
+      <div class="photos__cell">
+        <div class="photos__item">
+          <a href="" class="photos__link" style="background-image:url(https://www.w3schools.com/w3css/img_lights.jpg);" data-uk-lightbox></a>
+        </div>
+      </div>
+      <div class="photos__cell">
+          <div class="photos__grid">
+            <div class="photos__cell photos__cell_big">
+              <div class="photos__item photos__item_rect">
+                <a href="" class="photos__link" style="background-image:url(https://www.w3schools.com/w3css/img_lights.jpg);"></a>
+              </div>
+            </div>
+            <div class="photos__cell">
+              <div class="photos__item">
+                <a href="" class="photos__link" style="background-image:url(https://www.w3schools.com/w3css/img_lights.jpg);"></a>
+              </div>
+            </div>
+            <div class="photos__cell">
+              <div class="photos__item">
+                <a href="" class="photos__link" style="background-image:url(https://www.w3schools.com/w3css/img_lights.jpg);"></a>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="photos__cell">
+        <div class="photos__item photos__item_rect">
+          <a href="" class="photos__link" style="background-image:url(https://www.w3schools.com/w3css/img_lights.jpg);"></a>
+        </div>
+      </div>
+      <div class="photos__cell">
+        <div class="photos__item photos__item_rect">
+          <a href="" class="photos__link" style="background-image:url(https://www.w3schools.com/w3css/img_lights.jpg);"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="proposal-section">
+  <div class="container container_center">
+    <div class="proposal">
+      <h3 class="proposal__heading">вы можете больше узнать о нашей деятельности</h3>
+      <p class="proposal__text">Многие люди, работа которых связана с компьютерами жалуются на проблемы со здоровьем, такие как головная боль, заболевания кисти, боли в спине, плохое зрение.</p>
+      <div class="proposal__grid proposal__grid_margin-top">
+        <div class="proposal__button">
+          <a href="" class="button">запрос на съемку</a>
+        </div>
+        <div class="proposal__button">
+          <a href="" class="button">заявка на экскурсию</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="footer">
   <div class="container container_center">

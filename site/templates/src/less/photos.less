@@ -1,0 +1,41 @@
+.photos {
+  padding-top:60px;
+  &__heading {
+    font-weight: 900;
+    margin-bottom:60px;
+  }
+  &__grid {
+    display:flex;
+    flex-wrap: wrap;
+    &_main {
+      margin:-5px;
+    }
+  }
+  &__cell {
+    box-sizing: border-box;
+    width:50%;
+    &_big {
+      width:100%;
+    }
+  }
+  &__item {
+    position:relative;
+    &:after {
+      display:block;
+      content:"";
+      padding-bottom:100%;
+    }
+    &_rect:after { padding-bottom:50%; }
+  }
+  &__link {
+    display:block;
+    position:absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    left:5px;
+    top:5px;
+    right:5px;
+    bottom:5px;
+  }
+}
