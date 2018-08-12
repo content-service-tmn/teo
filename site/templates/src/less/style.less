@@ -1,0 +1,58 @@
+@gray:#313131;
+@green:#75cb3e;
+@light-green:#73b660;
+@dark-gray:#6e6e6e;
+@blue:#92C1D6;
+
+body {
+  overflow-y: scroll;
+}
+
+a {
+  text-decoration: none;
+  color:#3b3c36;
+  transition:all 0.2s;
+}
+
+a,input,button {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  &:focus {
+    outline:none;
+  }
+}
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+  font-size:18px;
+  line-height: normal;
+  color:#3b3c36;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  text-transform: uppercase;
+}
+h1 {
+  font-size:60px;
+  font-weight:800;
+}
+h2 {
+  font-size: 48px;
+  font-weight: 900;
+}
+h3 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.container {
+  max-width:980px;
+  padding:0 25px;
+  @media (min-width: 1200px) {
+    max-width:1200px;
+    padding:0 35px;
+  }
+
+  &_center {
+    margin:auto;
+  }
+}
