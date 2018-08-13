@@ -91,7 +91,9 @@ function getThumbnail($url)
 function getRandomPics($count, $pages)
 {
     $urls = [];
-    while(count($urls) != $count) {
+    $j = 0;
+    while(count($urls) != $count && $j<300) {
+        $j++;
         $galleries = $pages->find("template=layout_gallery");
         $countGalleries = $galleries->count();
         $gallery = $galleries[rand(0, $countGalleries - 1)];
@@ -105,6 +107,5 @@ function getRandomPics($count, $pages)
             $i++;
         }
     }
-    bd($urls);
     return $urls;
 }

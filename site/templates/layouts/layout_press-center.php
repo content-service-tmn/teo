@@ -116,7 +116,7 @@
             <?php $pics = getRandomPics(5, $pages) ?>
             <div class="photos__cell">
                 <div class="photos__item">
-                    <a href="https://www.w3schools.com/w3css/img_lights.jpg" class="photos__link"
+                    <a href="<?=$pics[0]?>" class="photos__link"
                        style="background-image:url(<?=$pics[0]?>);"
                        data-uk-lightbox></a>
                 </div>
@@ -125,8 +125,9 @@
                 <div class="photos__grid">
                     <div class="photos__cell photos__cell_big">
                         <div class="photos__item photos__item_rect">
-                            <a href="" class="photos__link"
-                               style="background-image:url(<?=$pics[1]?>);"></a>
+                            <a href="<?=$pics[1]?>" class="photos__link"
+                               style="background-image:url(<?=$pics[1]?>);"
+                               data-uk-lightbox></a>
                         </div>
                     </div>
                     <div class="photos__cell">
@@ -135,29 +136,32 @@
                                 <h3 class="photos-more__heading">все галереи</h3>
                                 <div class="photos-more__more">
                                     <h3 class="photos-more__text">перейти в раздел</h3>
-                                    <a href="" class="photos-more__link"></a>
+                                    <a href="<?=$pages->get("template=layout_galleries")->url?>" class="photos-more__link"></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="photos__cell">
                         <div class="photos__item">
-                            <a href="" class="photos__link"
-                               style="background-image:url(<?=$pics[2]?>);"></a>
+                            <a href="<?=$pics[2]?>" class="photos__link"
+                               style="background-image:url(<?=$pics[2]?>);"
+                               data-uk-lightbox></a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="photos__cell">
                 <div class="photos__item photos__item_rect">
-                    <a href="" class="photos__link"
-                       style="background-image:url(<?=$pics[3]?>);"></a>
+                    <a href="<?=$pics[3]?>" class="photos__link"
+                       style="background-image:url(<?=$pics[3]?>);"
+                       data-uk-lightbox></a>
                 </div>
             </div>
             <div class="photos__cell">
                 <div class="photos__item photos__item_rect">
-                    <a href="" class="photos__link"
-                       style="background-image:url(<?=$pics[4]?>);"></a>
+                    <a href="<?=$pics[4]?>" class="photos__link"
+                       style="background-image:url(<?=$pics[4]?>);"
+                       data-uk-lightbox></a>
                 </div>
             </div>
         </div>
@@ -167,9 +171,8 @@
 <section class="proposal-section">
     <div class="container container_center">
         <div class="proposal">
-            <h3 class="proposal__heading">вы можете больше узнать о нашей деятельности</h3>
-            <p class="proposal__text">Многие люди, работа которых связана с компьютерами жалуются на проблемы со
-                здоровьем, такие как головная боль, заболевания кисти, боли в спине, плохое зрение.</p>
+            <h3 class="proposal__heading"><?=$page->press_center_bottom_header?></h3>
+            <p class="proposal__text"><?=$page->press_center_bottom_content?></p>
             <div class="proposal__grid proposal__grid_margin-top">
                 <div class="proposal__button">
                     <a href="" class="button">запрос на съемку</a>
