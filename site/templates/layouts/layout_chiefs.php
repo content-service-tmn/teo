@@ -26,9 +26,9 @@
 <section class="breadcrumbs">
   <div class="container container_center">
     <div class="breadcrumbs__grid">
-      <div class="breadcrumbs__cell"><a href="" class="breadcrumbs__link">главная</a></div>
-      <div class="breadcrumbs__cell"><a href="" class="breadcrumbs__link">клиентам</a></div>
-      <div class="breadcrumbs__cell"><a href="" class="breadcrumbs__link">полигоны тко</a></div>
+        <?php foreach ($page->parents()->append($page) as $parent): ?>
+            <div class="breadcrumbs__cell"><a href="<?= $parent->url ?>" class="breadcrumbs__link"><?= $parent->title ?></a></div>
+        <?php endforeach; ?>
     </div>
     <h2 class="breadcrumbs__heading">руководство</h2>
   </div>

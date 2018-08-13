@@ -26,9 +26,9 @@
 <section class="breadcrumbs">
   <div class="container container_center">
     <div class="breadcrumbs__grid">
-      <div class="breadcrumbs__cell"><a href="" class="breadcrumbs__link">главная</a></div>
-      <div class="breadcrumbs__cell"><a href="" class="breadcrumbs__link">клиентам</a></div>
-      <div class="breadcrumbs__cell"><a href="" class="breadcrumbs__link">полигоны тко</a></div>
+        <?php foreach ($page->parents()->append($page) as $parent): ?>
+            <div class="breadcrumbs__cell"><a href="<?= $parent->url ?>" class="breadcrumbs__link"><?= $parent->title ?></a></div>
+        <?php endforeach; ?>
     </div>
     <h2 class="breadcrumbs__heading">о нас</h2>
   </div>
@@ -41,34 +41,10 @@
       <div class="blocks__cell">
         <div class="blocks__item" style="background-image:url(<?=$item->repeater_block_svg->url?>)">
           <h3 class="blocks__heading"><?=$item->repeater_block_title?></h3>
-          <a href="" class="blocks__link"></a>
+          <a href="<?=$item->repeater_block_link->url?>" class="blocks__link"></a>
         </div>
       </div>
         <?php endforeach; ?>
-      <div class="blocks__cell">
-        <div class="blocks__item" style="background-image:url(https://sun1-17.userapi.com/c831109/v831109158/16331c/c_Yh6qcGZ08.jpg)">
-          <h3 class="blocks__heading">мусоро-сортировочные заводы</h3>
-          <a href="" class="blocks__link"></a>
-        </div>
-      </div>
-      <div class="blocks__cell">
-        <div class="blocks__item" style="background-image:url(https://sun1-17.userapi.com/c831109/v831109158/16331c/c_Yh6qcGZ08.jpg)">
-          <h3 class="blocks__heading">руководство</h3>
-          <a href="" class="blocks__link"></a>
-        </div>
-      </div>
-      <div class="blocks__cell">
-        <div class="blocks__item" style="background-image:url(https://sun1-17.userapi.com/c831109/v831109158/16331c/c_Yh6qcGZ08.jpg)">
-          <h3 class="blocks__heading">руководство</h3>
-          <a href="" class="blocks__link"></a>
-        </div>
-      </div>
-      <div class="blocks__cell">
-        <div class="blocks__item" style="background-image:url(https://sun1-17.userapi.com/c831109/v831109158/16331c/c_Yh6qcGZ08.jpg)">
-          <h3 class="blocks__heading">руководство</h3>
-          <a href="" class="blocks__link"></a>
-        </div>
-      </div>
     </div>
   </div>
 </section>
