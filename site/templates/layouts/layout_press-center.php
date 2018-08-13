@@ -24,9 +24,9 @@
 <section class="breadcrumbs">
   <div class="container container_center">
     <div class="breadcrumbs__grid">
-      <div class="breadcrumbs__cell"><a href="" class="breadcrumbs__link">главная</a></div>
-      <div class="breadcrumbs__cell"><a href="" class="breadcrumbs__link">клиентам</a></div>
-      <div class="breadcrumbs__cell"><a href="" class="breadcrumbs__link">полигоны тко</a></div>
+        <?php foreach($page->parents()->append($page) as $parent): ?>
+      <div class="breadcrumbs__cell"><a href="<?=$parent->url?>" class="breadcrumbs__link"><?=$parent->title?></a></div>
+        <?php endforeach; ?>
     </div>
     <h2 class="breadcrumbs__heading">пресс-центр</h2>
   </div>
@@ -36,10 +36,11 @@
   <div class="container container_center">
     <h3 class="messages__heading">срочные сообщения</h3>
     <div class="messages__grid">
+        <?php foreach ($page->braking_news as $bn): ?>
       <div class="messages__cell">
         <div class="messages__item">
-          <h3 class="messages__subheading">открытие нового отдела экологического объединения</h3>
-          <p class="messages__text">Гедонизм осмысляет дедуктивный метод. Согласно мнению известных философов, дедуктивный метод естественно порождает и обеспечивает мир</p>
+          <h3 class="messages__subheading"><?=$bn->breaking_news_title?></h3>
+          <p class="messages__text"><?=$bn->breaking_news_description?></p>
         </div>
       </div>
       <div class="messages__cell">
