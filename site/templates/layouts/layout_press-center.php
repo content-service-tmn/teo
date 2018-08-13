@@ -113,10 +113,11 @@
     <div class="container container_center">
         <h3 class="photos__heading">фотогалерея</h3>
         <div class="photos__grid">
+            <?php $pics = getRandomPics(5, $pages) ?>
             <div class="photos__cell">
                 <div class="photos__item">
                     <a href="https://www.w3schools.com/w3css/img_lights.jpg" class="photos__link"
-                       style="background-image:url(https://www.w3schools.com/w3css/img_lights.jpg);"
+                       style="background-image:url(<?=$pics[0]?>);"
                        data-uk-lightbox></a>
                 </div>
             </div>
@@ -125,7 +126,7 @@
                     <div class="photos__cell photos__cell_big">
                         <div class="photos__item photos__item_rect">
                             <a href="" class="photos__link"
-                               style="background-image:url(https://www.w3schools.com/w3css/img_lights.jpg);"></a>
+                               style="background-image:url(<?=$pics[1]?>);"></a>
                         </div>
                     </div>
                     <div class="photos__cell">
@@ -142,7 +143,7 @@
                     <div class="photos__cell">
                         <div class="photos__item">
                             <a href="" class="photos__link"
-                               style="background-image:url(https://www.w3schools.com/w3css/img_lights.jpg);"></a>
+                               style="background-image:url(<?=$pics[2]?>);"></a>
                         </div>
                     </div>
                 </div>
@@ -150,13 +151,13 @@
             <div class="photos__cell">
                 <div class="photos__item photos__item_rect">
                     <a href="" class="photos__link"
-                       style="background-image:url(https://www.w3schools.com/w3css/img_lights.jpg);"></a>
+                       style="background-image:url(<?=$pics[3]?>);"></a>
                 </div>
             </div>
             <div class="photos__cell">
                 <div class="photos__item photos__item_rect">
                     <a href="" class="photos__link"
-                       style="background-image:url(https://www.w3schools.com/w3css/img_lights.jpg);"></a>
+                       style="background-image:url(<?=$pics[4]?>);"></a>
                 </div>
             </div>
         </div>
