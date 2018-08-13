@@ -1,0 +1,68 @@
+.blocks {
+  padding:60px 0;
+  padding-bottom:120px;
+  background-image:url(../img/wave.jpg);
+  background-size:contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  &__img {
+    position:absolute;
+    width:100%;
+    top:50%;
+    transform:translateY(-50%);
+  }
+  &__grid {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top:-60px;
+    margin-left: -60px;
+  }
+  &__cell {
+    width:33.3333%;
+    box-sizing: border-box;
+    padding-top:60px;
+    padding-left: 60px;
+    &:nth-child(3n+2) {
+      transform:translateY(60px);
+    }
+    &:last-child {
+      transform:none;
+    }
+  }
+
+  &__item {
+    box-sizing: border-box;
+    position:relative;
+    height:100%;
+    box-shadow: 0 0 50px rgba(0,0,0,0.15);
+    border-radius: 10px;
+    background-color:white;
+    padding:30px;
+    background-repeat: no-repeat;
+    background-size:auto 170px;
+    background-position: 0% 100%;
+    transition:all 0.5s;
+    &:after {
+      content:"";
+      display:block;
+      padding-bottom:150px;
+    }
+    &:hover {
+      background-color:@green;
+      color:white;
+    }
+  }
+  &__heading {
+    font-weight: 600;
+    font-size:30px;
+    min-height:120px;
+  }
+  &__link {
+    position:absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+  }
+}
