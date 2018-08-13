@@ -21,13 +21,6 @@
     box-sizing: border-box;
     padding-left: 60px;
     padding-top:60px;
-    &:first-child>div {
-      background-color:#72ca3a;
-      color:white;
-      a,h3 {
-        color:white;
-      }
-    }
   }
   &__item {
     box-sizing: border-box;
@@ -39,6 +32,16 @@
     padding:30px;
     padding-bottom:140px;
     transition:all 0.3s;
+    &:hover {
+      background-color:#72ca3a;
+      color:white;
+      a,h3 {
+        color:white;
+      }
+      a {
+        text-decoration: underline;
+      }
+    }
   }
   &__subheading {
     font-size:30px;
