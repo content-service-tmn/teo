@@ -73,3 +73,9 @@ function getHost($url){
         $url, $matches);
     return $matches[1];
 }
+
+function getThumbnail($url){
+    $parts = parse_url($url);
+    parse_str($parts['query'], $query);
+    return "https://img.youtube.com/vi/" . $query["v"] . "/mqdefault.jpg";
+}
