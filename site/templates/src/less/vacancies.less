@@ -3,8 +3,9 @@
   padding-bottom:120px;
   background-repeat: no-repeat;
   background-size:contain;
-  background-position: 50% 50%;
+  background-position: 50% 0%;
   background-image:url(../img/wave.jpg);
+  font-weight: 300;
   &__grid {
     display:flex;
     flex-wrap: wrap;
@@ -19,6 +20,8 @@
     background-color:white;
     box-shadow: 0 0 50px rgba(0,0,0,0.15);
     padding:30px;
+    padding-bottom:70px;
+    position:relative;
   }
   &__header {
     display:flex;
@@ -42,17 +45,58 @@
     clear:both;
     margin-top:30px;
   }
-  & .uk-accordion {
+  &__subheading {
+    font-size:30px;
+    font-weight: 900;
+  }
+  &__list {
+    margin-top:25px;
+    & li+li {
+      margin-top:25px;
+    }
+    & li:before {
+      content:"-";
+    }
+  }
+  &__conclusion {
+    font-weight: bold;
+    margin-top:50px;
+  }
+  &__contacts {
     margin-top:30px;
+    font-weight: bold;
+  }
+  & .uk-accordion {
+
   }
   & .uk-accordion-title {
-    background-color:white;
+    font-weight: 400;
+    background-color:transparent;
     color:@green;
     display:inline-block;
     padding:0;
-    margin-top:30px;
-    &:after {
+    position:absolute;
+    bottom:30px;
+    margin:0;
+    left:30px;
+    &:before {
       content:"развернуть";
     }
+    &.uk-active:before {
+      content:"свернуть";
+    }
+    &:after {
+      content:"\f107";
+      padding-left: 10px;
+      font-family: "FontAwesome";
+    }
+    &.uk-active:after {
+      content:"\f106";
+    }
+  }
+  & .uk-accordion-content {
+    padding:0;
+    padding-top:50px;
+    padding-bottom:30px;
   }
 }
