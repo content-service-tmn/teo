@@ -17,9 +17,20 @@
   }
   &__link {
     display:block;
+    position:relative;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
+    &:before {
+      content:"\f144";
+      font-family: "FontAwesome";
+      color:rgba(200,200,200,0.7);
+      font-size:90px;
+      top:50%;
+      left:50%;
+      position:absolute;
+      transform:translate(-50%,-50%);
+    }
     &:after {
       content:"";
       display:block;
