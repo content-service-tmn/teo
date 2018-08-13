@@ -1,3 +1,4 @@
+<?php namespace Processwire; ?>
 <div class="menu menu_green">
   <div class="container container_center">
     <div class="menu__grid">
