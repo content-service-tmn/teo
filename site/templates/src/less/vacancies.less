@@ -3,7 +3,7 @@
   padding-bottom:120px;
   background-repeat: no-repeat;
   background-size:contain;
-  background-position: 50% 50%;
+  background-position: 50% 0%;
   background-image:url(../img/wave.jpg);
   font-weight: 300;
   &__grid {
@@ -79,11 +79,19 @@
     bottom:30px;
     margin:0;
     left:30px;
-    &:after {
+    &:before {
       content:"развернуть";
     }
-    &.uk-active:after {
+    &.uk-active:before {
       content:"свернуть";
+    }
+    &:after {
+      content:"\f107";
+      padding-left: 10px;
+      font-family: "FontAwesome";
+    }
+    &.uk-active:after {
+      content:"\f106";
     }
   }
   & .uk-accordion-content {
