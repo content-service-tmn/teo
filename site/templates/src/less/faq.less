@@ -1,28 +1,70 @@
 .faq {
-  padding:60px 0;
-  &__heading {
-    font-weight: 900;
-    margin-bottom:60px;
-  }
+  padding:55px 0;
+  padding-bottom:500px;
   &__grid {
     margin-left: -30px;
-    margin-top: -20px;
+    margin-top: 20px;
+    display:flex;
+    flex-wrap: wrap;
   }
   &__cell {
     padding-left: 30px;
-    padding-top:20px;
     box-sizing: border-box;
     width:50%;
   }
   &__subheading {
-    margin-top:60px;
+    margin-top:40px;
     font-size:30px;
     font-weight: bold;
+    text-transform: none;
   }
-  & .uk-accordion-title {
+  &__text {
+    font-weight: bold;
+    font-size:16px;
+    margin-top:10px;
+  }
+  &__link {
+    color:@green;
+  }
 
+
+  & .uk-accordion-title {
+    background-color:white;
+    padding:20px 85px 20px 20px;
+    box-shadow: 0 0 50px rgba(0,0,0,0.15);
+    position:relative;
+    font-size:16px;
+    overflow:hidden;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    &:before {
+      content:"";
+      background-color:@green;
+      position:absolute;
+      width:65px;
+      top:0;
+      bottom:0;
+      right:0;
+    }
+    &:after {
+      content:"";
+      width:25px;
+      height:25px;
+      position:absolute;
+      top:50%;
+      right:20px;
+      background-repeat: no-repeat;
+      background-size:contain;
+      background-position: 50% 50%;
+      background-image:url(../img/plus.svg);
+      transform:translateY(-50%);
+      transition:all 0.3s;
+    }
+    &.uk-active:after {
+      transform:translateY(-50%) rotate(45deg);
+    }
   }
   & .uk-accordion-content {
-
+    padding: 0 30px 20px 30px;
   }
 }
