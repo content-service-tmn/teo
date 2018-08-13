@@ -1,0 +1,58 @@
+.vacancies {
+  padding:60px 0;
+  padding-bottom:120px;
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position: 50% 50%;
+  background-image:url(../img/wave.jpg);
+  &__grid {
+    display:flex;
+    flex-wrap: wrap;
+    margin-top:-60px;
+  }
+  &__cell {
+    width:55%;
+    padding-top:60px;
+  }
+  &__item {
+    border-radius: 10px;
+    background-color:white;
+    box-shadow: 0 0 50px rgba(0,0,0,0.15);
+    padding:30px;
+  }
+  &__header {
+    display:flex;
+    flex-wrap: wrap;
+  }
+  &__heading {
+    font-size:30px;
+    font-weight: 900;
+    max-width: 60%;
+    color:@green;
+    float:left;
+  }
+  &__salary {
+    flex-grow:1;
+    font-size:30px;
+    font-weight: 900;
+    float:right;
+    text-align: right;
+  }
+  &__text {
+    clear:both;
+    margin-top:30px;
+  }
+  & .uk-accordion {
+    margin-top:30px;
+  }
+  & .uk-accordion-title {
+    background-color:white;
+    color:@green;
+    display:inline-block;
+    padding:0;
+    margin-top:30px;
+    &:after {
+      content:"развернуть";
+    }
+  }
+}
