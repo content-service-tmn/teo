@@ -34,80 +34,15 @@
 </section>
 
 <section class="contacts-section">
+  <div id="google-map" class="contacts-section__map"></div>
   <div class="container container_center">
-    <div class="contacts-section__grid">
-      <div class="contacts-section__cell">
-        <p class="contacts-section__name">Анна Иванова</p>
-        <p class="contacts-section__post">Директор</p>
-        <ul class="contacts-section__list">
-          <li><a href="" class="contacts-section__mail">directorecoteo72@mail.com</a></li>
-          <li><a href="" class="contacts-section__phone">+7 (999) 000-00-00</a></li>
-        </ul>
-      </div>
-      <div class="contacts-section__cell">
-        <p class="contacts-section__name">Анна Иванова</p>
-        <p class="contacts-section__post">Директор</p>
-        <ul class="contacts-section__list">
-          <li><a href="" class="contacts-section__mail">directorecoteo72@mail.com</a></li>
-          <li><a href="" class="contacts-section__phone">+7 (999) 000-00-00</a></li>
-        </ul>
-      </div>
-      <div class="contacts-section__cell">
-        <p class="contacts-section__name">Анна Иванова</p>
-        <p class="contacts-section__post">Директор</p>
-        <ul class="contacts-section__list">
-          <li><a href="" class="contacts-section__mail">directorecoteo72@mail.com</a></li>
-          <li><a href="" class="contacts-section__phone">+7 (999) 000-00-00</a></li>
-        </ul>
-      </div>
-      <div class="contacts-section__cell">
-        <p class="contacts-section__name">Анна Иванова</p>
-        <p class="contacts-section__post">Директор</p>
-        <ul class="contacts-section__list">
-          <li><a href="" class="contacts-section__mail">directorecoteo72@mail.com</a></li>
-          <li><a href="" class="contacts-section__phone">+7 (999) 000-00-00</a></li>
-        </ul>
-      </div>
-      <div class="contacts-section__cell">
-        <p class="contacts-section__name">Анна Иванова</p>
-        <p class="contacts-section__post">Директор</p>
-        <ul class="contacts-section__list">
-          <li><a href="" class="contacts-section__mail">directorecoteo72@mail.com</a></li>
-          <li><a href="" class="contacts-section__phone">+7 (999) 000-00-00</a></li>
-        </ul>
-      </div>
-      <div class="contacts-section__cell">
-        <p class="contacts-section__name">Анна Иванова</p>
-        <p class="contacts-section__post">Директор</p>
-        <ul class="contacts-section__list">
-          <li><a href="" class="contacts-section__mail">directorecoteo72@mail.com</a></li>
-          <li><a href="" class="contacts-section__phone">+7 (999) 000-00-00</a></li>
-        </ul>
-      </div>
-      <div class="contacts-section__cell">
-        <p class="contacts-section__name">Анна Иванова</p>
-        <p class="contacts-section__post">Директор</p>
-        <ul class="contacts-section__list">
-          <li><a href="" class="contacts-section__mail">directorecoteo72@mail.com</a></li>
-          <li><a href="" class="contacts-section__phone">+7 (999) 000-00-00</a></li>
-        </ul>
-      </div>
-      <div class="contacts-section__cell">
-        <p class="contacts-section__name">Анна Иванова</p>
-        <p class="contacts-section__post">Директор</p>
-        <ul class="contacts-section__list">
-          <li><a href="" class="contacts-section__mail">directorecoteo72@mail.com</a></li>
-          <li><a href="" class="contacts-section__phone">+7 (999) 000-00-00</a></li>
-        </ul>
-      </div>
-      <div class="contacts-section__cell">
-        <p class="contacts-section__name">Анна Иванова</p>
-        <p class="contacts-section__post">Директолог директа агрегатной промышленности</p>
-        <ul class="contacts-section__list">
-          <li><a href="" class="contacts-section__mail">directorecoteo72@mail.com</a></li>
-          <li><a href="" class="contacts-section__phone">+7 (999) 000-00-00</a></li>
-        </ul>
-      </div>
+    <div class="contacts-section__panel">
+      <h2 class="contacts-section__heading">адрес</h2>
+      <ul class="contacts-section__list">
+        <li>индекс 625023</li>
+        <li>тюменская обл, тюмень</li>
+        <li>улица харьковская, 75</li>
+      </ul>
     </div>
   </div>
 </section>
