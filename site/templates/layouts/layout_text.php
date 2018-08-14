@@ -65,6 +65,7 @@
               <img src="http://lamcdn.net/furfurmag.ru/post_image-image/T3bX68VN1UclS8ZHdGyIXA-article.jpg" alt="" class="text__img">
             </div>
           </div>
+          <a href="https://sun1-17.userapi.com/c831109/v831109158/16331c/c_Yh6qcGZ08.jpg" class="text__video" style="background-image:url(https://sun1-17.userapi.com/c831109/v831109158/16331c/c_Yh6qcGZ08.jpg)" data-uk-lightbox></a>
           <p class="text__text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Мир бросил то щеке семь речью моей! Все агентство он там обеспечивает это всеми ему прямо. Рекламных, запятой предупредила жаренные.</p>
         </div>
       </div>
