@@ -7,6 +7,31 @@
 </head>
 
 <body>
+<?php if($page->template != "home"): ?>
+<div class="menu menu_green">
+  <div class="container container_center">
+    <div class="menu__grid">
+      <div class="menu__cell">
+        <a href="" class="menu__logo logo">
+          <img src="http://ecoteo.ru/wp-content/uploads/2015/02/logoteo-350x90.png" class="logo__img" alt="">
+        </a>
+      </div>
+      <div class="menu__cell">
+        <div class="menu__nav nav">
+          <a href="tel:<?=phoneLink($pages->get("template=layout_contacts")->site_phone)?>" class="nav__phone"><?=$pages->get("template=layout_contacts")->site_phone?></a>
+          <ul class="nav__items">
+            <li class="nav__item"><a href="/about" class="nav__link">о нас</a></li>
+            <li class="nav__item"><a href="/clients" class="nav__link">клиентам</a></li>
+            <li class="nav__item"><a href="/important" class="nav__link">важная информация</a></li>
+            <li class="nav__item"><a href="/press-center" class="nav__link">пресс-центр</a></li>
+            <li class="nav__item"><a href="/contacts" class="nav__link">контакты</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<?php endif; ?>
 
 <?= $templateRender; ?>
 
@@ -101,22 +126,23 @@
 </div>
 
 <script type="text/javascript">
-  (function($) {
-      $(document).ready(function(){
-          $(window).scroll(function(){
-              if ($(this).scrollTop() > 500) {
-                  $('#menu').slideDown(300);
-              } else {
-                  $('#menu').slideUp(300);
-              }
-          });
-      });
-  })(jQuery);
+    (function($) {
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                if ($(this).scrollTop() > 500) {
+                    $('#menu').slideDown(300);
+                } else {
+                    $('#menu').slideUp(300);
+                }
+            });
+        });
+    })(jQuery);
 </script>
+<?php if($page->template == "layout_contacts"): ?>
 <script type="text/javascript">
   function initMap() {
-    var coordinates= {lat: 57.14267, lng: 65.59402235},
-        marker= {lat: 57.1419482, lng: 65.5986856},
+    var coordinates= {lat: <?=$page->contacts_map_lat?>, lng: <?=$page->contacts_map_lng?>},
+        marker= {lat: coordinates["lat"]-0.0007218, lng: coordinates["lng"]+0.00466324999},
         options = {
           zoom: 16,
           disableDefaultUI: true,
@@ -131,6 +157,7 @@
   }
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDz-fa3z3jDQhfL6rwyNt3DEJ3XHbyoUHk&callback=initMap" async></script>
+<?php endif; ?>
 
 <section class="footer">
     <div class="container container_center">

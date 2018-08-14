@@ -1,32 +1,10 @@
-<div class="menu menu_green">
-  <div class="container container_center">
-    <div class="menu__grid">
-      <div class="menu__cell">
-        <a href="" class="menu__logo logo">
-          <img src="http://ecoteo.ru/wp-content/uploads/2015/02/logoteo-350x90.png" class="logo__img" alt="">
-        </a>
-      </div>
-      <div class="menu__cell">
-        <div class="menu__nav nav">
-          <a href="" class="nav__phone">8-800-250-73-26</a>
-          <ul class="nav__items">
-            <li class="nav__item"><a href="" class="nav__link">о нас</a></li>
-            <li class="nav__item"><a href="" class="nav__link">клиентам</a></li>
-            <li class="nav__item"><a href="" class="nav__link">важная информация</a></li>
-            <li class="nav__item"><a href="" class="nav__link">пресс-центр</a></li>
-            <li class="nav__item"><a href="" class="nav__link">контакты</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
+<?php namespace Processwire; ?>
 <section class="breadcrumbs">
   <div class="container container_center">
     <div class="breadcrumbs__grid">
         <?php foreach ($page->parents()->append($page) as $parent): ?>
-            <div class="breadcrumbs__cell"><a href="<?= $parent->url ?>" class="breadcrumbs__link"><?= $parent->title ?></a></div>
+          <div class="breadcrumbs__cell"><a href="<?= $parent->url ?>"
+                                            class="breadcrumbs__link"><?= $parent->title ?></a></div>
         <?php endforeach; ?>
     </div>
   </div>
@@ -37,30 +15,27 @@
     <div class="document__grid">
       <div class="document__left">
         <ul class="document__list">
-          <li><a href="" class="document__link">Устав общества</a></li>
-          <li><a href="" class="document__link">Пункты номер два</a></li>
-          <li><a href="" class="document__link">Информация эмитента ценных бумаг</a></li>
-          <li><a href="" class="document__link">Стандарты раскрытия информации в области обращения с ТКО</a></li>
+            <?php foreach ($page->parent->children as $pge):; ?>
+              <li><a href="<?= $pge->url ?>"
+                     class="document__link <?php if ($pge->id == $page->id) echo "active" ?>"><?= $pge->title ?></a>
+              </li>
+            <?php endforeach; ?>
         </ul>
       </div>
       <div class="document__right">
-        <h2 class="document__heading">важная информация</h2>
-        <p class="document__text">Перечень документов рыба текст сын сына папа папы уле=еле Перечень документов рыба текст сын сына папа папы уле=еле Перечень документов рыба текст сын сына папа папы уле=еле</p>
-        <p class="document__subheading">Информация, подлежащая раскрытию за 2016 год.</p>
-        <ul class="document__files">
-          <li class="document__file">
-            <p class="document__name">Документ</p>
-            <a href="" class="document__file-link">Ознакомиться с документом (PDF, размер 1.22 мб)</a>
-          </li>
-          <li class="document__file">
-            <p class="document__name">Документ</p>
-            <a href="" class="document__file-link">Ознакомиться с документом (PDF, размер 1.22 мб)</a>
-          </li>
-          <li class="document__file">
-            <p class="document__name">Документ</p>
-            <a href="" class="document__file-link">Ознакомиться с документом (PDF, размер 1.22 мб)</a>
-          </li>
-        </ul>
+        <h2 class="document__heading"><?= $page->files_list_header_title ?></h2>
+        <p class="document__text"><?= $page->files_list_header_subtitle ?></p>
+          <?php foreach ($page->files_list_blocks as $block): ?>
+            <p class="document__subheading"><?= $block->repeater_files_list_header ?></p>
+              <?php foreach ($block->repeater_files_list_files as $file): ; ?>
+              <ul class="document__files">
+                <li class="document__file">
+                  <p class="document__name"><?= $file->description ?></p>
+                  <a href="<?= $file->url ?>" target="_blank" class="document__file-link">Ознакомиться с документом (<?=strtoupper($file->ext)?>, размер <?= $file->filesizeStr ?>)</a>
+                </li>
+              </ul>
+              <?php endforeach; ?>
+          <?php endforeach; ?>
       </div>
     </div>
   </div>
