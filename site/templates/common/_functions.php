@@ -52,7 +52,9 @@ function rusdate($param, $time)
 
 function isDomainAvailible($url)
 {
+
     return true;
+
     $handle = curl_init($url);
     curl_setopt($handle, CURLOPT_RETURNTRANSFER, TRUE);
 
