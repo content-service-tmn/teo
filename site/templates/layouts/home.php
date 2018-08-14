@@ -11,7 +11,7 @@
           <div class="menu__nav nav">
             <a href="" class="nav__phone">8-800-250-73-26</a>
             <ul class="nav__items">
-              <li class="nav__item"><a href="#sidebar" class="nav__link" data-uk-offcanvas="{mode:'slide'}">о нас</a></li>
+              <li class="nav__item"><a href="#callback" class="nav__link" data-uk-offcanvas="{mode:'slide'}">о нас</a></li>
               <li class="nav__item"><a href="" class="nav__link">клиентам</a></li>
               <li class="nav__item"><a href="" class="nav__link">важная информация</a></li>
               <li class="nav__item"><a href="" class="nav__link">пресс-центр</a></li>
@@ -19,6 +19,7 @@
             </ul>
           </div>
         </div>
+      </div>
     </div>
     <div class="container container_center">
         <div class="header__wrapper">
@@ -38,9 +39,10 @@
         <div class="grid grid_main">
             <div class="grid__cell">
                 <div class="grid__wrapper">
-                    <div class="item" style="background-image:url(https://www.w3schools.com/w3css/img_lights.jpg);">
-                        <h3 class="item__heading">региональный оператор по обращению с тко в тюменской области</h3>
-                        <a href="" class="item__link"></a>
+                    <div class="item">
+                      <img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="" class="item__img">
+                      <h3 class="item__heading">региональный оператор по обращению с тко в тюменской области</h3>
+                      <a href="" class="item__link"></a>
                     </div>
                 </div>
             </div>
@@ -57,19 +59,19 @@
                         </div>
                         <div class="grid__cell">
                             <div class="grid__wrapper">
-                                <div class="item"
-                                     style="background-image:url(https://www.w3schools.com/w3css/img_lights.jpg);">
-                                    <h3 class="item__heading item__heading_small">документы</h3>
-                                    <a href="" class="item__link"></a>
+                                <div class="item">
+                                  <img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="" class="item__img">
+                                  <h3 class="item__heading item__heading_small">документы</h3>
+                                  <a href="" class="item__link"></a>
                                 </div>
                             </div>
                         </div>
                         <div class="grid__cell">
                             <div class="grid__wrapper">
-                                <div class="item"
-                                     style="background-image:url(https://www.w3schools.com/w3css/img_lights.jpg);">
-                                    <h3 class="item__heading item__heading_small">закупки</h3>
-                                    <a href="" class="item__link"></a>
+                                <div class="item">
+                                  <img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="" class="item__img">
+                                  <h3 class="item__heading item__heading_small">закупки</h3>
+                                  <a href="" class="item__link"></a>
                                 </div>
                             </div>
                         </div>
@@ -78,19 +80,21 @@
             </div>
             <div class="grid__cell">
                 <div class="grid__wrapper">
-                    <div class="item" style="background-image:url(https://www.w3schools.com/w3css/img_lights.jpg);">
-                        <h3 class="item__heading item__heading_small">вакансии</h3>
-                        <p class="item__text">Здесь вы можете ознакомиться с важной информацией о нашей организации.</p>
-                        <a href="" class="item__link"></a>
+                    <div class="item">
+                      <img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="" class="item__img">
+                      <h3 class="item__heading item__heading_small">вакансии</h3>
+                      <p class="item__text">Здесь вы можете ознакомиться с важной информацией о нашей организации.</p>
+                      <a href="" class="item__link"></a>
                     </div>
                 </div>
             </div>
             <div class="grid__cell">
                 <div class="grid__wrapper">
-                    <div class="item" style="background-image:url(https://www.w3schools.com/w3css/img_lights.jpg);">
-                        <h3 class="item__heading item__heading_small">интересные факты</h3>
-                        <p class="item__text">Здесь вы можете ознакомиться с важной информацией о нашей организации.</p>
-                        <a href="" class="item__link"></a>
+                    <div class="item">
+                      <img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="" class="item__img">
+                      <h3 class="item__heading item__heading_small">интересные факты</h3>
+                      <p class="item__text">Здесь вы можете ознакомиться с важной информацией о нашей организации.</p>
+                      <a href="" class="item__link"></a>
                     </div>
                 </div>
             </div>
@@ -137,39 +141,29 @@
             <h1 class="support__heading">при поддержке</h1>
             <div class="support__line"></div>
         </div>
-        <div class="support__grid">
-            <div class="support__cell">
+        <div class="uk-slidenav-position support__grid" data-uk-slider="{center:true}">
+          <div class="uk-slider-container">
+            <ul class="uk-slider uk-grid uk-grid-medium">
+              <li class="uk-width-1-3">
                 <div class="support__image"
-                     style="background-image:url(https://previews.123rf.com/images/alekss/alekss1412/alekss141200404/34431214-background-of-a-green-grass-texture-green-lawn.jpg)"></div>
-            </div>
-            <div class="support__cell">
+                     style="background-image:url(https://pbs.twimg.com/profile_images/888907252702347265/g2JwwLDR_400x400.jpg"></div>
+              </li>
+              <li class="uk-width-1-3">
                 <div class="support__image"
-                     style="background-image:url(https://previews.123rf.com/images/alekss/alekss1412/alekss141200404/34431214-background-of-a-green-grass-texture-green-lawn.jpg)"></div>
-            </div>
-            <div class="support__cell">
+                     style="background-image:url(https://pbs.twimg.com/profile_images/888907252702347265/g2JwwLDR_400x400.jpg"></div>
+              </li>
+              <li class="uk-width-2-3">
                 <div class="support__image"
-                     style="background-image:url(https://previews.123rf.com/images/alekss/alekss1412/alekss141200404/34431214-background-of-a-green-grass-texture-green-lawn.jpg)"></div>
-            </div>
-            <div class="support__cell support__cell_big">
+                     style="background-image:url(https://pbs.twimg.com/profile_images/888907252702347265/g2JwwLDR_400x400.jpg"></div>
+              </li>
+              <li class="uk-width-1-3">
                 <div class="support__image"
-                     style="background-image:url(https://previews.123rf.com/images/alekss/alekss1412/alekss141200404/34431214-background-of-a-green-grass-texture-green-lawn.jpg)"></div>
-            </div>
-            <div class="support__cell">
-                <div class="support__image"
-                     style="background-image:url(https://previews.123rf.com/images/alekss/alekss1412/alekss141200404/34431214-background-of-a-green-grass-texture-green-lawn.jpg)"></div>
-            </div>
-            <div class="support__cell">
-                <div class="support__image"
-                     style="background-image:url(https://previews.123rf.com/images/alekss/alekss1412/alekss141200404/34431214-background-of-a-green-grass-texture-green-lawn.jpg)"></div>
-            </div>
-            <div class="support__cell">
-                <div class="support__image"
-                     style="background-image:url(https://previews.123rf.com/images/alekss/alekss1412/alekss141200404/34431214-background-of-a-green-grass-texture-green-lawn.jpg)"></div>
-            </div>
-            <div class="support__cell">
-                <div class="support__image"
-                     style="background-image:url(https://previews.123rf.com/images/alekss/alekss1412/alekss141200404/34431214-background-of-a-green-grass-texture-green-lawn.jpg)"></div>
-            </div>
+                     style="background-image:url(https://pbs.twimg.com/profile_images/888907252702347265/g2JwwLDR_400x400.jpg"></div>
+              </li>
+            </ul>
+          </div>
+          <a href="" class="support__nav support__nav_left" data-uk-slider-item="previous"></a>
+          <a href="" class="support__nav support__nav_right" data-uk-slider-item="next"></a>
         </div>
     </div>
 </section>

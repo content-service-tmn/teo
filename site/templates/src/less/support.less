@@ -15,10 +15,7 @@
     border-top:1px solid black;
   }
   &__grid {
-    margin-left:-30px;
-    margin-top:40px;
-    display:flex;
-    flex-wrap: wrap;
+    margin-top:70px;
   }
   &__cell {
     box-sizing: border-box;
@@ -34,5 +31,37 @@
     background-repeat: no-repeat;
     background-size:cover;
     background-position: 50% 50%;
+  }
+  &__nav {
+    position:absolute;
+    bottom:50%;
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    background-color:@green;
+    transform:translateY(50%);
+    &:after {
+      position:absolute;
+      font-family: "FontAwesome";
+      color:white;
+      font-size:26px;
+      line-height: 40px;
+      top:0;
+    }
+    &_left {
+      left:15px;
+      &:after {
+        left:13px;
+        content:"\f104";
+      }
+
+    }
+    &_right {
+      right:15px;
+      &:after {
+        right:13px;
+        content:"\f105";
+      }
+    }
   }
 }
