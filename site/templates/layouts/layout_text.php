@@ -33,6 +33,32 @@
               <img src="http://lamcdn.net/furfurmag.ru/post_image-image/T3bX68VN1UclS8ZHdGyIXA-article.jpg" alt="" class="text__img">
             </div>
           </div>
+          <div class="text__slider-wrapper">
+            <div class="uk-slidenav-position text__slider" data-uk-slider="{center:true}">
+              <div class="uk-slider-container">
+                <ul class="uk-slider uk-grid uk-grid-medium">
+                  <li class="uk-width-1-3">
+                    <div class="support__image"
+                    style="background-image:url(https://pbs.twimg.com/profile_images/888907252702347265/g2JwwLDR_400x400.jpg"></div>
+                  </li>
+                  <li class="uk-width-1-3">
+                    <div class="support__image"
+                    style="background-image:url(https://pbs.twimg.com/profile_images/888907252702347265/g2JwwLDR_400x400.jpg"></div>
+                  </li>
+                  <li class="uk-width-2-3">
+                    <div class="support__image"
+                    style="background-image:url(https://pbs.twimg.com/profile_images/888907252702347265/g2JwwLDR_400x400.jpg"></div>
+                  </li>
+                  <li class="uk-width-1-3">
+                    <div class="support__image"
+                    style="background-image:url(https://pbs.twimg.com/profile_images/888907252702347265/g2JwwLDR_400x400.jpg"></div>
+                  </li>
+                </ul>
+              </div>
+              <a href="" class="support__nav support__nav_left" data-uk-slider-item="previous"></a>
+              <a href="" class="support__nav support__nav_right" data-uk-slider-item="next"></a>
+            </div>
+          </div>
           <p class="text__text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Мир бросил то щеке семь речью моей! Все агентство он там обеспечивает это всеми ему прямо. Рекламных, запятой предупредила жаренные.</p>
           <div class="text__grid">
             <div class="text__cell">

@@ -7,13 +7,15 @@
   }
   &__left {
     box-sizing: border-box;
-    width: 360px;
+    width: 30%;
     padding-right: 30px;
     flex-shrink: 0;
+    flex-grow: 1;
   }
   &__list {
     font-size:16px;
     padding-right: 30px;
+    max-width: 330px;
     & li+li {
       margin-top:15px;
     }
@@ -33,7 +35,8 @@
     }
   }
   &__right {
-    flex-grow: 1;
+    box-sizing: border-box;
+    width:70%;
     padding-right: 30px;
   }
   &__heading {
