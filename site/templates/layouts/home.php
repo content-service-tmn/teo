@@ -1,3 +1,34 @@
+<section id="menu" class="fixed-menu">
+  <div class="menu menu_small menu_green">
+    <div class="container container_center">
+      <div class="menu__phone-container">
+        <a href="" class="menu__phone">8-800-250-73-26</a>
+      </div>
+      
+      <div class="menu__grid">
+        <div class="menu__cell">
+          <a href="" class="menu__logo logo">
+            <img src="http://ecoteo.ru/wp-content/uploads/2015/02/logoteo-350x90.png" class="logo__img" alt="">
+          </a>
+        </div>
+        <div class="menu__cell">
+          <div class="menu__nav nav">
+            <ul class="nav__items">
+              <li class="nav__item"><a href="#callback" class="nav__link" data-uk-offcanvas="{mode:'slide'}">о нас</a></li>
+              <li class="nav__item"><a href="" class="nav__link">клиентам</a></li>
+              <li class="nav__item"><a href="" class="nav__link">важная информация</a></li>
+              <li class="nav__item"><a href="" class="nav__link">пресс-центр</a></li>
+              <li class="nav__item"><a href="" class="nav__link">контакты</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<a href="#sidebar" class="burger" data-uk-offcanvas="{mode:'slide'}"></a>
+
 <section class="header">
   <div class="menu">
     <div class="container container_center">
@@ -21,18 +52,21 @@
         </div>
       </div>
     </div>
-    <div class="container container_center">
-        <div class="header__wrapper">
-            <img src="<?= $config->urls->templates . 'assets/img/map.png' ?>" alt="" class="header__map">
-            <h3 class="header__name header__name_tmn">Тюмень</h3>
-            <h3 class="header__name header__name_tob">Тобольск</h3>
-            <h3 class="header__name header__name_ish">Ишим</h3>
-            <div class="header__content content">
-                <h1 class="content__heading">Тюменское экологическое объединение</h1>
-                <p class="content__text"><?= $page->home_description_under_title ?></p>
-            </div>
-        </div>
+  </div>
+  <div class="container container_center">
+    <div class="header__wrapper">
+      <div class="header__map-wrapper">
+        <img src="<?= $config->urls->templates . 'assets/img/map.png' ?>" alt="" class="header__map">
+        <h3 class="header__name header__name_tmn">Тюмень</h3>
+        <h3 class="header__name header__name_tob">Тобольск</h3>
+        <h3 class="header__name header__name_ish">Ишим</h3>
+      </div>
+      <div class="header__content content">
+        <h1 class="content__heading">Тюменское экологическое объединение</h1>
+        <p class="content__text"><?= $page->home_description_under_title ?></p>
+      </div>
     </div>
+  </div>
 </section>
 <section class="home">
     <div class="container container_center">

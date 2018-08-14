@@ -127,6 +127,19 @@
 
 <?php if($page->template == "layout_contacts"): ?>
 <script type="text/javascript">
+  (function($) {
+      $(document).ready(function(){
+          $(window).scroll(function(){
+              if ($(this).scrollTop() > 500) {
+                  $('#menu').slideDown(300);
+              } else {
+                  $('#menu').slideUp(300);
+              }
+          });
+      });
+  })(jQuery);
+</script>
+<script type="text/javascript">
   function initMap() {
     var coordinates= {lat: <?=$page->contacts_map_lat?>, lng: <?=$page->contacts_map_lng?>},
         marker= {lat: coordinates["lat"]-0.0007218, lng: coordinates["lng"]+0.00466324999},
