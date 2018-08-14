@@ -1,10 +1,6 @@
 <section id="menu" class="fixed-menu">
   <div class="menu menu_small menu_green">
     <div class="container container_center">
-      <div class="menu__phone-container">
-        <a href="" class="menu__phone">8-800-250-73-26</a>
-      </div>
-      
       <div class="menu__grid">
         <div class="menu__cell">
           <a href="" class="menu__logo logo">
@@ -32,6 +28,9 @@
 <section class="header">
   <div class="menu">
     <div class="container container_center">
+      <div class="menu__phone-container">
+        <a href="" class="menu__phone">8-800-250-73-26</a>
+      </div>
       <div class="menu__grid">
         <div class="menu__cell">
           <a href="" class="menu__logo logo">
@@ -40,7 +39,6 @@
         </div>
         <div class="menu__cell">
           <div class="menu__nav nav">
-            <a href="" class="nav__phone">8-800-250-73-26</a>
             <ul class="nav__items">
               <li class="nav__item"><a href="#callback" class="nav__link" data-uk-offcanvas="{mode:'slide'}">о нас</a></li>
               <li class="nav__item"><a href="" class="nav__link">клиентам</a></li>
