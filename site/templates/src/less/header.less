@@ -6,7 +6,11 @@
   }
   &__map-wrapper {
     display:inline-block;
+    position:relative;
     transform:translateX(300px);
+    &_normal {
+      transform:none;
+    }
   }
   &__map {
     width:100%;
@@ -17,7 +21,6 @@
     display:block;
     position:absolute;
     bottom:0;
-    transform:translateX(300px);
     &_first {
       z-index:1;
     }
