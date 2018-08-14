@@ -37,6 +37,7 @@
     <div class="document__grid">
       <div class="document__left">
         <ul class="document__list">
+            <?php foreach ($page->parent->children as $pge) {bd($pge->title); }; ?>
           <li><a href="" class="document__link">Устав общества</a></li>
           <li><a href="" class="document__link">Пункты номер два</a></li>
           <li><a href="" class="document__link">Информация эмитента ценных бумаг</a></li>
