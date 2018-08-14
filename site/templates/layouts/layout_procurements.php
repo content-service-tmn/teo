@@ -25,9 +25,9 @@
 <section class="breadcrumbs">
   <div class="container container_center">
     <div class="breadcrumbs__grid">
-      <div class="breadcrumbs__cell"><a href="" class="breadcrumbs__link">главная</a></div>
-      <div class="breadcrumbs__cell"><a href="" class="breadcrumbs__link">клиентам</a></div>
-      <div class="breadcrumbs__cell"><a href="" class="breadcrumbs__link">полигоны тко</a></div>
+        <?php foreach ($page->parents()->append($page) as $parent): ?>
+            <div class="breadcrumbs__cell"><a href="<?= $parent->url ?>" class="breadcrumbs__link"><?= $parent->title ?></a></div>
+        <?php endforeach; ?>
     </div>
   </div>
 </section>
@@ -37,6 +37,7 @@
     <div class="document__grid">
       <div class="document__left">
         <ul class="document__list">
+            <?php foreach ($page->parent->children as $pge) {bd($pge->title); }; ?>
           <li><a href="" class="document__link">Устав общества</a></li>
           <li><a href="" class="document__link">Пункты номер два</a></li>
           <li><a href="" class="document__link">Информация эмитента ценных бумаг</a></li>
