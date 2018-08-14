@@ -19,6 +19,7 @@
             </ul>
           </div>
         </div>
+      </div>
     </div>
     <div class="container container_center">
         <div class="header__wrapper">
