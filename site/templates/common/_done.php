@@ -125,20 +125,20 @@
   </div>
 </div>
 
-<?php if($page->template == "layout_contacts"): ?>
 <script type="text/javascript">
-  (function($) {
-      $(document).ready(function(){
-          $(window).scroll(function(){
-              if ($(this).scrollTop() > 500) {
-                  $('#menu').slideDown(300);
-              } else {
-                  $('#menu').slideUp(300);
-              }
-          });
-      });
-  })(jQuery);
+    (function($) {
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                if ($(this).scrollTop() > 500) {
+                    $('#menu').slideDown(300);
+                } else {
+                    $('#menu').slideUp(300);
+                }
+            });
+        });
+    })(jQuery);
 </script>
+<?php if($page->template == "layout_contacts"): ?>
 <script type="text/javascript">
   function initMap() {
     var coordinates= {lat: <?=$page->contacts_map_lat?>, lng: <?=$page->contacts_map_lng?>},
