@@ -12,6 +12,54 @@
 
 <?= $templateRender; ?>
 
+<div id="sidebar" class="uk-offcanvas">
+  <div class="uk-offcanvas-bar">
+    <a class="uk-offcanvas-close"></a>
+    <div class="uk-offcanvas-bar-inner sidebar">
+      <a href="" class="sidebar__logo">
+        <img src="http://ecoteo.ru/wp-content/uploads/2015/02/logoteo-350x90.png" alt="" class="sidebar__logo-img">
+      </a>
+      <ul class="sidebar__items">
+        <li class="sidebar__item"><a href="/" data-uk-smoothscroll>Главная</a></li>
+      </ul>
+      <ul class="sidebar__items">
+        <li class="sidebar__item"><a href="/" data-uk-smoothscroll>О нас</a></li>
+        <li class="sidebar__item"><a href="/" data-uk-smoothscroll>Руководство</a></li>
+        <li class="sidebar__item"><a href="/" data-uk-smoothscroll>Мусоросортировочные заводы</a></li>
+        <li class="sidebar__item"><a href="/" data-uk-smoothscroll>Полигоны ТКО</a></li>
+        <li class="sidebar__item"><a href="/" data-uk-smoothscroll>Мусороперегрузочные станции</a></li>
+      </ul>
+      <ul class="sidebar__items">
+        <li class="sidebar__item"><a href="/" data-uk-smoothscroll>Клиентам</a></li>
+        <li class="sidebar__item"><a href="/" data-uk-smoothscroll>Деятельность регионального оператора</a></li>
+        <li class="sidebar__item"><a href="/" data-uk-smoothscroll>Деятельность по захоронению ТКО</a></li>
+        <li class="sidebar__item"><a href="/" data-uk-smoothscroll>Деятельность мусоросортировочного завода</a></li>
+      </ul>
+      <ul class="sidebar__items">
+        <li class="sidebar__item"><a href="/" data-uk-smoothscroll>Важная информация</a></li>
+        <li class="sidebar__item"><a href="/" data-uk-smoothscroll>Документы</a></li>
+        <li class="sidebar__item"><a href="/" data-uk-smoothscroll>Закупки</a></li>
+        <li class="sidebar__item"><a href="/" data-uk-smoothscroll>Вопрос-ответ</a></li>
+      </ul>
+      <ul class="sidebar__items">
+        <li class="sidebar__item"><a href="/" data-uk-smoothscroll>Пресс-центр</a></li>
+        <li class="sidebar__item"><a href="/" data-uk-smoothscroll>Срочные сообщения</a></li>
+        <li class="sidebar__item"><a href="/" data-uk-smoothscroll>Новости</a></li>
+        <li class="sidebar__item"><a href="/" data-uk-smoothscroll>СМИ о нас</a></li>
+        <li class="sidebar__item"><a href="/" data-uk-smoothscroll>Фотогалерея</a></li>
+        <li class="sidebar__item"><a href="/" data-uk-smoothscroll>Видеоматериалы</a></li>
+        <li class="sidebar__item"><a href="/" data-uk-smoothscroll>Запросы на съемку и экскурсию</a></li>
+      </ul>
+      <ul class="sidebar__items">
+        <li class="sidebar__item"><a href="/" data-uk-smoothscroll>Контакты</a></li>
+        <li class="sidebar__item"><a href="/" data-uk-smoothscroll>Тюмень</a></li>
+        <li class="sidebar__item"><a href="/" data-uk-smoothscroll>Тобольск</a></li>
+        <li class="sidebar__item"><a href="/" data-uk-smoothscroll>Ялуторовск</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
 <script type="text/javascript">
   function initMap() {
     var coordinates= {lat: 57.14267, lng: 65.59402235},

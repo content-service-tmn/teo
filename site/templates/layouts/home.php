@@ -11,7 +11,7 @@
           <div class="menu__nav nav">
             <a href="" class="nav__phone">8-800-250-73-26</a>
             <ul class="nav__items">
-              <li class="nav__item"><a href="" class="nav__link">о нас</a></li>
+              <li class="nav__item"><a href="#sidebar" class="nav__link" data-uk-offcanvas="{mode:'slide'}">о нас</a></li>
               <li class="nav__item"><a href="" class="nav__link">клиентам</a></li>
               <li class="nav__item"><a href="" class="nav__link">важная информация</a></li>
               <li class="nav__item"><a href="" class="nav__link">пресс-центр</a></li>
