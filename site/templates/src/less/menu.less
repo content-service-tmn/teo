@@ -1,10 +1,22 @@
+.fixed-menu {
+  position:fixed;
+  z-index:1000;
+  left:0;
+  top:0;
+  right:0;
+}
+
 .menu {
   padding:50px 0;
   z-index:999;
+  @media(max-width: 959px) {
+    display:none;
+  }
   &__grid {
     display:flex;
     margin-left: -30px;
     justify-content: space-between;
+    align-items: center;
   }
   &__cell {
     padding-left: 30px;
@@ -15,17 +27,22 @@
   &__nav {
 
   }
+  &__phone-container {
+    text-align: right;
+  }
+  &__phone {
+    font-size:30px;
+    font-weight: 600px;
+    color:white;
+  }
   &_green {
-    background-color:@light-green;
+    background-image: linear-gradient(#7dbc71,#70b45c);
   }
   &_swamp {
     background-color:@swamp;
   }
-  &_fixed {
-    position:fixed;
-    top:0;
-    left:0;
-    right:0;
+  &_small {
+    padding:25px 0;
   }
   &_sticky {
     position:sticky;
@@ -37,14 +54,8 @@
 
 .nav {
   text-align: right;
-  &__phone {
-    font-size:30px;
-    font-weight: 600px;
-    color:white;
-  }
   &__items {
     text-align: center;
-    margin-top:30px;
     margin-left: -20px;
     display:flex;
     justify-content: space-between;
@@ -79,6 +90,6 @@
 .logo {
   display:inline-block;
   &__img {
-    max-height: 70px;
+    max-width: 290px;
   }
 }
