@@ -58,6 +58,17 @@
   </div>
 </div>
 
+<div id="callback" class="uk-offcanvas">
+  <div class="uk-offcanvas-bar">
+    <a class="uk-offcanvas-close"></a>
+    <div class="uk-offcanvas-bar-inner sidebar">
+      <a href="" class="sidebar__logo">
+        <img src="http://ecoteo.ru/wp-content/uploads/2015/02/logoteo-350x90.png" alt="" class="sidebar__logo-img">
+      </a>
+    </div>      
+  </div>
+</div>
+
 <script type="text/javascript">
   function initMap() {
     var coordinates= {lat: 57.14267, lng: 65.59402235},
@@ -76,7 +87,7 @@
   }
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDz-fa3z3jDQhfL6rwyNt3DEJ3XHbyoUHk&callback=initMap" async></script>
-  
+
 <section class="footer">
     <div class="container container_center">
         <a href="" class="footer__logo logo">
