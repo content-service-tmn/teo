@@ -83,10 +83,11 @@
   </div>
 </div>
 
+<?php if($page->template == "layout_contacts"): ?>
 <script type="text/javascript">
   function initMap() {
-    var coordinates= {lat: 57.14267, lng: 65.59402235},
-        marker= {lat: 57.1419482, lng: 65.5986856},
+    var coordinates= {lat: <?=$page->contacts_map_lat?>, lng: <?=$page->contacts_map_lng?>},
+        marker= {lat: coordinates["lat"]-0.0007218, lng: coordinates["lng"]+0.00466324999},
         options = {
           zoom: 16,
           disableDefaultUI: true,
@@ -101,7 +102,8 @@
   }
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDz-fa3z3jDQhfL6rwyNt3DEJ3XHbyoUHk&callback=initMap" async></script>
-  
+<?php endif; ?>
+
 <section class="footer">
     <div class="container container_center">
         <a href="" class="footer__logo logo">

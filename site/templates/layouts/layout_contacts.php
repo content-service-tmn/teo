@@ -15,9 +15,9 @@
     <div class="contacts-section__panel">
       <h2 class="contacts-section__heading">адрес</h2>
       <ul class="contacts-section__list">
-        <li>индекс 625023</li>
-        <li>тюменская обл, тюмень</li>
-        <li>улица харьковская, 75</li>
+        <?php foreach (explode(";", $page->contacts_address) as $str): ?>
+        <li><?=$str?></li>
+        <?php endforeach; ?>
       </ul>
     </div>
   </div>
