@@ -39,9 +39,10 @@
         <div class="grid grid_main">
             <div class="grid__cell">
                 <div class="grid__wrapper">
-                    <div class="item" style="background-image:url(https://www.w3schools.com/w3css/img_lights.jpg);">
-                        <h3 class="item__heading">региональный оператор по обращению с тко в тюменской области</h3>
-                        <a href="" class="item__link"></a>
+                    <div class="item">
+                      <img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="" class="item__img">
+                      <h3 class="item__heading">региональный оператор по обращению с тко в тюменской области</h3>
+                      <a href="" class="item__link"></a>
                     </div>
                 </div>
             </div>
@@ -58,19 +59,19 @@
                         </div>
                         <div class="grid__cell">
                             <div class="grid__wrapper">
-                                <div class="item"
-                                     style="background-image:url(https://www.w3schools.com/w3css/img_lights.jpg);">
-                                    <h3 class="item__heading item__heading_small">документы</h3>
-                                    <a href="" class="item__link"></a>
+                                <div class="item">
+                                  <img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="" class="item__img">
+                                  <h3 class="item__heading item__heading_small">документы</h3>
+                                  <a href="" class="item__link"></a>
                                 </div>
                             </div>
                         </div>
                         <div class="grid__cell">
                             <div class="grid__wrapper">
-                                <div class="item"
-                                     style="background-image:url(https://www.w3schools.com/w3css/img_lights.jpg);">
-                                    <h3 class="item__heading item__heading_small">закупки</h3>
-                                    <a href="" class="item__link"></a>
+                                <div class="item">
+                                  <img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="" class="item__img">
+                                  <h3 class="item__heading item__heading_small">закупки</h3>
+                                  <a href="" class="item__link"></a>
                                 </div>
                             </div>
                         </div>
@@ -79,19 +80,21 @@
             </div>
             <div class="grid__cell">
                 <div class="grid__wrapper">
-                    <div class="item" style="background-image:url(https://www.w3schools.com/w3css/img_lights.jpg);">
-                        <h3 class="item__heading item__heading_small">вакансии</h3>
-                        <p class="item__text">Здесь вы можете ознакомиться с важной информацией о нашей организации.</p>
-                        <a href="" class="item__link"></a>
+                    <div class="item">
+                      <img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="" class="item__img">
+                      <h3 class="item__heading item__heading_small">вакансии</h3>
+                      <p class="item__text">Здесь вы можете ознакомиться с важной информацией о нашей организации.</p>
+                      <a href="" class="item__link"></a>
                     </div>
                 </div>
             </div>
             <div class="grid__cell">
                 <div class="grid__wrapper">
-                    <div class="item" style="background-image:url(https://www.w3schools.com/w3css/img_lights.jpg);">
-                        <h3 class="item__heading item__heading_small">интересные факты</h3>
-                        <p class="item__text">Здесь вы можете ознакомиться с важной информацией о нашей организации.</p>
-                        <a href="" class="item__link"></a>
+                    <div class="item">
+                      <img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="" class="item__img">
+                      <h3 class="item__heading item__heading_small">интересные факты</h3>
+                      <p class="item__text">Здесь вы можете ознакомиться с важной информацией о нашей организации.</p>
+                      <a href="" class="item__link"></a>
                     </div>
                 </div>
             </div>
