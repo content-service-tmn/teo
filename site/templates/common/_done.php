@@ -15,7 +15,7 @@
     </div>
     <div class="menu__grid">
       <div class="menu__cell">
-        <a href="" class="menu__logo logo">
+        <a href="/" class="menu__logo logo">
           <img src="http://ecoteo.ru/wp-content/uploads/2015/02/logoteo-350x90.png" class="logo__img" alt="">
         </a>
       </div>
