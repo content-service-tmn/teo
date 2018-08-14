@@ -83,6 +83,48 @@
   </div>
 </div>
 
+<div id="callback" class="uk-offcanvas">
+  <div class="uk-offcanvas-bar">
+    <a class="uk-offcanvas-close"></a>
+    <div class="uk-offcanvas-bar-inner sidebar">
+      <a href="" class="sidebar__logo">
+        <img src="http://ecoteo.ru/wp-content/uploads/2015/02/logoteo-350x90.png" alt="" class="sidebar__logo-img">
+      </a>
+      <form id="callback__form" class="form" action="/" method="post">
+        <div class="form__element form__element_name">
+          <label class="label" for="name">Имя</label>
+          <input id="name" class="input js-input" type="text" name="name" value="">
+        </div>
+        <div class="form__element form__element_phone">
+          <label class="label" for="phone1">Телефон</label>
+          <input id="phone1" class="input js-input js-phone" type="text" name="phone" value="">
+        </div>
+        <div class="form__element form__element_name">
+          <label class="label" for="company">Компания</label>
+          <input id="company" class="input js-input" type="text" name="company" value="">
+        </div>
+        <div class="form__element form__element_name">
+          <label class="label" for="mail">E-mail</label>
+          <input id="mail" class="input js-input" type="text" name="mail" value="">
+        </div>
+        <p class="form__text">Нажимая кнопку Отправить, Вы соглашаетесь на обработку персональных данных</a></p>
+        <div class="form__element form__element_send">
+          <div class="send">
+            <span class="send__text">отправить</span>
+            <button id="submit_form" class="send__button" type="submit" name="submit" value="order"></button>
+          </div>
+        </div>
+      </form>
+      <h3 class="sidebar__subheading">контакты</h3>
+      <ul class="sidebar__contacts">
+        <li class="sidebar__contact sidebar__contact_phone"><a href="tel:+7999999999">+7 (999) 99-99-99</a></li>
+        <li class="sidebar__contact"><a href="mailto:ecoteo@mail.ru">ecoteo@mail.ru</a></li>
+        <li class="sidebar__contact"><a href="mailto:ecoteo@mail.ru">ecoteo@mail.ru</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
 <?php if($page->template == "layout_contacts"): ?>
 <script type="text/javascript">
   function initMap() {
