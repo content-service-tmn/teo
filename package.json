@@ -17,7 +17,9 @@
     "url": "https://github.com/nikon72ru/teo/issues"
   },
   "homepage": "https://github.com/nikon72ru/teo#readme",
-  "dependencies": {},
+  "dependencies": {
+    "git": "^0.1.5"
+  },
   "devDependencies": {
     "browser-sync": "^2.24.6",
     "gulp": "^3.9.1",
