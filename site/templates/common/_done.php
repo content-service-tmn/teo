@@ -101,6 +101,19 @@
 </div>
 
 <script type="text/javascript">
+  (function($) {
+      $(document).ready(function(){
+          $(window).scroll(function(){
+              if ($(this).scrollTop() > 500) {
+                  $('#menu').slideDown(300);
+              } else {
+                  $('#menu').slideUp(300);
+              }
+          });
+      });
+  })(jQuery);
+</script>
+<script type="text/javascript">
   function initMap() {
     var coordinates= {lat: 57.14267, lng: 65.59402235},
         marker= {lat: 57.1419482, lng: 65.5986856},
