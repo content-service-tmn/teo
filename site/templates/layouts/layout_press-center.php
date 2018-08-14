@@ -78,7 +78,7 @@
         <div class="videos__grid">
             <?php foreach ($page->press_center_videos as $i => $v_url):?>
             <div class="videos__cell"><a href="<?=$v_url->repeater_press_center_video_url?>" class="videos__link"
-                                         style="background-image:url(<?=getThumbnail("https://www.youtube.com/watch?v=UcRtFYAz2Yo")?>)"
+                                         style="background-image:url(<?=getThumbnail($v_url->repeater_press_center_video_url, "mq")?>)"
                                          data-uk-lightbox></a></div>
             <?php if ($i == 2) {break;} endforeach;?>
         </div>

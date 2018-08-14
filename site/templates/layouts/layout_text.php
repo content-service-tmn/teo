@@ -1,8 +1,10 @@
+<?php namespace Processwire; ?>
 <section class="breadcrumbs">
   <div class="container container_center">
     <div class="breadcrumbs__grid">
         <?php foreach ($page->parents()->append($page) as $parent): ?>
-            <div class="breadcrumbs__cell"><a href="<?= $parent->url ?>" class="breadcrumbs__link"><?= $parent->title ?></a></div>
+          <div class="breadcrumbs__cell"><a href="<?= $parent->url ?>"
+                                            class="breadcrumbs__link"><?= $parent->title ?></a></div>
         <?php endforeach; ?>
     </div>
   </div>
@@ -13,59 +15,62 @@
     <div class="document__grid">
       <div class="document__left">
         <ul class="document__list">
-          <li><a href="" class="document__link">Устав общества</a></li>
-          <li><a href="" class="document__link">Пункты номер два</a></li>
-          <li><a href="" class="document__link">Информация эмитента ценных бумаг</a></li>
-          <li><a href="" class="document__link">Стандарты раскрытия информации в области обращения с ТКО</a></li>
+            <?php foreach ($page->parent->children as $pge):; ?>
+              <li><a href="<?= $pge->url ?>"
+                     class="document__link <?php if ($pge->id == $page->id) echo "active" ?>"><?= $pge->title ?></a>
+              </li>
+            <?php endforeach; ?>
         </ul>
       </div>
       <div class="document__right">
-        <h2 class="document__heading">полигоны тко</h2>
+        <h2 class="document__heading"><?= $page->text_page_title ?></h2>
         <div class="document__text-block text">
-          <h3 class="text__heading">Перспективное планирование напрямую зависит от новых принципов</h3>
-          <p class="text__text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Мир бросил то щеке семь речью моей! Все агентство он там обеспечивает это всеми ему прямо. Рекламных, запятой предупредила жаренные.</p>
-          <div class="text__grid">
-            <div class="text__cell">
-              <img src="http://lamcdn.net/furfurmag.ru/post_image-image/T3bX68VN1UclS8ZHdGyIXA-article.jpg" alt="" class="text__img">
-            </div>
-            <div class="text__cell">
-              <img src="http://lamcdn.net/furfurmag.ru/post_image-image/T3bX68VN1UclS8ZHdGyIXA-article.jpg" alt="" class="text__img">
-            </div>
-          </div>
-          <div class="text__slider-wrapper">
-            <div class="uk-slidenav-position text__slider" data-uk-slider="{center:true}">
-              <div class="uk-slider-container">
-                <ul class="uk-slider uk-grid uk-grid-medium">
-                  <li class="uk-width-1-3">
-                    <div class="support__image"
-                    style="background-image:url(https://pbs.twimg.com/profile_images/888907252702347265/g2JwwLDR_400x400.jpg"></div>
-                  </li>
-                  <li class="uk-width-1-3">
-                    <div class="support__image"
-                    style="background-image:url(https://pbs.twimg.com/profile_images/888907252702347265/g2JwwLDR_400x400.jpg"></div>
-                  </li>
-                  <li class="uk-width-2-3">
-                    <div class="support__image"
-                    style="background-image:url(https://pbs.twimg.com/profile_images/888907252702347265/g2JwwLDR_400x400.jpg"></div>
-                  </li>
-                  <li class="uk-width-1-3">
-                    <div class="support__image"
-                    style="background-image:url(https://pbs.twimg.com/profile_images/888907252702347265/g2JwwLDR_400x400.jpg"></div>
-                  </li>
-                </ul>
-              </div>
-              <a href="" class="support__nav support__nav_left" data-uk-slider-item="previous"></a>
-              <a href="" class="support__nav support__nav_right" data-uk-slider-item="next"></a>
-            </div>
-          </div>
-          <p class="text__text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Мир бросил то щеке семь речью моей! Все агентство он там обеспечивает это всеми ему прямо. Рекламных, запятой предупредила жаренные.</p>
-          <div class="text__grid">
-            <div class="text__cell">
-              <img src="http://lamcdn.net/furfurmag.ru/post_image-image/T3bX68VN1UclS8ZHdGyIXA-article.jpg" alt="" class="text__img">
-            </div>
-          </div>
-          <a href="https://sun1-17.userapi.com/c831109/v831109158/16331c/c_Yh6qcGZ08.jpg" class="text__video" style="background-image:url(https://sun1-17.userapi.com/c831109/v831109158/16331c/c_Yh6qcGZ08.jpg)" data-uk-lightbox></a>
-          <p class="text__text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Мир бросил то щеке семь речью моей! Все агентство он там обеспечивает это всеми ему прямо. Рекламных, запятой предупредила жаренные.</p>
+
+          <h3 class="text__heading"><?= $page->text_page_subtitle ?></h3>
+
+            <?php foreach ($page->text_page_content as $block): ?>
+                <?php if ($block->repeater_matrix_type == 1): ?>
+                    <?= str_replace("<p>", "<p class=\"text__text\">", $block->text_page_text) ?>
+                <?php endif; ?>
+
+                <?php if ($block->repeater_matrix_type == 2): ?>
+                <div class="text__grid">
+                    <?php foreach ($block->text_page_images as $img): ?>
+                      <div class="text__cell">
+                        <img src="<?= $img->url ?>"
+                             alt=""
+                             class="text__img">
+                      </div>
+                    <?php endforeach; ?>
+                </div>
+                <?php endif; ?>
+
+                <?php if ($block->repeater_matrix_type == 3): ?>
+                <div class="text__slider-wrapper">
+                  <div class="uk-slidenav-position text__slider" data-uk-slider="{center:true}">
+                    <div class="uk-slider-container">
+                      <ul class="uk-slider uk-grid uk-grid-medium">
+                        <?php bd($block->text_page_gallery);?>
+                          <?php foreach ($block->text_page_gallery->gallery_images as $img): ?>
+                            <li class="uk-width-1-3">
+                              <div class="support__image"
+                                   style="background-image:url(<?= $img->url ?>"></div>
+                            </li>
+                          <?php endforeach; ?>
+                      </ul>
+                    </div>
+                    <a href="" class="support__nav support__nav_left" data-uk-slider-item="previous"></a>
+                    <a href="" class="support__nav support__nav_right" data-uk-slider-item="next"></a>
+                  </div>
+                </div>
+                <?php endif; ?>
+
+                <?php if ($block->repeater_matrix_type == 4): ?>
+                <a href="<?=$block->text_page_video_url?>" class="text__video"
+                   style="background-image:url(<?=getThumbnail($block->text_page_video_url, "hq")?>)"
+                   data-uk-lightbox></a>
+                <?php endif; ?>
+            <?php endforeach; ?>
         </div>
       </div>
     </div>

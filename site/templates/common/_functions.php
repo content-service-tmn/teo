@@ -83,11 +83,11 @@ function getHost($url)
     return $matches[1];
 }
 
-function getThumbnail($url)
+function getThumbnail($url, $quality)
 {
     $parts = parse_url($url);
     parse_str($parts['query'], $query);
-    return "https://img.youtube.com/vi/" . $query["v"] . "/mqdefault.jpg";
+    return "https://img.youtube.com/vi/" . $query["v"] . "/{$quality}default.jpg";
 }
 
 function getRandomPics($count, $pages)
