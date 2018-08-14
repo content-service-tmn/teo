@@ -37,11 +37,9 @@
     <div class="document__grid">
       <div class="document__left">
         <ul class="document__list">
-            <?php foreach ($page->parent->children as $pge) {bd($pge->title); }; ?>
-          <li><a href="" class="document__link">Устав общества</a></li>
-          <li><a href="" class="document__link">Пункты номер два</a></li>
-          <li><a href="" class="document__link">Информация эмитента ценных бумаг</a></li>
-          <li><a href="" class="document__link">Стандарты раскрытия информации в области обращения с ТКО</a></li>
+            <?php foreach ($page->parent->children as $pge):; ?>
+              <li><a href="<?=$pge->url?>" class="document__link <?php if($pge->id == $page->id) echo "active"?>"><?=$pge->title?></a></li>
+            <?php endforeach; ?>
         </ul>
       </div>
       <div class="document__right">
