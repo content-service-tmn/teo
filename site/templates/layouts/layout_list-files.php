@@ -1,4 +1,4 @@
-<?php namespace Processwire?>
+<?php namespace Processwire; ?>
 <section class="breadcrumbs">
   <div class="container container_center">
     <div class="breadcrumbs__grid">
