@@ -73,7 +73,7 @@
       <div class="grid__cell">
         <div class="grid__wrapper">
           <div class="item">
-            <img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="" class="item__img">
+            <!--<img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="" class="item__img">-->
             <h3 class="item__heading">региональный оператор по обращению с тко в тюменской области</h3>
             <a href="" class="item__link"></a>
           </div>
@@ -93,7 +93,7 @@
             <div class="grid__cell">
               <div class="grid__wrapper">
                 <div class="item">
-                  <img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="" class="item__img">
+                  <img src="<?=$config->urls->templates . "assets/svg/doc1.svg"?>" alt="" class="item__img">
                   <h3 class="item__heading item__heading_small">документы</h3>
                   <a href="" class="item__link"></a>
                 </div>
@@ -102,7 +102,7 @@
             <div class="grid__cell">
               <div class="grid__wrapper">
                 <div class="item">
-                  <img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="" class="item__img">
+                  <img src="<?=$config->urls->templates . "assets/svg/zakupki1.svg"?>" alt="" class="item__img">
                   <h3 class="item__heading item__heading_small">закупки</h3>
                   <a href="" class="item__link"></a>
                 </div>
@@ -114,7 +114,7 @@
       <div class="grid__cell">
         <div class="grid__wrapper">
           <div class="item">
-            <img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="" class="item__img">
+            <img src="<?=$config->urls->templates . "assets/svg/vacancy1.svg"?>" alt="" class="item__img">
             <h3 class="item__heading item__heading_small">вакансии</h3>
             <p class="item__text">Здесь вы можете ознакомиться с важной информацией о нашей организации.</p>
             <a href="" class="item__link"></a>
@@ -124,7 +124,7 @@
       <div class="grid__cell">
         <div class="grid__wrapper">
           <div class="item">
-            <img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="" class="item__img">
+            <img src="<?=$config->urls->templates . "assets/svg/info.svg"?>" alt="" class="item__img">
             <h3 class="item__heading item__heading_small">интересные факты</h3>
             <p class="item__text">Здесь вы можете ознакомиться с важной информацией о нашей организации.</p>
             <a href="" class="item__link"></a>
@@ -155,13 +155,13 @@
       <a href="<?=$pages->get("template=layout_news")->url?>" class="news__button">все новости</a>
     </div>
     <div class="news__grid">
-        <?php foreach ($pages->find("template=layout_news-item, sort=-text_page_date, limit=3") as $pge): ?>
+        <?php foreach ($pages->get("template=layout_news")->children("template=layout_text, sort=-text_page_date, limit=3") as $pge): ?>
           <div class="news__cell">
             <div class="news-block">
-              <p class="news-block__date"><?=$pge->text_page_date?></p>
-              <h3 class="news-block__heading"><?=$pge->text_page_title?></h3>
-              <p class="news-block__text"><?=$pge->text_page_subtitle?></p>
-              <a href="<?=$pge->url?>" class="news-block__link">Подробнее</a>
+              <p class="news-block__date"><?= $pge->text_page_date ?></p>
+              <h3 class="news-block__heading"><?= $pge->text_page_title ?></h3>
+              <p class="news-block__text"><?= $pge->text_page_subtitle ?></p>
+              <a href="<?= $pge->url ?>" class="news-block__link">Подробнее</a>
             </div>
           </div>
         <?php endforeach; ?>
