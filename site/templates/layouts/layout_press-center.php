@@ -77,13 +77,13 @@
     <div class="container container_center">
         <h3 class="videos__heading">видеоматериалы</h3>
         <div class="videos__grid">
-            <?php foreach ($page->press_center_videos as $i => $v_url):?>
-            <div class="videos__cell"><a href="<?=$v_url->repeater_press_center_video_url?>" class="videos__link"
-                                         style="background-image:url(<?=getThumbnail($v_url->repeater_press_center_video_url, "mq")?>)"
+            <?php foreach (getRandomVideos(3, $pages) as  $v_url):?>
+            <div class="videos__cell"><a href="<?=$v_url?>" class="videos__link"
+                                         style="background-image:url(<?=getThumbnail($v_url, "mq")?>)"
                                          data-uk-lightbox></a></div>
-            <?php if ($i == 2) {break;} endforeach;?>
+            <?php endforeach;?>
         </div>
-        <div class="videos__footer"><a href="" class="videos__more">перейти в раздел</a></div>
+        <div class="videos__footer"><a href="<?=$pages->get("template=layout_videos")->url?>" class="videos__more">перейти в раздел</a></div>
     </div>
 </section>
 

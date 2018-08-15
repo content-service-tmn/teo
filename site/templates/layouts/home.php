@@ -155,13 +155,13 @@
       <a href="<?=$pages->get("template=layout_news")->url?>" class="news__button">все новости</a>
     </div>
     <div class="news__grid">
-        <?php foreach ($pages->find("template=layout_news-item, sort=-text_page_date, limit=3") as $pge): ?>
+        <?php foreach ($pages->get("template=layout_news")->children("template=layout_text, sort=-text_page_date, limit=3") as $pge): ?>
           <div class="news__cell">
             <div class="news-block">
-              <p class="news-block__date"><?=$pge->text_page_date?></p>
-              <h3 class="news-block__heading"><?=$pge->text_page_title?></h3>
-              <p class="news-block__text"><?=$pge->text_page_subtitle?></p>
-              <a href="<?=$pge->url?>" class="news-block__link">Подробнее</a>
+              <p class="news-block__date"><?= $pge->text_page_date ?></p>
+              <h3 class="news-block__heading"><?= $pge->text_page_title ?></h3>
+              <p class="news-block__text"><?= $pge->text_page_subtitle ?></p>
+              <a href="<?= $pge->url ?>" class="news-block__link">Подробнее</a>
             </div>
           </div>
         <?php endforeach; ?>
