@@ -15,7 +15,7 @@
     <div class="container container_center">
         <h3 class="messages__heading">срочные сообщения</h3>
         <div class="messages__grid">
-            <?php foreach (array_reverse($page->breaking_news->getArray()) as $i => $bn): ?>
+            <?php foreach (array_reverse($pages->get("template=layout_breaking-news")->breaking_news->getArray()) as $i => $bn): ?>
                 <div class="messages__cell">
                     <div class="messages__item">
                         <p class="messages__date"><?= $bn->breaking_news_date ?></p>
@@ -38,7 +38,7 @@
             <a href="" class="news__button">все новости</a>
         </div>
         <div class="news__grid">
-            <?php foreach ($pages->find("template=layout_news-item, sort=-text_page_date, limit=3") as $pge): ?>
+            <?php foreach ($pages->get("template=layout_news")->children("template=layout_text, sort=-text_page_date, limit=3") as $pge): ?>
                 <div class="news__cell">
                     <div class="news-block">
                         <p class="news-block__date"><?= $pge->text_page_date ?></p>
