@@ -14,7 +14,7 @@
 <section class="messages">
     <div class="container container_center">
       <div class="messages__header">
-          <h1 class="messages__heading messages__heading_small">новости</h1>
+          <h3 class="messages__heading messages__heading_small">новости</h3>
           <div class="messages__line"></div>
           <a href="" class="messages__button">все сообщения</a>
       </div>

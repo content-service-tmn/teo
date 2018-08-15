@@ -13,6 +13,9 @@
   &__cell {
     box-sizing: border-box;
     width:50%;
+    @media(max-width: 959px) {
+      width:100%;
+    }
     &_big {
       width:100%;
     }
@@ -37,6 +40,10 @@
   color:@dark-gray;
   border-radius: 10px;
   box-shadow: 0 0 50px rgba(0,0,0,0.15);
+  @media(max-width: 959px) {
+    padding-left:40px;
+    padding-right:40px;
+  }
   &:after {
     content:"";
     display:block;
@@ -47,8 +54,14 @@
     max-width: 420px;
     position:relative;
     z-index:1;
+    @media(max-width: 959px) {
+      max-width: 100%;
+    }
     &_small {
       font-size:30px;
+      @media(max-width: 1200px) {
+        font-size:26px;
+      }
     }
   }
   &__text {
