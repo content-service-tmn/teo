@@ -14,8 +14,10 @@
   <div class="container container_center">
     <div class="document__grid">
       <div class="document__left">
+        <p>Читайте также:</p>
+        <br>
         <ul class="document__list">
-            <?php foreach ($page->parent->children as $pge):; ?>
+            <?php foreach ($page->parent->children("limit=3, sort=-text_page_date") as $pge): ?>
               <li><a href="<?= $pge->url ?>"
                      class="document__link <?php if ($pge->id == $page->id) echo "active" ?>"><?= $pge->title ?></a>
               </li>

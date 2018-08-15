@@ -111,3 +111,25 @@ function getRandomPics($count, $pages)
     }
     return $urls;
 }
+
+function getRandomVideos($count, $pages)
+{
+    $urls = [];
+    $j = 0;
+    while(count($urls) != $count && $j<300) {
+        $j++;
+        $galleries = $pages->find("template=layout_video");
+        $countGalleries = $galleries->count();
+        $gallery = $galleries[rand(0, $countGalleries - 1)];
+        $i = 0;
+        $num = rand(0, $gallery->press_center_videos->count() - 1);
+        foreach ($gallery->press_center_videos as $video) {
+            if ($i == $num && !in_array($video->repeater_press_center_video_url, $urls)) {
+                $urls[] = $video->repeater_press_center_video_url;
+                break;
+            }
+            $i++;
+        }
+    }
+    return $urls;
+}
