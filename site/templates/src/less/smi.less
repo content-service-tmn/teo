@@ -2,6 +2,11 @@
   padding-top:60px;
   padding-bottom:60px;
   position:relative;
+  @media(max-width: 959px) {
+    padding-bottom:0;
+    padding-top:30px;
+    line-height: 1.5;
+  }
   // background-image:url(../img/wave.jpg);
   // background-size:contain;
   // background-position: 50% 50%;
@@ -14,9 +19,15 @@
     left:0;
     z-index: -1;
     transform:translateY(-50%);
+    @media(max-width: 960px) {
+      display:none;
+    }
   }
   &__heading {
     font-weight: 900;
+    @media(max-width: 959px) {
+      font-size:30px;
+    }
   }
   &__grid {
     display:flex;
@@ -25,12 +36,22 @@
     &>div:nth-child(3n+2) {
       transform:translateY(60px);
     }
+    @media(max-width: 959px) {
+      margin-top:20px;
+      &>div:nth-child(3n+2) {
+        transform:none;
+      }
+    }
   }
   &__cell {
     width:33.3333%;
     box-sizing: border-box;
     padding-left: 60px;
     padding-top:60px;
+    @media(max-width: 959px) {
+      width:100%;
+      padding-top:10px;
+    }
   }
   &__item {
     box-sizing: border-box;
@@ -52,14 +73,27 @@
         text-decoration: underline;
       }
     }
+    @media(max-width: 767px) {
+      border-radius: 0;
+      margin-left: -25px;
+      margin-right: -25px;
+      padding-bottom:120px;
+    }
   }
   &__subheading {
     font-size:30px;
     font-weight: 600px;
     color:@green;
+    @media(max-width: 959px) {
+      font-size:20px;
+    }
   }
   &__text {
     margin-top:30px;
+    @media(max-width: 959px) {
+      font-size:16px;
+      margin-top:20px;
+    }
   }
   &__source {
     position:absolute;
@@ -71,6 +105,9 @@
       content:"источник";
       text-transform: uppercase;
       display:block;
+    }
+    @media(max-width: 959px) {
+
     }
   }
 }
