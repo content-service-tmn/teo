@@ -1,5 +1,9 @@
 <?php namespace Processwire; ?>
 
+<?php if ($config->ajax): ?>
+    <?= $templateRender; ?>
+<?php else: ?>
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -98,8 +102,8 @@
           <input id="name" class="input js-input" type="text" name="name" value="">
         </div>
         <div class="form__element form__element_phone">
-          <label class="label" for="phone1">Телефон</label>
-          <input id="phone1" class="input js-input js-phone" type="text" name="phone" value="">
+          <label class="label" for="phone">Телефон</label>
+          <input id="phone" class="input js-input js-phone" type="text" name="phone" value="">
         </div>
         <div class="form__element form__element_name">
           <label class="label" for="company">Компания</label>
@@ -127,38 +131,6 @@
   </div>
 </div>
 
-<div id="question" class="uk-offcanvas">
-  <div class="uk-offcanvas-bar">
-    <a class="uk-offcanvas-close"></a>
-    <div class="uk-offcanvas-bar-inner sidebar sidebar_big">
-      <a href="" class="sidebar__logo">
-        <img src="http://ecoteo.ru/wp-content/uploads/2015/02/logoteo-350x90.png" alt="" class="sidebar__logo-img">
-      </a>
-      <form id="question__form" class="form" action="/" method="post">
-        <div class="form__element form__element_name">
-          <label class="label" for="name9">Имя</label>
-          <input id="name9" class="input js-input" type="text" name="name9" value="">
-        </div>
-        <div class="form__element form__element_name">
-          <label class="label" for="mail9">E-mail</label>
-          <input id="mail9" class="input js-input" type="text" name="mail9" value="">
-        </div>
-        <div class="form__element form__element_name">
-          <label class="label" for="text9">Ваш вопрос</label>
-          <textarea id="text9" class="input js-input" type="text" name="text9" value=""></textarea>
-        </div>
-        <p class="form__text">Нажимая кнопку Отправить, Вы соглашаетесь на обработку персональных данных</a></p>
-        <div class="form__element form__element_send">
-          <div class="send">
-            <span class="send__text">отправить</span>
-            <button id="submit_form" class="send__button" type="submit" name="submit" value="order"></button>
-          </div>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
-
 <script type="text/javascript">
     (function($) {
         $(document).ready(function(){
@@ -173,21 +145,32 @@
     })(jQuery);
 </script>
 <?php if($page->template == "layout_contacts"): ?>
-<script type="text/javascript">
-  function initMap() {
-    var coordinates= {lat: <?=$page->contacts_map_lat?>, lng: <?=$page->contacts_map_lng?>},
-        marker= {lat: coordinates["lat"]-0.0007218, lng: coordinates["lng"]+0.00466324999},
-        options = {
+    <?php
+    echo "<script>";
+    foreach ($page->children as $i => $child){
+        echo "var marker{$i}= {lat: {$child->contacts_map_lat}-0.0007218, lng: {$child->contacts_map_lng}+0.00466324999};";
+        echo "options{$i} = {
           zoom: 16,
           disableDefaultUI: true,
-          center: coordinates,
-          draggable: !("ontouchend" in document)
-        };
-    var map = new google.maps.Map(document.getElementById('google-map'), options);
+          center: {lat: {$child->contacts_map_lat}, lng: {$child->contacts_map_lng}},
+          draggable: !(\"ontouchend\" in document)
+        };";
+    }
+    echo "</script>";
+    ?>
+<script type="text/javascript">
+  function initMap() {
+    var map = new google.maps.Map(document.getElementById('google-map0'), options0);
+    var map1 = new google.maps.Map(document.getElementById('google-map1'), options1);
+    var map2 = new google.maps.Map(document.getElementById('google-map2'), options2);
     $.getJSON('/google-map.json',function(data){
       map.setOptions({styles:data});
+      map1.setOptions({styles:data});
+      map2.setOptions({styles:data});
     });
-    new google.maps.Marker({map:map,position:marker});
+    new google.maps.Marker({map:map,position:marker0});
+    new google.maps.Marker({map:map1,position:marker1});
+    new google.maps.Marker({map:map2,position:marker2});
   }
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDz-fa3z3jDQhfL6rwyNt3DEJ3XHbyoUHk&callback=initMap" async></script>
@@ -256,3 +239,4 @@
 </body>
 
 </html>
+<?php endif; ?>
