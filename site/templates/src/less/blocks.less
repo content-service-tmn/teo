@@ -3,6 +3,9 @@
   padding-bottom:120px;
   position:relative;
   min-height: 50vh;
+  @media(max-width: 767px) {
+    padding-top:30px;
+  }
   //background-image:url(../img/wave.jpg);
   // background-size:contain;
   // background-position: 50% 50%;
@@ -14,6 +17,9 @@
     top:0;
     left:0;
     z-index: -1;
+    @media(max-width: 959px) {
+      display:none;
+    }
   }
   &__grid {
     display:flex;
@@ -21,6 +27,12 @@
     justify-content: space-between;
     margin-top:-60px;
     margin-left: -60px;
+    @media(max-width: 1200px) {
+      justify-content: center;
+    }
+    @media(max-width: 767px) {
+      margin-top:-15px;
+    }
   }
   &__cell {
     width:33.3333%;
@@ -32,6 +44,16 @@
     }
     &:last-child {
       transform:none;
+    }
+    @media(max-width: 1200px) {
+      width:50%;
+      &:nth-child(3n+2) {
+        transform:none;
+      }
+    }
+    @media(max-width: 767px) {
+      width:100%;
+      padding-top:15px;
     }
   }
 
@@ -57,6 +79,12 @@
       background-color:@green;
       color:white;
     }
+    @media(max-width: 767px) {
+      padding-top:80px;
+      &:after {
+        display:none;
+      }
+    }
   }
   &__heading {
     font-weight: 600;
@@ -64,6 +92,13 @@
     min-height:120px;
     position:relative;
     z-index:1;
+    @media(max-width: 767px) {
+      min-height: auto;
+      max-width: 60%;
+      margin:auto;
+      font-size:18px;
+      text-align: center;
+    }
   }
   &__link {
     position:absolute;
@@ -71,5 +106,19 @@
     top:0;
     right:0;
     bottom:0;
+    z-index:1;
+  }
+  &__icon {
+    position:absolute;
+    height:360px;
+    left:0;
+    bottom:0;
+    transform:translate(-20%,150px);
+    @media(max-width: 767px) {
+      height:80px;
+      top:0;
+      left:50%;
+      transform:translateX(-50%);
+    }
   }
 }

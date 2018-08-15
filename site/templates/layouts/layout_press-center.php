@@ -14,7 +14,7 @@
 <section class="messages">
     <div class="container container_center">
       <div class="messages__header">
-          <h1 class="messages__heading messages__heading_small">новости</h1>
+          <h3 class="messages__heading messages__heading_small">срочные сообщения</h3>
           <div class="messages__line"></div>
           <a href="" class="messages__button">все сообщения</a>
       </div>
@@ -32,6 +32,7 @@
                 } ?>
             <?php endforeach; ?>
         </div>
+        <a href="" class="button button_more">перейти в раздел</a>
     </div>
 </section>
 <section class="news">
@@ -53,6 +54,7 @@
                 </div>
             <?php endforeach; ?>
         </div>
+        <a href="" class="button button_more">перейти в раздел</a>
     </div>
 </section>
 <section class="smi">
@@ -88,6 +90,7 @@
             <?php endforeach;?>
         </div>
         <div class="videos__footer"><a href="<?=$pages->get("template=layout_videos")->url?>" class="videos__more">перейти в раздел</a></div>
+        <a href="<?=$pages->get("template=layout_videos")->url?>" class="button button_more">перейти в раздел</a>
     </div>
 </section>
 
@@ -112,7 +115,7 @@
                                data-uk-lightbox></a>
                         </div>
                     </div>
-                    <div class="photos__cell">
+                    <div class="photos__cell photos__cell_small photos__cell_hidden-small">
                         <div class="photos__item">
                             <div class="photos-more">
                                 <h3 class="photos-more__heading">все галереи</h3>
@@ -123,7 +126,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="photos__cell">
+                    <div class="photos__cell photos__cell_small">
                         <div class="photos__item">
                             <a href="<?=$pics[2]?>" class="photos__link"
                                style="background-image:url(<?=$pics[2]?>);"
@@ -147,6 +150,7 @@
                 </div>
             </div>
         </div>
+        <a href="<?=$pages->get("template=layout_galleries")->url?>" class="button button_more">перейти в раздел</a>
     </div>
 </section>
 
