@@ -1,5 +1,9 @@
 <?php namespace Processwire; ?>
 
+<?php if ($config->ajax): ?>
+    <?= $templateRender; ?>
+<?php else: ?>
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -98,8 +102,8 @@
           <input id="name" class="input js-input" type="text" name="name" value="">
         </div>
         <div class="form__element form__element_phone">
-          <label class="label" for="phone1">Телефон</label>
-          <input id="phone1" class="input js-input js-phone" type="text" name="phone" value="">
+          <label class="label" for="phone">Телефон</label>
+          <input id="phone" class="input js-input js-phone" type="text" name="phone" value="">
         </div>
         <div class="form__element form__element_name">
           <label class="label" for="company">Компания</label>
@@ -235,3 +239,4 @@
 </body>
 
 </html>
+<?php endif; ?>
