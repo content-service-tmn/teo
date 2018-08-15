@@ -19,7 +19,7 @@
           <a href="" class="messages__button">все сообщения</a>
       </div>
         <div class="messages__grid">
-            <?php foreach (array_reverse($page->breaking_news->getArray()) as $i => $bn): ?>
+            <?php foreach (array_reverse($pages->get("template=layout_breaking-news")->breaking_news->getArray()) as $i => $bn): ?>
                 <div class="messages__cell">
                     <div class="messages__item">
                         <p class="messages__date"><?= $bn->breaking_news_date ?></p>
@@ -42,7 +42,7 @@
             <a href="" class="news__button">все новости</a>
         </div>
         <div class="news__grid">
-            <?php foreach ($pages->find("template=layout_news-item, sort=-text_page_date, limit=3") as $pge): ?>
+            <?php foreach ($pages->get("template=layout_news")->children("template=layout_text, sort=-text_page_date, limit=3") as $pge): ?>
                 <div class="news__cell">
                     <div class="news-block">
                         <p class="news-block__date"><?= $pge->text_page_date ?></p>
@@ -81,13 +81,13 @@
     <div class="container container_center">
         <h3 class="videos__heading">видеоматериалы</h3>
         <div class="videos__grid">
-            <?php foreach ($page->press_center_videos as $i => $v_url):?>
-            <div class="videos__cell"><a href="<?=$v_url->repeater_press_center_video_url?>" class="videos__link"
-                                         style="background-image:url(<?=getThumbnail($v_url->repeater_press_center_video_url, "mq")?>)"
+            <?php foreach (getRandomVideos(3, $pages) as  $v_url):?>
+            <div class="videos__cell"><a href="<?=$v_url?>" class="videos__link"
+                                         style="background-image:url(<?=getThumbnail($v_url, "mq")?>)"
                                          data-uk-lightbox></a></div>
-            <?php if ($i == 2) {break;} endforeach;?>
+            <?php endforeach;?>
         </div>
-        <div class="videos__footer"><a href="" class="videos__more">перейти в раздел</a></div>
+        <div class="videos__footer"><a href="<?=$pages->get("template=layout_videos")->url?>" class="videos__more">перейти в раздел</a></div>
     </div>
 </section>
 
