@@ -1,22 +1,37 @@
 .videos {
   padding-top:60px;
+  @media(max-width: 959px) {
+    padding-top:30px;
+  }
   &_padding-bottom {
     padding-bottom:60px;
   }
   &__heading {
     font-weight: 900;
+    @media(max-width: 959px) {
+      font-size:30px;
+    }
   }
   &__grid {
     margin-top:30px;
     margin-left: -30px;
     display:flex;
     flex-wrap: wrap;
+    @media(max-width: 959px) {
+      margin-top:20px;
+    }
   }
   &__cell {
     box-sizing: border-box;
     width:33.3333%;
     padding-left:30px;
     padding-top:30px;
+    @media(max-width: 959px) {
+      padding-top:10px;
+    }
+    @media(max-width: 767px) {
+      width:100%;
+    }
   }
   &__link {
     display:block;
@@ -43,6 +58,9 @@
   &__footer {
     margin-top:30px;
     text-align: right;
+    @media(max-width: 767px) {
+      display:none;
+    }
   }
   &__more {
     font-weight: 900;
