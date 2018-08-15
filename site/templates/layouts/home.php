@@ -73,7 +73,7 @@
       <div class="grid__cell">
         <div class="grid__wrapper">
           <div class="item">
-            <img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="" class="item__img">
+            <!--<img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="" class="item__img">-->
             <h3 class="item__heading">региональный оператор по обращению с тко в тюменской области</h3>
             <a href="" class="item__link"></a>
           </div>
@@ -93,7 +93,7 @@
             <div class="grid__cell">
               <div class="grid__wrapper">
                 <div class="item">
-                  <img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="" class="item__img">
+                  <img src="<?=$config->urls->templates . "assets/svg/doc1.svg"?>" alt="" class="item__img">
                   <h3 class="item__heading item__heading_small">документы</h3>
                   <a href="" class="item__link"></a>
                 </div>
@@ -102,7 +102,7 @@
             <div class="grid__cell">
               <div class="grid__wrapper">
                 <div class="item">
-                  <img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="" class="item__img">
+                  <img src="<?=$config->urls->templates . "assets/svg/zakupki1.svg"?>" alt="" class="item__img">
                   <h3 class="item__heading item__heading_small">закупки</h3>
                   <a href="" class="item__link"></a>
                 </div>
@@ -114,7 +114,7 @@
       <div class="grid__cell">
         <div class="grid__wrapper">
           <div class="item">
-            <img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="" class="item__img">
+            <img src="<?=$config->urls->templates . "assets/svg/vacancy1.svg"?>" alt="" class="item__img">
             <h3 class="item__heading item__heading_small">вакансии</h3>
             <p class="item__text">Здесь вы можете ознакомиться с важной информацией о нашей организации.</p>
             <a href="" class="item__link"></a>
@@ -124,7 +124,7 @@
       <div class="grid__cell">
         <div class="grid__wrapper">
           <div class="item">
-            <img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="" class="item__img">
+            <img src="<?=$config->urls->templates . "assets/svg/info.svg"?>" alt="" class="item__img">
             <h3 class="item__heading item__heading_small">интересные факты</h3>
             <p class="item__text">Здесь вы можете ознакомиться с важной информацией о нашей организации.</p>
             <a href="" class="item__link"></a>
