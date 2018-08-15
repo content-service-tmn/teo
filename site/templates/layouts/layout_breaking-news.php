@@ -12,41 +12,15 @@
 <section class="messages messages_padding-bottom">
     <div class="container container_center">
         <div class="messages__grid">
+          <?php foreach (array_reverse($page->breaking_news->getArray())  as $bn): ?>
                 <div class="messages__cell">
                     <div class="messages__item">
-                        <p class="messages__date">12312312</p>
-                        <h3 class="messages__subheading">заголовок</h3>
-                        <p class="messages__text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Взгляд рекламных выйти живет города, послушавшись назад, о сих, необходимыми всемогущая однажды то? Его lorem решила напоивший ему последний! Безопасную.</p>
+                        <p class="messages__date"><?= $bn->breaking_news_date ?></p>
+                        <h3 class="messages__subheading"><?= $bn->breaking_news_title ?></h3>
+                        <p class="messages__text"><?= $bn->breaking_news_description ?></p>
                     </div>
                 </div>
-                <div class="messages__cell">
-                    <div class="messages__item">
-                        <p class="messages__date">12312312</p>
-                        <h3 class="messages__subheading">заголовок</h3>
-                        <p class="messages__text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Взгляд рекламных выйти живет города, послушавшись назад, о сих, необходимыми всемогущая однажды то? Его lorem решила напоивший ему последний! Безопасную.</p>
-                    </div>
-                </div>
-                <div class="messages__cell">
-                    <div class="messages__item">
-                        <p class="messages__date">12312312</p>
-                        <h3 class="messages__subheading">заголовок</h3>
-                        <p class="messages__text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Взгляд рекламных выйти живет города, послушавшись назад, о сих, необходимыми всемогущая однажды то? Его lorem решила напоивший ему последний! Безопасную.</p>
-                    </div>
-                </div>
-                <div class="messages__cell">
-                    <div class="messages__item">
-                        <p class="messages__date">12312312</p>
-                        <h3 class="messages__subheading">заголовок</h3>
-                        <p class="messages__text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Взгляд рекламных выйти живет города, послушавшись назад, о сих, необходимыми всемогущая однажды то? Его lorem решила напоивший ему последний! Безопасную.</p>
-                    </div>
-                </div>
-                <div class="messages__cell">
-                    <div class="messages__item">
-                        <p class="messages__date">12312312</p>
-                        <h3 class="messages__subheading">заголовок</h3>
-                        <p class="messages__text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Взгляд рекламных выйти живет города, послушавшись назад, о сих, необходимыми всемогущая однажды то? Его lorem решила напоивший ему последний! Безопасную.</p>
-                    </div>
-                </div>
+          <?php endforeach; ?>
         </div>
     </div>
 </section>

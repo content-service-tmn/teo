@@ -1,41 +1,25 @@
+<?php namespace Processwire; ?>
 <section class="breadcrumbs">
-    <div class="container container_center">
-        <div class="breadcrumbs__grid">
-            <div class="breadcrumbs__cell"><a href="" class="breadcrumbs__link">123</a></div>
-            <div class="breadcrumbs__cell"><a href="" class="breadcrumbs__link">123</a></div>
-            <div class="breadcrumbs__cell"><a href="" class="breadcrumbs__link">123</a></div>
-        </div>
-        <h2 class="breadcrumbs__heading">видеоматериалы</h2>
+  <div class="container container_center">
+    <div class="breadcrumbs__grid">
+        <?php foreach ($page->parents()->append($page) as $parent): ?>
+          <div class="breadcrumbs__cell"><a href="<?= $parent->url ?>"
+                                            class="breadcrumbs__link"><?= $parent->title ?></a></div>
+        <?php endforeach; ?>
     </div>
+    <h2 class="breadcrumbs__heading">Видеоматериалы</h2>
+  </div>
 </section>
 
+<?php foreach ($pages->find("template=layout_video") as $gallery): ?>
 <section class="videos">
     <div class="container container_center">
-        <h3 class="videos__heading">блок 1</h3>
+        <h3 class="videos__heading"><?=$gallery->title?></h3>
         <div class="videos__grid">
-            <div class="videos__cell"><a href="https://sun9-8.userapi.com/c831109/v831109158/16331c/c_Yh6qcGZ08.jpg" class="videos__link" style="background-image:url(https://sun9-8.userapi.com/c831109/v831109158/16331c/c_Yh6qcGZ08.jpg)" data-uk-lightbox></a></div>
-            <div class="videos__cell"><a href="https://sun9-8.userapi.com/c831109/v831109158/16331c/c_Yh6qcGZ08.jpg" class="videos__link" style="background-image:url(https://sun9-8.userapi.com/c831109/v831109158/16331c/c_Yh6qcGZ08.jpg)" data-uk-lightbox></a></div>
-            <div class="videos__cell"><a href="https://sun9-8.userapi.com/c831109/v831109158/16331c/c_Yh6qcGZ08.jpg" class="videos__link" style="background-image:url(https://sun9-8.userapi.com/c831109/v831109158/16331c/c_Yh6qcGZ08.jpg)" data-uk-lightbox></a></div>
+          <?php foreach ($gallery->press_center_videos as $video):?>
+            <div class="videos__cell"><a href="<?=$video->repeater_press_center_video_url?>" class="videos__link" style="background-image:url(<?=getThumbnail($video->repeater_press_center_video_url, "mq")?>)" data-uk-lightbox></a></div>
+        <?php endforeach; ?>
         </div>
     </div>
 </section>
-<section class="videos">
-    <div class="container container_center">
-        <h3 class="videos__heading">блок 1</h3>
-        <div class="videos__grid">
-            <div class="videos__cell"><a href="https://sun9-8.userapi.com/c831109/v831109158/16331c/c_Yh6qcGZ08.jpg" class="videos__link" style="background-image:url(https://sun9-8.userapi.com/c831109/v831109158/16331c/c_Yh6qcGZ08.jpg)" data-uk-lightbox></a></div>
-            <div class="videos__cell"><a href="https://sun9-8.userapi.com/c831109/v831109158/16331c/c_Yh6qcGZ08.jpg" class="videos__link" style="background-image:url(https://sun9-8.userapi.com/c831109/v831109158/16331c/c_Yh6qcGZ08.jpg)" data-uk-lightbox></a></div>
-            <div class="videos__cell"><a href="https://sun9-8.userapi.com/c831109/v831109158/16331c/c_Yh6qcGZ08.jpg" class="videos__link" style="background-image:url(https://sun9-8.userapi.com/c831109/v831109158/16331c/c_Yh6qcGZ08.jpg)" data-uk-lightbox></a></div>
-        </div>
-    </div>
-</section>
-<section class="videos videos_padding-bottom">
-    <div class="container container_center">
-        <h3 class="videos__heading">блок 1</h3>
-        <div class="videos__grid">
-            <div class="videos__cell"><a href="https://sun9-8.userapi.com/c831109/v831109158/16331c/c_Yh6qcGZ08.jpg" class="videos__link" style="background-image:url(https://sun9-8.userapi.com/c831109/v831109158/16331c/c_Yh6qcGZ08.jpg)" data-uk-lightbox></a></div>
-            <div class="videos__cell"><a href="https://sun9-8.userapi.com/c831109/v831109158/16331c/c_Yh6qcGZ08.jpg" class="videos__link" style="background-image:url(https://sun9-8.userapi.com/c831109/v831109158/16331c/c_Yh6qcGZ08.jpg)" data-uk-lightbox></a></div>
-            <div class="videos__cell"><a href="https://sun9-8.userapi.com/c831109/v831109158/16331c/c_Yh6qcGZ08.jpg" class="videos__link" style="background-image:url(https://sun9-8.userapi.com/c831109/v831109158/16331c/c_Yh6qcGZ08.jpg)" data-uk-lightbox></a></div>
-        </div>
-    </div>
-</section>
+<?php endforeach; ?>
