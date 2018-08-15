@@ -6,6 +6,7 @@
                                             class="breadcrumbs__link"><?= $parent->title ?></a></div>
         <?php endforeach; ?>
     </div>
+    <h2 class="breadcrumbs__heading">Срочные новости</h2>
   </div>
 </section>
 

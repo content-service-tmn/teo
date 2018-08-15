@@ -6,7 +6,9 @@
   }
   &_padding-bottom {
     padding-bottom:60px;
-    padding-top:30px;
+    @media(max-width: 959px) {
+      padding-top:0;
+    }
   }
   &__header {
     display:flex;
@@ -46,6 +48,7 @@
     flex-wrap: wrap;
     @media(max-width: 959px) {
       margin-top:20px;
+      margin-left: -10px;
     }
   }
   &__cell {
@@ -56,6 +59,7 @@
 
     @media(max-width: 959px) {
       padding-top:10px;
+      padding-left: 10px;
     }
     @media(max-width: 767px) {
       width:100%;
