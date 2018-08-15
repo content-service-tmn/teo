@@ -9,13 +9,30 @@
     </div>
 </section>
 
-<section class="videos videos_padding-bottom">
+<section class="videos">
     <div class="container container_center">
+        <h3 class="videos__heading">блок 1</h3>
         <div class="videos__grid">
             <div class="videos__cell"><a href="https://sun9-8.userapi.com/c831109/v831109158/16331c/c_Yh6qcGZ08.jpg" class="videos__link" style="background-image:url(https://sun9-8.userapi.com/c831109/v831109158/16331c/c_Yh6qcGZ08.jpg)" data-uk-lightbox></a></div>
             <div class="videos__cell"><a href="https://sun9-8.userapi.com/c831109/v831109158/16331c/c_Yh6qcGZ08.jpg" class="videos__link" style="background-image:url(https://sun9-8.userapi.com/c831109/v831109158/16331c/c_Yh6qcGZ08.jpg)" data-uk-lightbox></a></div>
             <div class="videos__cell"><a href="https://sun9-8.userapi.com/c831109/v831109158/16331c/c_Yh6qcGZ08.jpg" class="videos__link" style="background-image:url(https://sun9-8.userapi.com/c831109/v831109158/16331c/c_Yh6qcGZ08.jpg)" data-uk-lightbox></a></div>
+        </div>
+    </div>
+</section>
+<section class="videos">
+    <div class="container container_center">
+        <h3 class="videos__heading">блок 1</h3>
+        <div class="videos__grid">
             <div class="videos__cell"><a href="https://sun9-8.userapi.com/c831109/v831109158/16331c/c_Yh6qcGZ08.jpg" class="videos__link" style="background-image:url(https://sun9-8.userapi.com/c831109/v831109158/16331c/c_Yh6qcGZ08.jpg)" data-uk-lightbox></a></div>
+            <div class="videos__cell"><a href="https://sun9-8.userapi.com/c831109/v831109158/16331c/c_Yh6qcGZ08.jpg" class="videos__link" style="background-image:url(https://sun9-8.userapi.com/c831109/v831109158/16331c/c_Yh6qcGZ08.jpg)" data-uk-lightbox></a></div>
+            <div class="videos__cell"><a href="https://sun9-8.userapi.com/c831109/v831109158/16331c/c_Yh6qcGZ08.jpg" class="videos__link" style="background-image:url(https://sun9-8.userapi.com/c831109/v831109158/16331c/c_Yh6qcGZ08.jpg)" data-uk-lightbox></a></div>
+        </div>
+    </div>
+</section>
+<section class="videos videos_padding-bottom">
+    <div class="container container_center">
+        <h3 class="videos__heading">блок 1</h3>
+        <div class="videos__grid">
             <div class="videos__cell"><a href="https://sun9-8.userapi.com/c831109/v831109158/16331c/c_Yh6qcGZ08.jpg" class="videos__link" style="background-image:url(https://sun9-8.userapi.com/c831109/v831109158/16331c/c_Yh6qcGZ08.jpg)" data-uk-lightbox></a></div>
             <div class="videos__cell"><a href="https://sun9-8.userapi.com/c831109/v831109158/16331c/c_Yh6qcGZ08.jpg" class="videos__link" style="background-image:url(https://sun9-8.userapi.com/c831109/v831109158/16331c/c_Yh6qcGZ08.jpg)" data-uk-lightbox></a></div>
             <div class="videos__cell"><a href="https://sun9-8.userapi.com/c831109/v831109158/16331c/c_Yh6qcGZ08.jpg" class="videos__link" style="background-image:url(https://sun9-8.userapi.com/c831109/v831109158/16331c/c_Yh6qcGZ08.jpg)" data-uk-lightbox></a></div>
