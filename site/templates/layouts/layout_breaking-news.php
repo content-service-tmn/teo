@@ -1,12 +1,12 @@
 <section class="breadcrumbs">
-    <div class="container container_center">
-        <div class="breadcrumbs__grid">
-            <div class="breadcrumbs__cell"><a href="" class="breadcrumbs__link">123</a></div>
-            <div class="breadcrumbs__cell"><a href="" class="breadcrumbs__link">123</a></div>
-            <div class="breadcrumbs__cell"><a href="" class="breadcrumbs__link">123</a></div>
-        </div>
-        <h2 class="breadcrumbs__heading">срочные сообщения</h2>
+  <div class="container container_center">
+    <div class="breadcrumbs__grid">
+        <?php foreach ($page->parents()->append($page) as $parent): ?>
+          <div class="breadcrumbs__cell"><a href="<?= $parent->url ?>"
+                                            class="breadcrumbs__link"><?= $parent->title ?></a></div>
+        <?php endforeach; ?>
     </div>
+  </div>
 </section>
 
 <section class="messages messages_padding-bottom">
