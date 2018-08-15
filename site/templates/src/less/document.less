@@ -1,7 +1,11 @@
 .document {
   padding:60px 0;
   padding-bottom:180px;
-
+  @media(max-width: 959px) {
+    line-height: 1.5;
+    font-size:16px;
+    padding-top:30px;
+  }
   &__grid {
     display:flex;
   }
@@ -43,6 +47,7 @@
     padding-right: 30px;
     @media(max-width: 959px) {
       width:100%;
+      padding-right: 0;
     }
   }
   &__heading {

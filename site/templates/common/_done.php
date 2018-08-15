@@ -16,7 +16,7 @@
     <div class="menu__grid">
       <div class="menu__cell">
         <a href="/" class="menu__logo logo">
-          <img src="http://ecoteo.ru/wp-content/uploads/2015/02/logoteo-350x90.png" class="logo__img" alt="">
+          <img src="<?= $config->urls->templates . 'assets/img/logo_white.png' ?>" class="logo__img" alt="">
         </a>
       </div>
       <div class="menu__cell">
@@ -42,7 +42,7 @@
     <a class="uk-offcanvas-close"></a>
     <div class="uk-offcanvas-bar-inner sidebar">
       <a href="" class="sidebar__logo">
-        <img src="http://ecoteo.ru/wp-content/uploads/2015/02/logoteo-350x90.png" alt="" class="sidebar__logo-img">
+        <img src="<?= $config->urls->templates . 'assets/img/logo_white.png' ?>" alt="" class="sidebar__logo-img">
       </a>
       <ul class="sidebar__items">
         <li class="sidebar__item"><a href="/" data-uk-smoothscroll>Главная</a></li>
@@ -90,7 +90,7 @@
     <a class="uk-offcanvas-close"></a>
     <div class="uk-offcanvas-bar-inner sidebar">
       <a href="" class="sidebar__logo">
-        <img src="http://ecoteo.ru/wp-content/uploads/2015/02/logoteo-350x90.png" alt="" class="sidebar__logo-img">
+        <img src="<?= $config->urls->templates . 'assets/img/logo.png' ?>" alt="" class="sidebar__logo-img">
       </a>
       <form id="callback__form" class="form" action="/" method="post">
         <div class="form__element form__element_name">
@@ -132,7 +132,7 @@
     <a class="uk-offcanvas-close"></a>
     <div class="uk-offcanvas-bar-inner sidebar sidebar_big">
       <a href="" class="sidebar__logo">
-        <img src="http://ecoteo.ru/wp-content/uploads/2015/02/logoteo-350x90.png" alt="" class="sidebar__logo-img">
+        <img src="<?= $config->urls->templates . 'assets/img/logo.png' ?>" alt="" class="sidebar__logo-img">
       </a>
       <form id="question__form" class="form" action="/" method="post">
         <div class="form__element form__element_name">
