@@ -46,7 +46,7 @@
                         <p><?= $procurement->procurement_start ?></p>
                         <p><?= $procurement->procurement_end ?></p>
                       </div>
-                      <div class="procurements__cell">
+                      <div class="procurements__cell procurements__cell_button">
                         <a href="<?= $procurement->procurement_url ?>" class="procurements__button">просмотреть на
                           сайте</a>
                       </div>
@@ -66,6 +66,8 @@
                             <?php endforeach; ?>
                         </div>
                       </div>
+                      <a href="<?= $procurement->procurement_url ?>" class="procurements__button procurements__button_visible-small">просмотреть на
+                        сайте</a>
                     </div>
                   </div>
                 <?php endif; endforeach; ?>
@@ -87,7 +89,7 @@
                         <p><?= $procurement->procurement_start ?></p>
                         <p><?= $procurement->procurement_end ?></p>
                       </div>
-                      <div class="procurements__cell">
+                      <div class="procurements__cell procurements__cell_button">
                         <a href="<?= $procurement->procurement_url ?>" class="procurements__button">просмотреть на
                           сайте</a>
                       </div>
@@ -108,6 +110,8 @@
                         </div>
                       </div>
                     </div>
+                    <a href="<?= $procurement->procurement_url ?>" class="procurements__button procurements__button_visible-small">просмотреть на
+                      сайте</a>
                   </div>
                 <?php endif; endforeach; ?>
             </li>
