@@ -44,4 +44,19 @@ $(document).ready(function() {
       svg1.find('polygon').eq(i).toggleClass('active');
     });
 
+    var svg_on_page = $("#svg_on_mappage");
+    svg_on_page.find('polygon')
+        .mouseover(function () {
+        i = $(this).index()-1;
+        svg_on_page.find('polygon').eq(i).toggleClass('active');
+        })
+        .mouseleave(function() {
+            i = $(this).index()-1;
+            svg_on_page.find('polygon').eq(i).toggleClass('active');
+        })
+        .click(function () {
+            i = $(this).index()-1;
+            window.location.replace(svg_on_page.find('polygon').eq(i).attr("data-link"));
+        });
+
 });
