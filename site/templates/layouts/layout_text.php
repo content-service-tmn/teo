@@ -54,7 +54,7 @@
                       <ul class="uk-slider uk-grid uk-grid-medium">
                         <?php bd($block->text_page_gallery);?>
                           <?php foreach ($block->text_page_gallery->gallery_images as $img): ?>
-                            <li class="uk-width-1-3">
+                            <li class="uk-width-small-1-3 uk-width-1-1">
                               <div class="support__image"
                                    style="background-image:url(<?= $img->url ?>"></div>
                             </li>

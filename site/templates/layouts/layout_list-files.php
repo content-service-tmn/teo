@@ -27,14 +27,14 @@
         <p class="document__text"><?= $page->files_list_header_subtitle ?></p>
           <?php foreach ($page->files_list_blocks as $block): ?>
             <p class="document__subheading"><?= $block->repeater_files_list_header ?></p>
-              <?php foreach ($block->repeater_files_list_files as $file): ; ?>
               <ul class="document__files">
+                <?php foreach ($block->repeater_files_list_files as $file): ; ?>
                 <li class="document__file">
                   <p class="document__name"><?= $file->description ?></p>
                   <a href="<?= $file->url ?>" target="_blank" class="document__file-link">Ознакомиться с документом (<?=strtoupper($file->ext)?>, размер <?= $file->filesizeStr ?>)</a>
                 </li>
+                <?php endforeach; ?>
               </ul>
-              <?php endforeach; ?>
           <?php endforeach; ?>
       </div>
     </div>
