@@ -141,21 +141,32 @@
     })(jQuery);
 </script>
 <?php if($page->template == "layout_contacts"): ?>
-<script type="text/javascript">
-  function initMap() {
-    var coordinates= {lat: <?=$page->contacts_map_lat?>, lng: <?=$page->contacts_map_lng?>},
-        marker= {lat: coordinates["lat"]-0.0007218, lng: coordinates["lng"]+0.00466324999},
-        options = {
+    <?php
+    echo "<script>";
+    foreach ($page->children as $i => $child){
+        echo "var marker{$i}= {lat: {$child->contacts_map_lat}-0.0007218, lng: {$child->contacts_map_lng}+0.00466324999};";
+        echo "options{$i} = {
           zoom: 16,
           disableDefaultUI: true,
-          center: coordinates,
-          draggable: !("ontouchend" in document)
-        };
-    var map = new google.maps.Map(document.getElementById('google-map'), options);
+          center: {lat: {$child->contacts_map_lat}, lng: {$child->contacts_map_lng}},
+          draggable: !(\"ontouchend\" in document)
+        };";
+    }
+    echo "</script>";
+    ?>
+<script type="text/javascript">
+  function initMap() {
+    var map = new google.maps.Map(document.getElementById('google-map0'), options0);
+    var map1 = new google.maps.Map(document.getElementById('google-map1'), options1);
+    var map2 = new google.maps.Map(document.getElementById('google-map2'), options2);
     $.getJSON('/google-map.json',function(data){
       map.setOptions({styles:data});
+      map1.setOptions({styles:data});
+      map2.setOptions({styles:data});
     });
-    new google.maps.Marker({map:map,position:marker});
+    new google.maps.Marker({map:map,position:marker0});
+    new google.maps.Marker({map:map1,position:marker1});
+    new google.maps.Marker({map:map2,position:marker2});
   }
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDz-fa3z3jDQhfL6rwyNt3DEJ3XHbyoUHk&callback=initMap" async></script>

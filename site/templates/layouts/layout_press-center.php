@@ -14,9 +14,9 @@
 <section class="messages">
     <div class="container container_center">
       <div class="messages__header">
-          <h1 class="messages__heading messages__heading_small">новости</h1>
+          <h3 class="messages__heading messages__heading_small">Срочные сообщения</h3>
           <div class="messages__line"></div>
-          <a href="" class="messages__button">все сообщения</a>
+          <a href="breaking-news" class="messages__button">все сообщения</a>
       </div>
         <div class="messages__grid">
             <?php foreach (array_reverse($pages->get("template=layout_breaking-news")->breaking_news->getArray()) as $i => $bn): ?>
@@ -39,7 +39,7 @@
         <div class="news__header">
             <h1 class="news__heading news__heading_small">новости</h1>
             <div class="news__line"></div>
-            <a href="" class="news__button">все новости</a>
+            <a href="news" class="news__button">все новости</a>
         </div>
         <div class="news__grid">
             <?php foreach ($pages->get("template=layout_news")->children("template=layout_text, sort=-text_page_date, limit=3") as $pge): ?>
