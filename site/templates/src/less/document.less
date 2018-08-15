@@ -52,6 +52,9 @@
   }
   &__heading {
     font-weight: 900;
+    @media(max-width: 959px) {
+      font-size:30px;
+    }
   }
   &__text {
     margin-top:30px;
@@ -60,11 +63,20 @@
     margin-top:60px;
     font-weight: bold;
     font-size:26px;
+    @media(max-width: 959px) {
+      margin-top:30px;
+    }
   }
   &__files {
     margin-top:60px;
     & li+li {
       margin-top:60px;
+      @media(max-width: 959px) {
+        margin-top:20px;
+      }
+    }
+    @media(max-width: 959px) {
+      margin-top:30px;
     }
   }
   &__file {
@@ -96,5 +108,8 @@
   }
   &__text-block {
     margin-top:60px;
+    @media(max-width: 959px) {
+      margin-top:30px;
+    }
   }
 }
