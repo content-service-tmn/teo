@@ -23,4 +23,25 @@ $(document).ready(function() {
         }
         $(this).val(val);
     });
+
+    var svg1 = $('#svg1');
+    var svg2 = $('#svg2');
+    var contents = $('.header__content');
+    var i = 0;
+    var j = 0;
+    contents.eq(j).toggleClass('active');
+    svg2.find('polygon').click(function() {
+      contents.eq(j).toggleClass('active');
+      j = $(this).index()-1;
+      contents.eq(j).toggleClass('active');
+    })
+    .mouseover(function() {
+      i = $(this).index()-1;
+      svg1.find('polygon').eq(i).toggleClass('active');
+    })
+    .mouseleave(function() {
+      i = $(this).index()-1;
+      svg1.find('polygon').eq(i).toggleClass('active');
+    });
+
 });
