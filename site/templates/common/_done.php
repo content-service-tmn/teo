@@ -131,38 +131,6 @@
   </div>
 </div>
 
-<div id="question" class="uk-offcanvas">
-  <div class="uk-offcanvas-bar">
-    <a class="uk-offcanvas-close"></a>
-    <div class="uk-offcanvas-bar-inner sidebar sidebar_big">
-      <a href="" class="sidebar__logo">
-        <img src="http://ecoteo.ru/wp-content/uploads/2015/02/logoteo-350x90.png" alt="" class="sidebar__logo-img">
-      </a>
-      <form id="question__form" class="form" action="/" method="post">
-        <div class="form__element form__element_name">
-          <label class="label" for="name9">Имя</label>
-          <input id="name9" class="input js-input" type="text" name="name9" value="">
-        </div>
-        <div class="form__element form__element_name">
-          <label class="label" for="mail9">E-mail</label>
-          <input id="mail9" class="input js-input" type="text" name="mail9" value="">
-        </div>
-        <div class="form__element form__element_name">
-          <label class="label" for="text9">Ваш вопрос</label>
-          <textarea id="text9" class="input js-input" type="text" name="text9" value=""></textarea>
-        </div>
-        <p class="form__text">Нажимая кнопку Отправить, Вы соглашаетесь на обработку персональных данных</a></p>
-        <div class="form__element form__element_send">
-          <div class="send">
-            <span class="send__text">отправить</span>
-            <button id="submit_form" class="send__button" type="submit" name="submit" value="order"></button>
-          </div>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
-
 <script type="text/javascript">
     (function($) {
         $(document).ready(function(){
