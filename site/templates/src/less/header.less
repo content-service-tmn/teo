@@ -8,6 +8,9 @@
     display:inline-block;
     position:relative;
     transform:translateX(300px);
+    @media(max-width: 959px) {
+      transform:none;
+    }
     &_normal {
       transform:none;
     }
@@ -72,6 +75,10 @@
     color:white;
     opacity:0;
     transition:none;
+    @media(max-width: 959px) {
+      transform:none;
+      padding-left: 30px;
+    }
     &.active {
       opacity:1;
       transition:all 1s;
