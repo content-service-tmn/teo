@@ -1,5 +1,8 @@
 .support {
   padding-top:60px;
+  @media(max-width: 959px) {
+    padding-top:30px;
+  }
   &__header {
     display:flex;
     align-items: flex-end;
@@ -7,15 +10,25 @@
   &__heading {
     display:inline-block;
     line-height: 62px;
+    @media(max-width: 959px) {
+      font-size:30px;
+      line-height: 1.5;
+    }
   }
   &__line {
     margin-left:25px;
     height:11px;
     flex-grow: 1;
     border-top:1px solid black;
+    @media(max-width: 959px) {
+      display:none;
+    }
   }
   &__grid {
     margin-top:70px;
+    @media(max-width: 959px) {
+      margin-top:30px;
+    }
   }
   &__cell {
     box-sizing: border-box;
