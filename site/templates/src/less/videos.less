@@ -36,6 +36,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
+    &:hover:before {
+      color:rgba(255,255,255,0.8);
+    }
     &:before {
       content:"\f144";
       font-family: "FontAwesome";
@@ -45,6 +48,7 @@
       left:50%;
       position:absolute;
       transform:translate(-50%,-50%);
+      transition:all 0.3s;
     }
     &:after {
       content:"";
@@ -62,6 +66,10 @@
   &__more {
     font-weight: 900;
     text-transform: uppercase;
+    transition:all 0.3s;
+    &:hover {
+      color:@green;
+    }
     &:after {
       content:"\f105";
       padding-left: 5px;
