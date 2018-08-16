@@ -120,7 +120,7 @@
             <label class="label" for="mail">E-mail</label>
             <input id="mail" class="input js-input" type="text" name="mail" value="">
           </div>
-          <p class="form__text">Нажимая кнопку Отправить, Вы соглашаетесь на обработку персональных данных</a></p>
+          <p class="form__text">Нажимая кнопку Отправить, Вы соглашаетесь на <a href="/privacy">обработку персональных данных</a></p>
           <div class="form__element form__element_send">
             <div class="send">
               <span class="send__text">отправить</span>
@@ -161,7 +161,7 @@
             <label class="label" for="text9">Ваш вопрос</label>
             <textarea id="text9" class="input js-input" type="text" name="text9" value=""></textarea>
           </div>
-          <p class="form__text">Нажимая кнопку Отправить, Вы соглашаетесь на обработку персональных данных</a></p>
+          <p class="form__text">Нажимая кнопку Отправить, Вы соглашаетесь на<a href="/privacy"> обработку персональных данных</a></a></p>
           <div class="form__element form__element_send">
             <div class="send">
               <span class="send__text">отправить</span>
