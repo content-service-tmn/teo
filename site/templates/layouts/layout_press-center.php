@@ -57,7 +57,7 @@
     <a href="" class="button button_more">перейти в раздел</a>
     </div>
 </section>
-<section class="smi">
+<section id="smi" class="smi">
   <img src="<?= $config->urls->templates . 'assets/img/wave.jpg' ?>" alt="" class="smi__img">
     <div class="container container_center">
         <h3 class="smi__heading">сми о нас</h3>
