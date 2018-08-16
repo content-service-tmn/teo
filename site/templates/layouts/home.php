@@ -220,7 +220,7 @@
             <p class="proposal__text"><?= $page->home_saw_dump_description ?></p>
             <div class="proposal__grid">
               <div class="proposal__button proposal__button_home">
-                <a href="#callback" class="button button_home" data-uk-offcanvas="{mode:'slide'}">сообщить о свалке</a>
+                <a href="#callback" class="button"  data-uk-offcanvas="{mode:'slide'}">сообщить о свалке</a>
                 <div id="callback_source" data-source="dump"></div>
               </div>
             </div>

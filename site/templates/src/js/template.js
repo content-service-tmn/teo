@@ -5,7 +5,7 @@ $(document).ready(function() {
         if(e.type == 'focusout') {
             $(e.target).val($.trim($(e.target).val()));
         }
-    });
+    }); 
     $('.js-input').on('change keyup', function(e) {
         e.preventDefault();
         if($.trim($(e.target).val()) !== '' && !$(e.target).hasClass('is_filled')) {
