@@ -182,11 +182,11 @@
     <?php
     echo "<script type=\"text/javascript\">";
     foreach ($page->children as $i => $child){
-        echo "var marker{$i}= {lat: {$child->contacts_map_lat}, lng: {$child->contacts_map_lng}};";
+        echo "var marker{$i}= {lat: ".str_replace(",", ".", $child->contacts_map_lat).", lng: ".str_replace(",", ".", $child->contacts_map_lng)."};";
         echo "options{$i} = {
           zoom: 16,
           disableDefaultUI: true,
-          center: {lat: {$child->contacts_map_lat}+0.0007218, lng: {$child->contacts_map_lng}-0.00466324999},
+          center: {lat: ".str_replace(",", ".", $child->contacts_map_lat)."+0.0007218, lng: ".str_replace(",", ".", $child->contacts_map_lng)."-0.00466324999},
           draggable: !(\"ontouchend\" in document)
         };";
     }
