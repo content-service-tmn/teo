@@ -24,7 +24,6 @@
     <?php foreach ($page->children as $i => $child): ?>
       <li>
         <section class="contacts-section">
-          <div id="google-map<?=$i?>" data-lat="<?=$child->contacts_map_lat?>" data-lng="<?=$child->contacts_map_lng?>" class="contacts-section__map"></div>
           <div class="container container_center">
             <div class="contacts-section__panel">
               <h2 class="contacts-section__heading">адрес</h2>
@@ -35,6 +34,7 @@
               </ul>
             </div>
           </div>
+          <div id="google-map<?=$i?>" data-lat="<?=$child->contacts_map_lat?>" data-lng="<?=$child->contacts_map_lng?>" class="contacts-section__map"></div>
         </section>
       </li>
     <?php endforeach; ?>
