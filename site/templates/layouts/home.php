@@ -126,19 +126,19 @@
         <h3 class="header__name header__name_ish">Ишим</h3>
         <div class="header__content content">
           <h1 class="content__heading"><?= $page->home_title_on_map_tyumen ?></h1>
-          <p class="content__text"><?= $page->home_description_under_title_tyumen?></p>
+          <p class="content__text"><?= $page->home_description_under_title_tyumen ?></p>
         </div>
         <div class="header__content content">
           <h1 class="content__heading"><?= $page->home_title_on_map_tobolsk ?></h1>
-          <p class="content__text"><?= $page->home_description_under_title_tobolsk?></p>
+          <p class="content__text"><?= $page->home_description_under_title_tobolsk ?></p>
         </div>
         <div class="header__content content">
           <h1 class="content__heading"><?= $page->home_title_on_map_ishim ?></h1>
-          <p class="content__text"><?= $page->home_description_under_title_ishim?></p>
+          <p class="content__text"><?= $page->home_description_under_title_ishim ?></p>
         </div>
         <div class="header__content content active">
           <h1 class="content__heading"><?= $page->home_title_on_map ?></h1>
-          <p class="content__text"><?= $page->home_description_under_title?></p>
+          <p class="content__text"><?= $page->home_description_under_title ?></p>
         </div>
       </div>
     </div>
@@ -151,7 +151,8 @@
         <div class="grid__wrapper">
           <div class="item item_main">
             <img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="" class="item__img item__img_main">
-            <h3 class="item__heading item__heading_left">региональный оператор по обращению с тко в тюменской области</h3>
+            <h3 class="item__heading item__heading_left">региональный оператор по обращению с тко в тюменской
+              области</h3>
             <!--<a href="" class="item__link"></a>-->
           </div>
         </div>
@@ -170,7 +171,8 @@
             <div class="grid__cell">
               <div class="grid__wrapper">
                 <div class="item">
-                  <img src="<?= $config->urls->templates . "assets/svg/doc1.svg" ?>" alt="" class="item__img item__img_big">
+                  <img src="<?= $config->urls->templates . "assets/svg/doc1.svg" ?>" alt=""
+                       class="item__img item__img_big">
                   <h3 class="item__heading item__heading_small">документы</h3>
                   <a href="/important/documents/" class="item__link"></a>
                 </div>
@@ -179,7 +181,8 @@
             <div class="grid__cell">
               <div class="grid__wrapper">
                 <div class="item">
-                  <img src="<?= $config->urls->templates . "assets/svg/zakupki1.svg" ?>" alt="" class="item__img item__img_big">
+                  <img src="<?= $config->urls->templates . "assets/svg/zakupki1.svg" ?>" alt=""
+                       class="item__img item__img_big">
                   <h3 class="item__heading item__heading_small">закупки</h3>
                   <a href="/important/procurements/" class="item__link"></a>
                 </div>
@@ -191,7 +194,8 @@
       <div class="grid__cell">
         <div class="grid__wrapper">
           <div class="item">
-            <img src="<?= $config->urls->templates . "assets/svg/vacancy1.svg" ?>" alt="" class="item__img item__img_for-text">
+            <img src="<?= $config->urls->templates . "assets/svg/vacancy1.svg" ?>" alt=""
+                 class="item__img item__img_for-text">
             <h3 class="item__heading item__heading_small">вакансии</h3>
             <p class="item__text">Здесь вы можете ознакомиться с важной информацией о нашей организации.</p>
             <a href="/about/vacancies/" class="item__link"></a>
@@ -201,7 +205,8 @@
       <div class="grid__cell">
         <div class="grid__wrapper">
           <div class="item">
-            <img src="<?= $config->urls->templates . "assets/svg/info.svg" ?>" alt="" class="item__img item__img_for-text">
+            <img src="<?= $config->urls->templates . "assets/svg/info.svg" ?>" alt=""
+                 class="item__img item__img_for-text">
             <h3 class="item__heading item__heading_small">интересные факты</h3>
             <p class="item__text">Здесь вы можете ознакомиться с важной информацией о нашей организации.</p>
             <!--<a href="" class="item__link"></a>-->
@@ -215,7 +220,7 @@
             <p class="proposal__text"><?= $page->home_saw_dump_description ?></p>
             <div class="proposal__grid">
               <div class="proposal__button proposal__button_home">
-                <a href="#callback" class="button button_home"  data-uk-offcanvas="{mode:'slide'}">сообщить о свалке</a>
+                <a href="#callback" class="button button_home" data-uk-offcanvas="{mode:'slide'}">сообщить о свалке</a>
                 <div id="callback_source" data-source="dump"></div>
               </div>
             </div>
@@ -255,22 +260,18 @@
     <div class="uk-slidenav-position support__grid" data-uk-slider="{center:true}">
       <div class="uk-slider-container">
         <ul class="uk-slider uk-grid uk-grid-medium">
-          <li class="uk-width-1-2 uk-width-small-1-3">
-            <div class="support__image"
-                 style="background-image:url(https://pbs.twimg.com/profile_images/888907252702347265/g2JwwLDR_400x400.jpg"></div>
-          </li>
-          <li class="uk-width-1-2 uk-width-small-2-3">
-            <div class="support__image"
-                 style="background-image:url(https://pbs.twimg.com/profile_images/888907252702347265/g2JwwLDR_400x400.jpg"></div>
-          </li>
-          <li class="uk-width-1-1 uk-width-small-1-3">
-            <div class="support__image"
-                 style="background-image:url(https://pbs.twimg.com/profile_images/888907252702347265/g2JwwLDR_400x400.jpg"></div>
-          </li>
-          <li class="uk-width-1-2 uk-width-small-1-3">
-            <div class="support__image"
-                 style="background-image:url(https://pbs.twimg.com/profile_images/888907252702347265/g2JwwLDR_400x400.jpg"></div>
-          </li>
+            <?php foreach ($page->home_partners as $partner): ?>
+                <?php if (!$partner->repeater_partner_isBanner): ?>
+                <li class="uk-width-1-2 uk-width-small-1-3">
+                  <div class="support__image"
+                       style="background-image:url(<?=$partner->repeater_partner_image->url?>"></div>
+                </li>
+                    <?php else: ?>
+                <li class="uk-width-1-1 uk-width-small-2-3">
+                  <div class="support__image"
+                       style="background-image:url(<?=$partner->repeater_partner_image->url?>"></div>
+                </li>
+                <?php endif; endforeach; ?>
         </ul>
       </div>
       <a href="" class="support__nav support__nav_left" data-uk-slider-item="previous"></a>
