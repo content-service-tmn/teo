@@ -5,7 +5,7 @@ $(document).ready(function() {
         if(e.type == 'focusout') {
             $(e.target).val($.trim($(e.target).val()));
         }
-    }); 
+    });
     $('.js-input').on('change keyup', function(e) {
         e.preventDefault();
         if($.trim($(e.target).val()) !== '' && !$(e.target).hasClass('is_filled')) {
@@ -28,7 +28,7 @@ $(document).ready(function() {
     var svg2 = $('#svg2');
     var contents = $('.header__content');
     var i = 0;
-    var j = 4;
+    var j = 3;
     svg2.find('polygon').click(function() {
       contents.eq(j).toggleClass('active');
       j = $(this).index()-1;
