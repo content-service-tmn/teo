@@ -1,8 +1,15 @@
 .header {
   background-color:@blue;
   overflow:hidden;
+  @media(max-width: 959px) {
+    line-height:1.5;
+    font-size:16px;
+  }
   &__wrapper {
     position:relative;
+    @media(max-width: 959px) {
+      padding-top:300px;
+    }
   }
   &__map-wrapper {
     display:inline-block;
@@ -82,8 +89,11 @@
     opacity:0;
     transition:none;
     @media(max-width: 959px) {
-      transform:none;
       padding-left: 30px;
+      left:auto;
+      right:0;
+      top:0;
+      transform:translateY(-240px);
     }
     &.active {
       opacity:1;
@@ -93,13 +103,21 @@
 }
 
 .content {
-  &__heading {
 
+  &__heading {
+    @media(max-width: 959px) {
+      font-size:30px;
+      line-height: 1.5;
+    }
   }
   &__text {
     margin-top:60px;
     font-weight: 700;
     font-size:20px;
     line-height: 1.5;
+    @media(max-width: 959px) {
+      margin-top:10px;
+      font-size:16px;
+    }
   }
 }
