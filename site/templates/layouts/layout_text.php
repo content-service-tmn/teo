@@ -4,7 +4,7 @@
     <div class="breadcrumbs__grid">
         <?php foreach ($page->parents()->append($page) as $parent): ?>
           <div class="breadcrumbs__cell"><a href="<?= $parent->url ?>"
-                                            class="breadcrumbs__link"><?= $parent->title ?></a></div>
+                                            class="breadcrumbs__link"><?= ($parent->parent->template != "layout_news")?$parent->title:"Новость" ?></a></div>
         <?php endforeach; ?>
     </div>
   </div>
