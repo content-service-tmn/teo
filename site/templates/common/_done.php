@@ -87,7 +87,7 @@
           <li class="sidebar__item"><a href="/press-center/#smi" data-uk-smoothscroll>СМИ о нас</a></li>
           <li class="sidebar__item"><a href="/press-center/galleries/" data-uk-smoothscroll>Фотогалереи</a></li>
           <li class="sidebar__item"><a href="/press-center/videos/" data-uk-smoothscroll>Видеоматериалы</a></li>
-          <li class="sidebar__item"><a href="#callback" data-uk-smoothscroll>Запросы на съемку и экскурсию</a></li>
+          <li class="sidebar__item"><a href="#callback" data-uk-offcanvas="{mode:'slide'}" data-uk-smoothscroll>Запросы на съемку и экскурсию</a></li>
         </ul>
         <ul class="sidebar__items">
           <li class="sidebar__item"><a href="/contacts" data-uk-smoothscroll>Контакты</a></li>
