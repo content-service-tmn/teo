@@ -136,13 +136,9 @@
           <h1 class="content__heading"><?= $page->home_title_on_map_ishim ?></h1>
           <p class="content__text"><?= $page->home_description_under_title_ishim?></p>
         </div>
-        <div class="header__content content">
+        <div class="header__content content active">
           <h1 class="content__heading"><?= $page->home_title_on_map ?></h1>
           <p class="content__text"><?= $page->home_description_under_title?></p>
-        </div>
-        <div class="header__content content active">
-          <h1 class="content__heading">дефолт</h1>
-          <p class="content__text">дефолтный текст</p>
         </div>
       </div>
     </div>
