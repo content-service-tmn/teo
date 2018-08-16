@@ -178,13 +178,13 @@
 </script>
 <?php if($page->template == "layout_contacts"): ?>
     <?php
-    echo "<script>";
+    echo "<script type=\"text/javascript\">";
     foreach ($page->children as $i => $child){
-        echo "var marker{$i}= {lat: {$child->contacts_map_lat}-0.0007218, lng: {$child->contacts_map_lng}+0.00466324999};";
+        echo "var marker{$i}= {lat: {$child->contacts_map_lat}, lng: {$child->contacts_map_lng}};";
         echo "options{$i} = {
           zoom: 16,
           disableDefaultUI: true,
-          center: {lat: {$child->contacts_map_lat}, lng: {$child->contacts_map_lng}},
+          center: {lat: {$child->contacts_map_lat}+0.0007218, lng: {$child->contacts_map_lng}-0.00466324999},
           draggable: !(\"ontouchend\" in document)
         };";
     }
