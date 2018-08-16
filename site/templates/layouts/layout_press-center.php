@@ -32,7 +32,7 @@
             } ?>
         <?php endforeach; ?>
     </div>
-    <a href="" class="button button_more">перейти в раздел</a>
+    <a href="breaking-news" class="button button_more">перейти в раздел</a>
   </div>
 </section>
 <section class="news">
@@ -54,7 +54,7 @@
                 </div>
             <?php endforeach; ?>
         </div>
-    <a href="" class="button button_more">перейти в раздел</a>
+    <a href="news" class="button button_more">перейти в раздел</a>
     </div>
 </section>
 <section id="smi" class="smi">
