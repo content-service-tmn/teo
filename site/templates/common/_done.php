@@ -274,13 +274,13 @@
             </ul>
             <div class="contacts__socials">
                 <?php if ($pages->get("template=layout_contacts")->contacts_vk != ""): ?>
-                  <a href="<?=$pages->get("template=layout_contacts")->contacts_vk?>" class="contacts__social contacts__social_vk"></a>
+                  <a href="<?=$pages->get("template=layout_contacts")->contacts_vk?>" target="_blank" class="contacts__social contacts__social_vk"></a>
                 <?php endif; ?>
                 <?php if ($pages->get("template=layout_contacts")->contacts_instagram != ""): ?>
-                  <a href="<?=$pages->get("template=layout_contacts")->contacts_instagram?>" class="contacts__social contacts__social_inst"></a>
+                  <a href="<?=$pages->get("template=layout_contacts")->contacts_instagram?>" target="_blank" class="contacts__social contacts__social_inst"></a>
                 <?php endif; ?>
                 <?php if ($pages->get("template=layout_contacts")->contacts_whatsapp != ""): ?>
-                  <a href="https://wa.me/<?=$pages->get("template=layout_contacts")->contacts_whatsapp?>" class="contacts__social contacts__social_whatsapp"></a>
+                  <a href="https://wa.me/<?=$pages->get("template=layout_contacts")->contacts_whatsapp?>" target="_blank" class="contacts__social contacts__social_whatsapp"></a>
                 <?php endif; ?>
             </div>
           </div>
