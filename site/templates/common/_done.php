@@ -10,6 +10,8 @@
   <?php include_once($config->paths->templates . "common/_head.php"); ?>
 </head>
 
+<a href="#sidebar" class="burger" data-uk-offcanvas="{mode:'slide'}"></a>
+
 <body>
 <?php if($page->template != "home"): ?>
 <div class="menu menu_green">
@@ -46,7 +48,7 @@
     <a class="uk-offcanvas-close"></a>
     <div class="uk-offcanvas-bar-inner sidebar">
       <a href="" class="sidebar__logo">
-        <img src="<?= $config->urls->templates . 'assets/img/logo_white.png' ?>" alt="" class="sidebar__logo-img">
+        <img src="<?= $config->urls->templates . 'assets/img/logo.png' ?>" alt="" class="sidebar__logo-img">
       </a>
       <ul class="sidebar__items">
         <li class="sidebar__item"><a href="/" data-uk-smoothscroll>Главная</a></li>
