@@ -86,6 +86,18 @@
     bottom:0;
     left:0;
     right:0;
+    &:after {
+      position:absolute;
+      content:"";
+      background-image:url(../img/arrow.svg);
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: contain;
+      width:20px;
+      top:0;
+      right:10px;
+      bottom:0;
+    }
   }
   &__link {
     position:absolute;
@@ -111,15 +123,13 @@
       right:40px;
     }
     &:after {
-      text-align: center;
-      content:"\f061";
       position:absolute;
+      content:"";
       right:0;
       top:0;
       bottom:0;
       width:40px;
       background-color:#76ba4a;
-      font-family: "FontAwesome";
     }
   }
 }
