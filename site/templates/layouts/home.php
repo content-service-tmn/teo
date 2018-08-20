@@ -150,7 +150,7 @@
       <div class="grid__cell">
         <div class="grid__wrapper">
           <div class="item item_main">
-            <img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="" class="item__img item__img_main">
+            <img src="<?= $config->urls->templates . "assets/svg/chelik1.svg" ?>" alt="" class="item__img item__img_main">
             <h3 class="item__heading item__heading_left">региональный оператор по обращению с тко в тюменской
               области</h3>
             <!--<a href="" class="item__link"></a>-->
@@ -208,7 +208,7 @@
             <img src="<?= $config->urls->templates . "assets/svg/info.svg" ?>" alt=""
                  class="item__img item__img_for-text">
             <h3 class="item__heading item__heading_small">интересные факты</h3>
-            <p class="item__text">Здесь вы можете ознакомиться с важной информацией о нашей организации.</p>
+            <p class="item__text"><?=$page->home_facts?></p>
             <!--<a href="" class="item__link"></a>-->
           </div>
         </div>
