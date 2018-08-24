@@ -10,6 +10,9 @@
 .menu {
   padding:50px 0;
   z-index:999;
+  @media(max-width: 1399px) {
+    padding:40px 0;
+  }
   @media(max-width: 959px) {
     display:none;
   }
@@ -33,6 +36,9 @@
   }
   &__phone {
     font-size:30px;
+    @media(max-width: 1439px) {
+      font-size:22px;
+    }
     font-weight: 600px;
     color:white;
   }
@@ -44,6 +50,12 @@
   }
   &_small {
     padding:25px 0;
+    @media(max-width: 1439px) {
+      padding:15px 0;
+      & .logo__img {
+        max-width: 180px;
+      }
+    }
   }
   &_sticky {
     position:sticky;
@@ -70,6 +82,9 @@
     text-transform: uppercase;
     position:relative;
     color:white;
+    @media(max-width: 1439px) {
+      font-size:15px;
+    }
     &:before {
       content:"";
       position:absolute;
@@ -92,6 +107,9 @@
   display:inline-block;
   &__img {
     max-width: 290px;
+    @media(max-width: 1439px) {
+      max-width: 220px;
+    }
     @media(max-width: 1199px) {
       max-width: 160px;
     }

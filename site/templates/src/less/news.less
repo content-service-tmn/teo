@@ -1,5 +1,8 @@
 .news {
   padding-top:60px;
+  @media(max-width: 1439px) {
+    padding-top:45px;
+  }
   @media(max-width: 959px) {
     line-height: 1.5;
     padding-top:25px;
@@ -7,6 +10,9 @@
   &_padding-bottom {
     padding-bottom:60px;
     padding-top:5px;
+    @media(max-width: 1439px) {
+      padding-bottom:45px;
+    }
   }
   &__header {
     display:flex;
@@ -15,6 +21,10 @@
   &__heading {
     display:inline-block;
     line-height: 62px;
+    @media(max-width: 1439px) {
+      font-size:42px;
+      line-height:  50px;
+    }
     @media(max-width: 959px) {
       font-size:30px;
       line-height: 42px;
@@ -23,6 +33,9 @@
       font-weight: 900;
       font-size:36px;
       line-height: 46px;
+      @media(max-width: 1439px) {
+        font-size:27px;
+      }
       @media(max-width: 959px) {
         font-size:30px;
       }
@@ -62,6 +75,9 @@
     margin-top:40px;
     display:flex;
     flex-wrap: wrap;
+    @media(max-width: 1439px) {
+      margin-top:30px;
+    }
     @media(max-width: 959px) {
       margin-top:0;
     }
@@ -71,6 +87,9 @@
     padding-left: 50px;
     padding-top: 50px;
     width:33.3333%;
+    @media(max-width: 1439px) {
+      padding-top:38px;
+    }
     @media(max-width: 959px) {
       padding-top:25px;
     }
@@ -85,21 +104,34 @@
   padding-bottom:40px;
   border-bottom:1px solid #e5e5e5;
   height:100%;
+  @media(max-width: 1439px) {
+    padding-bottom:30px;
+  }
   @media(max-width: 959px) {
     padding-bottom:30px;
   }
   &__date {
     font-size:14px;
+    @media(max-width: 1439px) {
+      font-size:12px;
+    }
   }
   &__heading {
     font-size:18px;
     margin-top:20px;
+    @media(max-width: 1439px) {
+      font-size:  16px;
+    }
     @media(max-width: 959px) {
       margin-top:15px;
     }
   }
   &__text {
     margin-top:20px;
+    @media(max-width: 1439px) {
+      font-size: 14px;
+      margin-top:15px;
+    }
     @media(max-width: 959px) {
       font-size:16px;
     }

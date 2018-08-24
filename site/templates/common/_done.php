@@ -14,7 +14,7 @@
 
   <body>
   <?php if ($page->template != "home"): ?>
-    <div class="menu menu_green">
+    <div class="menu menu_green menu_small">
       <div class="container container_center">
         <div class="menu__phone-container">
           <a href="tel:<?= phoneLink($pages->get("template=layout_contacts")->site_phone) ?>"
