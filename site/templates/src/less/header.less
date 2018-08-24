@@ -14,7 +14,7 @@
   &__map-wrapper {
     display:inline-block;
     position:relative;
-    transform:translateX(300px);
+    transform:translateX(225px);
     @media(max-width: 959px) {
       transform:none;
     }
@@ -84,10 +84,13 @@
     top:50%;
     max-width: 525px;
     z-index:2;
-    transform:translateY(-50%) translateX(-300px);
+    transform:translateY(-50%) translateX(-225px);
     color:white;
     opacity:0;
     transition:none;
+    @media(max-width: 1439px) {
+      max-width: 390px;
+    }
     @media(max-width: 959px) {
       padding-left: 30px;
       left:auto;
@@ -115,6 +118,9 @@
     font-weight: 700;
     font-size:20px;
     line-height: 1.5;
+    @media(max-width: 1439px) {
+      margin-top:30px;
+    }
     @media(max-width: 959px) {
       margin-top:10px;
       font-size:16px;

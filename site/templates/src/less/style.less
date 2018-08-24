@@ -36,21 +36,30 @@ h1,h2,h3,h4,h5,h6 {
 }
 h1 {
   font-size:60px;
+  @media(max-width: 1439px) {
+    font-size:48px;
+  }
   font-weight:800;
 }
 h2 {
-  font-size: 48px;
+  font-size:48px;
+  @media(max-width: 1439px) {
+    font-size: 36px;
+  }
   font-weight: 900;
 }
 h3 {
-  font-size: 36px;
+  font-size:36px;
+  @media(max-width: 1439px) {
+    font-size: 27px;
+  }
   font-weight: 700;
 }
 
 .container {
-  max-width:980px;
+  max-width:900px;
   padding:0 25px;
-  @media (min-width: 1200px) {
+  @media (min-width: 1440px) {
     max-width:1200px;
     padding:0 35px;
   }
