@@ -253,32 +253,28 @@
 </section>
 <section class="support">
   <div class="container container_center">
-    <div class="support__header">
+    <div class="support__container">
       <h1 class="support__heading">при поддержке</h1>
-      <div class="support__line"></div>
-    </div>
-    <div class="uk-slidenav-position support__grid" data-uk-slider="{center:true}">
-      <div class="uk-slider-container">
-        <ul class="uk-slider uk-grid uk-grid-medium">
+      <div class="uk-slidenav-position support__grid" data-uk-slider="{center:true}">
+        <div class="uk-slider-container">
+          <ul class="uk-slider uk-grid uk-grid-medium">
             <?php foreach ($page->home_partners as $partner): ?>
-                <?php if (!$partner->repeater_partner_isBanner): ?>
+              <?php if (!$partner->repeater_partner_isBanner): ?>
                 <li class="uk-width-1-2 uk-width-small-1-3">
                   <div class="support__image"
-                       style="background-image:url(<?=$partner->repeater_partner_image->url?>"></div>
+                  style="background-image:url(<?=$partner->repeater_partner_image->url?>"></div>
                 </li>
-                    <?php else: ?>
+              <?php else: ?>
                 <li class="uk-width-1-1 uk-width-small-2-3">
                   <div class="support__image"
-                       style="background-image:url(<?=$partner->repeater_partner_image->url?>"></div>
+                  style="background-image:url(<?=$partner->repeater_partner_image->url?>"></div>
                 </li>
-                <?php endif; endforeach; ?>
-        </ul>
-      </div>
-      <a href="" class="support__nav support__nav_left" data-uk-slider-item="previous"></a>
-      <a href="" class="support__nav support__nav_right" data-uk-slider-item="next"></a>
+              <?php endif; endforeach; ?>
+            </ul>
+          </div>
+          <a href="" class="support__nav support__nav_left" data-uk-slider-item="previous"></a>
+          <a href="" class="support__nav support__nav_right" data-uk-slider-item="next"></a>
+        </div>
     </div>
   </div>
-</section>
-<section class="wave">
-  <img src="<?= $config->urls->templates . 'assets/img/wave.jpg' ?>" alt="" class="wave__img">
 </section>

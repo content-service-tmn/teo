@@ -1,15 +1,45 @@
 .support {
   padding-top:60px;
+  position:relative;
+  padding-bottom:90px;
   @media(max-width: 959px) {
     padding-top:30px;
+  }
+  &:after {
+    position:absolute;
+    z-index: -2;
+    display:block;
+    top:0;
+    width:100%;
+    padding-bottom:56%;
+    content:"";
+    background-repeat: no-repeat;
+    background-image: url(../img/wave.jpg);
+    background-size:100% 100%;
+    background-position: 50% 50%;
+    transform:translateY(-20%);
   }
   &__header {
     display:flex;
     align-items: flex-end;
   }
+  &__container {
+    padding:30px;
+    @media(max-width: 1439px) {
+      padding:20px;
+    }
+    background-color:#fff;
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgba(0,0,0,0.15);
+  }
   &__heading {
-    display:inline-block;
+    flex-grow: 1;
+    text-align: center;
     line-height: 62px;
+    @media(max-width: 1439px) {
+      font-size:42px;
+      line-height:  50px;
+    }
     @media(max-width: 959px) {
       font-size:30px;
       line-height: 1.5;
@@ -26,6 +56,9 @@
   }
   &__grid {
     margin-top:70px;
+    @media(max-width: 1439px) {
+      margin-top:40px;
+    }
     @media(max-width: 959px) {
       margin-top:30px;
     }
