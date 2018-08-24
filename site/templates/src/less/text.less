@@ -1,10 +1,16 @@
 .text {
+  @media(max-width: 1439px) {
+    font-size:14px;
+  }
   @media(max-width: 959px) {
     font-size:16px;
     line-height: 1.5;
   }
   &__heading {
     margin-bottom:90px;
+    @media(max-width: 1439px) {
+      margin-bottom:60px;
+    }
     @media(max-width: 959px) {
       font-size:30px;
       margin-bottom:30px;
@@ -12,12 +18,18 @@
   }
   &__text {
     margin-top:60px;
+    @media(max-width: 1439px) {
+      margin-top:45px;
+    }
     @media(max-width: 959px) {
       margin-top:30px;
     }
   }
   &__text+&__text {
     margin-top:20px;
+    @media(max-width: 1439px) {
+      margin-top:15px;
+    }
     @media(max-width: 959px) {
       margin-top:10px;
     }
@@ -50,6 +62,9 @@
   }
   &__slider {
     margin-top:60px;
+    @media(max-width: 1439px) {
+      margin-top:45px;  
+    }
     @media(max-width: 959px) {
       margin-top:30px;
     }
@@ -61,6 +76,9 @@
     background-position: 50% 50%;
     background-size:cover;
     background-repeat: no-repeat;
+    @media(max-width: 1439px) {
+      margin-top:45px;
+    }
     @media(max-width: 959px) {
       margin-top:30px;
     }

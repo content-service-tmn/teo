@@ -1,6 +1,10 @@
 .document {
   padding:60px 0;
   padding-bottom:180px;
+  @media(max-width: 1439px) {
+    padding:45px 0;
+    padding-bottom:  135px;
+  }
   @media(max-width: 959px) {
     line-height: 1.5;
     font-size:16px;
@@ -23,14 +27,25 @@
     font-size:16px;
     padding-right: 30px;
     max-width: 330px;
+    @media(max-width: 1439px) {
+      padding-right: 20px;
+      max-width: 248px;
+      font-size:12px;
+    }
     & li+li {
       margin-top:15px;
+      @media(max-width: 1439px) {
+        margin-top:10px;
+      }
     }
   }
   &__link {
     display:inline-block;
     position:relative;
     padding-left: 20px;
+    @media(max-width: 1439px) {
+      padding-left: 15px;
+    }
     &:before {
       position:absolute;
       content:"\f105";
@@ -57,12 +72,20 @@
     }
   }
   &__text {
+    @media(max-width: 1439px) {
+      margin-top:20px;
+      font-size:14px;
+    }
     margin-top:30px;
   }
   &__subheading {
     margin-top:60px;
     font-weight: bold;
     font-size:26px;
+    @media(max-width: 1439px) {
+      margin-top:45px;
+      font-size:  20px;
+    }
     @media(max-width: 959px) {
       margin-top:30px;
     }
@@ -71,9 +94,15 @@
     margin-top:60px;
     & li+li {
       margin-top:60px;
+      @media(max-width: 1439px) {
+        margin-top:45px;
+      }
       @media(max-width: 959px) {
         margin-top:20px;
       }
+    }
+    @media(max-width: 1439px) {
+      margin-top:45px;
     }
     @media(max-width: 959px) {
       margin-top:30px;
@@ -111,6 +140,9 @@
   }
   &__text-block {
     margin-top:60px;
+    @media(max-width: 1439px) {
+      margin-top:45px;  
+    }
     @media(max-width: 959px) {
       margin-top:30px;
     }

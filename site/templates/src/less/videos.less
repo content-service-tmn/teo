@@ -1,5 +1,8 @@
 .videos {
   padding-top:60px;
+  @media(max-width: 1439px) {
+    padding-top:45px;
+  }
   @media(max-width: 959px) {
     padding-top:30px;
   }
@@ -14,6 +17,10 @@
     margin-left: -30px;
     display:flex;
     flex-wrap: wrap;
+    @media(max-width: 1439px) {
+      margin-top:20px;
+      margin-left: -20px;
+    }
     @media(max-width: 959px) {
       margin-top:20px;
     }
@@ -23,6 +30,10 @@
     width:33.3333%;
     padding-left:30px;
     padding-top:30px;
+    @media(max-width: 1439px) {
+      padding-left: 20px;
+      padding-top:20px;
+    }
     @media(max-width: 959px) {
       padding-top:10px;
     }
@@ -59,6 +70,9 @@
   &__footer {
     margin-top:30px;
     text-align: right;
+    @media(max-width: 1439px) {
+      margin-top:20px;
+    }
     @media(max-width: 767px) {
       display:none;
     }
@@ -67,6 +81,9 @@
     font-weight: 900;
     text-transform: uppercase;
     transition:all 0.3s;
+    @media(max-width: 1439px) {
+      font-size:14px;  
+    }
     &:hover {
       color:@green;
     }
