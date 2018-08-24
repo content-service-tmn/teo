@@ -1,4 +1,7 @@
 .factories {
+  @media(max-width: 1439px) {
+    font-size:14px;
+  }
   @media(max-width: 959px) {
     line-height: 1.5;
     font-size:16px;
@@ -7,11 +10,17 @@
     margin-top:30px;
     display:flex;
     flex-wrap: wrap;
+    @media(max-width: 1439px) {
+      margin-top:20px;
+    }
   }
   &__cell {
     width:50%;
     box-sizing: border-box;
     padding-top:30px;
+    @media(max-width: 1439px) {
+      padding-top:20px;
+    }
     @media(max-width: 959px) {
       width:100%;
     }
@@ -21,6 +30,9 @@
   }
   &__panel {
     padding:60px;
+    @media(max-width: 1439px) {
+      padding:45px;
+    }
     @media(max-width: 959px) {
       padding-top:0;
     }
@@ -31,14 +43,23 @@
   &__subheading {
     font-size: 30px;
     font-weight: 900;
+    @media(max-width: 1439px) {
+      font-size:24px;
+    }
   }
   &__text {
     margin-top:30px;
+    @media(max-width: 1439px) {
+      margin-top:20px;
+    }
   }
   &__link {
     margin-top:30px;
     display:inline-block;
     color:@green;
+    @media(max-width: 1439px) {
+      margin-top:20px;  
+    }
     &:after {
       font-family: "FontAwesome";
       padding-left: 10px;
