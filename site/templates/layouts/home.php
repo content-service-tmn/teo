@@ -11,7 +11,7 @@
         <div class="menu__cell">
           <div class="menu__nav nav">
             <ul class="nav__items">
-              <li class="nav__item"><a href="/about" class="nav__link" data-uk-offcanvas="{mode:'slide'}">о нас</a>
+              <li class="nav__item"><a href="/about" class="nav__link">о нас</a>
               </li>
               <li class="nav__item"><a href="/clients" class="nav__link">клиентам</a></li>
               <li class="nav__item"><a href="/important" class="nav__link">важная информация</a></li>
@@ -41,7 +41,7 @@
         <div class="menu__cell">
           <div class="menu__nav nav">
             <ul class="nav__items">
-              <li class="nav__item"><a href="/about" class="nav__link" data-uk-offcanvas="{mode:'slide'}">о нас</a>
+              <li class="nav__item"><a href="/about" class="nav__link">о нас</a>
               </li>
               <li class="nav__item"><a href="/clients" class="nav__link">клиентам</a></li>
               <li class="nav__item"><a href="/important" class="nav__link">важная информация</a></li>
