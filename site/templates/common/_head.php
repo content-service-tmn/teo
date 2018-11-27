@@ -1,7 +1,7 @@
 <meta charset="UTF-8">
 <title>Document</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href= <?= $config->urls->templates . "assets/css/template.css"?>>
+<!--<link rel="stylesheet" type="text/css" href= <?= $config->urls->templates . "assets/css/template.css"?>>-->
 <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,600,700,800,900" rel="stylesheet">
 <script
         src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -25,5 +25,9 @@
     "assets/js/components/slideset.js",
     "assets/js/template.js"
   ));
+  $css = AIOM::CSS(array(
+	'assets/css/template.css'
+  ));
 ?>
+<link rel="stylesheet" type="text/css" href="<?= $css; ?>">
 <script src="<?= $js; ?>"></script>
