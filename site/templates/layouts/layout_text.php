@@ -72,6 +72,85 @@
                    style="background-image:url(<?=getThumbnail($block->text_page_video_url, "hq")?>)"
                    data-uk-lightbox></a>
                 <?php endif; ?>
+
+                <?php if ($block->repeater_matrix_type == 5): ?>
+                <div class="grid__cell grid__cell_big">
+                  <div class="grid__wrapper">
+                    <div class="proposal">
+                      <div class="proposal__grid">
+                        <div class="proposal__button proposal__button_home">
+                          <a href="#callback" class="button"  data-uk-offcanvas="{mode:'slide'}">Подать заявку на заключение договора</a>
+                          <div id="callback_source" data-source="dump"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <?php endif; ?>
+
+                <?php if ($block->repeater_matrix_type == 6): ?>
+                <div class="grid__cell grid__cell_big">
+                  <div class="grid__wrapper">
+                    <div class="proposal">
+                      <div class="proposal__grid">
+                        <div class="proposal__button proposal__button_home">
+                          <a href="#callback_full" class="button"  data-uk-offcanvas="{mode:'slide'}">Подать заявку на заключение договора</a>
+                          <div id="callback_source" data-source="dump"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <?php endif; ?>
+                <?php if ($block->repeater_matrix_type == 7): ?>
+                <section class="text-section">
+                  <div class="container container_center">
+                    <div class="text-section__text text">
+                      <h3 class="text__heading">Заголовок</h3>
+                        <?=str_replace("<p>", "<p class=\"text__text\">","<p>какой-то</p><p>мать его</p><p>текст</p>");?>
+                      <div class="procurements__files text__files">
+                            <div class="procurements__file">
+                              <div class="document__file">
+                                <p class="document__name">Имя файла</p>
+                                <a href="" class="document__file-link">Ознакомиться с документом</a>
+                              </div>
+                            </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <?php endif; ?>
+                <?php if ($block->repeater_matrix_type == 8): ?>
+                <section class="faq">
+                  <div class="container container_center">
+                    <div class="faq__grid uk-accordion" data-uk-accordion="{showfirst:false}">
+                      <div class="faq__cell">
+                            <h3 class="uk-accordion-title">Вопрос</h3>
+                            <div class="uk-accordion-content">Ответ</div>
+                      </div>
+                      <div class="faq__cell">
+                            <h3 class="uk-accordion-title">Вопрос</h3>
+                            <div class="uk-accordion-content">Ответ</div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <?php endif; ?>
+                <?php if ($block->repeater_matrix_type == 9): ?>
+                <section class="faq">
+                  <div class="container container_center">
+                    <div class="faq__grid">
+                      <div class="faq__link">
+                        <a href="#"><h3 class="uk-accordion-title">Вопрос</h3></a>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <?php endif; ?>
+                <?php if ($block->repeater_matrix_type == 10): ?>
+                <?php endif; ?>
             <?php endforeach; ?>
         </div>
       </div>
