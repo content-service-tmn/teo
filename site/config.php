@@ -47,10 +47,10 @@ $config->defaultAdminTheme = 'AdminThemeUikit';
  * Installer: Database Configuration
  * 
  */
-$config->dbHost = ( gethostname() == "vh154.timeweb.ru" ) ? 'localhost':'92.53.96.195';
-$config->dbName = 'cw40247_teo';
-$config->dbUser = 'cw40247_teo';
-$config->dbPass = '7TseYuk9';
+$config->dbHost = 'localhost';
+$config->dbName = 'teo';
+$config->dbUser = 'root';
+$config->dbPass = 'root';
 $config->dbPort = '3306';
 
 /**

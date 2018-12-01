@@ -18,6 +18,9 @@
     "assets/js/core/offcanvas.custom.js",
     "assets/js/core/switcher.js",
     "assets/js/core/smooth-scroll.js",
+    "assets/js/core/nav.js",
+    "assets/js/core/dropdown.js",
+    "assets/js/core/button.js",
     "assets/js/components/lightbox.js",
     "assets/js/components/slider.js",
     "assets/js/components/notify.js",
@@ -31,3 +34,4 @@
 ?>
 <link rel="stylesheet" type="text/css" href="<?= $css; ?>">
 <script src="<?= $js; ?>"></script>
+

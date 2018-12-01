@@ -11,11 +11,13 @@
         <div class="menu__cell">
           <div class="menu__nav nav">
             <ul class="nav__items">
-              <li class="nav__item"><a href="/about" class="nav__link">о нас</a>
+              <li class="nav__item"><a href="/about" class="nav__link">о предприятии</a>
               </li>
               <li class="nav__item"><a href="/clients" class="nav__link">клиентам</a></li>
-              <li class="nav__item"><a href="/important" class="nav__link">важная информация</a></li>
+              <li class="nav__item"><a href="" class="nav__link">закупки</a></li>
               <li class="nav__item"><a href="/press-center" class="nav__link">пресс-центр</a></li>
+              <li class="nav__item"><a href="/about/vacancies/" class="nav__link">вакансии</a></li>
+              <li class="nav__item"><a href="" class="nav__link">faq</a></li>
               <li class="nav__item"><a href="/contacts" class="nav__link">контакты</a></li>
             </ul>
           </div>
@@ -28,10 +30,13 @@
 
 <section class="header">
   <div class="menu">
-    <div class="container container_center">
+    <div class="container container_center menu__wrapper">
+      <a href="<?= $pages->get("template=layout_news")->url ?>"  class="container container_center menu__button ">Обратная связь</a>
       <div class="menu__phone-container">
+        <a class="menu__text-phone">Телефон горячей линии регионального оператора по обращению с ТКО</a>
         <a href="tel:<?= phoneLink($pages->get("template=layout_contacts")->site_phone) ?>"
-           class="menu__phone"><?= $pages->get("template=layout_contacts")->site_phone ?></a></div>
+           class="menu__phone"><?= $pages->get("template=layout_contacts")->site_phone ?></a>
+      </div>
       <div class="menu__grid">
         <div class="menu__cell">
           <a href="" class="menu__logo logo">
@@ -41,12 +46,36 @@
         <div class="menu__cell">
           <div class="menu__nav nav">
             <ul class="nav__items">
-              <li class="nav__item"><a href="/about" class="nav__link">о нас</a>
-              </li>
-              <li class="nav__item"><a href="/clients" class="nav__link">клиентам</a></li>
-              <li class="nav__item"><a href="/important" class="nav__link">важная информация</a></li>
+              <li class="nav__item">
+                <div style="position: relative;" data-uk-dropdown>
+                  <a href="" class="nav__link">о предприятии</a>
+                  <div class="uk-dropdown nav__subset">
+                    <ul>
+                      <li class="nav__subset__item"><a href="" class="nav__subset__link">Общие сведения</a></li>
+                      <li class="nav__subset__item"><a href="" class="nav__subset__link">Руководство</a></li>
+                      <li class="nav__subset__item"><a href="" class="nav__subset__link">Документы</a></li>
+                      <li class="nav__subset__item"><a href="" class="nav__subset__link">Контакты</a></li>
+                    </ul>
+                  </div>
+                </div></li>
+              <li class="nav__item"><div style="position: relative;" data-uk-dropdown>
+                  <a href="" class="nav__link">клиентам</a>
+                  <div class="uk-dropdown nav__subset">
+                    <ul>
+                      <li class="nav__subset__item"><a href="" class="nav__subset__link">Деятельность регионального оператора по обращению с ТКО</a></li>
+                      <li class="nav__subset__item"><a href="" class="nav__subset__link">Реализация вторичного сырья</a></li>
+                      <li class="nav__subset__item"><a href="" class="nav__subset__link">Транспортирование отходов</a></li>
+                      <li class="nav__subset__item"><a href="" class="nav__subset__link">Деятельность по захоронению ТКО</a></li>
+                      <li class="nav__subset__item"><a href="" class="nav__subset__link">Мусоросортировочные заводы и перегрузочные станции</a></li>
+                    </ul>
+                  </div>
+                </div></li>
+              <li class="nav__item"><a href="" class="nav__link">закупки</a></li>
               <li class="nav__item"><a href="/press-center" class="nav__link">пресс-центр</a></li>
+              <li class="nav__item"><a href="/about/vacancies/" class="nav__link">вакансии</a></li>
+              <li class="nav__item"><a href="/press-center" class="nav__link">faq</a></li>
               <li class="nav__item"><a href="/contacts" class="nav__link">контакты</a></li>
+
             </ul>
           </div>
         </div>
@@ -220,7 +249,7 @@
             <p class="proposal__text"><?= $page->home_saw_dump_description ?></p>
             <div class="proposal__grid">
               <div class="proposal__button proposal__button_home">
-                <a href="#callback" class="button"  data-uk-offcanvas="{mode:'slide'}">сообщить о свалке</a>
+                <a href="#callback" class="button"  data-uk-offcanvas="{mode:'slide'}">сообщить о нарушении</a>
                 <div id="callback_source" data-source="dump"></div>
               </div>
             </div>
