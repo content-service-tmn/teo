@@ -26,6 +26,8 @@
     "assets/js/components/notify.js",
     "assets/js/components/accordion.js",
     "assets/js/components/slideset.js",
+    "assets/js/components/form-select.js",
+    "assets/js/components/datepicker.js",
     "assets/js/template.js"
   ));
   $css = AIOM::CSS(array(
@@ -34,4 +36,5 @@
 ?>
 <link rel="stylesheet" type="text/css" href="<?= $css; ?>">
 <script src="<?= $js; ?>"></script>
+
 
