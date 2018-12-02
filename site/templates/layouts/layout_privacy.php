@@ -51,7 +51,7 @@ $data = substr($data, 0,-2);
 
 <div class="privacy">
 	<div class="privacy__container">
-		<article class="privacy__content">
+		<article class="privacy__content canSpeak">
 			<h1><?= $page->title; ?></h1>
 			<p>Сайт – ресурс, размещенный в сети Интернет по адресу <a href="/"><?= $config->urls->httpRoot; ?></a>, который принадлежит <?= $data; ?>.</p>
 			<p>Пользователь — физическое лицо (в том числе представитель
@@ -210,7 +210,7 @@ $data = substr($data, 0,-2);
 			<p><strong>Пользователь подтверждает, что ознакомлен со всеми пунктами
 			настоящей Политики конфиденциальности и безусловно принимает их.</strong></p>
 			<footer>
-				<div class="privacy__back"><a href="/">Вернуться на главную</a></div>
+				<div class="privacy__back canSpeak"><a href="/">Вернуться на главную</a></div>
 			</footer>
 		</article>
 	</div>

@@ -234,5 +234,43 @@ $(document).ready(function() {
         var blockid = $(this).val();
         $(".feedback_container").not("#feedback_" + blockid).slideUp(300);
         $("#feedback_" + blockid).slideDown(300);
-    })
+    });
+    $(".canSpeak").mouseenter(function(){
+        if (sessionStorage.getItem('isInvalid') == "true") {
+            var msg = new SpeechSynthesisUtterance($(this)[0].innerText);
+            say(msg);
+        }
+    });
+
+    var sayTimeout = null;
+
+    function say(text) {
+        if (speechSynthesis.speaking) {
+            // SpeechSyn is currently speaking, cancel the current utterance(s)
+            speechSynthesis.cancel();
+
+            // Make sure we don't create more than one timeout...
+            if (sayTimeout !== null)
+                clearTimeout(sayTimeout);
+
+            sayTimeout = setTimeout(function () { say(text); }, 250);
+        }
+        else {
+            // Good to go
+            speechSynthesis.speak(text);
+        }
+    }
+    $(".invalid").click(function () {
+        if (sessionStorage.getItem('isInvalid') == "true"){
+            $(this).css("fill","black");
+            sessionStorage.setItem('isInvalid', false);
+        } else {
+            $(this).css("fill", "#e9ac45");
+            sessionStorage.setItem('isInvalid', true);
+        }
+    });
+    if (sessionStorage.getItem('isInvalid') == "true"){
+        $(".invalid").css("fill","#e9ac45");
+    }
+
 });
