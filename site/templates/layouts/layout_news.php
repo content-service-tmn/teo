@@ -3,10 +3,10 @@
     <div class="breadcrumbs__grid">
         <?php foreach ($page->parents()->append($page) as $parent): ?>
           <div class="breadcrumbs__cell"><a href="<?= $parent->url ?>"
-                                            class="breadcrumbs__link"><?= $parent->title ?></a></div>
+                                            class="breadcrumbs__link canSpeak"><?= $parent->title ?></a></div>
         <?php endforeach; ?>
     </div>
-    <h2 class="breadcrumbs__heading">Новости</h2>
+    <h2 class="breadcrumbs__heading canSpeak">Новости</h2>
   </div>
 </section>
 
@@ -17,9 +17,9 @@
           <div class="news__cell">
             <div class="news-block">
               <p class="news-block__date"><?= $pge->text_page_date ?></p>
-              <h3 class="news-block__heading"><?= $pge->text_page_title ?></h3>
-              <p class="news-block__text"><?= $pge->text_page_description ?></p>
-              <a href="<?= $pge->url ?>" class="news-block__link">Подробнее</a>
+              <h3 class="news-block__heading canSpeak"><?= $pge->text_page_title ?></h3>
+              <p class="news-block__text canSpeak"><?= $pge->text_page_description ?></p>
+              <a href="<?= $pge->url ?>" class="news-block__link canSpeak">Подробнее</a>
             </div>
           </div>
         <?php endforeach; ?>

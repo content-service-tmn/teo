@@ -3,7 +3,7 @@
   <div class="container container_center">
     <div class="breadcrumbs__grid">
         <?php foreach ($page->parents()->append($page) as $parent): ?>
-            <div class="breadcrumbs__cell"><a href="<?= $parent->url ?>" class="breadcrumbs__link"><?= $parent->title ?></a></div>
+            <div class="breadcrumbs__cell"><a href="<?= $parent->url ?>" class="breadcrumbs__link canSpeak"><?= $parent->title ?></a></div>
         <?php endforeach; ?>
     </div>
     <h2 class="breadcrumbs__heading">о нас</h2>
@@ -16,9 +16,9 @@
     <div class="blocks__grid">
         <?php foreach ($page->block_items as $item): ?>
       <div class="blocks__cell">
-        <div class="blocks__item">
+        <div class="blocks__item canSpeak">
           <img src="<?=$item->repeater_block_svg->url?>" alt="" class="blocks__icon">
-          <h3 class="blocks__heading"><?=$item->repeater_block_title?></h3>
+          <h3 class="blocks__heading canSpeak"><?=$item->repeater_block_title?></h3>
           <a href="<?=$item->repeater_block_link->url?>" class="blocks__link"></a>
         </div>
       </div>

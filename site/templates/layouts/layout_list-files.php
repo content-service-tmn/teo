@@ -4,7 +4,7 @@
     <div class="breadcrumbs__grid">
         <?php foreach ($page->parents()->append($page) as $parent): ?>
           <div class="breadcrumbs__cell"><a href="<?= $parent->url ?>"
-                                            class="breadcrumbs__link"><?= $parent->title ?></a></div>
+                                            class="breadcrumbs__link canSpeak"><?= $parent->title ?></a></div>
         <?php endforeach; ?>
     </div>
   </div>
@@ -23,15 +23,15 @@
         </ul>
       </div>
       <div class="document__right">
-        <h2 class="document__heading"><?= $page->files_list_header_title ?></h2>
-        <p class="document__text"><?= $page->files_list_header_subtitle ?></p>
+        <h2 class="document__heading canSpeak"><?= $page->files_list_header_title ?></h2>
+        <p class="document__text canSpeak"><?= $page->files_list_header_subtitle ?></p>
           <?php foreach ($page->files_list_blocks as $block): ?>
-            <p class="document__subheading"><?= $block->repeater_files_list_header ?></p>
+            <p class="document__subheading canSpeak"><?= $block->repeater_files_list_header ?></p>
               <ul class="document__files">
                 <?php foreach ($block->repeater_files_list_files as $file): ; ?>
                 <li class="document__file">
-                  <p class="document__name"><?= $file->description ?></p>
-                  <a href="<?= $file->url ?>" target="_blank" class="document__file-link">Ознакомиться с документом (<?=strtoupper($file->ext)?>, размер <?= $file->filesizeStr ?>)</a>
+                  <p class="document__name canSpeak"><?= $file->description ?></p>
+                  <a href="<?= $file->url ?>" target="_blank" class="document__file-link canSpeak">Ознакомиться с документом (<?=strtoupper($file->ext)?>, размер <?= $file->filesizeStr ?>)</a>
                 </li>
                 <?php endforeach; ?>
               </ul>

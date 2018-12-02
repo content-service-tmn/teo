@@ -11,14 +11,14 @@
         <div class="menu__cell">
           <div class="menu__nav nav">
             <ul class="nav__items">
-              <li class="nav__item"><a href="/about" class="nav__link">о предприятии</a>
+              <li class="nav__item"><a href="/about" class="nav__link canSpeak">о предприятии</a>
               </li>
-              <li class="nav__item"><a href="/clients" class="nav__link">клиентам</a></li>
-              <li class="nav__item"><a href="" class="nav__link">закупки</a></li>
-              <li class="nav__item"><a href="/press-center" class="nav__link">пресс-центр</a></li>
-              <li class="nav__item"><a href="/about/vacancies/" class="nav__link">вакансии</a></li>
-              <li class="nav__item"><a href="" class="nav__link">faq</a></li>
-              <li class="nav__item"><a href="/contacts" class="nav__link">контакты</a></li>
+              <li class="nav__item"><a href="/clients" class="nav__link canSpeak">клиентам</a></li>
+              <li class="nav__item"><a href="<?=$pages->get(1)->procurement_url?>" class="nav__link canSpeak">закупки</a></li>
+              <li class="nav__item"><a href="/press-center" class="nav__link canSpeak">пресс-центр</a></li>
+              <li class="nav__item"><a href="/about/vacancies/" class="nav__link canSpeak">вакансии</a></li>
+              <li class="nav__item"><a href="" class="nav__link canSpeak">faq</a></li>
+              <li class="nav__item"><a href="/contacts" class="nav__link canSpeak">контакты</a></li>
             </ul>
           </div>
         </div>
@@ -31,11 +31,11 @@
 <section class="header">
   <div class="menu">
     <div class="container container_center menu__wrapper">
-      <a href="<?= $pages->get("template=layout_news")->url ?>"  class="container container_center menu__button ">Обратная связь</a>
+      <a href="callback-full/"  class="container container_center menu__button canSpeak">Обратная связь</a>
       <div class="menu__phone-container">
-        <a class="menu__text-phone">Телефон горячей линии регионального оператора по обращению с ТКО</a>
+        <a class="menu__text-phone canSpeak">Телефон горячей линии регионального оператора по обращению с ТКО</a>
         <a href="tel:<?= phoneLink($pages->get("template=layout_contacts")->site_phone) ?>"
-           class="menu__phone"><?= $pages->get("template=layout_contacts")->site_phone ?></a>
+           class="menu__phone canSpeak"><?= $pages->get("template=layout_contacts")->site_phone ?></a>
       </div>
       <div class="menu__grid">
         <div class="menu__cell">
@@ -48,7 +48,7 @@
             <ul class="nav__items">
               <li class="nav__item">
                 <div style="position: relative;" data-uk-dropdown>
-                  <a href="" class="nav__link">о предприятии</a>
+                  <a href="" class="nav__link canSpeak">о предприятии</a>
                   <div class="uk-dropdown nav__subset">
                     <ul>
                       <li class="nav__subset__item"><a href="" class="nav__subset__link">Общие сведения</a></li>
@@ -59,22 +59,22 @@
                   </div>
                 </div></li>
               <li class="nav__item"><div style="position: relative;" data-uk-dropdown>
-                  <a href="" class="nav__link">клиентам</a>
+                  <a href="" class="nav__link canSpeak">клиентам</a>
                   <div class="uk-dropdown nav__subset">
                     <ul>
-                      <li class="nav__subset__item"><a href="" class="nav__subset__link">Деятельность регионального оператора по обращению с ТКО</a></li>
-                      <li class="nav__subset__item"><a href="" class="nav__subset__link">Реализация вторичного сырья</a></li>
-                      <li class="nav__subset__item"><a href="" class="nav__subset__link">Транспортирование отходов</a></li>
-                      <li class="nav__subset__item"><a href="" class="nav__subset__link">Деятельность по захоронению ТКО</a></li>
-                      <li class="nav__subset__item"><a href="" class="nav__subset__link">Мусоросортировочные заводы и перегрузочные станции</a></li>
+                      <li class="nav__subset__item"><a href="" class="nav__subset__link canSpeak">Деятельность регионального оператора по обращению с ТКО</a></li>
+                      <li class="nav__subset__item"><a href="" class="nav__subset__link canSpeak">Реализация вторичного сырья</a></li>
+                      <li class="nav__subset__item"><a href="" class="nav__subset__link canSpeak">Транспортирование отходов</a></li>
+                      <li class="nav__subset__item"><a href="" class="nav__subset__link canSpeak">Деятельность по захоронению ТКО</a></li>
+                      <li class="nav__subset__item"><a href="" class="nav__subset__link canSpeak">Мусоросортировочные заводы и перегрузочные станции</a></li>
                     </ul>
                   </div>
                 </div></li>
-              <li class="nav__item"><a href="" class="nav__link">закупки</a></li>
-              <li class="nav__item"><a href="/press-center" class="nav__link">пресс-центр</a></li>
-              <li class="nav__item"><a href="/about/vacancies/" class="nav__link">вакансии</a></li>
-              <li class="nav__item"><a href="/press-center" class="nav__link">faq</a></li>
-              <li class="nav__item"><a href="/contacts" class="nav__link">контакты</a></li>
+              <li class="nav__item"><a href="<?=$pages->get(1)->procurement_url?>" class="nav__link canSpeak">закупки</a></li>
+              <li class="nav__item"><a href="/press-center" class="nav__link canSpeak">пресс-центр</a></li>
+              <li class="nav__item"><a href="/about/vacancies/" class="nav__link canSpeak">вакансии</a></li>
+              <li class="nav__item"><a href="/press-center" class="nav__link canSpeak">faq</a></li>
+              <li class="nav__item"><a href="/contacts" class="nav__link canSpeak">контакты</a></li>
 
             </ul>
           </div>
@@ -180,7 +180,7 @@
         <div class="grid__wrapper">
           <div class="item item_main">
             <img src="<?= $config->urls->templates . "assets/svg/chelik1.svg" ?>" alt="" class="item__img item__img_main">
-            <h3 class="item__heading item__heading_left">региональный оператор по обращению с тко в тюменской
+            <h3 class="item__heading item__heading_left canSpeak">региональный оператор по обращению с тко в тюменской
               области</h3>
             <!--<a href="" class="item__link"></a>-->
           </div>
@@ -192,7 +192,10 @@
             <div class="grid__cell grid__cell_big">
               <div class="grid__wrapper">
                 <div class="item">
-                  <h3 class="item__heading"><?= $page->home_header_tagline ?></h3>
+                  <img src="<?= $config->urls->templates . "assets/svg/info.svg" ?>" alt=""
+                       class="item__img item__img_for-text">
+                  <h3 class="item__heading canSpeak">интересные факты</h3>
+                  <p class="item__text"><?=$page->home_facts?></p>
                   <!--<a href="" class="item__link"></a>-->
                 </div>
               </div>
@@ -202,8 +205,8 @@
                 <div class="item">
                   <img src="<?= $config->urls->templates . "assets/svg/doc1.svg" ?>" alt=""
                        class="item__img item__img_big">
-                  <h3 class="item__heading item__heading_small">документы</h3>
-                  <a href="/important/documents/" class="item__link"></a>
+                  <h3 class="item__heading item__heading_small canSpeak">документы</h3>
+                  <a href="/about/documents/" class="item__link"></a>
                 </div>
               </div>
             </div>
@@ -212,7 +215,7 @@
                 <div class="item">
                   <img src="<?= $config->urls->templates . "assets/svg/zakupki1.svg" ?>" alt=""
                        class="item__img item__img_big">
-                  <h3 class="item__heading item__heading_small">закупки</h3>
+                  <h3 class="item__heading item__heading_small canSpeak">Реализация В.С.</h3>
                   <a href="/important/procurements/" class="item__link"></a>
                 </div>
               </div>
@@ -225,8 +228,8 @@
           <div class="item">
             <img src="<?= $config->urls->templates . "assets/svg/vacancy1.svg" ?>" alt=""
                  class="item__img item__img_for-text">
-            <h3 class="item__heading item__heading_small">вакансии</h3>
-            <p class="item__text">Здесь вы можете ознакомиться с важной информацией о нашей организации.</p>
+            <h3 class="item__heading item__heading_small canSpeak">Транспортирование отходов</h3>
+<!--            <p class="item__text">Здесь вы можете ознакомиться с важной информацией о нашей организации.</p>-->
             <a href="/about/vacancies/" class="item__link"></a>
           </div>
         </div>
@@ -236,8 +239,7 @@
           <div class="item">
             <img src="<?= $config->urls->templates . "assets/svg/info.svg" ?>" alt=""
                  class="item__img item__img_for-text">
-            <h3 class="item__heading item__heading_small">интересные факты</h3>
-            <p class="item__text"><?=$page->home_facts?></p>
+            <h3 class="item__heading item__heading_small canSpeak">Захоронение отходов</h3>
             <!--<a href="" class="item__link"></a>-->
           </div>
         </div>
@@ -245,11 +247,11 @@
       <div class="grid__cell grid__cell_big">
         <div class="grid__wrapper">
           <div class="proposal">
-            <h3 class="proposal__heading proposal__heading_center">увидели свалку?</h3>
+            <h3 class="proposal__heading proposal__heading_center canSpeak">увидели свалку?</h3>
             <p class="proposal__text"><?= $page->home_saw_dump_description ?></p>
             <div class="proposal__grid">
               <div class="proposal__button proposal__button_home">
-                <a href="#callback" class="button"  data-uk-offcanvas="{mode:'slide'}">сообщить о нарушении</a>
+                <a href="#callback" class="button canSpeak"  data-uk-offcanvas="{mode:'slide'}">сообщить о нарушении</a>
                 <div id="callback_source" data-source="dump"></div>
               </div>
             </div>
@@ -262,18 +264,18 @@
 <section class="news">
   <div class="container container_center">
     <div class="news__header">
-      <h1 class="news__heading">новости</h1>
+      <h1 class="news__heading canSpeak">новости</h1>
       <div class="news__line"></div>
-      <a href="<?= $pages->get("template=layout_news")->url ?>" class="news__button">все новости</a>
+      <a href="<?= $pages->get("template=layout_news")->url ?>" class="news__button canSpeak">все новости</a>
     </div>
     <div class="news__grid">
         <?php foreach ($pages->get("template=layout_news")->children("template=layout_text, sort=-text_page_date, limit=3") as $pge): ?>
           <div class="news__cell">
             <div class="news-block">
               <p class="news-block__date"><?= $pge->text_page_date ?></p>
-              <h3 class="news-block__heading"><?= $pge->text_page_title ?></h3>
-              <p class="news-block__text"><?= $pge->text_page_subtitle ?></p>
-              <a href="<?= $pge->url ?>" class="news-block__link">Подробнее</a>
+              <h3 class="news-block__heading canSpeak"><?= $pge->text_page_title ?></h3>
+              <p class="news-block__text canSpeak"><?= $pge->text_page_subtitle ?></p>
+              <a href="<?= $pge->url ?>" class="news-block__link canSpeak">Подробнее</a>
             </div>
           </div>
         <?php endforeach; ?>
@@ -283,7 +285,7 @@
 <section class="support">
   <div class="container container_center">
     <div class="support__container">
-      <h1 class="support__heading">при поддержке</h1>
+      <h1 class="support__heading canSpeak">при поддержке</h1>
       <div class="uk-slidenav-position support__grid" data-uk-slider="{center:true}">
         <div class="uk-slider-container">
           <ul class="uk-slider uk-grid uk-grid-medium">
