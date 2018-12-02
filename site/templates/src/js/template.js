@@ -200,4 +200,39 @@ $(document).ready(function() {
 
     });
 
+
+
+    $(".inputfile_button").click(function(){
+        var button = $(this).closest(".feedback_form_inputfile_block").find(".inputfile_input");
+        button.trigger("click");
+    });
+
+    $(".inputfile_input").change(function(){
+        var val = $(this).val();
+
+        var html = val;
+        var reg= new RegExp("[^*](\.txt|\.jpg|\.png|\.zip|\.rar|\.doc|\.docx|\.xls|\.xlsx|\.pdf)", 'i');
+        if (!reg.test(val)) {
+            html = "<span class=\"red\">Неверное расширение файла</span>";
+            $(this).val("");
+        } else {
+            var size = this.files[0].size;
+            if (size > 5 * 1024 * 1024){
+                html = "<span class=\"red\">Размер файла превышает 5 Мб</span>";
+                $(this).val("");
+            } else {
+                val_mas = val.split("\\");
+                html = val_mas[val_mas.length - 1];
+            }
+        }
+
+
+        $(this).closest(".feedback_form_inputfile_block").find(".inputfile_caption").html(html).attr("title", val);
+    });
+
+    $(".feedback_radio_input").change(function(){
+        var blockid = $(this).val();
+        $(".feedback_container").not("#feedback_" + blockid).slideUp(300);
+        $("#feedback_" + blockid).slideDown(300);
+    })
 });
