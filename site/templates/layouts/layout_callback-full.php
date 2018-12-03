@@ -39,32 +39,24 @@
         <div class="block_item">
           <div class="block_item_fields">
             <div id="feedback_item_thema" class="feedback_form_item feedback_form_left  ">
-              <div class="feedback_form_caption">Тема обращения <span class="notnull_icon">*</span></div>
+				<div class="feedback_form_caption">Тема обращения <span class="notnull_icon">*</span></div>
               <div class="feedback_form_field"><span class="custom_form_span" style="padding-right: 9px;"><span
                           class="custom_form_arrow"><span id="custom_form_span_thema" class="custom_form_content"
                                                           style="width: 461px; height: 50px; line-height: 50px;">Заключение договора</span></span></span>
                 <select
                         name="thema" id="thema" class="notnull  custom_form uk-select" style="opacity: 0;">
                   <option value="Заключение договора">Заключение договора</option>
-                  <option value="Предложение сотрудничества">Предложение сотрудничества</option>
-                  <option value="Заявка на вывоз">Заявка на вывоз</option>
-                  <option value="Сообщить о не вывозе">Сообщить о не вывозе</option>
+                  <option value="Предложение сотрудничества">Предложение о сотрудничестве</option>
+                  <option value="Заявка на вывоз">Купить вторичное сырье</option>
+                  <option value="Сообщить о не вывозе">Сообщить о невывозе мусора</option>
+                  <option value="Сообщить о не вывозе">Подать заявку на вывоз отходов</option>
                   <option value="Сообщить о свалке">Сообщить о свалке</option>
                   <option value="Стоимость услуг">Стоимость услуг</option>
                   <option value="Выставление счета">Выставление счета</option>
                   <option value="Другое">Другое</option>
                 </select>
                 <span id="thema_info" class="field_info"></span></div>
-              <div class="clearer"></div>
-            </div>
-            <div id="feedback_item_city" class="feedback_form_item  feedback_form_right ">
-              <div class="feedback_form_caption">Населенный пункт <span class="notnull_icon">*</span></div>
-              <div class="feedback_form_field"><input type="text" name="city" id="city" value=""
-                                                      class="notnull ecotek_inputtext"><span id="city_info"
-                                                                                             class="field_info"></span>
-              </div>
-              <div class="clearer"></div>
-            </div>
+              <div class="clearer"></div>            </div>
             <div class="clearer"></div>
             <div id="feedback_item_comment" class="feedback_form_item   ">
               <div class="feedback_form_caption">Текст обращения <span class="notnull_icon">*</span></div>
@@ -211,14 +203,24 @@
         <div class="block_item">
           <div class="block_item_fields">
             <div id="feedback_item_target" class="feedback_form_item   ">
-              <div class="feedback_form_caption">Тема обращения <span class="notnull_icon">*</span></div>
-              <div class="feedback_form_field"><input type="text"
-                                                      placeholder="Укажите краткую цель обращения. Например, Свалка мусора"
-                                                      name="target" id="target" value=""
-                                                      class="notnull ecotek_inputtext placeholder"><span
-                        id="target_info" class="field_info"></span></div>
-              <div class="clearer"></div>
-            </div>
+<div class="feedback_form_caption">Тема обращения <span class="notnull_icon">*</span></div>
+              <div class="feedback_form_field"><span class="custom_form_span" style="padding-right: 9px;"><span
+                          class="custom_form_arrow"><span id="custom_form_span_thema" class="custom_form_content"
+                                                          style="width: 461px; height: 50px; line-height: 50px;">Заключение договора</span></span></span>
+                <select
+                        name="thema" id="thema" class="notnull  custom_form uk-select" style="opacity: 0;">
+                  <option value="Заключение договора">Заключение договора</option>
+                  <option value="Предложение сотрудничества">Предложение о сотрудничестве</option>
+                  <option value="Заявка на вывоз">Купить вторичное сырье</option>
+                  <option value="Сообщить о не вывозе">Сообщить о невывозе мусора</option>
+                  <option value="Сообщить о не вывозе">Подать заявку на вывоз отходов</option>
+                  <option value="Сообщить о свалке">Сообщить о свалке</option>
+                  <option value="Стоимость услуг">Стоимость услуг</option>
+                  <option value="Выставление счета">Выставление счета</option>
+                  <option value="Другое">Другое</option>
+                </select>
+                <span id="thema_info" class="field_info"></span></div>
+              <div class="clearer"></div>            </div>
             <div id="feedback_item_comment" class="feedback_form_item   ">
               <div class="feedback_form_caption">Текст обращения <span class="notnull_icon">*</span></div>
               <div class="feedback_form_field"><textarea
@@ -276,10 +278,17 @@
             </div>
             <div class="clearer"></div>
             <div id="feedback_item_deal_kogda" class="feedback_form_item feedback_form_left  feedback_form_float">
-              <div class="feedback_form_caption">Я уже обращался по этому вопросу </div>
+              <div class="feedback_form_caption">Я уже обращался(-ась) по этому вопросу </div>
               <div class="feedback_form_field"><input type="text" name="deal_kogda" id="deal_kogda" value=""
                                                       class="datepicker datepicker_max ecotek_inputtext" data-uk-datepicker="{format:'DD.MM.YYYY'}"><span
                         id="deal_kogda_info" class="field_info"></span></div>
+              <div class="clearer"></div>
+            </div>
+            <div id="feedback_item_deal_num" class="feedback_form_item  feedback_form_right feedback_form_float">
+              <div class="feedback_form_caption">№ обращения </div>
+              <div class="feedback_form_field"><input type="text" name="deal_num" id="deal_num" value=""
+                                                      class="ecotek_inputtext"><span id="deal_num_info"
+                                                                                     class="field_info"></span></div>
               <div class="clearer"></div>
             </div>
             <div class="clearer"></div>
@@ -311,8 +320,7 @@
               <div class="feedback_form_checkbox"><input type="checkbox" name="agree[]" value="1" id="agree"
                                                          class="rules_checkbox"><span id="agree_info"
                                                                                       class="field_info"></span> <label
-                        for="agree" class="feedback_form_checkbox_label">Я согласен с использованием ООО "ЭкоТек" моих
-                  персональных данных для обработки данного обращения <span class="notnull_icon">*</span></label></div>
+                        for="agree" class="feedback_form_checkbox_label">Я согласен с использованием ООО "ТЭО" моих персональных данных для обработки данного обращения<span class="notnull_icon">*</span></label></div>
               <div class="clearer"></div>
             </div>
             <div class="clearer"></div>
