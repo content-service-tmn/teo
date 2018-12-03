@@ -35,7 +35,7 @@
                 <li class="nav__item canSpeak"><a href="<?=$pages->get(1)->procurement_url?>" class="nav__link">закупки</a></li>
                 <li class="nav__item canSpeak"><a href="/press-center" class="nav__link">пресс-центр</a></li>
                 <li class="nav__item canSpeak"><a href="/about/vacancies/" class="nav__link">вакансии</a></li>
-                <li class="nav__item canSpeak"><a href="" class="nav__link">faq</a></li>
+                <li class="nav__item canSpeak"><a href="/important/faq" class="nav__link">faq</a></li>
                 <li class="nav__item canSpeak"><a href="/contacts" class="nav__link">контакты</a></li>
               </ul>
             </div>

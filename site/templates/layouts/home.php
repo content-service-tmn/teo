@@ -17,7 +17,7 @@
               <li class="nav__item"><a href="<?=$pages->get(1)->procurement_url?>" class="nav__link canSpeak">закупки</a></li>
               <li class="nav__item"><a href="/press-center" class="nav__link canSpeak">пресс-центр</a></li>
               <li class="nav__item"><a href="/about/vacancies/" class="nav__link canSpeak">вакансии</a></li>
-              <li class="nav__item"><a href="" class="nav__link canSpeak">faq</a></li>
+              <li class="nav__item"><a href="/important/faq" class="nav__link canSpeak">faq</a></li>
               <li class="nav__item"><a href="/contacts" class="nav__link canSpeak">контакты</a></li>
             </ul>
           </div>
@@ -51,10 +51,10 @@
                   <a href="" class="nav__link canSpeak">о предприятии</a>
                   <div class="uk-dropdown nav__subset">
                     <ul>
-                      <li class="nav__subset__item"><a href="" class="nav__subset__link">Общие сведения</a></li>
-                      <li class="nav__subset__item"><a href="" class="nav__subset__link">Руководство</a></li>
-                      <li class="nav__subset__item"><a href="" class="nav__subset__link">Документы</a></li>
-                      <li class="nav__subset__item"><a href="" class="nav__subset__link">Контакты</a></li>
+                      <li class="nav__subset__item"><a href="/about/us/" class="nav__subset__link">Общие сведения</a></li>
+                      <li class="nav__subset__item"><a href="/about/management/" class="nav__subset__link">Руководство</a></li>
+                      <li class="nav__subset__item"><a href="/about/" class="nav__subset__link">Документы</a></li>
+                      <li class="nav__subset__item"><a href="/contacts" class="nav__subset__link">Контакты</a></li>
                     </ul>
                   </div>
                 </div></li>
@@ -62,18 +62,18 @@
                   <a href="" class="nav__link canSpeak">клиентам</a>
                   <div class="uk-dropdown nav__subset">
                     <ul>
-                      <li class="nav__subset__item"><a href="" class="nav__subset__link canSpeak">Деятельность регионального оператора по обращению с ТКО</a></li>
-                      <li class="nav__subset__item"><a href="" class="nav__subset__link canSpeak">Реализация вторичного сырья</a></li>
-                      <li class="nav__subset__item"><a href="" class="nav__subset__link canSpeak">Транспортирование отходов</a></li>
-                      <li class="nav__subset__item"><a href="" class="nav__subset__link canSpeak">Деятельность по захоронению ТКО</a></li>
-                      <li class="nav__subset__item"><a href="" class="nav__subset__link canSpeak">Мусоросортировочные заводы и перегрузочные станции</a></li>
+                      <li class="nav__subset__item"><a href="/clients/operator-activities/" class="nav__subset__link canSpeak">Деятельность регионального оператора по обращению с ТКО</a></li>
+                      <li class="nav__subset__item"><a href="/clients/secondary-materials/" class="nav__subset__link canSpeak">Реализация вторичного сырья</a></li>
+                      <li class="nav__subset__item"><a href="/clients/wasted-transport/" class="nav__subset__link canSpeak">Транспортирование отходов</a></li>
+                      <li class="nav__subset__item"><a href="/clients/activities-tko/" class="nav__subset__link canSpeak">Деятельность по захоронению ТКО</a></li>
+                      <li class="nav__subset__item"><a href="/clients/waste-sorting-activity/" class="nav__subset__link canSpeak">Мусоросортировочные заводы и перегрузочные станции</a></li>
                     </ul>
                   </div>
                 </div></li>
               <li class="nav__item"><a href="<?=$pages->get(1)->procurement_url?>" class="nav__link canSpeak">закупки</a></li>
               <li class="nav__item"><a href="/press-center" class="nav__link canSpeak">пресс-центр</a></li>
               <li class="nav__item"><a href="/about/vacancies/" class="nav__link canSpeak">вакансии</a></li>
-              <li class="nav__item"><a href="/press-center" class="nav__link canSpeak">faq</a></li>
+              <li class="nav__item"><a href="/important/faq" class="nav__link canSpeak">faq</a></li>
               <li class="nav__item"><a href="/contacts" class="nav__link canSpeak">контакты</a></li>
 
             </ul>
