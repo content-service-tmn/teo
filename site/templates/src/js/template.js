@@ -273,4 +273,18 @@ $(document).ready(function() {
         $(".invalid").css("fill","#e9ac45");
     }
 
+    changeHeightMainBlock();
+
+    $(window).resize(function () {
+        changeHeightMainBlock()
+    });
+
+    function changeHeightMainBlock() {
+        var group = $('#grid-group');
+
+        if (window.innerWidth >= 960)
+            group.height(window.innerHeight - 150);
+        else
+            group.height('initial')
+    }
 });
