@@ -49,8 +49,8 @@ $config->defaultAdminTheme = 'AdminThemeUikit';
  */
 $config->dbHost = 'localhost';
 $config->dbName = 'cw40247_teo';
-$config->dbUser = 'root';
-$config->dbPass = 'root';
+$config->dbUser = 'cw40247_teo';
+$config->dbPass = 'jqrU3ZDL';
 $config->dbPort = '3306';
 
 /**
