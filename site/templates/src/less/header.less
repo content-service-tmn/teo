@@ -84,15 +84,25 @@
   &__content {
     position:absolute;
     left:0;
-    top:50%;
+    top:34%;
     max-width: 525px;
     z-index:2;
     transform:translateY(-50%) translateX(-225px);
     color:white;
     opacity:0;
     transition:none;
+
+    h1 {
+      font-size: 55px;
+
+      @media(max-width: 1439px) {
+        font-size: 42px;
+      }
+    }
     @media(max-width: 1439px) {
       max-width: 390px;
+      top: 33%;
+      transform:translateY(-50%) translateX(-190px);
     }
     @media(max-width: 959px) {
       padding-left: 30px;
