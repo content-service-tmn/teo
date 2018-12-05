@@ -2,6 +2,22 @@
 <section id="menu" class="fixed-menu">
   <div class="menu menu_small menu_green">
     <div class="container container_center">
+        <div class="menu__phone-container">
+            <div class="menu__phone-container__left">
+                <div class="menu__phone-container__middle">
+                    <a href="callback-full/"  class="container container_center menu__button fixed canSpeak">Обратная связь</a>
+                    <a href="tel:<?= phoneLink($pages->get("template=layout_contacts")->site_phone) ?>"
+                       class="menu__phone canSpeak"><?= $pages->get("template=layout_contacts")->site_phone ?>
+                    </a>
+                </div>
+            </div>
+            <div class="menu__phone-container__right invalid" style="width: 30px; cursor: pointer; margin-left: 3px">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+<metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
+                    <g><g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"><path d="M4001,4994c-344.9-72.8-699.4-354.5-858.4-678.3c-178.2-360.2-178.2-678.3,0-1034.7c113-226.1,341.1-456,567.2-571c88.1-44.1,172.5-80.5,187.8-80.5c23,0,26.8-245.3,26.8-1714.9V-800.3h1452.4h1454.3l611.2-919.7l611.2-917.8l695.5-1.9h693.6v306.6v306.6h-532.7h-534.6l-611.2,919.7L7153-189l-1306.8,1.9H4537.6v766.4v766.4H5304h766.4v306.6v306.6H5304h-766.4v335.3c0,277.8,3.8,335.3,26.8,335.3c15.3,0,99.6,36.4,187.8,80.5c226.1,115,454.1,344.9,567.2,571c178.2,358.3,178.2,676.4,0,1034.7c-115,229.9-341.1,456-571,571C4487.7,5017,4257.8,5049.6,4001,4994z M4520.3,4356c113.1-53.6,212.7-153.3,270.2-268.3c36.4-74.7,44.1-118.8,44.1-289.3c0-229.9-34.5-323.8-157.1-446.4c-122.6-122.6-216.5-157.1-446.5-157.1c-170.5,0-214.6,7.7-289.3,44.1c-203.1,99.6-306.6,266.3-320,515.4c-17.3,312.3,115,530.7,379.4,626.6C4127.5,4426.9,4401.5,4413.4,4520.3,4356z"/><path d="M2966.4,1815.2C1814.8,1472.2,912.3,495,636.4-704.5c-341.1-1496.5,444.5-3060,1889.3-3753.7c777.9-373.6,1645.9-423.4,2460.3-141.8c846.9,291.3,1565.5,923.6,1965.9,1728.3c101.6,203.1,237.6,582.5,258.7,720.4l13.4,76.6l-266.3,53.6c-147.5,28.7-279.7,51.7-297,51.7c-21.1,0-42.2-53.7-76.6-185.9c-195.4-739.6-718.5-1389.2-1385.3-1720.7c-241.4-118.8-427.3-183.9-693.6-243.3c-274-59.4-887.1-59.4-1161.1,0c-557.6,122.6-1007.9,364.1-1383.4,741.5c-377.5,375.6-618.9,825.8-741.5,1385.3c-61.3,270.2-61.3,887.2,0,1157.3c124.6,563.3,346.8,975.3,739.6,1368.1c325.7,323.8,672.6,536.5,1115.2,678.3l193.5,63.2l-72.8,285.5c-38.3,157.1-74.7,289.3-78.6,293.2C3113.9,1855.4,3044.9,1840.1,2966.4,1815.2z"/></g></g>
+</svg>
+            </div>
+        </div>
       <div class="menu__grid">
         <div class="menu__cell">
           <a href="" class="menu__logo logo">
@@ -31,11 +47,22 @@
 <section class="header">
   <div class="menu">
     <div class="container container_center menu__wrapper">
-      <a href="callback-full/"  class="container container_center menu__button canSpeak">Обратная связь</a>
       <div class="menu__phone-container">
-        <a class="menu__text-phone canSpeak">Телефон горячей линии регионального оператора по обращению с ТКО</a>
-        <a href="tel:<?= phoneLink($pages->get("template=layout_contacts")->site_phone) ?>"
-           class="menu__phone canSpeak"><?= $pages->get("template=layout_contacts")->site_phone ?></a>
+          <div class="menu__phone-container__left">
+              <a class="menu__text-phone canSpeak">Телефон горячей линии регионального оператора по обращению с ТКО</a>
+              <div class="menu__phone-container__middle">
+                  <a href="callback-full/"  class="container container_center menu__button canSpeak">Обратная связь</a>
+                  <a href="tel:<?= phoneLink($pages->get("template=layout_contacts")->site_phone) ?>"
+                     class="menu__phone canSpeak"><?= $pages->get("template=layout_contacts")->site_phone ?>
+                  </a>
+              </div>
+          </div>
+          <div class="menu__phone-container__right invalid" style="width: 55px; cursor: pointer">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+<metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
+                      <g><g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"><path d="M4001,4994c-344.9-72.8-699.4-354.5-858.4-678.3c-178.2-360.2-178.2-678.3,0-1034.7c113-226.1,341.1-456,567.2-571c88.1-44.1,172.5-80.5,187.8-80.5c23,0,26.8-245.3,26.8-1714.9V-800.3h1452.4h1454.3l611.2-919.7l611.2-917.8l695.5-1.9h693.6v306.6v306.6h-532.7h-534.6l-611.2,919.7L7153-189l-1306.8,1.9H4537.6v766.4v766.4H5304h766.4v306.6v306.6H5304h-766.4v335.3c0,277.8,3.8,335.3,26.8,335.3c15.3,0,99.6,36.4,187.8,80.5c226.1,115,454.1,344.9,567.2,571c178.2,358.3,178.2,676.4,0,1034.7c-115,229.9-341.1,456-571,571C4487.7,5017,4257.8,5049.6,4001,4994z M4520.3,4356c113.1-53.6,212.7-153.3,270.2-268.3c36.4-74.7,44.1-118.8,44.1-289.3c0-229.9-34.5-323.8-157.1-446.4c-122.6-122.6-216.5-157.1-446.5-157.1c-170.5,0-214.6,7.7-289.3,44.1c-203.1,99.6-306.6,266.3-320,515.4c-17.3,312.3,115,530.7,379.4,626.6C4127.5,4426.9,4401.5,4413.4,4520.3,4356z"/><path d="M2966.4,1815.2C1814.8,1472.2,912.3,495,636.4-704.5c-341.1-1496.5,444.5-3060,1889.3-3753.7c777.9-373.6,1645.9-423.4,2460.3-141.8c846.9,291.3,1565.5,923.6,1965.9,1728.3c101.6,203.1,237.6,582.5,258.7,720.4l13.4,76.6l-266.3,53.6c-147.5,28.7-279.7,51.7-297,51.7c-21.1,0-42.2-53.7-76.6-185.9c-195.4-739.6-718.5-1389.2-1385.3-1720.7c-241.4-118.8-427.3-183.9-693.6-243.3c-274-59.4-887.1-59.4-1161.1,0c-557.6,122.6-1007.9,364.1-1383.4,741.5c-377.5,375.6-618.9,825.8-741.5,1385.3c-61.3,270.2-61.3,887.2,0,1157.3c124.6,563.3,346.8,975.3,739.6,1368.1c325.7,323.8,672.6,536.5,1115.2,678.3l193.5,63.2l-72.8,285.5c-38.3,157.1-74.7,289.3-78.6,293.2C3113.9,1855.4,3044.9,1840.1,2966.4,1815.2z"/></g></g>
+</svg>
+          </div>
       </div>
       <div class="menu__grid">
         <div class="menu__cell">
@@ -174,92 +201,94 @@
   </div>
 </section>
 <section class="home">
-  <div class="container container_center">
-    <div class="grid grid_main">
-      <div class="grid__cell">
-        <div class="grid__wrapper">
-          <div class="item item_main">
-            <img src="<?= $config->urls->templates . "assets/svg/chelik1.svg" ?>" alt="" class="item__img item__img_main">
-            <h3 class="item__heading item__heading_left canSpeak">региональный оператор по обращению с тко в тюменской
-              области</h3>
-            <!--<a href="" class="item__link"></a>-->
-          </div>
-        </div>
-      </div>
-      <div class="grid__cell">
-        <div class="grid-wrapper">
-          <div class="grid">
+    <div class="container container_center">
+        <div class="grid grid_main">
+            <div class="grid__group" id="grid-group">
+                <div class="grid__group_cell">
+                    <div class="grid__wrapper">
+                        <div class="item item_main">
+                            <img src="<?= $config->urls->templates . "assets/svg/chelik1.svg" ?>" alt="" class="item__img item__img_main">
+                            <h3 class="item__heading item__heading_left canSpeak">региональный оператор по обращению с тко в тюменской
+                                области</h3>
+                            <!--<a href="" class="item__link"></a>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__group_cell">
+                    <div class="grid-wrapper">
+                        <div class="grid">
+                            <div class="grid__group_cell grid__group_cell_big">
+                                <div class="grid__group_wrapper">
+                                    <div class="item">
+                                        <img src="<?= $config->urls->templates . "assets/svg/info.svg" ?>" alt=""
+                                             class="item__img item__img_for-text">
+                                        <h3 class="item__heading canSpeak">интересные факты</h3>
+                                        <p class="item__text"><?=$page->home_facts?></p>
+                                        <!--<a href="" class="item__link"></a>-->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid__group_cell">
+                                <div class="grid__group_wrapper">
+                                    <div class="item">
+                                        <img src="<?= $config->urls->templates . "assets/svg/doc1.svg" ?>" alt=""
+                                             class="item__img item__img_big">
+                                        <h3 class="item__heading item__heading_small canSpeak">документы</h3>
+                                        <a href="/about/documents/" class="item__link"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid__group_cell">
+                                <div class="grid__group_wrapper">
+                                    <div class="item">
+                                        <img src="<?= $config->urls->templates . "assets/svg/zakupki1.svg" ?>" alt=""
+                                             class="item__img item__img_big">
+                                        <h3 class="item__heading item__heading_small canSpeak">Реализация В.С.</h3>
+                                        <a href="/important/procurements/" class="item__link"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__group_cell">
+                    <div class="grid__group_wrapper">
+                        <div class="item">
+                            <img src="<?= $config->urls->templates . "assets/svg/vacancy1.svg" ?>" alt=""
+                                 class="item__img item__img_for-text">
+                            <h3 class="item__heading item__heading_small canSpeak">Транспортирование отходов</h3>
+                            <!--            <p class="item__text">Здесь вы можете ознакомиться с важной информацией о нашей организации.</p>-->
+                            <a href="/about/vacancies/" class="item__link"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__group_cell">
+                    <div class="grid__group_wrapper">
+                        <div class="item">
+                            <img src="<?= $config->urls->templates . "assets/svg/info.svg" ?>" alt=""
+                                 class="item__img item__img_for-text">
+                            <h3 class="item__heading item__heading_small canSpeak">Захоронение отходов</h3>
+                            <!--<a href="" class="item__link"></a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="grid__cell grid__cell_big">
-              <div class="grid__wrapper">
-                <div class="item">
-                  <img src="<?= $config->urls->templates . "assets/svg/info.svg" ?>" alt=""
-                       class="item__img item__img_for-text">
-                  <h3 class="item__heading canSpeak">интересные факты</h3>
-                  <p class="item__text"><?=$page->home_facts?></p>
-                  <!--<a href="" class="item__link"></a>-->
+                <div class="grid__wrapper">
+                    <div class="proposal">
+                        <h3 class="proposal__heading proposal__heading_center canSpeak">увидели свалку?</h3>
+                        <p class="proposal__text"><?= $page->home_saw_dump_description ?></p>
+                        <div class="proposal__grid">
+                            <div class="proposal__button proposal__button_home">
+                                <a href="#callback" class="button canSpeak"  data-uk-offcanvas="{mode:'slide'}">сообщить о нарушении</a>
+                                <div id="callback_source" data-source="dump"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-            <div class="grid__cell">
-              <div class="grid__wrapper">
-                <div class="item">
-                  <img src="<?= $config->urls->templates . "assets/svg/doc1.svg" ?>" alt=""
-                       class="item__img item__img_big">
-                  <h3 class="item__heading item__heading_small canSpeak">документы</h3>
-                  <a href="/about/documents/" class="item__link"></a>
-                </div>
-              </div>
-            </div>
-            <div class="grid__cell">
-              <div class="grid__wrapper">
-                <div class="item">
-                  <img src="<?= $config->urls->templates . "assets/svg/zakupki1.svg" ?>" alt=""
-                       class="item__img item__img_big">
-                  <h3 class="item__heading item__heading_small canSpeak">Реализация В.С.</h3>
-                  <a href="/important/procurements/" class="item__link"></a>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-      <div class="grid__cell">
-        <div class="grid__wrapper">
-          <div class="item">
-            <img src="<?= $config->urls->templates . "assets/svg/vacancy1.svg" ?>" alt=""
-                 class="item__img item__img_for-text">
-            <h3 class="item__heading item__heading_small canSpeak">Транспортирование отходов</h3>
-<!--            <p class="item__text">Здесь вы можете ознакомиться с важной информацией о нашей организации.</p>-->
-            <a href="/about/vacancies/" class="item__link"></a>
-          </div>
-        </div>
-      </div>
-      <div class="grid__cell">
-        <div class="grid__wrapper">
-          <div class="item">
-            <img src="<?= $config->urls->templates . "assets/svg/info.svg" ?>" alt=""
-                 class="item__img item__img_for-text">
-            <h3 class="item__heading item__heading_small canSpeak">Захоронение отходов</h3>
-            <!--<a href="" class="item__link"></a>-->
-          </div>
-        </div>
-      </div>
-      <div class="grid__cell grid__cell_big">
-        <div class="grid__wrapper">
-          <div class="proposal">
-            <h3 class="proposal__heading proposal__heading_center canSpeak">увидели свалку?</h3>
-            <p class="proposal__text"><?= $page->home_saw_dump_description ?></p>
-            <div class="proposal__grid">
-              <div class="proposal__button proposal__button_home">
-                <a href="#callback" class="button canSpeak"  data-uk-offcanvas="{mode:'slide'}">сообщить о нарушении</a>
-                <div id="callback_source" data-source="dump"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
 </section>
 <section class="news">
   <div class="container container_center">

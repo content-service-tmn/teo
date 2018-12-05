@@ -75,8 +75,14 @@ h2.feedback_h2 {
 }
 
 .feedback_switcher {
+    display: flex;
     background-color: #e3e8e8;
     padding: 36px 40px 32px;
+
+    @media (max-width: 600px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 .feedback_form_caption {
@@ -86,22 +92,25 @@ h2.feedback_h2 {
 }
 
 .feedback_form_caption.feedback_switcher_caption {
-    float: left;
-    line-height: 30px;
+    width: 30%;
+
     @media (max-width: 600px) {
         display: none;
     }
 }
 
 .feedback_radio {
-    float: left;
-    margin-left: 140px;;
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+
+    @media (max-width: 600px) {
+        width: 100%;
+    }
 }
 
 .feedback_radio_item {
-    float: left;
-    line-height: 30px;
-    margin-right: 140px;
+
 }
 
 .feedback_radio_input {
@@ -149,7 +158,8 @@ h2.feedback_h2 {
 }
 
 .block_item_fields {
-
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .feedback_form_item {
@@ -166,7 +176,6 @@ h2.feedback_h2 {
 .ecotek_inputtext {
     border: 0;
     background-color: #ecf1f1;
-    line-height: 48px;
     height: 48px;
     font-size: 15px;
     color: #1e2825;
@@ -183,25 +192,27 @@ h2.feedback_h2 {
 }
 
 .feedback_form_left {
-    float: left;
-    width: 490px;
+    width: 100%;
+    box-sizing: border-box;
+
+    @media (min-width: 1024px) {
+        padding-right: 20px;
+        width: 50%;
+    }
 }
 
 .feedback_form_right {
-    float: right;
-    width: 490px;
-}
+    width: 100%;
+    box-sizing: border-box;
 
-.feedback_form_float .feedback_form_caption {
-    float: left;
-    margin: 0;
-    line-height: 50px;
+    @media (min-width: 1024px) {
+        padding-left: 20px;
+        width: 50%;
+    }
 }
 
 .notnull_icon {
-
     color: #3fa64d;
-
 }
 
 .feedback_form_float .feedback_form_field {
@@ -210,15 +221,12 @@ h2.feedback_h2 {
 }
 
 .feedback_form_item .ecotek_inputtext {
-    width: 980px;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .feedback_form_left .ecotek_inputtext, .feedback_form_right .ecotek_inputtext {
-    width: 450px;
-}
-
-.feedback_form_float .ecotek_inputtext {
-    width: 120px;
+    width: 100%;
 }
 
 textarea.ecotek_inputtext {
@@ -230,16 +238,27 @@ textarea.ecotek_inputtext {
 }
 
 .feedback_form_item select {
-    height: 50px;
-    width: 490px;
+    height: 48px;
+    width: 100%;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
-#feedback_item_deal_kogda .feedback_form_caption {
-    width: 330px;
-}
+#feedback_item_deal_num,
+#feedback_item_deal_kogda {
+    display: flex;
+    justify-content: space-between;
 
-#feedback_item_deal_num .feedback_form_caption {
-    width: 140px;
+    .feedback_form_caption {
+        display: flex;
+        align-items: center;
+        width: 70%;
+    }
+
+    .feedback_form_field {
+        width: 30%;
+    }
 }
 
 .ecotek_inputtext.datepicker {
@@ -252,7 +271,7 @@ textarea.ecotek_inputtext {
 }
 
 .feedback_form_item .ecotek_inputtext.datepicker {
-    width: 100px;
+    width: 100%;
 }
 
 .dopfile_hint {
@@ -297,7 +316,6 @@ textarea.ecotek_inputtext {
 
 .inputfile_caption {
     font-weight: bold;
-    line-height: 50px;
     display: inline-block;
     margin-left: 8px;
 }
@@ -364,7 +382,6 @@ textarea.ecotek_inputtext {
 
 .feedback_form_submit_hint {
     display: inline-block;
-    line-height: 50px;
     font-size: 13px;
     color: #727d7d;
     margin-left: 40px;
@@ -376,11 +393,6 @@ textarea.ecotek_inputtext {
 .engine_form_tel {
     display: none;
 }
-.page_content {
-    padding-left: 12%;
-    padding-right: 12%;
-}
-
 
 div.clearer {
     clear:               both;
@@ -397,4 +409,28 @@ div.clearer {
     padding-left: 20px;
     color: #1e2825;
     background-color: #ecf1f1;
+}
+
+#feedback_item_title {
+    width: 100%;
+}
+
+#feedback_item_comment {
+    width: 100%;
+}
+
+.feedback_form_submit {
+    @media (max-width: 1023px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feedback_form_submit_hint {
+        @media (max-width: 1023px) {
+            margin-left: 0;
+            margin-top: 10px;
+            text-align: center;
+        }
+    }
 }

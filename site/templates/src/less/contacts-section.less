@@ -69,23 +69,9 @@
 
 .Contacts {
   box-sizing: border-box;
-  margin: 0 auto;
-  padding: 0 16px;
+  padding: 0;
   width: 100%;
-  @media (min-width: 600px) {
-    padding-right: 0;
-    padding-left: 0;
-    max-width: 512px;
-  }
-  @media (min-width: 768px) {
-    max-width: 608px;
-  }
-  @media (min-width: 1024px) {
-    max-width: 824px;
-  }
-  @media (min-width: 1360px) {
-    max-width: 1104px;
-  }
+  
   &__link{
     background: 0 0;
     border: 0;
@@ -137,11 +123,10 @@
   }
 
   &__wrapper {
-    padding-top: 50px;
     display: flex;
     flex-direction: column;
     margin-bottom: -14px;
-    padding-bottom: 0;
+    padding: 50px 25px 0;
 
     @media (min-width: 1024px) {
       display: block;
@@ -149,8 +134,7 @@
       column-count: 2;
       -webkit-column-gap: 65px;
       column-gap: 65px;
-      padding-top: 50px;
-      padding-bottom: 47px;
+      padding: 50px 0 47px;
     }
 
     &__block{
@@ -172,6 +156,7 @@
       &__table {
         width: 100%;
         &__row {
+          display: flex;
           font-size: 17px;
           line-height: 24px;
           vertical-align: top;
@@ -187,7 +172,6 @@
         &__column {
           padding: 21px 0;
           box-sizing: border-box;
-          display: inline-block;
           width: 50%;
           vertical-align: top;
         }
