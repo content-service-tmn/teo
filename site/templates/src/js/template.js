@@ -260,17 +260,27 @@ $(document).ready(function() {
             speechSynthesis.speak(text);
         }
     }
+
+    var icon_invalid = $('.menu__phone-container__icon');
+
     $(".invalid").click(function () {
         if (sessionStorage.getItem('isInvalid') == "true"){
             $(this).css("fill","black");
+            icon_invalid.css("box-shadow", "none");
             sessionStorage.setItem('isInvalid', false);
         } else {
             $(this).css("fill", "#e9ac45");
+
+            if ($(this).find('.menu__phone-container__icon')) {
+                icon_invalid.css("box-shadow", "white 0px 0px 5px 2px");
+            }
+
             sessionStorage.setItem('isInvalid', true);
         }
     });
     if (sessionStorage.getItem('isInvalid') == "true"){
         $(".invalid").css("fill","#e9ac45");
+        icon_invalid.css("box-shadow", "white 0px 0px 5px 2px");
     }
 
     changeHeightMainBlock();
@@ -283,8 +293,28 @@ $(document).ready(function() {
         var group = $('#grid-group');
 
         if (window.innerWidth >= 960)
-            group.height(window.innerHeight - 150);
+            group.height(window.innerHeight - 170);
         else
             group.height('initial')
     }
+
+    // открытие дефолтного селекта при нажатии на стрелочку
+    $('.feedback_form_field-arrow').click(function () {
+        var element = $(this).closest('.feedback_form_field').find('select');
+
+        if (document.createEvent) {
+            var e = document.createEvent("MouseEvents");
+            e.initMouseEvent("mousedown", true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+            element[0].dispatchEvent(e);
+        } else if (element.fireEvent) {
+            element[0].fireEvent("onmousedown");
+        }
+
+    })
+
+    $(".to_validate").inputmask();
 });
+
+
+
+
