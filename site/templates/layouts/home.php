@@ -41,7 +41,7 @@
                             <ul>
                                 <li class="nav__subset__item"><a href="/about/us/" class="nav__subset__link">Общие сведения</a></li>
                                 <li class="nav__subset__item"><a href="/about/management/" class="nav__subset__link">Руководство</a></li>
-                                <li class="nav__subset__item"><a href="/about/" class="nav__subset__link">Документы</a></li>
+                                <li class="nav__subset__item"><a href="/important/docs/" class="nav__subset__link">Документы</a></li>
                                 <li class="nav__subset__item"><a href="/contacts" class="nav__subset__link">Контакты</a></li>
                             </ul>
                         </div>
@@ -129,7 +129,7 @@
                     <ul>
                       <li class="nav__subset__item"><a href="/about/us/" class="nav__subset__link">Общие сведения</a></li>
                       <li class="nav__subset__item"><a href="/about/management/" class="nav__subset__link">Руководство</a></li>
-                      <li class="nav__subset__item"><a href="/about/" class="nav__subset__link">Документы</a></li>
+                      <li class="nav__subset__item"><a href="/important/docs/" class="nav__subset__link">Документы</a></li>
                       <li class="nav__subset__item"><a href="/contacts" class="nav__subset__link">Контакты</a></li>
                     </ul>
                   </div>

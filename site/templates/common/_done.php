@@ -55,7 +55,7 @@
                               <ul>
                                   <li class="nav__subset__item"><a href="/about/us/" class="nav__subset__link">Общие сведения</a></li>
                                   <li class="nav__subset__item"><a href="/about/management/" class="nav__subset__link">Руководство</a></li>
-                                  <li class="nav__subset__item"><a href="/about/" class="nav__subset__link">Документы</a></li>
+                                  <li class="nav__subset__item"><a href="/important/docs/" class="nav__subset__link">Документы</a></li>
                                   <li class="nav__subset__item"><a href="/contacts" class="nav__subset__link">Контакты</a></li>
                               </ul>
                           </div>
@@ -120,7 +120,7 @@
           <li class="sidebar__item canSpeak"><a href="/about" data-uk-smoothscroll>О предприятии</a></li>
           <li class="sidebar__item canSpeak"><a href="/about/us/" data-uk-smoothscroll>Общие сведения</a></li>
           <li class="sidebar__item canSpeak"><a href="/about/management/" data-uk-smoothscroll>Руководство</a></li>
-          <li class="sidebar__item canSpeak"><a href="/about/" data-uk-smoothscroll>Документы</a></li>
+          <li class="sidebar__item canSpeak"><a href="/important/docs/" data-uk-smoothscroll>Документы</a></li>
           <li class="sidebar__item canSpeak"><a href="/contacts/" data-uk-smoothscroll>Контакты</a></li>
         </ul>
         <ul class="sidebar__items">
@@ -292,7 +292,7 @@
             <li class="footer__item"><a href="/about" class="footer__link">О предприятии</a></li>
             <li class="footer__item"><a href="/about/management" class="footer__link">Руководство</a>
             </li>
-            <li class="footer__item"><a href="/about" class="footer__link">Документы</a></li>
+            <li class="footer__item"><a href="/important/docs/" class="footer__link">Документы</a></li>
             <li class="footer__item"><a href="/contacts" class="footer__link">Контакты</a></li>
           </ul>
         </div>
