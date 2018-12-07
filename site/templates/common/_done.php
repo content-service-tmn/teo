@@ -73,7 +73,21 @@
                           </div>
                       </div></li>
                 <li class="nav__item canSpeak"><a href="<?=$pages->get(1)->procurement_url?>" class="nav__link">закупки</a></li>
-                <li class="nav__item canSpeak"><a href="/press-center" class="nav__link">пресс-центр</a></li>
+                <li class="nav__item">
+                  <div style="position: relative;" data-uk-dropdown>
+                    <a href="/press-center" class="nav__link canSpeak">пресс-центр</a>
+                    <div class="uk-dropdown nav__subset">
+                      <ul>
+                        <li class="nav__subset__item"><a href="/press-center#messages" class="nav__subset__link">Срочные сообщения</a></li>
+                        <li class="nav__subset__item"><a href="/press-center/news/" class="nav__subset__link">Новости</a></li>
+                        <li class="nav__subset__item"><a href="/press-center#smi" class="nav__subset__link">СМИ о нас</a></li>
+                        <li class="nav__subset__item"><a href="/press-center/galleries" class="nav__subset__link">Фотогалерея</a></li>
+                        <li class="nav__subset__item"><a href="/press-center/videos" class="nav__subset__link">Видеоматериалы</a></li>
+                        <li class="nav__subset__item"><a href="/press-center/record-request" class="nav__subset__link">Запрос на съемку</a></li>
+                        <li class="nav__subset__item"><a href="/press-center/excursion-request" class="nav__subset__link">Заявка на экскурсию</a></li>
+                      </ul>
+                    </div>
+                  </div></li>
                 <li class="nav__item canSpeak"><a href="/about/vacancies/" class="nav__link">вакансии</a></li>
                 <li class="nav__item canSpeak"><a href="/important/faq" class="nav__link">faq</a></li>
                 <li class="nav__item canSpeak"><a href="/contacts" class="nav__link">контакты</a></li>

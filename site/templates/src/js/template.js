@@ -311,4 +311,10 @@ $(document).ready(function() {
         }
 
     })
+
+    $(".to_validate").inputmask();
 });
+
+
+
+

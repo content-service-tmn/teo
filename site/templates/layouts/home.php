@@ -59,7 +59,21 @@
                         </div>
                     </div></li>
               <li class="nav__item"><a href="<?=$pages->get(1)->procurement_url?>" class="nav__link canSpeak">закупки</a></li>
-              <li class="nav__item"><a href="/press-center" class="nav__link canSpeak">пресс-центр</a></li>
+              <li class="nav__item">
+                <div style="position: relative;" data-uk-dropdown>
+                  <a href="/press-center" class="nav__link canSpeak">пресс-центр</a>
+                  <div class="uk-dropdown nav__subset">
+                    <ul>
+                      <li class="nav__subset__item"><a href="/press-center#messages" class="nav__subset__link">Срочные сообщения</a></li>
+                      <li class="nav__subset__item"><a href="/press-center/news/" class="nav__subset__link">Новости</a></li>
+                      <li class="nav__subset__item"><a href="/press-center#smi" class="nav__subset__link">СМИ о нас</a></li>
+                      <li class="nav__subset__item"><a href="/press-center/galleries" class="nav__subset__link">Фотогалерея</a></li>
+                      <li class="nav__subset__item"><a href="/press-center/videos" class="nav__subset__link">Видеоматериалы</a></li>
+                      <li class="nav__subset__item"><a href="/press-center/record-request" class="nav__subset__link">Запрос на съемку</a></li>
+                      <li class="nav__subset__item"><a href="/press-center/excursion-request" class="nav__subset__link">Заявка на экскурсию</a></li>
+                    </ul>
+                  </div>
+                </div></li>
               <li class="nav__item"><a href="/about/vacancies/" class="nav__link canSpeak">вакансии</a></li>
               <li class="nav__item"><a href="/important/faq" class="nav__link canSpeak">faq</a></li>
               <li class="nav__item"><a href="/contacts" class="nav__link canSpeak">контакты</a></li>
@@ -138,13 +152,13 @@
                   <a href="/press-center" class="nav__link canSpeak">пресс-центр</a>
                   <div class="uk-dropdown nav__subset">
                     <ul>
-                      <li class="nav__subset__item"><a href="/about/us/" class="nav__subset__link">Срочные сообщения</a></li>
-                      <li class="nav__subset__item"><a href="/about/management/" class="nav__subset__link">Новости</a></li>
-                      <li class="nav__subset__item"><a href="/about/" class="nav__subset__link">СМИ о нас</a></li>
-                      <li class="nav__subset__item"><a href="/contacts" class="nav__subset__link">Фотогалерея</a></li>
-                      <li class="nav__subset__item"><a href="/contacts" class="nav__subset__link">Видеоматериалы</a></li>
-                      <li class="nav__subset__item"><a href="/contacts" class="nav__subset__link">Запрос на съемку</a></li>
-                      <li class="nav__subset__item"><a href="/contacts" class="nav__subset__link">Заявка на экскурсию</a></li>
+                      <li class="nav__subset__item"><a href="/press-center#messages" class="nav__subset__link">Срочные сообщения</a></li>
+                      <li class="nav__subset__item"><a href="/press-center/news/" class="nav__subset__link">Новости</a></li>
+                      <li class="nav__subset__item"><a href="/press-center#smi" class="nav__subset__link">СМИ о нас</a></li>
+                      <li class="nav__subset__item"><a href="/press-center/galleries" class="nav__subset__link">Фотогалерея</a></li>
+                      <li class="nav__subset__item"><a href="/press-center/videos" class="nav__subset__link">Видеоматериалы</a></li>
+                      <li class="nav__subset__item"><a href="/press-center/record-request" class="nav__subset__link">Запрос на съемку</a></li>
+                      <li class="nav__subset__item"><a href="/press-center/excursion-request" class="nav__subset__link">Заявка на экскурсию</a></li>
                     </ul>
                   </div>
                 </div></li>
@@ -227,23 +241,23 @@
           661.4,394.8 677.6,385.7 690.4,390.3 690.6,381.3 708.6,370.6 731,370.7 "></polygon>
           </svg>
         </div>
-        <h3 class="header__name header__name_tmn">Тюмень</h3>
-        <h3 class="header__name header__name_tob">Тобольск</h3>
-        <h3 class="header__name header__name_ish">Ишим</h3>
+        <h3 class="header__name header__name_tmn canSpeak">Тюмень</h3>
+        <h3 class="header__name header__name_tob canSpeak">Тобольск</h3>
+        <h3 class="header__name header__name_ish canSpeak">Ишим</h3>
         <div class="header__content content">
-          <h1 class="content__heading"><?= $page->home_title_on_map_tyumen ?></h1>
+          <h1 class="content__heading canSpeak"><?= $page->home_title_on_map_tyumen ?></h1>
           <p class="content__text"><?= $page->home_description_under_title_tyumen ?></p>
         </div>
         <div class="header__content content">
-          <h1 class="content__heading"><?= $page->home_title_on_map_tobolsk ?></h1>
+          <h1 class="content__heading canSpeak"><?= $page->home_title_on_map_tobolsk ?></h1>
           <p class="content__text"><?= $page->home_description_under_title_tobolsk ?></p>
         </div>
         <div class="header__content content">
-          <h1 class="content__heading"><?= $page->home_title_on_map_ishim ?></h1>
+          <h1 class="content__heading canSpeak"><?= $page->home_title_on_map_ishim ?></h1>
           <p class="content__text"><?= $page->home_description_under_title_ishim ?></p>
         </div>
         <div class="header__content content active">
-          <h1 class="content__heading"><?= $page->home_title_on_map ?></h1>
+          <h1 class="content__heading canSpeak"><?= $page->home_title_on_map ?></h1>
           <p class="content__text"><?= $page->home_description_under_title ?></p>
         </div>
       </div>
@@ -291,7 +305,7 @@
                             <div class="grid__group_cell">
                                 <div class="grid__group_wrapper">
                                     <div class="item">
-                                        <img src="<?= $config->urls->templates . "assets/svg/zakupki1.svg" ?>" alt=""
+                                        <img src="<?= $config->urls->templates . "assets/svg/Recycle001.svg" ?>" alt=""
                                              class="item__img item__img_big">
                                         <h3 class="item__heading item__heading_small canSpeak">Реализация вторичного сырья</h3>
                                         <a href="/important/procurements/" class="item__link"></a>
@@ -304,7 +318,7 @@
                 <div class="grid__group_cell">
                     <div class="grid__group_wrapper">
                         <div class="item">
-                            <img src="<?= $config->urls->templates . "assets/svg/vacancy1.svg" ?>" alt=""
+                            <img src="<?= $config->urls->templates . "assets/svg/truck.svg" ?>" alt=""
                                  class="item__img item__img_for-text">
                             <h3 class="item__heading item__heading_small canSpeak">Транспортирование отходов</h3>
                             <!--            <p class="item__text">Здесь вы можете ознакомиться с важной информацией о нашей организации.</p>-->
@@ -315,7 +329,7 @@
                 <div class="grid__group_cell">
                     <div class="grid__group_wrapper">
                         <div class="item">
-                            <img src="<?= $config->urls->templates . "assets/svg/info.svg" ?>" alt=""
+                            <img src="<?= $config->urls->templates . "assets/svg/konteyner1.svg" ?>" alt=""
                                  class="item__img item__img_for-text">
                             <h3 class="item__heading item__heading_small canSpeak">Захоронение отходов</h3>
                             <!--<a href="" class="item__link"></a>-->
