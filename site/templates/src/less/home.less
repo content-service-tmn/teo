@@ -341,7 +341,6 @@
     &_margin-top {
       margin-top:30px;
       @media(max-width: 1439px) {
-        margin-left: -90px;
         margin-top:22px;
       }
       @media(max-width: 959px) {
@@ -363,6 +362,13 @@
     }
     &_home {
       padding-top:30px;
+    }
+  }
+  &__button + &__button {
+    margin-left: 20px;
+
+    @media(max-width: 767px) {
+      margin-left: 0;
     }
   }
 }
