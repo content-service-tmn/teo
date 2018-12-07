@@ -274,7 +274,7 @@
                             <img src="<?= $config->urls->templates . "assets/svg/chelik1.svg" ?>" alt="" class="item__img item__img_main">
                             <h3 class="item__heading item__heading_left canSpeak">региональный оператор по обращению с тко в тюменской
                                 области</h3>
-                            <!--<a href="" class="item__link"></a>-->
+                            <a href="/clients/operator-activities/" class="item__link"></a>
                         </div>
                     </div>
                 </div>
@@ -288,7 +288,7 @@
                                              class="item__img item__img_for-text">
                                         <h3 class="item__heading canSpeak">интересные факты</h3>
                                         <p class="item__text"><?=$page->home_facts?></p>
-                                        <!--<a href="" class="item__link"></a>-->
+                                        <a href="/press-center" class="item__link"></a>
                                     </div>
                                 </div>
                             </div>
@@ -308,7 +308,7 @@
                                         <img src="<?= $config->urls->templates . "assets/svg/Recycle001.svg" ?>" alt=""
                                              class="item__img item__img_big">
                                         <h3 class="item__heading item__heading_small canSpeak">Реализация вторичного сырья</h3>
-                                        <a href="/important/procurements/" class="item__link"></a>
+                                        <a href="/clients/secondary-materials/" class="item__link"></a>
                                     </div>
                                 </div>
                             </div>
@@ -322,7 +322,7 @@
                                  class="item__img item__img_for-text">
                             <h3 class="item__heading item__heading_small canSpeak">Транспортирование отходов</h3>
                             <!--            <p class="item__text">Здесь вы можете ознакомиться с важной информацией о нашей организации.</p>-->
-                            <a href="/about/vacancies/" class="item__link"></a>
+                            <a href="/clients/wasted-transport/" class="item__link"></a>
                         </div>
                     </div>
                 </div>
@@ -332,7 +332,7 @@
                             <img src="<?= $config->urls->templates . "assets/svg/konteyner1.svg" ?>" alt=""
                                  class="item__img item__img_for-text">
                             <h3 class="item__heading item__heading_small canSpeak">Захоронение отходов</h3>
-                            <!--<a href="" class="item__link"></a>-->
+                                <a href="/clients/activities-tko/" class="item__link"></a>
                         </div>
                     </div>
                 </div>

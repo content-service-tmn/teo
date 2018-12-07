@@ -109,43 +109,47 @@
         <a href="" class="sidebar__logo">
           <img src="<?= $config->urls->templates . 'assets/img/logo.png' ?>" alt="" class="sidebar__logo-img">
         </a>
+        <div style="text-align: center">
+          <a style="color: #908f8e;" href="tel:<?= phoneLink($pages->get("template=layout_contacts")->site_phone) ?>" class="menu__phone canSpeak"><?=$pages->get("template=layout_contacts")->site_phone ?></a>
+        <a href="/callback-full" class="sidebar__button canSpeak">обратная связь</a>
+        </div>
         <ul class="sidebar__items">
           <li class="sidebar__item canSpeak"><a href="/" data-uk-smoothscroll>Главная</a></li>
         </ul>
         <ul class="sidebar__items">
-          <li class="sidebar__item canSpeak"><a href="/about" data-uk-smoothscroll>О нас</a></li>
+          <li class="sidebar__item canSpeak"><a href="/about" data-uk-smoothscroll>О предприятии</a></li>
+          <li class="sidebar__item canSpeak"><a href="/about/us/" data-uk-smoothscroll>Общие сведения</a></li>
           <li class="sidebar__item canSpeak"><a href="/about/management/" data-uk-smoothscroll>Руководство</a></li>
-          <li class="sidebar__item canSpeak"><a href="/about/garbage-disposal-plants/" data-uk-smoothscroll>Мусоросортировочные
-              заводы</a></li>
-          <li class="sidebar__item canSpeak"><a href="/about/tko-ground/" data-uk-smoothscroll>Полигоны ТКО</a></li>
-          <li class="sidebar__item canSpeak"><a href="/about/refuse-handling-stations/" data-uk-smoothscroll>Мусороперегрузочные
-              станции</a></li>
-          <li class="sidebar__item canSpeak"><a href="/about/vacancies/" data-uk-smoothscroll>Вакансии</a></li>
+          <li class="sidebar__item canSpeak"><a href="/about/" data-uk-smoothscroll>Документы</a></li>
+          <li class="sidebar__item canSpeak"><a href="/contacts/" data-uk-smoothscroll>Контакты</a></li>
         </ul>
         <ul class="sidebar__items">
           <li class="sidebar__item canSpeak"><a href="/clients" data-uk-smoothscroll>Клиентам</a></li>
-          <li class="sidebar__item canSpeak"><a href="/clients/operator-activities/" data-uk-smoothscroll>Деятельность
-              регионального оператора</a></li>
-          <li class="sidebar__item canSpeak"><a href="/clients/activities-tko/" data-uk-smoothscroll>Деятельность по захоронению
-              ТКО</a></li>
-          <li class="sidebar__item canSpeak"><a href="/clients/waste-sorting-activity/" data-uk-smoothscroll>Деятельность
-              мусоросортировочного завода</a></li>
+          <li class="sidebar__item canSpeak"><a href="/clients/operator-activities/" data-uk-smoothscroll>Деятельность регионального оператора по обращению с ТКО</a></li>
+          <li class="sidebar__item canSpeak"><a href="/clients/secondary-materials/" data-uk-smoothscroll>Реализация вторичного сырья</a></li>
+          <li class="sidebar__item canSpeak"><a href="/clients/wasted-transport/" data-uk-smoothscroll>Транспортирование отходов</a></li>
+          <li class="sidebar__item canSpeak"><a href="/clients/activities-tko/" data-uk-smoothscroll>Деятельность по захоронению ТКО</a></li>
+          <li class="sidebar__item canSpeak"><a href="/clients/waste-sorting-activity/" data-uk-smoothscroll>Мусоросортировочные заводы и перегрузочные станции</a></li>
         </ul>
         <ul class="sidebar__items">
-          <li class="sidebar__item canSpeak"><a href="/important/" data-uk-smoothscroll>Важная информация</a></li>
-          <li class="sidebar__item canSpeak"><a href="/important/documents/" data-uk-smoothscroll>Документы</a></li>
-          <li class="sidebar__item canSpeak"><a href="/important/procurements/" data-uk-smoothscroll>Закупки</a></li>
-          <li class="sidebar__item canSpeak"><a href="/important/faq/" data-uk-smoothscroll>Вопрос-ответ</a></li>
+          <li class="sidebar__item canSpeak"><a href="<?=$pages->get(1)->procurement_url?>" data-uk-smoothscroll>Закупки</a></li>
         </ul>
         <ul class="sidebar__items">
           <li class="sidebar__item canSpeak"><a href="/press-center/" data-uk-smoothscroll>Пресс-центр</a></li>
-          <li class="sidebar__item canSpeak"><a href="/press-center/breaking-news/" data-uk-smoothscroll>Срочные сообщения</a>
-          </li>
+          <li class="sidebar__item canSpeak"><a href="/press-center/breaking-news/" data-uk-smoothscroll>Срочные сообщения</a></li>
+          <li class="sidebar__item canSpeak"><a href="/press-center/news/" data-uk-smoothscroll>Срочные сообщения</a></li>
           <li class="sidebar__item canSpeak"><a href="/press-center/news/" data-uk-smoothscroll>Новости</a></li>
           <li class="sidebar__item canSpeak"><a href="/press-center/#smi" data-uk-smoothscroll>СМИ о нас</a></li>
           <li class="sidebar__item canSpeak"><a href="/press-center/galleries/" data-uk-smoothscroll>Фотогалереи</a></li>
           <li class="sidebar__item canSpeak"><a href="/press-center/videos/" data-uk-smoothscroll>Видеоматериалы</a></li>
-          <li class="sidebar__item canSpeak"><a href="#callback" data-uk-offcanvas="{mode:'slide'}" data-uk-smoothscroll>Запросы на съемку и экскурсию</a></li>
+          <li class="sidebar__item canSpeak"><a href="/press-center/record-request" data-uk-smoothscroll>Запросы на съемку</a></li>
+          <li class="sidebar__item canSpeak"><a href="/press-center/excursion-request" data-uk-smoothscroll>Запросы на экскурсию</a></li>
+        </ul>
+        <ul class="sidebar__items">
+          <li class="sidebar__item canSpeak"><a href="/about/vacancies/" data-uk-smoothscroll>Вакансии</a></li>
+        </ul>
+        <ul class="sidebar__items">
+          <li class="sidebar__item canSpeak"><a href="/important/faq" data-uk-smoothscroll>FAQ</a></li>
         </ul>
         <ul class="sidebar__items">
           <li class="sidebar__item canSpeak"><a href="/contacts" data-uk-smoothscroll>Контакты</a></li>
@@ -285,38 +289,35 @@
       <div class="footer__grid">
         <div class="footer__cell">
           <ul class="footer__list">
-            <li class="footer__item"><a href="" class="footer__link">связаться с нами</a></li>
-            <li class="footer__item"><a href="" class="footer__link">реестр недобросовестных поставщиков</a>
+            <li class="footer__item"><a href="/about" class="footer__link">О предприятии</a></li>
+            <li class="footer__item"><a href="/about/management" class="footer__link">Руководство</a>
             </li>
-            <li class="footer__item"><a href="" class="footer__link">пресс центр</a></li>
-            <li class="footer__item"><a href="" class="footer__link">продукция и услуги</a></li>
-            <li class="footer__item"><a href="" class="footer__link">мусороперерабатывающий завод</a></li>
-            <li class="footer__item"><a href="" class="footer__link">годовой отчет</a></li>
-            <li class="footer__item"><a href="" class="footer__link">вакансии</a></li>
+            <li class="footer__item"><a href="/about" class="footer__link">Документы</a></li>
+            <li class="footer__item"><a href="/contacts" class="footer__link">Контакты</a></li>
           </ul>
         </div>
         <div class="footer__cell">
           <ul class="footer__list">
-            <li class="footer__item"><a href="" class="footer__link">связаться с нами</a></li>
-            <li class="footer__item"><a href="" class="footer__link">реестр недобросовестных поставщиков</a>
+            <li class="footer__item"><a href="/clients" class="footer__link">Клиентам</a></li>
+            <li class="footer__item"><a href="/clients/operator-activities/" class="footer__link">Деятельность регионального оператора по обращению с ТКО</a>
             </li>
-            <li class="footer__item"><a href="" class="footer__link">пресс центр</a></li>
-            <li class="footer__item"><a href="" class="footer__link">продукция и услуги</a></li>
-            <li class="footer__item"><a href="" class="footer__link">мусороперерабатывающий завод</a></li>
-            <li class="footer__item"><a href="" class="footer__link">годовой отчет</a></li>
-            <li class="footer__item"><a href="" class="footer__link">вакансии</a></li>
+            <li class="footer__item"><a href="/clients/secondary-materials/" class="footer__link">Реализация вторичного сырья</a></li>
+            <li class="footer__item"><a href="/clients/wasted-transport/" class="footer__link">Транспортирование отходов</a></li>
+            <li class="footer__item"><a href="/clients/activities-tko/" class="footer__link">Деятельность по захоронению ТКО</a></li>
+            <li class="footer__item"><a href="/clients/waste-sorting-activity/" class="footer__link">Мусоросортировочные заводы и перегрузочные станции</a></li>
           </ul>
         </div>
         <div class="footer__cell">
           <ul class="footer__list">
-            <li class="footer__item"><a href="" class="footer__link">связаться с нами</a></li>
-            <li class="footer__item"><a href="" class="footer__link">реестр недобросовестных поставщиков</a>
+            <li class="footer__item"><a href="/press-center/" class="footer__link">Пресс-центр</a></li>
+            <li class="footer__item"><a href="/press-center/breaking-news/" class="footer__link">Срочные сообщения</a>
             </li>
-            <li class="footer__item"><a href="" class="footer__link">пресс центр</a></li>
-            <li class="footer__item"><a href="" class="footer__link">продукция и услуги</a></li>
-            <li class="footer__item"><a href="" class="footer__link">мусороперерабатывающий завод</a></li>
-            <li class="footer__item"><a href="" class="footer__link">годовой отчет</a></li>
-            <li class="footer__item"><a href="" class="footer__link">вакансии</a></li>
+            <li class="footer__item"><a href="/press-center/news/" class="footer__link">Новости</a></li>
+            <li class="footer__item"><a href="/press-center/#smi" class="footer__link">СМИ о нас</a></li>
+            <li class="footer__item"><a href="/press-center/galleries/" class="footer__link">Фотогалерея</a></li>
+            <li class="footer__item"><a href="/press-center/videos/" class="footer__link">Видеоматериалы</a></li>
+            <li class="footer__item"><a href="/press-center/excursion-request" class="footer__link">Запрос на экскурсию</a></li>
+            <li class="footer__item"><a href="/press-center/record-request" class="footer__link">Запрос на съемку</a></li>
           </ul>
         </div>
         <div class="footer__cell">
