@@ -298,7 +298,7 @@
                                         <img src="<?= $config->urls->templates . "assets/svg/doc1.svg" ?>" alt=""
                                              class="item__img item__img_big">
                                         <h3 class="item__heading item__heading_small canSpeak">документы</h3>
-                                        <a href="/about/documents/" class="item__link"></a>
+                                        <a href="/important/docs/" class="item__link"></a>
                                     </div>
                                 </div>
                             </div>
