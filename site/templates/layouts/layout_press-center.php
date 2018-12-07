@@ -11,7 +11,7 @@
     </div>
 </section>
 
-<section class="messages">
+<section id="messages" class="messages">
   <div class="container container_center">
     <div class="messages__header">
       <h3 class="messages__heading messages__heading_small canSpeak">Срочные сообщения</h3>

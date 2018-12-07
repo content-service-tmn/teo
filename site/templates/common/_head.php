@@ -28,7 +28,9 @@
     "assets/js/components/slideset.js",
     "assets/js/components/form-select.js",
     "assets/js/components/datepicker.js",
-    "assets/js/template.js"
+    "assets/js/template.js",
+    "assets/js/jquery.inputmask.bundle.js",
+    "assets/js/autobindings.js",
   ));
   $css = AIOM::CSS(array(
 	'assets/css/template.css'
@@ -36,5 +38,6 @@
 ?>
 <link rel="stylesheet" type="text/css" href="<?= $css; ?>">
 <script src="<?= $js; ?>"></script>
+
 
 
