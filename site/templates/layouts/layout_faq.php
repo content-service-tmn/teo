@@ -27,7 +27,7 @@
       </div>
     </div>
     <h3 class="faq__subheading canSpeak">Не нашли ответ?</h3>
-    <p class="faq__text canSpeak">Вы можете <a href="#question" data-uk-offcanvas="{mode:'slide'}" class="faq__link">задать
+    <p class="faq__text canSpeak">Вы можете <a href="#question" data-uk-offcanvas="{mode:'slide'}" style="padding-left: 0" class="faq__link">задать
         вопрос,</a> мы обязательно Вам ответим.</p>
   </div>
 </section>
