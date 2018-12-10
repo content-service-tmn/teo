@@ -50,7 +50,7 @@
               <ul class="nav__items">
                   <li class="nav__item">
                       <div style="position: relative;" data-uk-dropdown>
-                          <a href="" class="nav__link canSpeak">о предприятии</a>
+                          <a href="/about" class="nav__link canSpeak">о предприятии</a>
                           <div class="uk-dropdown nav__subset">
                               <ul>
                                   <li class="nav__subset__item"><a href="/about/us/" class="nav__subset__link">Общие сведения</a></li>
@@ -61,7 +61,7 @@
                           </div>
                       </div></li>
                   <li class="nav__item"><div style="position: relative;" data-uk-dropdown>
-                          <a href="" class="nav__link canSpeak">клиентам</a>
+                          <a href="/clients" class="nav__link canSpeak">клиентам</a>
                           <div class="uk-dropdown nav__subset">
                               <ul>
                                   <li class="nav__subset__item"><a href="/clients/operator-activities/" class="nav__subset__link canSpeak">Деятельность регионального оператора по обращению с ТКО</a></li>
