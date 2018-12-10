@@ -1,6 +1,7 @@
 <?php
 namespace Processwire;
 if ($config->ajax) {
+    bd($_REQUEST);
     $smtpName = 'bot@contentservice.agency';
     $relative = ["dump" => "Кнопка \"Сообщить о свалке\"", "record" => "Кнопка \"Запрос на съемку\"", "excursion" => "Кнопка \"Заявка на экскурсию\""];
     $m = $mail->new();
@@ -8,8 +9,8 @@ if ($config->ajax) {
     $m->from($smtpName)
         ->fromName("TEO Site");
     $messageBody = "Новая заявка с сайта: \r\n";
-    if (isset($_REQUEST["data"])) {
-        $data = $_REQUEST["data"];
+    if (isset($_REQUEST)) {
+        $data = $_REQUEST;
         if (!$data["full"]) {
             $name = $sanitizer->text($data["name"]);
             $email = $sanitizer->text($data["email"]);
@@ -40,7 +41,7 @@ if ($config->ajax) {
         } else {
             $message = "";
             foreach ($data as $name => $content){
-                if ($name != "full" && $name != "id" && $name != "attach"){
+                if ($name != "full" && $name != "id" && $name != "it"){
                     $message .= $sanitizer->text($name) . ": " . $sanitizer->text($content) . "\r\n";
                 }
                 if ($name == "E-mail"){
@@ -56,7 +57,7 @@ if ($config->ajax) {
             $m->subject('Обращение с сайта №'. $data["id"]);
             $message .= "Номер заявки: " . $data["id"];
             $m->body($messageBody . $message);
-            $m->attachment($data["attach"]);
+            $m->attachment($data["img"]);
             if ($m->send() != 0) {
                 echo "success";
             } else {
