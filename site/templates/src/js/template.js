@@ -325,6 +325,10 @@ $(document).ready(function() {
 
         var current_form = $(this).parent().parent().parent();
         var hasErr = false;
+        if (!current_form.find(".rules_checkbox").is(':checked')){
+            hasErr = true;
+            alert("Вы должны согласиться с политикой обработки данных!");
+        }
         current_form.find(".to_validate").each(function (num, el) {
             if (!$(el).inputmask("isComplete") && ($(el).data("inputmask-regex") != ".*")) {
                 hasErr = true;
