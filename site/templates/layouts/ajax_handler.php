@@ -41,7 +41,7 @@ if ($config->ajax) {
         } else {
             $message = "";
             foreach ($data as $name => $content){
-                if ($name != "full" && $name != "id" && $name != "it" && !strpos($name, "wire") && $name[0] != "_"){
+                if ($name != "full" && $name != "id" && $name != "it" && strpos($name, "wire") == false && $name[0] != "_"){
                     $message .= $sanitizer->text($name) . ": " . $sanitizer->text($content) . "\r\n";
                 }
                 if ($name == "E-mail"){
