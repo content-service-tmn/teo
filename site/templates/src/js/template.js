@@ -345,7 +345,11 @@ $(document).ready(function() {
                 }
 
             });
-            results.append('img', current_form.find("#dopfile").prop('files')[0]);
+            try {
+                results.append('file', current_form.find("#dopfile").prop('files')[0]);
+            } catch (ex){
+
+            }
             $.ajax({
                 url: "/ajax-handler/",
                 type: 'POST',
@@ -360,7 +364,7 @@ $(document).ready(function() {
                         pos: 'bottom-center'
                     });
                     if (result == "success") {
-                        // $(".ecotek_inputtext").val("");
+                        $(".ecotek_inputtext").val("");
                     }
                 },
                 error: function (result) {

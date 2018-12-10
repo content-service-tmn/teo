@@ -1,9 +1,7 @@
 <?php
 namespace Processwire;
-$page->setOutputFormatting(false); 
+$page->setOutputFormatting(false);
 if ($config->ajax) {
-    bd($_REQUEST);
-    bd($_FILES);
     $smtpName = 'bot@contentservice.agency';
     $relative = ["dump" => "Кнопка \"Сообщить о свалке\"", "record" => "Кнопка \"Запрос на съемку\"", "excursion" => "Кнопка \"Заявка на экскурсию\""];
     $m = $mail->new();
@@ -59,8 +57,9 @@ if ($config->ajax) {
             $m->subject('Обращение с сайта №'. $data["id"]);
             $message .= "Номер заявки: " . $data["id"];
             $m->body($messageBody . $message);
-		bd($data);
-            $m->attachment($_FILES["img"]["tmp_name"], $_FILES["img"]["name"]);
+            if (isset($_FILES["file"])) {
+                $m->attachment($_FILES["file"]["tmp_name"], $_FILES["file"]["name"]);
+            }
             if ($m->send() != 0) {
                 echo "success";
             } else {
