@@ -334,7 +334,7 @@ $(document).ready(function() {
         var results = new FormData;
         results.append("full", true);
         results.append("id", new Date().getTime());
-        if (hasErr) {
+        if (!hasErr) {
             current_form.find(".feedback_form_item").each(function (num, el) {
                 try {
                     var title = $(el).find(".feedback_form_caption")[0].childNodes[0].data;
