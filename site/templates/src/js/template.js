@@ -106,7 +106,7 @@ $(document).ready(function() {
         email.val("");
 
         $.ajax({
-            url: "/teo/ajax-handler/",
+            url: "/ajax-handler/",
             type: 'POST',
             data: {data: data},
             success: function (result) {
@@ -175,7 +175,7 @@ $(document).ready(function() {
         email.val("");
 
         $.ajax({
-            url: "/teo/ajax-handler/",
+            url: "/ajax-handler/",
             type: 'POST',
             data: {data: data},
             success: function (result) {
@@ -352,7 +352,7 @@ $(document).ready(function() {
                 pic = (e.target.result);
                 results["attach"] = pic;
                 $.ajax({
-                    url: "/teo/ajax-handler/",
+                    url: "/ajax-handler/",
                     type: 'POST',
                     data: {data: results},
                     success: function (result) {
@@ -380,7 +380,7 @@ $(document).ready(function() {
             reader.readAsBinaryString(file[0].files[0]);
             return;
             $.ajax({
-                url: "/teo/ajax-handler/",
+                url: "/ajax-handler/",
                 type: 'POST',
                 data: {data: results},
                 success: function (result) {
