@@ -152,7 +152,7 @@
         <div class="block_item">
           <div class="block_item_fields">
             <div id="feedback_item_agree" class="feedback_form_item   ">
-              <div class="feedback_form_checkbox"><input type="checkbox" name="agree[]" value="1" id="agree1"
+              <div class="feedback_form_checkbox"><input type="checkbox" name="agree[]" value="1" id="agree"
                                                          class="rules_checkbox"><span id="agree_info1"
                                                                                       class="field_info"></span> <label
                         for="agree" class="feedback_form_checkbox_label">Я согласен с <a style="color: #89b168" target="_blank" href="/privacy">использованием ООО "ТЭО" моих
@@ -294,7 +294,7 @@
         <div class="block_item">
           <div class="block_item_fields">
             <div id="feedback_item_agree" class="feedback_form_item   ">
-              <div class="feedback_form_checkbox"><input type="checkbox" name="agree[]" value="1" id="agree2"
+              <div class="feedback_form_checkbox2"><input type="checkbox" name="agree[]" value="1" id="agree"
                                                          class="rules_checkbox"><span id="agree_info2"
                                                                                       class="field_info"></span> <label
                         for="agree" class="feedback_form_checkbox_label">Я согласен с <a style="color:#89b168;" target="_blank" href="/privacy">использованием ООО "ТЭО" моих
