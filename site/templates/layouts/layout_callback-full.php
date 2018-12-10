@@ -56,7 +56,7 @@
                           <?php if ($group->procurement_isArchived): ?>
                             <span class="notnull_icon">*</span>
                           <?php endif; ?></div>
-                      <div class="feedback_form_field"><input data-inputmask-regex="<?=$group->text_page_title?>" type="text" name="title" id="title" value=""
+                      <div class="feedback_form_field"><input data-inputmask-regex="<?=($group->text_page_title != "")?$group->text_page_title:($group->procurement_isArchived?".+":".*")?>" type="text" name="title"  value=""
                                                               class="notnull ecotek_inputtext to_validate"><span id="title_info"
                                                                                                      class="field_info"></span>
                       </div>
@@ -69,7 +69,7 @@
                           <?php if ($group->procurement_isArchived): ?>
                             <span class="notnull_icon">*</span>
                           <?php endif; ?></div>
-                      <div class="feedback_form_field"><textarea data-inputmask-regex="<?=$group->text_page_title?>"
+                      <div class="feedback_form_field"><textarea data-inputmask-regex="<?=($group->text_page_title != "")?$group->text_page_title:($group->procurement_isArchived?".+":".*")?>"
                                 name="comment" id="comment"
                                 class="notnull placeholder ecotek_inputtext to_validate"></textarea><span
                                 id="comment_info" class="field_info"></span></div>
@@ -137,7 +137,7 @@
                           <?php if ($group->procurement_isArchived): ?>
                             <span class="notnull_icon">*</span>
                           <?php endif; ?></div>
-                      <div class="feedback_form_field"><input data-inputmask-regex="<?=$group->text_page_title?>" type="text" name="deal_kogda" id="deal_kogda" value=""
+                      <div class="feedback_form_field"><input data-inputmask-regex="<?=($group->text_page_title != "")?$group->text_page_title:($group->procurement_isArchived?".+":".*")?>" type="text" name="deal_kogda" id="deal_kogda" value=""
                                                               class="datepicker datepicker_max ecotek_inputtext to_validate"
                                                               data-uk-datepicker="{format:'DD.MM.YYYY'}"><span
                                 id="deal_kogda_info" class="field_info"></span></div></div>
@@ -187,7 +187,7 @@
                       <?php if ($group->procurement_isArchived): ?>
                         <span class="notnull_icon">*</span>
                       <?php endif; ?></div>
-                  <div class="feedback_form_field"><input data-inputmask-regex="<?=$group->text_page_title?>" type="text" name="title" id="title" value=""
+                  <div class="feedback_form_field"><input data-inputmask-regex="<?=($group->text_page_title != "")?$group->text_page_title:($group->procurement_isArchived?".+":".*")?>" type="text" name="title"  value=""
                                                           class="notnull ecotek_inputtext to_validate"><span id="title_info"
                                                                                                  class="field_info"></span>
                   </div>
@@ -200,7 +200,7 @@
                       <?php if ($group->procurement_isArchived): ?>
                         <span class="notnull_icon">*</span>
                       <?php endif; ?></div>
-                  <div class="feedback_form_field"><textarea data-inputmask-regex="<?=$group->text_page_title?>"
+                  <div class="feedback_form_field"><textarea data-inputmask-regex="<?=($group->text_page_title != "")?$group->text_page_title:($group->procurement_isArchived?".+":".*")?>"
                             name="comment" id="comment"
                             class="notnull placeholder ecotek_inputtext to_validate"></textarea><span
                             id="comment_info" class="field_info"></span></div>
@@ -268,7 +268,7 @@
                   <?php if ($group->procurement_isArchived): ?>
                     <span class="notnull_icon">*</span>
                   <?php endif; ?></div>
-              <div class="feedback_form_field"><input data-inputmask-regex="<?=$group->text_page_title?>" type="text" name="deal_kogda" id="deal_kogda" value=""
+              <div class="feedback_form_field"><input data-inputmask-regex="<?=($group->text_page_title != "")?$group->text_page_title:($group->procurement_isArchived?".+":".*")?>" type="text" name="deal_kogda" id="deal_kogda" value=""
                                                       class="datepicker datepicker_max ecotek_inputtext to_validate"
                                                       data-uk-datepicker="{format:'DD.MM.YYYY'}"><span
                         id="deal_kogda_info" class="field_info"></span></div></div>

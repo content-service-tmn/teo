@@ -310,9 +310,101 @@ $(document).ready(function() {
             element[0].fireEvent("onmousedown");
         }
 
-    })
+    });
 
     $(".to_validate").inputmask();
+    $(".to_validate").on('change keyup', function (e) {
+        $(this).parent().removeClass("form__element error");
+    });
+
+
+
+
+    $(".ecotek_button3").click(function (e) {
+        e.preventDefault();
+
+        var current_form = $(this).parent().parent().parent();
+        var hasErr = false;
+        current_form.find(".to_validate").each(function (num, el) {
+            if (!$(el).inputmask("isComplete") && ($(el).data("inputmask-regex") != ".*")) {
+                hasErr = true;
+                $(el).parent().addClass("form__element error");
+            }
+        });
+        var results = {};
+        results["full"] = true;
+        results["id"] = new Date().getTime();
+        if (hasErr) {
+            current_form.find(".feedback_form_item").each(function (num, el) {
+                try {
+                    var title = $(el).find(".feedback_form_caption")[0].childNodes[0].data;
+                    var content_node = $(el).find(".ecotek_inputtext")[0];
+                    results[title.trim()] = $(content_node).val();
+                } catch (ex) {
+
+                }
+
+            });
+            var pic;
+            var reader = new FileReader();
+            reader.onload = function(e)
+            {
+                pic = (e.target.result);
+                results["attach"] = pic;
+                $.ajax({
+                    url: "/teo/ajax-handler/",
+                    type: 'POST',
+                    data: {data: results},
+                    success: function (result) {
+                        UIkit.notify({
+                            message: (result == "success") ? 'Ваше сообщение успешно отправлено, номер обращения: ' + results["id"] + "\nНомер обращения так же продублирован на вашу почту"  : 'Ошибка отправки сообщения',
+                            status: result,
+                            timeout: 6000,
+                            pos: 'bottom-center'
+                        });
+                        if (result == "success") {
+                            // $(".ecotek_inputtext").val("");
+                        }
+                    },
+                    error: function (result) {
+                        UIkit.notify({
+                            message: 'Ошибка отправки сообщения',
+                            status: 'warning',
+                            timeout: 3000,
+                            pos: 'bottom-center'
+                        });
+                    }
+                });
+            };
+            var file = current_form.find("#dopfile");
+            reader.readAsBinaryString(file[0].files[0]);
+            return;
+            $.ajax({
+                url: "/teo/ajax-handler/",
+                type: 'POST',
+                data: {data: results},
+                success: function (result) {
+                    UIkit.notify({
+                        message: (result == "success") ? 'Ваше сообщение успешно отправлено, номер обращения: ' + results["id"] + "\nНомер обращения так же продублирован на вашу почту"  : 'Ошибка отправки сообщения',
+                        status: result,
+                        timeout: 6000,
+                        pos: 'bottom-center'
+                    });
+                    if (result == "success") {
+                        // $(".ecotek_inputtext").val("");
+                    }
+                },
+                error: function (result) {
+                    UIkit.notify({
+                        message: 'Ошибка отправки сообщения',
+                        status: 'warning',
+                        timeout: 3000,
+                        pos: 'bottom-center'
+                    });
+                }
+            });
+        }
+    })
 });
 
 
