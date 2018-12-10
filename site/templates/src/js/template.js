@@ -330,7 +330,7 @@ $(document).ready(function() {
             alert("Вы должны согласиться с политикой обработки данных!");
         }
         current_form.find(".to_validate").each(function (num, el) {
-            if (!$(el).inputmask("isComplete") && ($(el).data("inputmask-regex") != ".*")) {
+            if (!$(el).inputmask("isComplete") && ($(el).data("inputmask-regex") != ".*") && $(el).parent().parent().find(".notnull_icon").length > 0) {
                 hasErr = true;
                 $(el).parent().addClass("form__element error");
             }
