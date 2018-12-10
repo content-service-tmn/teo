@@ -33,7 +33,7 @@
     </div>
     <div class="feedback_container" id="feedback_ur" style="display: block;">
       <form method="post" enctype="multipart/form-data" class="objectform ajaxform modalform"
-            action="/ajax/feedback/ur.php" id="feedback_form_ur">
+             id="feedback_form_ur">
           <?php foreach ($page->inputfields_blocks_ur as $block): ?>
             <div class="block_item">
               <div class="block_item_title"><?= $block->text_page_title ?></div>
@@ -149,6 +149,18 @@
               </div>
             </div>
           <?php endforeach; ?>
+        <div class="block_item">
+          <div class="block_item_fields">
+            <div id="feedback_item_agree" class="feedback_form_item   ">
+              <div class="feedback_form_checkbox"><input type="checkbox" name="agree[]" value="1" id="agree"
+                                                         class="rules_checkbox"><span id="agree_info"
+                                                                                      class="field_info"></span> <label
+                        for="agree" class="feedback_form_checkbox_label">Я согласен с <a href="/privacy">использованием ООО "ТЭО" моих
+                    персональных данных</a> для обработки данного обращения<span class="notnull_icon">*</span></label></div>
+            </div>
+          </div>
+        </div>
+
         <div class="feedback_form_submit">
           <input type="hidden" name="posted" value=""><input type="hidden" name="form_compiled"
                                                              value="1543692122"><input type="text" name="tel" value=""
@@ -162,8 +174,7 @@
       </form>
     </div>
     <div class="feedback_container" style="display: none;" id="feedback_fis">
-      <form method="post" enctype="multipart/form-data" class="objectform ajaxform modalform"
-            action="/ajax/feedback/fis.php" id="feedback_form_fis">
+      <form method="post" enctype="multipart/form-data" class="objectform ajaxform modalform" id="feedback_form_fis">
           <?php foreach ($page->inputfields_blocks_phys as $block): ?>
         <div class="block_item">
           <div class="block_item_title"><?= $block->text_page_title ?></div>
@@ -286,8 +297,8 @@
               <div class="feedback_form_checkbox"><input type="checkbox" name="agree[]" value="1" id="agree"
                                                          class="rules_checkbox"><span id="agree_info"
                                                                                       class="field_info"></span> <label
-                        for="agree" class="feedback_form_checkbox_label">Я согласен с использованием ООО "ТЭО" моих
-                  персональных данных для обработки данного обращения<span class="notnull_icon">*</span></label></div>
+                        for="agree" class="feedback_form_checkbox_label">Я согласен с <a href="/privacy">использованием ООО "ТЭО" моих
+                    персональных данных</a> для обработки данного обращения<span class="notnull_icon">*</span></label></div>
             </div>
           </div>
         </div>
