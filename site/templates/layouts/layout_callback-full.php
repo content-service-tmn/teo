@@ -16,9 +16,9 @@
       <p>Если у Вас есть вопросы, заполните форму ниже и наши специалисты ответят на них в ближайшее время.</p>
     </div>
 
-    <h2 class="welcome_h2 feedback_h2">Напишите нам</h2>
+    <h2 class="welcome_h2  canSpeak feedback_h2">Напишите нам</h2>
     <div class="feedback_switcher">
-      <div class="feedback_form_caption feedback_switcher_caption">Выберите категорию</div>
+      <div class="feedback_form_caption canSpeak feedback_switcher_caption">Выберите категорию</div>
       <div class="feedback_radio">
         <div class="feedback_radio_item">
           <input id="feedback_type_ur" name="type" type="radio" value="ur" class="feedback_radio_input"
@@ -52,7 +52,7 @@
                                  echo 'feedback_form_right';
                              }
                          } ?>">
-                      <div class="feedback_form_caption"><?= $group->procurement_title ?>
+                      <div class="feedback_form_caption canSpeak"><?= $group->procurement_title ?>
                           <?php if ($group->procurement_isArchived): ?>
                             <span class="notnull_icon">*</span>
                           <?php endif; ?></div>
@@ -65,7 +65,7 @@
 
                       <?php if ($group->inputfields_type->first()->data['title'] == 'TextArea'): $count = -1; ?>
                     <div id="feedback_item_comment" class="feedback_form_item   ">
-                      <div class="feedback_form_caption"><?= $group->procurement_title ?>
+                      <div class="feedback_form_caption canSpeak"><?= $group->procurement_title ?>
                           <?php if ($group->procurement_isArchived): ?>
                             <span class="notnull_icon">*</span>
                           <?php endif; ?></div>
@@ -87,7 +87,7 @@
                             echo 'feedback_form_right';
                         }
                     } ?>">
-                      <div class="feedback_form_caption"><?= $group->procurement_title ?>
+                      <div class="feedback_form_caption canSpeak"><?= $group->procurement_title ?>
                           <?php if ($group->procurement_isArchived): ?>
                             <span class="notnull_icon">*</span>
                           <?php endif; ?></div>
@@ -133,7 +133,7 @@
                             echo 'feedback_form_right';
                         }
                     } ?>">
-                      <div class="feedback_form_caption"><?= $group->procurement_title ?>
+                      <div class="feedback_form_caption canSpeak"><?= $group->procurement_title ?>
                           <?php if ($group->procurement_isArchived): ?>
                             <span class="notnull_icon">*</span>
                           <?php endif; ?></div>
@@ -155,7 +155,7 @@
               <div class="feedback_form_checkbox"><input type="checkbox" name="agree[]" value="1" id="agree"
                                                          class="rules_checkbox"><span id="agree_info1"
                                                                                       class="field_info"></span> <label
-                        for="agree" class="feedback_form_checkbox_label">Я согласен с <a style="color: #89b168" target="_blank" href="/privacy">использованием ООО "ТЭО" моих
+                        for="agree" class="feedback_form_checkbox_label canSpeak">Я согласен с <a style="color: #89b168" target="_blank" href="/privacy">использованием ООО "ТЭО" моих
                     персональных данных</a> для обработки данного обращения<span class="notnull_icon">*</span></label></div>
             </div>
           </div>
@@ -194,7 +194,7 @@
                              echo 'feedback_form_right';
                          }
                      } ?>">
-                  <div class="feedback_form_caption"><?= $group->procurement_title ?>
+                  <div class="feedback_form_caption canSpeak"><?= $group->procurement_title ?>
                       <?php if ($group->procurement_isArchived): ?>
                         <span class="notnull_icon">*</span>
                       <?php endif; ?></div>
@@ -207,7 +207,7 @@
 
               <?php if ($group->inputfields_type->first()->data['title'] == 'TextArea'): $count = -1; ?>
                 <div id="feedback_item_comment" class="feedback_form_item   ">
-                  <div class="feedback_form_caption"><?= $group->procurement_title ?>
+                  <div class="feedback_form_caption canSpeak"><?= $group->procurement_title ?>
                       <?php if ($group->procurement_isArchived): ?>
                         <span class="notnull_icon">*</span>
                       <?php endif; ?></div>
@@ -229,7 +229,7 @@
                         echo 'feedback_form_right';
                     }
                 } ?>">
-                  <div class="feedback_form_caption"><?= $group->procurement_title ?>
+                  <div class="feedback_form_caption canSpeak"><?= $group->procurement_title ?>
                       <?php if ($group->procurement_isArchived): ?>
                         <span class="notnull_icon">*</span>
                       <?php endif; ?></div>
@@ -275,7 +275,7 @@
                     echo 'feedback_form_right';
                 }
             } ?>">
-              <div class="feedback_form_caption"><?= $group->procurement_title ?>
+              <div class="feedback_form_caption canSpeak"><?= $group->procurement_title ?>
                   <?php if ($group->procurement_isArchived): ?>
                     <span class="notnull_icon">*</span>
                   <?php endif; ?></div>
@@ -297,7 +297,7 @@
               <div class="feedback_form_checkbox2"><input type="checkbox" name="agree[]" value="1" id="agree2"
                                                          class="rules_checkbox"><span id="agree_info2"
                                                                                       class="field_info"></span> <label
-                        for="agree2" class="feedback_form_checkbox_label2">Я согласен с <a style="color:#89b168;" target="_blank" href="/privacy">использованием ООО "ТЭО" моих
+                        for="agree2" class="feedback_form_checkbox_label2 canSpeak">Я согласен с <a style="color:#89b168;" target="_blank" href="/privacy">использованием ООО "ТЭО" моих
                     персональных данных</a> для обработки данного обращения<span class="notnull_icon">*</span></label></div>
             </div>
           </div>

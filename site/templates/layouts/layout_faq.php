@@ -13,18 +13,21 @@
 <section class="faq">
   <div class="container container_center">
     <div class="faq__grid uk-accordion" data-uk-accordion="{showfirst:false}">
+      <?php foreach($page->faq_block as $block): ?>
+          <div class="faq__cell__fulline"><h3><?=$block->text_page_title?></h3></div>
       <div class="faq__cell">
-          <?php foreach ($page->faq_item as $i => $quest): if ($i % 2 == 1): ?>
+          <?php foreach ($block->faq_item as $i => $quest): if ($i % 2 == 0): ?>
             <h3 class="uk-accordion-title canSpeak"><?= $quest->repeater_faq_quest ?></h3>
             <div class="uk-accordion-content canSpeak"><?= $quest->repeater_faq_answer ?></div>
           <?php endif; endforeach; ?>
       </div>
       <div class="faq__cell">
-          <?php foreach ($page->faq_item as $i => $quest): if ($i % 2 == 0): ?>
+          <?php foreach ($block->faq_item as $i => $quest): if ($i % 2 == 1): ?>
             <h3 class="uk-accordion-title canSpeak"><?= $quest->repeater_faq_quest ?></h3>
             <div class="uk-accordion-content canSpeak"><?= $quest->repeater_faq_answer ?></div>
           <?php endif; endforeach; ?>
       </div>
+      <?php endforeach; ?>
     </div>
     <h3 class="faq__subheading canSpeak">Не нашли ответ?</h3>
     <p class="faq__text canSpeak">Вы можете <a href="#question" data-uk-offcanvas="{mode:'slide'}" style="padding-left: 0" class="faq__link">задать
