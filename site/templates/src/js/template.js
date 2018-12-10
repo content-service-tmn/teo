@@ -331,58 +331,27 @@ $(document).ready(function() {
                 $(el).parent().addClass("form__element error");
             }
         });
-        var results = {};
-        results["full"] = true;
-        results["id"] = new Date().getTime();
+        var results = new FormData;
+        results.append("full", true);
+        results.append("id", new Date().getTime());
         if (hasErr) {
             current_form.find(".feedback_form_item").each(function (num, el) {
                 try {
                     var title = $(el).find(".feedback_form_caption")[0].childNodes[0].data;
                     var content_node = $(el).find(".ecotek_inputtext")[0];
-                    results[title.trim()] = $(content_node).val();
+                    results.append(title.trim(),$(content_node).val());
                 } catch (ex) {
 
                 }
 
             });
-            var pic;
-            var reader = new FileReader();
-            reader.onload = function(e)
-            {
-                pic = (e.target.result);
-                results["attach"] = pic;
-                $.ajax({
-                    url: "/ajax-handler/",
-                    type: 'POST',
-                    data: {data: results},
-                    success: function (result) {
-                        UIkit.notify({
-                            message: (result == "success") ? 'Ваше сообщение успешно отправлено, номер обращения: ' + results["id"] + "\nНомер обращения так же продублирован на вашу почту"  : 'Ошибка отправки сообщения',
-                            status: result,
-                            timeout: 6000,
-                            pos: 'bottom-center'
-                        });
-                        if (result == "success") {
-                            // $(".ecotek_inputtext").val("");
-                        }
-                    },
-                    error: function (result) {
-                        UIkit.notify({
-                            message: 'Ошибка отправки сообщения',
-                            status: 'warning',
-                            timeout: 3000,
-                            pos: 'bottom-center'
-                        });
-                    }
-                });
-            };
-            var file = current_form.find("#dopfile");
-            reader.readAsBinaryString(file[0].files[0]);
-            return;
+            results.append('img', current_form.find("#dopfile").prop('files')[0]);
             $.ajax({
                 url: "/ajax-handler/",
                 type: 'POST',
-                data: {data: results},
+                data: results,
+                processData: false,
+                contentType: false,
                 success: function (result) {
                     UIkit.notify({
                         message: (result == "success") ? 'Ваше сообщение успешно отправлено, номер обращения: ' + results["id"] + "\nНомер обращения так же продублирован на вашу почту"  : 'Ошибка отправки сообщения',
