@@ -358,7 +358,7 @@ $(document).ready(function() {
                 contentType: false,
                 success: function (result) {
                     UIkit.notify({
-                        message: (result == "success") ? 'Ваше сообщение успешно отправлено, номер обращения: ' + results["id"] + "\nНомер обращения так же продублирован на вашу почту"  : 'Ошибка отправки сообщения',
+                        message: (result == "success") ? 'Ваше сообщение успешно отправлено, номер обращения: ' + results.get("id") + "\nНомер обращения так же продублирован на вашу почту"  : 'Ошибка отправки сообщения',
                         status: result,
                         timeout: 6000,
                         pos: 'bottom-center'
