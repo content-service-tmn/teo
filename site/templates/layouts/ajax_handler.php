@@ -10,8 +10,8 @@ if ($config->ajax) {
         ->fromName("TEO Site");
     $messageBody = "Новая заявка с сайта: \r\n";
     if (isset($_REQUEST)) {
-        $data = $_REQUEST;
-        if (!$data["full"]) {
+        if (isset($_REQUEST["data"])) {
+            $data = $_REQUEST["data"];
             $name = $sanitizer->text($data["name"]);
             $email = $sanitizer->text($data["email"]);
 
@@ -39,6 +39,7 @@ if ($config->ajax) {
                 echo "warning";
             }
         } else {
+            $data = $_REQUEST;
             $message = "";
             foreach ($data as $name => $content){
 		//bd(strpos($name, "wire"), $name);
