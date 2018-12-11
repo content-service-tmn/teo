@@ -443,13 +443,36 @@ div.clearer {
 }
 
 .custom_form_span {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     overflow: hidden;
-    background-image: url(../img/select.png);
     position: absolute;
-    background-repeat: repeat-x;
     padding-left: 20px;
     color: #1e2825;
     background-color: #ecf1f1;
+    height: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 9px;
+}
+
+.feedback_form_item select {
+    width: 100%;
+    opacity: 0;
+}
+
+.custom_form_span_thema {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px
+}
+
+.custom_form {
+    z-index: 99;
+    position: relative;
+    margin-left: 0;
 }
 
 #feedback_item_title {
