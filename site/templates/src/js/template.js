@@ -298,18 +298,11 @@ $(document).ready(function() {
             group.height('initial')
     }
 
-    // открытие дефолтного селекта при нажатии на стрелочку
-    $('.feedback_form_field-arrow').click(function () {
-        var element = $(this).closest('.feedback_form_field').find('select');
+    $('.ecotek_inputtext.custom_form').change(function () {
+        var select = $(this);
+        var title = select.val();
 
-        if (document.createEvent) {
-            var e = document.createEvent("MouseEvents");
-            e.initMouseEvent("mousedown", true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
-            element[0].dispatchEvent(e);
-        } else if (element.fireEvent) {
-            element[0].fireEvent("onmousedown");
-        }
-
+        select.parent().find('.custom_form_span_thema').text(title);
     });
 
     $(".to_validate").inputmask();
