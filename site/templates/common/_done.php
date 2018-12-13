@@ -23,6 +23,11 @@
                       <img src="<?= $config->urls->templates . 'assets/img/logo_white.png' ?>" class="logo__img" alt="">
                   </a>
               </div>
+            <div class="menu__cell">
+              <p class="city_link"><?=$user->language->title?></p>
+
+            </div>
+
           </div>
         <div class="menu__grid-right">
             <div class="menu__phone-container">
@@ -357,6 +362,32 @@
   <section class="copyright">
     <p class="copyright__text">Разработка сайта <a href="http://contentservice.agency/" target="_blank" class="copyright__link">Content Service</a></p>
   </section>
+
+
+  <!-- This is the modal -->
+  <div id="lang-modal" class="uk-modal">
+    <div class="uk-modal-dialog">
+      <a class="uk-modal-close uk-close"></a>
+      <?php
+      foreach($languages as $language) {
+
+          // if user is already viewing the page in this language, skip it
+          if($language->id == $savedLanguage->id) continue;
+
+          // if this page isn't viewable (active) for the language, skip it
+          if(!$page->viewable($language)) continue;
+
+          // set the user's language, so that the $page->url and any other
+          // fields we access from it will be reflective of the $language
+          $user->language = $language;
+
+          // output a link to this page in the other language
+          echo "<li><a class='lang-var' href='$page->url'>$language->title</a></li>";
+      }
+      ?>
+    </div>
+  </div>
+
   </body>
 
   </html>

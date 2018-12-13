@@ -1,4 +1,25 @@
 $(document).ready(function() {
+    //---------------------- Language select -----------------------//
+
+    var modal = UIkit.modal("#lang-modal");
+    var lang = sessionStorage.getItem('language');
+    if (lang == null || lang == "null") {
+        modal.show();
+    } else {
+        if (!window.location.href.match(lang)){
+            window.location.href = lang;
+        }
+    }
+    $(".lang-var").click(function () {
+       sessionStorage.setItem("language", $(this).attr("href"));
+    });
+
+    $(".city_link").click(function () {
+        modal.show();
+    });
+
+
+    //---------------------- End language select -------------------//
   $('.js-input').on('focus focusout', function(e) {
         e.preventDefault();
         $(e.target).parent().toggleClass('is_focused');
@@ -374,7 +395,11 @@ $(document).ready(function() {
                 }
             });
         }
-    })
+    });
+
+
+
+
 });
 
 
