@@ -20,7 +20,7 @@
           <div class="menu__grid-left">
               <div class="menu__cell">
                   <a href="/" class="menu__logo logo">
-                      <img src="<?= $config->urls->templates . 'assets/img/logo_white.png' ?>" class="logo__img" alt="">
+                      <img src="<?= $config->urls->templates . 'assets/img/rifey-header.png' ?>" class="logo__img" alt="">
                   </a>
               </div>
             <div class="menu__cell">
@@ -289,7 +289,7 @@
   <section class="footer">
     <div class="container container_center">
       <a href="" class="footer__logo logo">
-        <img src="http://ecoteo.ru/wp-content/uploads/2015/02/logoteo-350x90.png" class="logo__img" alt="">
+        <img src="<?= $config->urls->templates . 'assets/img/rifey-main.png' ?>" class="logo__img" alt="">
       </a>
       <div class="footer__grid">
         <div class="footer__cell">
