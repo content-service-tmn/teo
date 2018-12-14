@@ -6,12 +6,12 @@ $(document).ready(function() {
     if (lang == null || lang == "null") {
         modal.show();
     } else {
-        if (!window.location.href.match(lang)){
-            window.location.href = lang;
-        }
+        // if (!window.location.href.match(lang)){
+        //     window.location.href = lang;
+        // }
     }
     $(".lang-var").click(function () {
-       sessionStorage.setItem("language", $(this).attr("href"));
+       sessionStorage.setItem("language", $(this).data("lang"));
     });
 
     $(".city_link").click(function () {

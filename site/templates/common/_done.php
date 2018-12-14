@@ -1,5 +1,5 @@
 <?php namespace Processwire; ?>
-
+<?php $rootPage = $pages->get("id=1")->url;?>
 <?php if ($config->ajax): ?>
     <?= $templateRender; ?>
 <?php else: ?>
@@ -19,7 +19,7 @@
           <div class="menu__grid">
           <div class="menu__grid-left">
               <div class="menu__cell">
-                  <a href="/" class="menu__logo logo">
+                  <a href="<?=$rootPage?>" class="menu__logo logo">
                       <img src="<?= $config->urls->templates . 'assets/img/rifey-header.png' ?>" class="logo__img" alt="">
                   </a>
               </div>
@@ -37,7 +37,7 @@
                         <a href="tel:<?= phoneLink($pages->get("template=layout_contacts")->site_phone) ?>"
                            class="menu__phone canSpeak"><?= $pages->get("template=layout_contacts")->site_phone ?>
                         </a>
-                        <a href="/callback-full/"  class="menu__button fixed canSpeak">Обратная связь</a>
+                        <a href="<?=$rootPage?>callback-full/"  class="menu__button fixed canSpeak">Обратная связь</a>
                     </div>
                 </div>
                 <div class="menu__phone-container__right invalid" title="Режим для людей с ограниченными возможностями.
@@ -55,47 +55,47 @@
               <ul class="nav__items">
                   <li class="nav__item">
                       <div style="position: relative;" data-uk-dropdown>
-                          <a href="/about" class="nav__link canSpeak">о предприятии</a>
+                          <a href="<?=$rootPage?>about" class="nav__link canSpeak">о предприятии</a>
                           <div class="uk-dropdown nav__subset">
                               <ul>
-                                  <li class="nav__subset__item"><a href="/about/us/" class="nav__subset__link">Общие сведения</a></li>
-                                  <li class="nav__subset__item"><a href="/about/management/" class="nav__subset__link">Руководство</a></li>
-                                  <li class="nav__subset__item"><a href="/important/docs/" class="nav__subset__link">Документы</a></li>
-                                  <li class="nav__subset__item"><a href="/contacts" class="nav__subset__link">Контакты</a></li>
+                                  <li class="nav__subset__item"><a href="<?=$rootPage?>about/us/" class="nav__subset__link">Общие сведения</a></li>
+                                  <li class="nav__subset__item"><a href="<?=$rootPage?>about/management/" class="nav__subset__link">Руководство</a></li>
+                                  <li class="nav__subset__item"><a href="<?=$rootPage?>important/docs/" class="nav__subset__link">Документы</a></li>
+                                  <li class="nav__subset__item"><a href="<?=$rootPage?>contacts" class="nav__subset__link">Контакты</a></li>
                               </ul>
                           </div>
                       </div></li>
                   <li class="nav__item"><div style="position: relative;" data-uk-dropdown>
-                          <a href="/clients" class="nav__link canSpeak">клиентам</a>
+                          <a href="<?=$rootPage?>clients" class="nav__link canSpeak">клиентам</a>
                           <div class="uk-dropdown nav__subset">
                               <ul>
-                                  <li class="nav__subset__item"><a href="/clients/operator-activities/" class="nav__subset__link canSpeak">Деятельность регионального оператора по обращению с ТКО</a></li>
-                                  <li class="nav__subset__item"><a href="/clients/secondary-materials/" class="nav__subset__link canSpeak">Реализация вторичного сырья</a></li>
-                                  <li class="nav__subset__item"><a href="/clients/wasted-transport/" class="nav__subset__link canSpeak">Транспортирование отходов</a></li>
-                                  <li class="nav__subset__item"><a href="/clients/activities-tko/" class="nav__subset__link canSpeak">Деятельность по захоронению ТКО</a></li>
-                                  <li class="nav__subset__item"><a href="/clients/waste-sorting-activity/" class="nav__subset__link canSpeak">Мусоросортировочные заводы и перегрузочные станции</a></li>
+                                  <li class="nav__subset__item"><a href="<?=$rootPage?>clients/operator-activities/" class="nav__subset__link canSpeak">Деятельность регионального оператора по обращению с ТКО</a></li>
+                                  <li class="nav__subset__item"><a href="<?=$rootPage?>clients/secondary-materials/" class="nav__subset__link canSpeak">Реализация вторичного сырья</a></li>
+                                  <li class="nav__subset__item"><a href="<?=$rootPage?>clients/wasted-transport/" class="nav__subset__link canSpeak">Транспортирование отходов</a></li>
+                                  <li class="nav__subset__item"><a href="<?=$rootPage?>clients/activities-tko/" class="nav__subset__link canSpeak">Деятельность по захоронению ТКО</a></li>
+                                  <li class="nav__subset__item"><a href="<?=$rootPage?>clients/waste-sorting-activity/" class="nav__subset__link canSpeak">Мусоросортировочные заводы и перегрузочные станции</a></li>
                               </ul>
                           </div>
                       </div></li>
                 <li class="nav__item canSpeak"><a href="<?=$pages->get(1)->procurement_url?>" class="nav__link">закупки</a></li>
                 <li class="nav__item">
                   <div style="position: relative;" data-uk-dropdown>
-                    <a href="/press-center" class="nav__link canSpeak">пресс-центр</a>
+                    <a href="<?=$rootPage?>press-center" class="nav__link canSpeak">пресс-центр</a>
                     <div class="uk-dropdown nav__subset">
                       <ul>
-                        <li class="nav__subset__item"><a href="/press-center#messages" class="nav__subset__link">Срочные сообщения</a></li>
-                        <li class="nav__subset__item"><a href="/press-center/news/" class="nav__subset__link">Новости</a></li>
-                        <li class="nav__subset__item"><a href="/press-center#smi" class="nav__subset__link">СМИ о нас</a></li>
-                        <li class="nav__subset__item"><a href="/press-center/galleries" class="nav__subset__link">Фотогалерея</a></li>
-                        <li class="nav__subset__item"><a href="/press-center/videos" class="nav__subset__link">Видеоматериалы</a></li>
-                        <li class="nav__subset__item"><a href="/press-center/record-request" class="nav__subset__link">Запрос на съемку</a></li>
-                        <li class="nav__subset__item"><a href="/press-center/excursion-request" class="nav__subset__link">Заявка на экскурсию</a></li>
+                        <li class="nav__subset__item"><a href="<?=$rootPage?>press-center#messages" class="nav__subset__link">Срочные сообщения</a></li>
+                        <li class="nav__subset__item"><a href="<?=$rootPage?>press-center/news/" class="nav__subset__link">Новости</a></li>
+                        <li class="nav__subset__item"><a href="<?=$rootPage?>press-center#smi" class="nav__subset__link">СМИ о нас</a></li>
+                        <li class="nav__subset__item"><a href="<?=$rootPage?>press-center/galleries" class="nav__subset__link">Фотогалерея</a></li>
+                        <li class="nav__subset__item"><a href="<?=$rootPage?>press-center/videos" class="nav__subset__link">Видеоматериалы</a></li>
+                        <li class="nav__subset__item"><a href="<?=$rootPage?>press-center/record-request" class="nav__subset__link">Запрос на съемку</a></li>
+                        <li class="nav__subset__item"><a href="<?=$rootPage?>press-center/excursion-request" class="nav__subset__link">Заявка на экскурсию</a></li>
                       </ul>
                     </div>
                   </div></li>
-                <li class="nav__item canSpeak"><a href="/about/vacancies/" class="nav__link">вакансии</a></li>
-                <li class="nav__item canSpeak"><a href="/important/faq" class="nav__link">faq</a></li>
-                <li class="nav__item canSpeak"><a href="/contacts" class="nav__link">контакты</a></li>
+                <li class="nav__item canSpeak"><a href="<?=$rootPage?>about/vacancies/" class="nav__link">вакансии</a></li>
+                <li class="nav__item canSpeak"><a href="<?=$rootPage?>important/faq" class="nav__link">faq</a></li>
+                <li class="nav__item canSpeak"><a href="<?=$rootPage?>contacts" class="nav__link">контакты</a></li>
               </ul>
             </div>
           </div>
@@ -116,48 +116,48 @@
         </a>
         <div style="text-align: center">
           <a style="color: #908f8e;" href="tel:<?= phoneLink($pages->get("template=layout_contacts")->site_phone) ?>" class="menu__phone canSpeak"><?=$pages->get("template=layout_contacts")->site_phone ?></a>
-        <a href="/callback-full" class="sidebar__button canSpeak">обратная связь</a>
+        <a href="<?=$rootPage?>callback-full" class="sidebar__button canSpeak">обратная связь</a>
         </div>
         <ul class="sidebar__items">
-          <li class="sidebar__item canSpeak"><a href="/" data-uk-smoothscroll>Главная</a></li>
+          <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>" data-uk-smoothscroll>Главная</a></li>
         </ul>
         <ul class="sidebar__items">
-          <li class="sidebar__item canSpeak"><a href="/about" data-uk-smoothscroll>О предприятии</a></li>
-          <li class="sidebar__item canSpeak"><a href="/about/us/" data-uk-smoothscroll>Общие сведения</a></li>
-          <li class="sidebar__item canSpeak"><a href="/about/management/" data-uk-smoothscroll>Руководство</a></li>
-          <li class="sidebar__item canSpeak"><a href="/important/docs/" data-uk-smoothscroll>Документы</a></li>
-          <li class="sidebar__item canSpeak"><a href="/contacts/" data-uk-smoothscroll>Контакты</a></li>
+          <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>about" data-uk-smoothscroll>О предприятии</a></li>
+          <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>about/us/" data-uk-smoothscroll>Общие сведения</a></li>
+          <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>about/management/" data-uk-smoothscroll>Руководство</a></li>
+          <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>important/docs/" data-uk-smoothscroll>Документы</a></li>
+          <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>contacts/" data-uk-smoothscroll>Контакты</a></li>
         </ul>
         <ul class="sidebar__items">
-          <li class="sidebar__item canSpeak"><a href="/clients" data-uk-smoothscroll>Клиентам</a></li>
-          <li class="sidebar__item canSpeak"><a href="/clients/operator-activities/" data-uk-smoothscroll>Деятельность регионального оператора по обращению с ТКО</a></li>
-          <li class="sidebar__item canSpeak"><a href="/clients/secondary-materials/" data-uk-smoothscroll>Реализация вторичного сырья</a></li>
-          <li class="sidebar__item canSpeak"><a href="/clients/wasted-transport/" data-uk-smoothscroll>Транспортирование отходов</a></li>
-          <li class="sidebar__item canSpeak"><a href="/clients/activities-tko/" data-uk-smoothscroll>Деятельность по захоронению ТКО</a></li>
-          <li class="sidebar__item canSpeak"><a href="/clients/waste-sorting-activity/" data-uk-smoothscroll>Мусоросортировочные заводы и перегрузочные станции</a></li>
+          <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>clients" data-uk-smoothscroll>Клиентам</a></li>
+          <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>clients/operator-activities/" data-uk-smoothscroll>Деятельность регионального оператора по обращению с ТКО</a></li>
+          <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>clients/secondary-materials/" data-uk-smoothscroll>Реализация вторичного сырья</a></li>
+          <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>clients/wasted-transport/" data-uk-smoothscroll>Транспортирование отходов</a></li>
+          <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>clients/activities-tko/" data-uk-smoothscroll>Деятельность по захоронению ТКО</a></li>
+          <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>clients/waste-sorting-activity/" data-uk-smoothscroll>Мусоросортировочные заводы и перегрузочные станции</a></li>
         </ul>
         <ul class="sidebar__items">
           <li class="sidebar__item canSpeak"><a href="<?=$pages->get(1)->procurement_url?>" data-uk-smoothscroll>Закупки</a></li>
         </ul>
         <ul class="sidebar__items">
-          <li class="sidebar__item canSpeak"><a href="/press-center/" data-uk-smoothscroll>Пресс-центр</a></li>
-          <li class="sidebar__item canSpeak"><a href="/press-center/breaking-news/" data-uk-smoothscroll>Срочные сообщения</a></li>
-          <li class="sidebar__item canSpeak"><a href="/press-center/news/" data-uk-smoothscroll>Срочные сообщения</a></li>
-          <li class="sidebar__item canSpeak"><a href="/press-center/news/" data-uk-smoothscroll>Новости</a></li>
-          <li class="sidebar__item canSpeak"><a href="/press-center/#smi" data-uk-smoothscroll>СМИ о нас</a></li>
-          <li class="sidebar__item canSpeak"><a href="/press-center/galleries/" data-uk-smoothscroll>Фотогалереи</a></li>
-          <li class="sidebar__item canSpeak"><a href="/press-center/videos/" data-uk-smoothscroll>Видеоматериалы</a></li>
-          <li class="sidebar__item canSpeak"><a href="/press-center/record-request" data-uk-smoothscroll>Запросы на съемку</a></li>
-          <li class="sidebar__item canSpeak"><a href="/press-center/excursion-request" data-uk-smoothscroll>Запросы на экскурсию</a></li>
+          <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>press-center/" data-uk-smoothscroll>Пресс-центр</a></li>
+          <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>press-center/breaking-news/" data-uk-smoothscroll>Срочные сообщения</a></li>
+          <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>press-center/news/" data-uk-smoothscroll>Срочные сообщения</a></li>
+          <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>press-center/news/" data-uk-smoothscroll>Новости</a></li>
+          <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>press-center/#smi" data-uk-smoothscroll>СМИ о нас</a></li>
+          <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>press-center/galleries/" data-uk-smoothscroll>Фотогалереи</a></li>
+          <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>press-center/videos/" data-uk-smoothscroll>Видеоматериалы</a></li>
+          <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>press-center/record-request" data-uk-smoothscroll>Запросы на съемку</a></li>
+          <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>press-center/excursion-request" data-uk-smoothscroll>Запросы на экскурсию</a></li>
         </ul>
         <ul class="sidebar__items">
-          <li class="sidebar__item canSpeak"><a href="/about/vacancies/" data-uk-smoothscroll>Вакансии</a></li>
+          <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>about/vacancies/" data-uk-smoothscroll>Вакансии</a></li>
         </ul>
         <ul class="sidebar__items">
-          <li class="sidebar__item canSpeak"><a href="/important/faq" data-uk-smoothscroll>FAQ</a></li>
+          <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>important/faq" data-uk-smoothscroll>FAQ</a></li>
         </ul>
         <ul class="sidebar__items">
-          <li class="sidebar__item canSpeak"><a href="/contacts" data-uk-smoothscroll>Контакты</a></li>
+          <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>contacts" data-uk-smoothscroll>Контакты</a></li>
         </ul>
       </div>
     </div>
@@ -170,7 +170,7 @@
         <a href="" class="sidebar__logo">
           <img src="<?= $config->urls->templates . 'assets/img/logo.png' ?>" alt="" class="sidebar__logo-img">
         </a>
-        <form id="callback__form" class="form" action="/" method="post">
+        <form id="callback__form" class="form" action="<?=$rootPage?>" method="post">
           <div class="form__element form__element_name">
             <label class="label canSpeak" for="name">Имя</label>
             <input id="name" class="input js-input" type="text" name="name" value="">
@@ -187,7 +187,7 @@
             <label class="label canSpeak" for="mail">E-mail</label>
             <input id="mail" class="input js-input" type="text" name="mail" value="">
           </div>
-          <p class="form__text canSpeak">Нажимая кнопку Отправить, Вы соглашаетесь на <a href="/privacy">обработку персональных данных</a></p>
+          <p class="form__text canSpeak">Нажимая кнопку Отправить, Вы соглашаетесь на <a href="<?=$rootPage?>privacy">обработку персональных данных</a></p>
           <div class="form__element form__element_send">
             <div class="send">
               <span class="send__text canSpeak">отправить</span>
@@ -215,7 +215,7 @@
         <a href="" class="sidebar__logo">
           <img src="<?= $config->urls->templates . 'assets/img/logo.png' ?>" alt="" class="sidebar__logo-img">
         </a>
-        <form id="question__form" class="form" action="/" method="post">
+        <form id="question__form" class="form" action="<?=$rootPage?>" method="post">
           <div class="form__element form__element_name">
             <label class="label canSpeak" for="name9">Имя</label>
             <input id="name9" class="input js-input" type="text" name="name9" value="">
@@ -228,7 +228,7 @@
             <label class="label canSpeak" for="text9">Ваш вопрос</label>
             <textarea id="text9" class="input js-input" type="text" name="text9" value=""></textarea>
           </div>
-          <p class="form__text canSpeak">Нажимая кнопку Отправить, Вы соглашаетесь на<a href="/privacy"> обработку персональных данных</a></a></p>
+          <p class="form__text canSpeak">Нажимая кнопку Отправить, Вы соглашаетесь на<a href="<?=$rootPage?>privacy"> обработку персональных данных</a></a></p>
           <div class="form__element form__element_send">
             <div class="send">
               <span class="send__text canSpeak">отправить</span>
@@ -294,35 +294,35 @@
       <div class="footer__grid">
         <div class="footer__cell">
           <ul class="footer__list">
-            <li class="footer__item"><a href="/about" class="footer__link">О предприятии</a></li>
-            <li class="footer__item"><a href="/about/management" class="footer__link">Руководство</a>
+            <li class="footer__item"><a href="<?=$rootPage?>about" class="footer__link">О предприятии</a></li>
+            <li class="footer__item"><a href="<?=$rootPage?>about/management" class="footer__link">Руководство</a>
             </li>
-            <li class="footer__item"><a href="/important/docs/" class="footer__link">Документы</a></li>
-            <li class="footer__item"><a href="/contacts" class="footer__link">Контакты</a></li>
+            <li class="footer__item"><a href="<?=$rootPage?>important/docs/" class="footer__link">Документы</a></li>
+            <li class="footer__item"><a href="<?=$rootPage?>contacts" class="footer__link">Контакты</a></li>
           </ul>
         </div>
         <div class="footer__cell">
           <ul class="footer__list">
-            <li class="footer__item"><a href="/clients" class="footer__link">Клиентам</a></li>
-            <li class="footer__item"><a href="/clients/operator-activities/" class="footer__link">Деятельность регионального оператора по обращению с ТКО</a>
+            <li class="footer__item"><a href="<?=$rootPage?>clients" class="footer__link">Клиентам</a></li>
+            <li class="footer__item"><a href="<?=$rootPage?>clients/operator-activities/" class="footer__link">Деятельность регионального оператора по обращению с ТКО</a>
             </li>
-            <li class="footer__item"><a href="/clients/secondary-materials/" class="footer__link">Реализация вторичного сырья</a></li>
-            <li class="footer__item"><a href="/clients/wasted-transport/" class="footer__link">Транспортирование отходов</a></li>
-            <li class="footer__item"><a href="/clients/activities-tko/" class="footer__link">Деятельность по захоронению ТКО</a></li>
-            <li class="footer__item"><a href="/clients/waste-sorting-activity/" class="footer__link">Мусоросортировочные заводы и перегрузочные станции</a></li>
+            <li class="footer__item"><a href="<?=$rootPage?>clients/secondary-materials/" class="footer__link">Реализация вторичного сырья</a></li>
+            <li class="footer__item"><a href="<?=$rootPage?>clients/wasted-transport/" class="footer__link">Транспортирование отходов</a></li>
+            <li class="footer__item"><a href="<?=$rootPage?>clients/activities-tko/" class="footer__link">Деятельность по захоронению ТКО</a></li>
+            <li class="footer__item"><a href="<?=$rootPage?>clients/waste-sorting-activity/" class="footer__link">Мусоросортировочные заводы и перегрузочные станции</a></li>
           </ul>
         </div>
         <div class="footer__cell">
           <ul class="footer__list">
-            <li class="footer__item"><a href="/press-center/" class="footer__link">Пресс-центр</a></li>
-            <li class="footer__item"><a href="/press-center/breaking-news/" class="footer__link">Срочные сообщения</a>
+            <li class="footer__item"><a href="<?=$rootPage?>press-center/" class="footer__link">Пресс-центр</a></li>
+            <li class="footer__item"><a href="<?=$rootPage?>press-center/breaking-news/" class="footer__link">Срочные сообщения</a>
             </li>
-            <li class="footer__item"><a href="/press-center/news/" class="footer__link">Новости</a></li>
-            <li class="footer__item"><a href="/press-center/#smi" class="footer__link">СМИ о нас</a></li>
-            <li class="footer__item"><a href="/press-center/galleries/" class="footer__link">Фотогалерея</a></li>
-            <li class="footer__item"><a href="/press-center/videos/" class="footer__link">Видеоматериалы</a></li>
-            <li class="footer__item"><a href="/press-center/excursion-request" class="footer__link">Запрос на экскурсию</a></li>
-            <li class="footer__item"><a href="/press-center/record-request" class="footer__link">Запрос на съемку</a></li>
+            <li class="footer__item"><a href="<?=$rootPage?>press-center/news/" class="footer__link">Новости</a></li>
+            <li class="footer__item"><a href="<?=$rootPage?>press-center/#smi" class="footer__link">СМИ о нас</a></li>
+            <li class="footer__item"><a href="<?=$rootPage?>press-center/galleries/" class="footer__link">Фотогалерея</a></li>
+            <li class="footer__item"><a href="<?=$rootPage?>press-center/videos/" class="footer__link">Видеоматериалы</a></li>
+            <li class="footer__item"><a href="<?=$rootPage?>press-center/excursion-request" class="footer__link">Запрос на экскурсию</a></li>
+            <li class="footer__item"><a href="<?=$rootPage?>press-center/record-request" class="footer__link">Запрос на съемку</a></li>
           </ul>
         </div>
         <div class="footer__cell">
@@ -371,9 +371,6 @@
       <?php
       foreach($languages as $language) {
 
-          // if user is already viewing the page in this language, skip it
-          if($language->id == $savedLanguage->id) continue;
-
           // if this page isn't viewable (active) for the language, skip it
           if(!$page->viewable($language)) continue;
 
@@ -382,7 +379,7 @@
           $user->language = $language;
 
           // output a link to this page in the other language
-          echo "<li><a class='lang-var' href='$page->url'>$language->title</a></li>";
+          echo "<li><a class='lang-var' data-lang='".explode("/", $page->url)[1]."' href='$page->url'>$language->title</a></li>";
       }
       ?>
     </div>

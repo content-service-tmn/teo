@@ -133,3 +133,12 @@ function getRandomVideos($count, $pages)
     }
     return $urls;
 }
+
+function checkLanguage($languages, $needle ){
+    foreach ($languages as $language){
+        if ($needle->title == $language->title){
+            return true;
+        }
+    }
+    return false;
+}

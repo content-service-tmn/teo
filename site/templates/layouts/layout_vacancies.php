@@ -14,7 +14,7 @@
 <section class="vacancies">
   <div class="container container_center">
     <div class="vacancies__grid">
-        <?php foreach ($page->vacancies as $vacancy): if ($vacancy->vacancy_isactive): ?>
+        <?php foreach ($page->vacancies as $vacancy): if ($vacancy->vacancy_isactive && checkLanguage($vacancy->reference_on_language, $user->language)): ?>
           <div class="vacancies__cell">
             <div class="vacancies__item">
               <div class="vacancies__header">

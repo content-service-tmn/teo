@@ -13,8 +13,7 @@
 <section class="chiefs">
   <div class="container container_center">
     <div class="chiefs__grid">
-      <?php bd($page->chiefs); ?>
-      <?php foreach($page->chiefs as $chief): ?>
+      <?php foreach($page->chiefs as $chief): if(checkLanguage($chief->reference_on_language, $user->language)): ?>
       <div class="chiefs__cell">
         <p class="chiefs__name canSpeak"><?=$chief->chief_fio?></p>
         <p class="chiefs__post canSpeak"><?=$chief->chief_position?></p>
@@ -23,7 +22,7 @@
           <li><a href="tel:<?=phoneLink($chief->chief_phones)?>" class="chiefs__phone canSpeak"><?=$chief->chief_phones?></a></li>
         </ul>
       </div>
-      <?php endforeach; ?>
+      <?php endif; endforeach; ?>
     </div>
   </div>
 </section>

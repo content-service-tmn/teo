@@ -5,7 +5,7 @@
         <div class="menu__grid">
             <div class="menu__grid-left">
                 <div class="menu__cell">
-                    <a href="/" class="menu__logo logo">
+                    <a href="<?=$page->url?>" class="menu__logo logo">
                         <img src="<?= $config->urls->templates . 'assets/img/rifey-header.png' ?>" class="logo__img" alt="">
                     </a>
                 </div>
@@ -22,7 +22,7 @@
                             <a href="tel:<?= phoneLink($pages->get("template=layout_contacts")->site_phone) ?>"
                                class="menu__phone canSpeak"><?= $pages->get("template=layout_contacts")->site_phone ?>
                             </a>
-                            <a href="/callback-full/" class="menu__button fixed canSpeak">Обратная связь</a>
+                            <a href="callback-full" class="menu__button fixed canSpeak">Обратная связь</a>
                         </div>
                     </div>
                     <div class="menu__phone-container__right invalid" title="Режим для людей с ограниченными возможностями.
@@ -40,47 +40,47 @@
             <ul class="nav__items">
                 <li class="nav__item">
                     <div style="position: relative;" data-uk-dropdown>
-                        <a href="/about" class="nav__link canSpeak">о предприятии</a>
+                        <a href="about" class="nav__link canSpeak">о предприятии</a>
                         <div class="uk-dropdown nav__subset">
                             <ul>
-                                <li class="nav__subset__item"><a href="/about/us/" class="nav__subset__link">Общие сведения</a></li>
-                                <li class="nav__subset__item"><a href="/about/management/" class="nav__subset__link">Руководство</a></li>
-                                <li class="nav__subset__item"><a href="/important/docs/" class="nav__subset__link">Документы</a></li>
-                                <li class="nav__subset__item"><a href="/contacts" class="nav__subset__link">Контакты</a></li>
+                                <li class="nav__subset__item"><a href="about/us/" class="nav__subset__link">Общие сведения</a></li>
+                                <li class="nav__subset__item"><a href="about/management/" class="nav__subset__link">Руководство</a></li>
+                                <li class="nav__subset__item"><a href="important/docs/" class="nav__subset__link">Документы</a></li>
+                                <li class="nav__subset__item"><a href="contacts" class="nav__subset__link">Контакты</a></li>
                             </ul>
                         </div>
                     </div></li>
                 <li class="nav__item"><div style="position: relative;" data-uk-dropdown>
-                        <a href="/clients" class="nav__link canSpeak">клиентам</a>
+                        <a href="clients" class="nav__link canSpeak">клиентам</a>
                         <div class="uk-dropdown nav__subset">
                             <ul>
-                                <li class="nav__subset__item"><a href="/clients/operator-activities/" class="nav__subset__link canSpeak">Деятельность регионального оператора по обращению с ТКО</a></li>
-                                <li class="nav__subset__item"><a href="/clients/secondary-materials/" class="nav__subset__link canSpeak">Реализация вторичного сырья</a></li>
-                                <li class="nav__subset__item"><a href="/clients/wasted-transport/" class="nav__subset__link canSpeak">Транспортирование отходов</a></li>
-                                <li class="nav__subset__item"><a href="/clients/activities-tko/" class="nav__subset__link canSpeak">Деятельность по захоронению ТКО</a></li>
-                                <li class="nav__subset__item"><a href="/clients/waste-sorting-activity/" class="nav__subset__link canSpeak">Мусоросортировочные заводы и перегрузочные станции</a></li>
+                                <li class="nav__subset__item"><a href="clients/operator-activities/" class="nav__subset__link canSpeak">Деятельность регионального оператора по обращению с ТКО</a></li>
+                                <li class="nav__subset__item"><a href="clients/secondary-materials/" class="nav__subset__link canSpeak">Реализация вторичного сырья</a></li>
+                                <li class="nav__subset__item"><a href="clients/wasted-transport/" class="nav__subset__link canSpeak">Транспортирование отходов</a></li>
+                                <li class="nav__subset__item"><a href="clients/activities-tko/" class="nav__subset__link canSpeak">Деятельность по захоронению ТКО</a></li>
+                                <li class="nav__subset__item"><a href="clients/waste-sorting-activity/" class="nav__subset__link canSpeak">Мусоросортировочные заводы и перегрузочные станции</a></li>
                             </ul>
                         </div>
                     </div></li>
               <li class="nav__item"><a href="<?=$pages->get(1)->procurement_url?>" class="nav__link canSpeak">закупки</a></li>
               <li class="nav__item">
                 <div style="position: relative;" data-uk-dropdown>
-                  <a href="/press-center" class="nav__link canSpeak">пресс-центр</a>
+                  <a href="press-center" class="nav__link canSpeak">пресс-центр</a>
                   <div class="uk-dropdown nav__subset">
                     <ul>
-                      <li class="nav__subset__item"><a href="/press-center#messages" class="nav__subset__link">Срочные сообщения</a></li>
-                      <li class="nav__subset__item"><a href="/press-center/news/" class="nav__subset__link">Новости</a></li>
-                      <li class="nav__subset__item"><a href="/press-center#smi" class="nav__subset__link">СМИ о нас</a></li>
-                      <li class="nav__subset__item"><a href="/press-center/galleries" class="nav__subset__link">Фотогалерея</a></li>
-                      <li class="nav__subset__item"><a href="/press-center/videos" class="nav__subset__link">Видеоматериалы</a></li>
-                      <li class="nav__subset__item"><a href="/press-center/record-request" class="nav__subset__link">Запрос на съемку</a></li>
-                      <li class="nav__subset__item"><a href="/press-center/excursion-request" class="nav__subset__link">Заявка на экскурсию</a></li>
+                      <li class="nav__subset__item"><a href="press-center#messages" class="nav__subset__link">Срочные сообщения</a></li>
+                      <li class="nav__subset__item"><a href="press-center/news/" class="nav__subset__link">Новости</a></li>
+                      <li class="nav__subset__item"><a href="press-center#smi" class="nav__subset__link">СМИ о нас</a></li>
+                      <li class="nav__subset__item"><a href="press-center/galleries" class="nav__subset__link">Фотогалерея</a></li>
+                      <li class="nav__subset__item"><a href="press-center/videos" class="nav__subset__link">Видеоматериалы</a></li>
+                      <li class="nav__subset__item"><a href="press-center/record-request" class="nav__subset__link">Запрос на съемку</a></li>
+                      <li class="nav__subset__item"><a href="press-center/excursion-request" class="nav__subset__link">Заявка на экскурсию</a></li>
                     </ul>
                   </div>
                 </div></li>
-              <li class="nav__item"><a href="/about/vacancies/" class="nav__link canSpeak">вакансии</a></li>
-              <li class="nav__item"><a href="/important/faq" class="nav__link canSpeak">faq</a></li>
-              <li class="nav__item"><a href="/contacts" class="nav__link canSpeak">контакты</a></li>
+              <li class="nav__item"><a href="about/vacancies/" class="nav__link canSpeak">вакансии</a></li>
+              <li class="nav__item"><a href="important/faq" class="nav__link canSpeak">faq</a></li>
+              <li class="nav__item"><a href="contacts" class="nav__link canSpeak">контакты</a></li>
             </ul>
           </div>
         </div>
@@ -90,14 +90,13 @@
   </div>
 </section>
 
-
-<section class="header">
+<section style="overflow: unset" class="header">
   <div class="menu">
     <div class="container container_center menu__wrapper">
         <div class="menu__grid">
             <div class="menu__grid-left">
                 <div class="menu__cell">
-                    <a href="/" class="menu__logo logo">
+                    <a href="<?=$page->url?>" class="menu__logo logo">
                         <img src="<?= $config->urls->templates . 'assets/img/rifey-header.png' ?>" class="logo__img" alt="">
                     </a>
                 </div>
@@ -114,7 +113,7 @@
                             <a href="tel:<?= phoneLink($pages->get("template=layout_contacts")->site_phone) ?>"
                                class="menu__phone canSpeak"><?= $pages->get("template=layout_contacts")->site_phone ?>
                             </a>
-                            <a href="/callback-full/" class="menu__button main canSpeak">Обратная связь</a>
+                            <a href="callback-full/" class="menu__button main canSpeak">Обратная связь</a>
                         </div>
                     </div>
                     <div class="menu__phone-container__right invalid" title="Режим для людей с ограниченными возможностями.
@@ -132,47 +131,47 @@
             <ul class="nav__items">
               <li class="nav__item">
                 <div style="position: relative;" data-uk-dropdown>
-                  <a href="/about" class="nav__link canSpeak">о предприятии</a>
+                  <a href="about" class="nav__link canSpeak">о предприятии</a>
                   <div class="uk-dropdown nav__subset">
                     <ul>
-                      <li class="nav__subset__item"><a href="/about/us/" class="nav__subset__link">Общие сведения</a></li>
-                      <li class="nav__subset__item"><a href="/about/management/" class="nav__subset__link">Руководство</a></li>
-                      <li class="nav__subset__item"><a href="/important/docs/" class="nav__subset__link">Документы</a></li>
-                      <li class="nav__subset__item"><a href="/contacts" class="nav__subset__link">Контакты</a></li>
+                      <li class="nav__subset__item"><a href="about/us/" class="nav__subset__link">Общие сведения</a></li>
+                      <li class="nav__subset__item"><a href="about/management/" class="nav__subset__link">Руководство</a></li>
+                      <li class="nav__subset__item"><a href="important/docs/" class="nav__subset__link">Документы</a></li>
+                      <li class="nav__subset__item"><a href="contacts" class="nav__subset__link">Контакты</a></li>
                     </ul>
                   </div>
                 </div></li>
               <li class="nav__item"><div style="position: relative;" data-uk-dropdown>
-                  <a href="/clients" class="nav__link canSpeak">клиентам</a>
+                  <a href="clients" class="nav__link canSpeak">клиентам</a>
                   <div class="uk-dropdown nav__subset">
                     <ul>
-                      <li class="nav__subset__item"><a href="/clients/operator-activities/" class="nav__subset__link canSpeak">Деятельность регионального оператора по обращению с ТКО</a></li>
-                      <li class="nav__subset__item"><a href="/clients/secondary-materials/" class="nav__subset__link canSpeak">Реализация вторичного сырья</a></li>
-                      <li class="nav__subset__item"><a href="/clients/wasted-transport/" class="nav__subset__link canSpeak">Транспортирование отходов</a></li>
-                      <li class="nav__subset__item"><a href="/clients/activities-tko/" class="nav__subset__link canSpeak">Деятельность по захоронению ТКО</a></li>
-                      <li class="nav__subset__item"><a href="/clients/waste-sorting-activity/" class="nav__subset__link canSpeak">Мусоросортировочные заводы и перегрузочные станции</a></li>
+                      <li class="nav__subset__item"><a href="clients/operator-activities/" class="nav__subset__link canSpeak">Деятельность регионального оператора по обращению с ТКО</a></li>
+                      <li class="nav__subset__item"><a href="clients/secondary-materials/" class="nav__subset__link canSpeak">Реализация вторичного сырья</a></li>
+                      <li class="nav__subset__item"><a href="clients/wasted-transport/" class="nav__subset__link canSpeak">Транспортирование отходов</a></li>
+                      <li class="nav__subset__item"><a href="clients/activities-tko/" class="nav__subset__link canSpeak">Деятельность по захоронению ТКО</a></li>
+                      <li class="nav__subset__item"><a href="clients/waste-sorting-activity/" class="nav__subset__link canSpeak">Мусоросортировочные заводы и перегрузочные станции</a></li>
                     </ul>
                   </div>
                 </div></li>
               <li class="nav__item"><a href="<?=$pages->get(1)->procurement_url?>" class="nav__link canSpeak">закупки</a></li>
               <li class="nav__item">
                 <div style="position: relative;" data-uk-dropdown>
-                  <a href="/press-center" class="nav__link canSpeak">пресс-центр</a>
+                  <a href="press-center" class="nav__link canSpeak">пресс-центр</a>
                   <div class="uk-dropdown nav__subset">
                     <ul>
-                      <li class="nav__subset__item"><a href="/press-center#messages" class="nav__subset__link">Срочные сообщения</a></li>
-                      <li class="nav__subset__item"><a href="/press-center/news/" class="nav__subset__link">Новости</a></li>
-                      <li class="nav__subset__item"><a href="/press-center#smi" class="nav__subset__link">СМИ о нас</a></li>
-                      <li class="nav__subset__item"><a href="/press-center/galleries" class="nav__subset__link">Фотогалерея</a></li>
-                      <li class="nav__subset__item"><a href="/press-center/videos" class="nav__subset__link">Видеоматериалы</a></li>
-                      <li class="nav__subset__item"><a href="/press-center/record-request" class="nav__subset__link">Запрос на съемку</a></li>
-                      <li class="nav__subset__item"><a href="/press-center/excursion-request" class="nav__subset__link">Заявка на экскурсию</a></li>
+                      <li class="nav__subset__item"><a href="press-center#messages" class="nav__subset__link">Срочные сообщения</a></li>
+                      <li class="nav__subset__item"><a href="press-center/news/" class="nav__subset__link">Новости</a></li>
+                      <li class="nav__subset__item"><a href="press-center#smi" class="nav__subset__link">СМИ о нас</a></li>
+                      <li class="nav__subset__item"><a href="press-center/galleries" class="nav__subset__link">Фотогалерея</a></li>
+                      <li class="nav__subset__item"><a href="press-center/videos" class="nav__subset__link">Видеоматериалы</a></li>
+                      <li class="nav__subset__item"><a href="press-center/record-request" class="nav__subset__link">Запрос на съемку</a></li>
+                      <li class="nav__subset__item"><a href="press-center/excursion-request" class="nav__subset__link">Заявка на экскурсию</a></li>
                     </ul>
                   </div>
                 </div></li>
-              <li class="nav__item"><a href="/about/vacancies/" class="nav__link canSpeak">вакансии</a></li>
-              <li class="nav__item"><a href="/important/faq" class="nav__link canSpeak">faq</a></li>
-              <li class="nav__item"><a href="/contacts" class="nav__link canSpeak">контакты</a></li>
+              <li class="nav__item"><a href="about/vacancies/" class="nav__link canSpeak">вакансии</a></li>
+              <li class="nav__item"><a href="important/faq" class="nav__link canSpeak">faq</a></li>
+              <li class="nav__item"><a href="contacts" class="nav__link canSpeak">контакты</a></li>
 
             </ul>
           </div>
@@ -182,6 +181,7 @@
     </div>
   </div>
 </section>
+
 <section class="home">
     <div class="container container_center">
         <div class="grid grid_main">
@@ -192,7 +192,7 @@
                             <img src="<?= $config->urls->templates . "assets/svg/chelik1.svg" ?>" alt="" class="item__img item__img_main">
                             <h3 class="item__heading item__heading_left canSpeak">региональный оператор по обращению с тко в тюменской
                                 области</h3>
-                            <a href="/clients/operator-activities/" class="item__link"></a>
+                            <a href="clients/operator-activities/" class="item__link"></a>
                         </div>
                     </div>
                 </div>
@@ -206,7 +206,7 @@
                                              class="item__img item__img_for-text">
                                         <h3 class="item__heading canSpeak">интересные факты</h3>
                                         <p class="item__text"><?=$page->home_facts?></p>
-                                        <a href="/press-center" class="item__link"></a>
+                                        <a href="press-center" class="item__link"></a>
                                     </div>
                                 </div>
                             </div>
@@ -216,7 +216,7 @@
                                         <img src="<?= $config->urls->templates . "assets/svg/doc1.svg" ?>" alt=""
                                              class="item__img item__img_big">
                                         <h3 class="item__heading item__heading_small canSpeak">документы</h3>
-                                        <a href="/important/docs/" class="item__link"></a>
+                                        <a href="important/docs/" class="item__link"></a>
                                     </div>
                                 </div>
                             </div>
@@ -226,7 +226,7 @@
                                         <img src="<?= $config->urls->templates . "assets/svg/Recycle001.svg" ?>" alt=""
                                              class="item__img item__img_big">
                                         <h3 class="item__heading item__heading_small canSpeak">Реализация вторичного сырья</h3>
-                                        <a href="/clients/secondary-materials/" class="item__link"></a>
+                                        <a href="clients/secondary-materials/" class="item__link"></a>
                                     </div>
                                 </div>
                             </div>
@@ -240,7 +240,7 @@
                                  class="item__img item__img_for-text">
                             <h3 class="item__heading item__heading_small canSpeak">Транспортирование отходов</h3>
                             <!--            <p class="item__text">Здесь вы можете ознакомиться с важной информацией о нашей организации.</p>-->
-                            <a href="/clients/wasted-transport/" class="item__link"></a>
+                            <a href="clients/wasted-transport/" class="item__link"></a>
                         </div>
                     </div>
                 </div>
@@ -250,7 +250,7 @@
                             <img src="<?= $config->urls->templates . "assets/svg/konteyner1.svg" ?>" alt=""
                                  class="item__img item__img_for-text">
                             <h3 class="item__heading item__heading_small canSpeak">Захоронение отходов</h3>
-                                <a href="/clients/activities-tko/" class="item__link"></a>
+                                <a href="clients/activities-tko/" class="item__link"></a>
                         </div>
                     </div>
                 </div>
@@ -300,7 +300,7 @@
       <div class="uk-slidenav-position support__grid" data-uk-slider="{center:true}">
         <div class="uk-slider-container">
           <ul class="uk-slider uk-grid uk-grid-medium">
-            <?php foreach ($page->home_partners as $partner): ?>
+            <?php foreach ($page->home_partners as $partner): if(checkLanguage($partner->reference_on_language, $user->language)):?>
               <?php if (!$partner->repeater_partner_isBanner): ?>
                 <li class="uk-width-1-2 uk-width-small-1-3">
                   <div class="support__image"
@@ -311,7 +311,7 @@
                   <div class="support__image"
                   style="background-image:url(<?=$partner->repeater_partner_image->url?>"></div>
                 </li>
-              <?php endif; endforeach; ?>
+              <?php endif; endif; endforeach; ?>
             </ul>
           </div>
           <a href="" class="support__nav support__nav_left" data-uk-slider-item="previous"></a>
