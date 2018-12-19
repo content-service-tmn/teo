@@ -8,13 +8,13 @@
 }
 
 .menu__button.fixed {
-  color: @blue;
-  background-color: white;
-  border: 2px solid white;
+  color: white;
+  background-color: @green;
+  border: 2px solid @green;
   &:hover {
     @media (min-width: 960px) {
       background-color: transparent;
-      color: #ffffff;
+      color: @green;
     }
   }
 }
@@ -33,7 +33,7 @@
   }
   &__grid {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
   &__grid-left {
     padding-top: 5px;
@@ -46,7 +46,6 @@
 
   }
   &__nav {
-    border-top: 1px solid #ffffff;
     padding: 30px 0 20px;
   }
   &__phone-container {
@@ -69,7 +68,7 @@
 
     &__right {
       display: flex;
-      align-items: center;
+      align-items: left;
     }
 
     &__icon {
@@ -82,11 +81,11 @@
       background-color: white;
 
       svg {
-        width: 35px;
+        width: 45px;
       }
 
       path {
-        fill: @blue;
+        fill: @violet;
       }
     }
 
@@ -105,7 +104,6 @@
   &__phone {
     font-size: 25px;
     font-weight: bold;
-    color: white;
   }
   &__text-phone {
     word-wrap: normal;
@@ -113,14 +111,13 @@
     width: 100%;
     padding-right: 5px;
     box-sizing: border-box;
-    color: white;
     margin-bottom: 10px;
   }
   &__button {
     display: inline-block;
     border-radius: 5px;
-    background-color: @green;
-    color: white;
+    background-color: #ffffff;
+    color: @green;
     text-transform: uppercase;
     font-weight: 600;
     transition: all 0.3s;
@@ -129,8 +126,8 @@
     box-shadow: white 0px 0px 5px 2px;
     &:hover {
       @media (min-width: 960px) {
-        color: @green;
-        background-color: #ffffff;
+        color: white;
+        background-color: @green;
       }
     }
     @media (max-width: 767px) {
@@ -145,11 +142,14 @@
   &_green {
     background-image: linear-gradient(#92C1D6, #7aa4b8);
   }
+  &_violet{
+    background: @violet;
+  }
   &_swamp {
     background-color: @swamp;
   }
   &_small {
-    padding: 20px 0;
+    padding: 10px 0;
     @media (max-width: 1439px) {
       padding: 15px 0;
       & .logo__img {
@@ -179,7 +179,6 @@
   &__link {
     font-weight: 600;
     font-size: 20px;
-    text-transform: uppercase;
     position: relative;
     color: white;
     @media (max-width: 1439px) {
@@ -200,6 +199,9 @@
       left: 0;
       right: 0;
     }
+  }
+  &__link{
+    text-transform: capitalize;
   }
   &__subset {
     text-align: left;

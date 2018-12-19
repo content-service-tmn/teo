@@ -11,7 +11,6 @@
 </section>
 
 <section class="blocks">
-  <img src="<?= $config->urls->templates . 'assets/img/wave.jpg' ?>" alt="" class="blocks__img">
   <div class="container container_center">
     <div class="blocks__grid">
         <?php foreach ($page->block_items as $item): ?>

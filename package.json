@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/nikon72ru/teo#readme",
   "dependencies": {
-    "git": "^0.1.5"
+    "git": "^0.1.5",
+    "run": "^1.4.0"
   },
   "devDependencies": {
     "browser-sync": "^2.24.6",
