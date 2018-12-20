@@ -14,7 +14,9 @@
 <section class="faq">
   <div class="container container_center">
     <div class="faq__grid uk-accordion" data-uk-accordion="{showfirst:false}">
-      <?php foreach($page->faq_block as $block): if($block->find("")->count > 0): ?>
+      <?php foreach($page->faq_block as $block): ?>
+          <?php $in_this_block = 0; foreach ($block->faq_item as $i => $quest) if (checkLanguage($quest->reference_on_language, $user->language)) $in_this_block++;?>
+          <?php if($in_this_block > 0):?>
           <div class="faq__cell__fulline"><h3><?=$block->text_page_title?></h3></div>
       <div class="faq__cell">
           <?php foreach ($block->faq_item as $i => $quest): if ($i % 2 == 0 && checkLanguage($quest->reference_on_language, $user->language)): ?>
