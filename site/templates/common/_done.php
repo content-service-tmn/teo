@@ -116,7 +116,7 @@
                       </div>
                     </div></li>
                   <li class="nav__item canSpeak"><a href="<?=$rootPage?>about/vacancies/" class="nav__link">вакансии</a></li>
-                  <li class="nav__item canSpeak"><a href="<?=$rootPage?>important/faq" class="nav__link">faq</a></li>
+                  <li class="nav__item canSpeak"><a href="<?=$rootPage?>important/faq" style="text-transform: uppercase" class="nav__link">faq</a></li>
                   <li class="nav__item canSpeak"><a href="<?=$rootPage?>contacts" class="nav__link">контакты</a></li>
                 </ul>
               </div>

@@ -154,7 +154,7 @@
               <div class="feedback_form_checkbox"><input type="checkbox" name="agree[]" value="1" id="agree"
                                                          class="rules_checkbox"><span id="agree_info1"
                                                                                       class="field_info"></span> <label
-                        for="agree" class="feedback_form_checkbox_label canSpeak">Я согласен с <a style="color: #89b168" target="_blank" href="/privacy">использованием ООО "ТЭО" моих
+                        for="agree" class="feedback_form_checkbox_label canSpeak">Я согласен с <a style="color: #89b168" target="_blank" href="/privacy">использованием ООО "Рифей" моих
                     персональных данных</a> для обработки данного обращения<span class="notnull_icon">*</span></label></div>
             </div>
           </div>
@@ -164,7 +164,7 @@
           <input type="hidden" name="posted" value=""><input type="hidden" name="form_compiled"
                                                              value="1543692122"><input type="text" name="tel" value=""
                                                                                        class="engine_form_tel"><input
-                  callerror="" type="button" class="ecotek_button3" id="objectformsubmit" value="Отправить"
+                  callerror="" type="button" class="ecotek_button3" id="objectformsubmit" style="background-color: #909CCA" value="Отправить"
                   onclick="form_ajax('feedback_form_ur', feedback_callback)">
           <div class="feedback_form_submit_hint">Поля, отмеченные звездочкой (<span class="notnull_icon">*</span>),
             обязательны для заполнения.
@@ -295,7 +295,7 @@
               <div class="feedback_form_checkbox2"><input type="checkbox" name="agree[]" value="1" id="agree2"
                                                          class="rules_checkbox"><span id="agree_info2"
                                                                                       class="field_info"></span> <label
-                        for="agree2" class="feedback_form_checkbox_label2 canSpeak">Я согласен с <a style="color:#89b168;" target="_blank" href="/privacy">использованием ООО "ТЭО" моих
+                        for="agree2" class="feedback_form_checkbox_label2 canSpeak">Я согласен с <a style="color:#89b168;" target="_blank" href="/privacy">использованием ООО "Рифей" моих
                     персональных данных</a> для обработки данного обращения<span class="notnull_icon">*</span></label></div>
             </div>
           </div>
@@ -305,7 +305,7 @@
             <input type="hidden" name="posted" value=""><input type="hidden" name="form_compiled"
                                                                value="1543692122"><input type="text" name="tel" value=""
                                                                                          class="engine_form_tel"><input
-                    callerror="" type="button" class="ecotek_button3" id="objectformsubmit" value="Отправить"
+                    callerror="" type="button" class="ecotek_button3" id="objectformsubmit" style="background-color: #909CCA" value="Отправить"
                     onclick="form_ajax('feedback_form_fis', feedback_callback)">
             <div class="feedback_form_submit_hint">Поля, отмеченные звездочкой (<span class="notnull_icon">*</span>),
               обязательны для заполнения.
