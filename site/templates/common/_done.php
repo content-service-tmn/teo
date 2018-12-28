@@ -82,7 +82,7 @@
                         <ul>
                           <li class="nav__subset__item"><a href="<?=$rootPage?>about/us/" class="nav__subset__link">Общие сведения</a></li>
                           <li class="nav__subset__item"><a href="<?=$rootPage?>about/management/" class="nav__subset__link">Руководство</a></li>
-                          <li class="nav__subset__item"><a href="<?=$rootPage?>important/docs/" class="nav__subset__link">Документы</a></li>
+                          <li class="nav__subset__item"><a href="<?=$rootPage?>docs/" class="nav__subset__link">Документы</a></li>
                           <li class="nav__subset__item"><a href="<?=$rootPage?>contacts" class="nav__subset__link">Контакты</a></li>
                         </ul>
                       </div>
@@ -146,7 +146,7 @@
           <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>about" data-uk-smoothscroll>О предприятии</a></li>
           <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>about/us/" data-uk-smoothscroll>Общие сведения</a></li>
           <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>about/management/" data-uk-smoothscroll>Руководство</a></li>
-          <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>important/docs/" data-uk-smoothscroll>Документы</a></li>
+          <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>docs/" data-uk-smoothscroll>Документы</a></li>
           <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>contacts/" data-uk-smoothscroll>Контакты</a></li>
         </ul>
         <ul class="sidebar__items">
@@ -318,7 +318,7 @@
             <li class="footer__item"><a href="<?=$rootPage?>about" class="footer__link">О предприятии</a></li>
             <li class="footer__item"><a href="<?=$rootPage?>about/management" class="footer__link">Руководство</a>
             </li>
-            <li class="footer__item"><a href="<?=$rootPage?>important/docs/" class="footer__link">Документы</a></li>
+            <li class="footer__item"><a href="<?=$rootPage?>docs/" class="footer__link">Документы</a></li>
             <li class="footer__item"><a href="<?=$rootPage?>contacts" class="footer__link">Контакты</a></li>
           </ul>
         </div>
