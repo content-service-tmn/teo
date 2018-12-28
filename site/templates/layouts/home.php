@@ -32,10 +32,10 @@ bd($user->language->title); ?>
                     <div class="uk-dropdown nav__subset">
                       <ul>
                         <li class="nav__subset__item"><a href="<?=$rootPage?>clients/operator-activities/" class="nav__subset__link canSpeak">Деятельность регионального оператора по обращению с ТКО</a></li>
-                        <li class="nav__subset__item"><a href="<?=$rootPage?>clients/secondary-materials/" class="nav__subset__link canSpeak">Реализация вторичного сырья</a></li>
+<!--                        <li class="nav__subset__item"><a href="--><?//=$rootPage?><!--clients/secondary-materials/" class="nav__subset__link canSpeak">Реализация вторичного сырья</a></li>-->
                         <li class="nav__subset__item"><a href="<?=$rootPage?>clients/wasted-transport/" class="nav__subset__link canSpeak">Транспортирование отходов</a></li>
                         <li class="nav__subset__item"><a href="<?=$rootPage?>clients/activities-tko/" class="nav__subset__link canSpeak">Деятельность по захоронению ТКО</a></li>
-                        <li class="nav__subset__item"><a href="<?=$rootPage?>clients/waste-sorting-activity/" class="nav__subset__link canSpeak">Мусоросортировочные заводы и перегрузочные станции</a></li>
+<!--                        <li class="nav__subset__item"><a href="--><?//=$rootPage?><!--clients/waste-sorting-activity/" class="nav__subset__link canSpeak">Мусоросортировочные заводы и перегрузочные станции</a></li>-->
                       </ul>
                     </div>
                   </div></li>

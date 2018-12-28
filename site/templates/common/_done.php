@@ -92,10 +92,10 @@
                       <div class="uk-dropdown nav__subset">
                         <ul>
                           <li class="nav__subset__item"><a href="<?=$rootPage?>clients/operator-activities/" class="nav__subset__link canSpeak">Деятельность регионального оператора по обращению с ТКО</a></li>
-                          <li class="nav__subset__item"><a href="<?=$rootPage?>clients/secondary-materials/" class="nav__subset__link canSpeak">Реализация вторичного сырья</a></li>
+<!--                          <li class="nav__subset__item"><a href="--><?//=$rootPage?><!--clients/secondary-materials/" class="nav__subset__link canSpeak">Реализация вторичного сырья</a></li>-->
                           <li class="nav__subset__item"><a href="<?=$rootPage?>clients/wasted-transport/" class="nav__subset__link canSpeak">Транспортирование отходов</a></li>
                           <li class="nav__subset__item"><a href="<?=$rootPage?>clients/activities-tko/" class="nav__subset__link canSpeak">Деятельность по захоронению ТКО</a></li>
-                          <li class="nav__subset__item"><a href="<?=$rootPage?>clients/waste-sorting-activity/" class="nav__subset__link canSpeak">Мусоросортировочные заводы и перегрузочные станции</a></li>
+<!--                          <li class="nav__subset__item"><a href="--><?//=$rootPage?><!--clients/waste-sorting-activity/" class="nav__subset__link canSpeak">Мусоросортировочные заводы и перегрузочные станции</a></li>-->
                         </ul>
                       </div>
                     </div></li>
@@ -152,10 +152,10 @@
         <ul class="sidebar__items">
           <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>clients" data-uk-smoothscroll>Клиентам</a></li>
           <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>clients/operator-activities/" data-uk-smoothscroll>Деятельность регионального оператора по обращению с ТКО</a></li>
-          <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>clients/secondary-materials/" data-uk-smoothscroll>Реализация вторичного сырья</a></li>
+<!--          <li class="sidebar__item canSpeak"><a href="--><?//=$rootPage?><!--clients/secondary-materials/" data-uk-smoothscroll>Реализация вторичного сырья</a></li>-->
           <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>clients/wasted-transport/" data-uk-smoothscroll>Транспортирование отходов</a></li>
           <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>clients/activities-tko/" data-uk-smoothscroll>Деятельность по захоронению ТКО</a></li>
-          <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>clients/waste-sorting-activity/" data-uk-smoothscroll>Мусоросортировочные заводы и перегрузочные станции</a></li>
+<!--          <li class="sidebar__item canSpeak"><a href="--><?//=$rootPage?><!--clients/waste-sorting-activity/" data-uk-smoothscroll>Мусоросортировочные заводы и перегрузочные станции</a></li>-->
         </ul>
         <ul class="sidebar__items">
           <li class="sidebar__item canSpeak"><a href="<?=$pages->get(1)->procurement_url?>" data-uk-smoothscroll>Закупки</a></li>
@@ -327,10 +327,10 @@
             <li class="footer__item"><a href="<?=$rootPage?>clients" class="footer__link">Клиентам</a></li>
             <li class="footer__item"><a href="<?=$rootPage?>clients/operator-activities/" class="footer__link">Деятельность регионального оператора по обращению с ТКО</a>
             </li>
-            <li class="footer__item"><a href="<?=$rootPage?>clients/secondary-materials/" class="footer__link">Реализация вторичного сырья</a></li>
+<!--            <li class="footer__item"><a href="--><?//=$rootPage?><!--clients/secondary-materials/" class="footer__link">Реализация вторичного сырья</a></li>-->
             <li class="footer__item"><a href="<?=$rootPage?>clients/wasted-transport/" class="footer__link">Транспортирование отходов</a></li>
             <li class="footer__item"><a href="<?=$rootPage?>clients/activities-tko/" class="footer__link">Деятельность по захоронению ТКО</a></li>
-            <li class="footer__item"><a href="<?=$rootPage?>clients/waste-sorting-activity/" class="footer__link">Мусоросортировочные заводы и перегрузочные станции</a></li>
+<!--            <li class="footer__item"><a href="--><?//=$rootPage?><!--clients/waste-sorting-activity/" class="footer__link">Мусоросортировочные заводы и перегрузочные станции</a></li>-->
           </ul>
         </div>
         <div class="footer__cell">

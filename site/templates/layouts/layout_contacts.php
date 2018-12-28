@@ -1,3 +1,4 @@
+<?php namespace Processwire;?>
 <section class="breadcrumbs">
   <div class="container container_center">
     <div class="breadcrumbs__grid">
@@ -13,7 +14,7 @@
 <div class="Contacts container container_center">
 
   <div class="Contacts__wrapper">
-  	<?php foreach($page->contacts as $contact_block): ?>
+  	<?php foreach($page->contacts as $contact_block): if (checkLanguage($contact_block->reference_on_language, $user->language)): ?>
     <div class="Contacts__wrapper__block">
       <div class="Contacts__wrapper__block__title">
         <div class="Contacts__wrapper__block__title__sizes">
@@ -41,6 +42,6 @@
         <?php endforeach; ?>
       </div>
     </div>
-    <?php endforeach; ?>
+    <?php endif; endforeach; ?>
   </div>
 </div>
