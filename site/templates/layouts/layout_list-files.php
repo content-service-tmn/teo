@@ -14,7 +14,7 @@
   <div class="container container_center">
     <div class="document__grid">
       <div class="document__left">
-        <ul class="document__list">
+        <ul class="document__list"  style="display: none">
             <?php foreach ($page->parent->children as $pge):; ?>
               <li><a href="<?= $pge->url ?>"
                      class="document__link <?php if ($pge->id == $page->id) echo "active" ?>"><?= $pge->title ?></a>
