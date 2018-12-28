@@ -45,8 +45,8 @@
                             <li class="uk-width-1-2 uk-width-small-1-4">
                               <div class="support__image"
                                    style="background-image:url(<?=$img->size(300,300,[])->url?>"></div>
-                              <h4 class="canSpeak" style="text-align: center">Заголовок</h4>
-                              <p class="canSpeak" style="text-align: center">Описание</p>
+<!--                              <h4 class="canSpeak" style="text-align: center">Заголовок</h4>-->
+<!--                              <p class="canSpeak" style="text-align: center">Описание</p>-->
                             </li>
                             <?php endforeach; ?>
                     </ul>
