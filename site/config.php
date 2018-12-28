@@ -96,3 +96,5 @@ $config->installed = 1532320736;
  */
 $config->httpHosts = array('teo.cw40247.tmweb.ru', 'localhost:8888');
 
+$config->sessionExpireSeconds = 864000;
+$config->sessionAllow = true;

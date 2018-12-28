@@ -23,11 +23,11 @@
         <div class="feedback_radio_item">
           <input id="feedback_type_ur" name="type" type="radio" value="ur" class="feedback_radio_input"
                  checked="checked">
-          <label for="feedback_type_ur" class="feedback_radio_label">Организация</label>
+          <label for="feedback_type_ur" class="feedback_radio_label">Юридическое лицо / индивидуальный предприниматель</label>
         </div>
         <div class="feedback_radio_item">
           <input id="feedback_type_fis" name="type" type="radio" value="fis" class="feedback_radio_input">
-          <label for="feedback_type_fis" class="feedback_radio_label">Частное лицо</label>
+          <label for="feedback_type_fis" class="feedback_radio_label">Физическое лицо</label>
         </div>
       </div>
     </div>
