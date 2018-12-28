@@ -41,7 +41,7 @@
                             <ul>
                                 <li class="nav__subset__item"><a href="/about/us/" class="nav__subset__link">Общие сведения</a></li>
                                 <li class="nav__subset__item"><a href="/about/management/" class="nav__subset__link">Руководство</a></li>
-                                <li class="nav__subset__item"><a href="/important/docs/" class="nav__subset__link">Документы</a></li>
+                                <li class="nav__subset__item"><a href="/docs/" class="nav__subset__link">Документы</a></li>
                                 <li class="nav__subset__item"><a href="/contacts" class="nav__subset__link">Контакты</a></li>
                             </ul>
                         </div>
@@ -129,7 +129,7 @@
                     <ul>
                       <li class="nav__subset__item"><a href="/about/us/" class="nav__subset__link">Общие сведения</a></li>
                       <li class="nav__subset__item"><a href="/about/management/" class="nav__subset__link">Руководство</a></li>
-                      <li class="nav__subset__item"><a href="/important/docs/" class="nav__subset__link">Документы</a></li>
+                      <li class="nav__subset__item"><a href="/docs/" class="nav__subset__link">Документы</a></li>
                       <li class="nav__subset__item"><a href="/contacts" class="nav__subset__link">Контакты</a></li>
                     </ul>
                   </div>
@@ -298,7 +298,7 @@
                                         <img src="<?= $config->urls->templates . "assets/svg/doc1.svg" ?>" alt=""
                                              class="item__img item__img_big">
                                         <h3 class="item__heading item__heading_small canSpeak">документы</h3>
-                                        <a href="/important/docs/" class="item__link"></a>
+                                        <a href="/docs/" class="item__link"></a>
                                     </div>
                                 </div>
                             </div>
