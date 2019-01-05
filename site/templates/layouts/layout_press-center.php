@@ -14,7 +14,7 @@
 <section id="messages" class="messages">
   <div class="container container_center">
     <div class="messages__header">
-      <h3 class="messages__heading messages__heading_small canSpeak">Срочные сообщения</h3>
+      <h3 class="messages__heading messages__heading_small canSpeak">Важные сообщения</h3>
       <div class="messages__line"></div>
       <a href="breaking-news" class="messages__button canSpeak">все сообщения</a>
     </div>

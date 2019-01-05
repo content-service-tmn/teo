@@ -13,15 +13,6 @@
 <section class="document">
   <div class="container container_center">
     <div class="document__grid">
-      <div class="document__left">
-        <ul class="document__list"  style="display: none">
-            <?php foreach ($page->parent->children as $pge):; ?>
-              <li><a href="<?= $pge->url ?>"
-                     class="document__link <?php if ($pge->id == $page->id) echo "active" ?>"><?= $pge->title ?></a>
-              </li>
-            <?php endforeach; ?>
-        </ul>
-      </div>
       <div class="document__right">
         <h2 class="document__heading canSpeak"><?= $page->files_list_header_title ?></h2>
         <p class="document__text canSpeak"><?= $page->files_list_header_subtitle ?></p>

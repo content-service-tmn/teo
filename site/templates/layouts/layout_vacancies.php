@@ -21,12 +21,16 @@
                 <h3 class="vacancies__heading"><?=$vacancy->vacancy_name?></h3>
                 <h3 class="vacancies__salary"><?=$vacancy->vacancy_salary?></h3>
               </div>
-              <p class="vacancies__text"><?=$vacancy->vacancy_conditions?></p>
               <div class="uk-accordion" data-uk-accordion="{showfirst:false}">
                 <p class="uk-accordion-title"></p>
                 <div class="uk-accordion-content">
+                  <p class="vacancies__text"><?=$vacancy->vacancy_description?></p>
+                  <br>
                   <h3 class="vacancies__subheading">требования</h3>
                     <?=str_replace("<ul>", "<ul class=\"vacancies__list\">", $vacancy->vacancy_demands)?>
+                  <br>
+                  <h3 class="vacancies__subheading">условия</h3>
+                    <?=str_replace("<ul>", "<ul class=\"vacancies__list\">", $vacancy->vacancy_conditions)?>
                   <p class="vacancies__conclusion">Если вакансия подходит Вам, свяжитесь с нами!</p>
                   <ul class="vacancies__contacts">
                     <li>почта : <a href="mailto: <?=$page->vacancies_email?>"><?=$page->vacancies_email?></a></li>
