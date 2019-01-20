@@ -29,8 +29,8 @@
                 <div class="menu__phone-container__left">
                     <a class="menu__text-phone canSpeak">Телефон горячей линии регионального оператора по обращению с ТКО</a>
                     <div class="menu__phone-container__middle">
-                        <a href="tel:<?= phoneLink($pages->get("template=layout_contacts")->site_phone) ?>"
-                           class="menu__phone canSpeak"><?= $pages->get("template=layout_contacts")->site_phone ?>
+                        <a href="tel:<?= phoneLink($pages->get("template=layout_contacts")->hotline_number) ?>"
+                           class="menu__phone canSpeak"><?= $pages->get("template=layout_contacts")->hotline_number ?>
                         </a>
                         <a href="/callback-full/"  class="menu__button fixed canSpeak">Обратная связь</a>
                     </div>
@@ -67,8 +67,8 @@
                                   <li class="nav__subset__item"><a href="/clients/operator-activities/" class="nav__subset__link canSpeak">Деятельность регионального оператора по обращению с ТКО</a></li>
                                   <li class="nav__subset__item"><a href="/clients/secondary-materials/" class="nav__subset__link canSpeak">Реализация вторичного сырья</a></li>
                                   <li class="nav__subset__item"><a href="/clients/wasted-transport/" class="nav__subset__link canSpeak">Транспортирование отходов</a></li>
-                                  <li class="nav__subset__item"><a href="/clients/activities-tko/" class="nav__subset__link canSpeak">Деятельность по захоронению ТКО</a></li>
-                                  <li class="nav__subset__item"><a href="/clients/waste-sorting-activity/" class="nav__subset__link canSpeak">Мусоросортировочные заводы и перегрузочные станции</a></li>
+                                  <li class="nav__subset__item"><a href="/clients/activities-tko/" class="nav__subset__link canSpeak">Деятельность по захоронению отходов</a></li>
+                                  <li class="nav__subset__item"><a href="/clients/waste-sorting-activity/" class="nav__subset__link canSpeak">Обработка (сортировка) отходов</a></li>
                               </ul>
                           </div>
                       </div></li>
@@ -110,7 +110,7 @@
           <img src="<?= $config->urls->templates . 'assets/img/logo.png' ?>" alt="" class="sidebar__logo-img">
         </a>
         <div style="text-align: center">
-          <a style="color: #908f8e;" href="tel:<?= phoneLink($pages->get("template=layout_contacts")->site_phone) ?>" class="menu__phone canSpeak"><?=$pages->get("template=layout_contacts")->site_phone ?></a>
+          <a style="color: #908f8e;" href="tel:<?= phoneLink($pages->get("template=layout_contacts")->hotline_number) ?>" class="menu__phone canSpeak"><?=$pages->get("template=layout_contacts")->hotline_number ?></a>
         <a href="/callback-full" class="sidebar__button canSpeak">обратная связь</a>
         </div>
         <ul class="sidebar__items">
@@ -128,8 +128,8 @@
           <li class="sidebar__item canSpeak"><a href="/clients/operator-activities/" data-uk-smoothscroll>Деятельность регионального оператора по обращению с ТКО</a></li>
           <li class="sidebar__item canSpeak"><a href="/clients/secondary-materials/" data-uk-smoothscroll>Реализация вторичного сырья</a></li>
           <li class="sidebar__item canSpeak"><a href="/clients/wasted-transport/" data-uk-smoothscroll>Транспортирование отходов</a></li>
-          <li class="sidebar__item canSpeak"><a href="/clients/activities-tko/" data-uk-smoothscroll>Деятельность по захоронению ТКО</a></li>
-          <li class="sidebar__item canSpeak"><a href="/clients/waste-sorting-activity/" data-uk-smoothscroll>Мусоросортировочные заводы и перегрузочные станции</a></li>
+          <li class="sidebar__item canSpeak"><a href="/clients/activities-tko/" data-uk-smoothscroll>Деятельность по захоронению отходов</a></li>
+          <li class="sidebar__item canSpeak"><a href="/clients/waste-sorting-activity/" data-uk-smoothscroll>Обработка (сортировка) отходов</a></li>
         </ul>
         <ul class="sidebar__items">
           <li class="sidebar__item canSpeak"><a href="<?=$pages->get(1)->procurement_url?>" data-uk-smoothscroll>Закупки</a></li>
@@ -303,8 +303,8 @@
             </li>
             <li class="footer__item"><a href="/clients/secondary-materials/" class="footer__link">Реализация вторичного сырья</a></li>
             <li class="footer__item"><a href="/clients/wasted-transport/" class="footer__link">Транспортирование отходов</a></li>
-            <li class="footer__item"><a href="/clients/activities-tko/" class="footer__link">Деятельность по захоронению ТКО</a></li>
-            <li class="footer__item"><a href="/clients/waste-sorting-activity/" class="footer__link">Мусоросортировочные заводы и перегрузочные станции</a></li>
+            <li class="footer__item"><a href="/clients/activities-tko/" class="footer__link">Деятельность по захоронению отходов</a></li>
+            <li class="footer__item"><a href="/clients/waste-sorting-activity/" class="footer__link">Обработка (сортировка) отходов</a></li>
           </ul>
         </div>
         <div class="footer__cell">

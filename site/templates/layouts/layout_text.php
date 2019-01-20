@@ -27,16 +27,18 @@
       <div class="document__right">
         <h2 class="document__heading canSpeak"><?= $page->text_page_title ?></h2>
         <div class="document__text-block text">
-
+            <?php if($page->text_page_subtitle!=""): ?>
           <h3 class="text__heading canSpeak"><?= $page->text_page_subtitle ?></h3>
+          <?php endif; ?>
             <?php foreach ($page->text_page_content as $block): ?>
+                <div class="textpage_node">
                 <?php if ($block->repeater_matrix_type == 1): ?>
                     <div class="text__block canSpeak">
                         <?= str_replace("<p>", "<p class=\"text__text\">", $block->text_page_text) ?>
                     </div>
                 <?php endif; ?>
 
-                <?php if ($block->repeater_matrix_type == 2): ?>
+                <?php if ($block->repeater_matrix_type == 222): ?>
                      <div class="text__block">
                 <div class="uk-slidenav-position support__grid" data-uk-slider="{center:true}">
                   <div class="uk-slider-container">
@@ -56,7 +58,17 @@
                 </div>
                      </div>
                 <?php endif; ?>
-
+                <?php if ($block->repeater_matrix_type == 2):?>
+                <div class="text__grid">
+                    <?php foreach ($block->text_page_images as $img): ?>
+                      <div class="text__cell">
+                        <img src="<?= $img->url ?>"
+                             alt=""
+                             class="text__img">
+                      </div>
+                    <?php endforeach; ?>
+                </div>
+                <?php endif; ?>
                 <?php if ($block->repeater_matrix_type == 3): ?>
                 <div class="text__slider-wrapper">
                   <div class="uk-slidenav-position text__slider" data-uk-slider="{center:true}">
@@ -75,7 +87,6 @@
                   </div>
                 </div>
                 <?php endif; ?>
-
                 <?php if ($block->repeater_matrix_type == 4): ?>
                 <a href="<?=$block->text_page_video_url?>" class="text__video"
                    style="background-image:url(<?=getThumbnail($block->text_page_video_url, "hq")?>)"
@@ -86,9 +97,9 @@
                 <div class="grid__cell grid__cell_big" style="margin-bottom: 60px">
                   <div class="grid__wrapper">
                     <div class="proposal">
-                      <div class="proposal__grid">
+                      <div class="proposal__grid" style="margin-top: -30px">
                         <div class="proposal__button proposal__button_home">
-                          <a href="#callback" class="button canSpeak"  data-uk-offcanvas="{mode:'slide'}">Подать заявку на заключение договора</a>
+                          <a href="#callback" class="button canSpeak"  data-uk-offcanvas="{mode:'slide'}"><?=$block->text_page_title?></a>
                           <div id="callback_source" data-source="dump"></div>
                         </div>
                       </div>
@@ -119,8 +130,8 @@
                       <div class="procurements__files text__files">
                         <?php foreach($block->repeater_files_list_files as $file):?>
                             <div class="procurements__file">
-                              <div class="document__file">
-                                <p class="document__name"><?=$file->name?></p>
+                              <div class="document__file_long">
+                                <p class="document__name"><?=$file->description?></p>
                                 <a href="<?=$file->url?>" class="document__file-link canSpeak">Ознакомиться с документом</a>
                               </div>
                             </div>
@@ -157,9 +168,11 @@
                 <?php endif; ?>
                 <?php if ($block->repeater_matrix_type == 10): ?>
                     <div class="small-contacts">
-                      <h3><?=$block->text_page_title?></h3>
-                      <div class="inner-small-contacts uk-grid">
-                        <div class="uk-width-1-2 canSpeak">Телефоны:</div>
+                      <h3>Контакты</h3>
+                      <br>
+                      <h4><?=$block->text_page_title?>:</h4>
+                      <div class="inner-small-contacts uk-grid" style="margin-top: 20px">
+                        <div class="uk-width-1-2 canSpeak">Телефон:</div>
                         <div class="uk-width-1-2 canSpeak">
                           <?php foreach(explode(",", str_replace(" ", "", $block->vacancy_name)) as $phone):?>
                             <p><a href="tel:<?=phoneLink($phone)?>" class=""><?=$phone?></a></p>
@@ -176,6 +189,7 @@
                       </div>
                     </div>
                 <?php endif; ?>
+                </div>
             <?php endforeach; ?>
         </div>
       </div>

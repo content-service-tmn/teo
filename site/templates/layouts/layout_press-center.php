@@ -14,7 +14,7 @@
 <section id="messages" class="messages">
   <div class="container container_center">
     <div class="messages__header">
-      <h3 class="messages__heading messages__heading_small canSpeak">Срочные сообщения</h3>
+      <h3 class="messages__heading messages__heading_small canSpeak">Важные сообщения</h3>
       <div class="messages__line"></div>
       <a href="breaking-news" class="messages__button canSpeak">все сообщения</a>
     </div>
@@ -158,10 +158,10 @@
   <div class="container container_center">
     <div class="proposal">
       <h3 class="proposal__heading canSpeak"><?= $page->press_center_bottom_header ?></h3>
-      <p class="proposal__text canSpeak"><?= $page->press_center_bottom_content ?></p>
+<!--      <p class="proposal__text canSpeak">--><?= $page->press_center_bottom_content ?><!--</p>-->
       <div class="proposal__grid proposal__grid_margin-top">
         <div class="proposal__button">
-          <a href="record-request" class="button proposal_request canSpeak" data-source="record">запрос на съемку</a>
+          <a href="record-request" class="button proposal_request canSpeak" data-source="record">ПОРЯДОК ЗАПРОСА ИНФОРМАЦИИ ДЛЯ СМИ</a>
         </div>
         <div class="proposal__button">
           <a href="excursion-request"  class="button proposal_request canSpeak" data-source="excursion">заявка на экскурсию</a>

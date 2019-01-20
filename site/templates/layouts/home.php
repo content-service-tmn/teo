@@ -15,8 +15,8 @@
                     <div class="menu__phone-container__left">
                         <a class="menu__text-phone canSpeak">Телефон горячей линии регионального оператора по обращению с ТКО</a>
                         <div class="menu__phone-container__middle">
-                            <a href="tel:<?= phoneLink($pages->get("template=layout_contacts")->site_phone) ?>"
-                               class="menu__phone canSpeak"><?= $pages->get("template=layout_contacts")->site_phone ?>
+                            <a href="tel:<?= phoneLink($pages->get("template=layout_contacts")->hotline_number) ?>"
+                               class="menu__phone canSpeak"><?= $pages->get("template=layout_contacts")->hotline_number ?>
                             </a>
                             <a href="/callback-full/" class="menu__button fixed canSpeak">Обратная связь</a>
                         </div>
@@ -53,8 +53,8 @@
                                 <li class="nav__subset__item"><a href="/clients/operator-activities/" class="nav__subset__link canSpeak">Деятельность регионального оператора по обращению с ТКО</a></li>
                                 <li class="nav__subset__item"><a href="/clients/secondary-materials/" class="nav__subset__link canSpeak">Реализация вторичного сырья</a></li>
                                 <li class="nav__subset__item"><a href="/clients/wasted-transport/" class="nav__subset__link canSpeak">Транспортирование отходов</a></li>
-                                <li class="nav__subset__item"><a href="/clients/activities-tko/" class="nav__subset__link canSpeak">Деятельность по захоронению ТКО</a></li>
-                                <li class="nav__subset__item"><a href="/clients/waste-sorting-activity/" class="nav__subset__link canSpeak">Мусоросортировочные заводы и перегрузочные станции</a></li>
+                                <li class="nav__subset__item"><a href="/clients/activities-tko/" class="nav__subset__link canSpeak">Деятельность по захоронению отходов</a></li>
+                                <li class="nav__subset__item"><a href="/clients/waste-sorting-activity/" class="nav__subset__link canSpeak">Обработка (сортировка) отходов</a></li>
                             </ul>
                         </div>
                     </div></li>
@@ -103,8 +103,8 @@
                     <div class="menu__phone-container__left">
                         <a class="menu__text-phone canSpeak">Телефон горячей линии регионального оператора по обращению с ТКО</a>
                         <div class="menu__phone-container__middle">
-                            <a href="tel:<?= phoneLink($pages->get("template=layout_contacts")->site_phone) ?>"
-                               class="menu__phone canSpeak"><?= $pages->get("template=layout_contacts")->site_phone ?>
+                            <a href="tel:<?= phoneLink($pages->get("template=layout_contacts")->hotline_number) ?>"
+                               class="menu__phone canSpeak"><?= $pages->get("template=layout_contacts")->hotline_number ?>
                             </a>
                             <a href="/callback-full/" class="menu__button main canSpeak">Обратная связь</a>
                         </div>
@@ -141,8 +141,8 @@
                       <li class="nav__subset__item"><a href="/clients/operator-activities/" class="nav__subset__link canSpeak">Деятельность регионального оператора по обращению с ТКО</a></li>
                       <li class="nav__subset__item"><a href="/clients/secondary-materials/" class="nav__subset__link canSpeak">Реализация вторичного сырья</a></li>
                       <li class="nav__subset__item"><a href="/clients/wasted-transport/" class="nav__subset__link canSpeak">Транспортирование отходов</a></li>
-                      <li class="nav__subset__item"><a href="/clients/activities-tko/" class="nav__subset__link canSpeak">Деятельность по захоронению ТКО</a></li>
-                      <li class="nav__subset__item"><a href="/clients/waste-sorting-activity/" class="nav__subset__link canSpeak">Мусоросортировочные заводы и перегрузочные станции</a></li>
+                      <li class="nav__subset__item"><a href="/clients/activities-tko/" class="nav__subset__link canSpeak">Деятельность по захоронению отходов</a></li>
+                      <li class="nav__subset__item"><a href="/clients/waste-sorting-activity/" class="nav__subset__link canSpeak">Обработка (сортировка) отходов</a></li>
                     </ul>
                   </div>
                 </div></li>
@@ -340,11 +340,11 @@
             <div class="grid__cell grid__cell_big">
                 <div class="grid__wrapper">
                     <div class="proposal">
-                        <h3 class="proposal__heading proposal__heading_center canSpeak">увидели свалку?</h3>
+                        <h3 class="proposal__heading proposal__heading_center canSpeak">Обнаружили свалку твердых коммунальных отходов?</h3>
                         <p class="proposal__text"><?= $page->home_saw_dump_description ?></p>
                         <div class="proposal__grid">
                             <div class="proposal__button proposal__button_home">
-                                <a href="#callback" class="button canSpeak"  data-uk-offcanvas="{mode:'slide'}">сообщить о нарушении</a>
+                                <a href="#callback" class="button canSpeak"  data-uk-offcanvas="{mode:'slide'}">сообщить о нарушении!</a>
                                 <div id="callback_source" data-source="dump"></div>
                             </div>
                         </div>
