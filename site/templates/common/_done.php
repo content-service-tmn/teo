@@ -324,11 +324,11 @@
           <div class="contacts">
             <ul class="contacts__list">
               <li class="contacts__item"><a href="mailto: <?= $pages->get("template=layout_contacts")->site_email ?>"
-                                            class="contacts__link">email <?= $pages->get("template=layout_contacts")->site_email ?></a>
+                                            class="contacts__link">email: <?= $pages->get("template=layout_contacts")->site_email ?></a>
               </li>
               <li class="contacts__item"><a
                         href="tel:<?= phoneLink($pages->get("template=layout_contacts")->site_phone) ?>"
-                        class="contacts__link">телефон <?= $pages->get("template=layout_contacts")->site_phone ?></a>
+                        class="contacts__link">телефон: <?= $pages->get("template=layout_contacts")->site_phone ?></a>
               </li>
             </ul>
             <div class="contacts__socials">

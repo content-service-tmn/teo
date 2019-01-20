@@ -180,7 +180,7 @@
                         </div>
                       </div>
                       <div class="inner-small-contacts uk-grid">
-                        <div class="uk-width-1-2 canSpeak">Email's</div>
+                        <div class="uk-width-1-2 canSpeak">Email</div>
                         <div class="uk-width-1-2 canSpeak">
                             <?php foreach(explode(",", str_replace(" ", "", $block->breaking_news_title)) as $mail):?>
                               <p><a href="mailto:<?=($mail)?>" class=""><?=$mail?></a></p>

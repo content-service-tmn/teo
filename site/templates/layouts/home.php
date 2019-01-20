@@ -286,7 +286,7 @@
                                     <div class="item">
                                         <img src="<?= $config->urls->templates . "assets/svg/info.svg" ?>" alt=""
                                              class="item__img item__img_for-text">
-                                        <h3 class="item__heading canSpeak">интересные факты</h3>
+                                        <h3 class="item__heading canSpeak">интересный факт</h3>
                                         <p class="item__text"><?=$page->home_facts?></p>
                                         <a href="/press-center" class="item__link"></a>
                                     </div>
