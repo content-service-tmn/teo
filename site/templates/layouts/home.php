@@ -51,10 +51,10 @@
                         <div class="uk-dropdown nav__subset">
                             <ul>
                                 <li class="nav__subset__item"><a href="/clients/operator-activities/" class="nav__subset__link canSpeak">Деятельность регионального оператора по обращению с ТКО</a></li>
-                                <li class="nav__subset__item"><a href="/clients/secondary-materials/" class="nav__subset__link canSpeak">Реализация вторичного сырья</a></li>
-                                <li class="nav__subset__item"><a href="/clients/wasted-transport/" class="nav__subset__link canSpeak">Транспортирование отходов</a></li>
-                                <li class="nav__subset__item"><a href="/clients/activities-tko/" class="nav__subset__link canSpeak">Деятельность по захоронению отходов</a></li>
-                                <li class="nav__subset__item"><a href="/clients/waste-sorting-activity/" class="nav__subset__link canSpeak">Обработка (сортировка) отходов</a></li>
+                              <li class="nav__subset__item"><a href="/clients/waste-sorting-activity/" class="nav__subset__link canSpeak">Обработка (сортировка) отходов</a></li>
+                              <li class="nav__subset__item"><a href="/clients/wasted-transport/" class="nav__subset__link canSpeak">Транспортирование отходов</a></li>
+                              <li class="nav__subset__item"><a href="/clients/activities-tko/" class="nav__subset__link canSpeak">Деятельность по захоронению отходов</a></li>
+                              <li class="nav__subset__item"><a href="/clients/secondary-materials/" class="nav__subset__link canSpeak">Реализация вторичного сырья</a></li>
                             </ul>
                         </div>
                     </div></li>
@@ -139,10 +139,10 @@
                   <div class="uk-dropdown nav__subset">
                     <ul>
                       <li class="nav__subset__item"><a href="/clients/operator-activities/" class="nav__subset__link canSpeak">Деятельность регионального оператора по обращению с ТКО</a></li>
-                      <li class="nav__subset__item"><a href="/clients/secondary-materials/" class="nav__subset__link canSpeak">Реализация вторичного сырья</a></li>
+                      <li class="nav__subset__item"><a href="/clients/waste-sorting-activity/" class="nav__subset__link canSpeak">Обработка (сортировка) отходов</a></li>
                       <li class="nav__subset__item"><a href="/clients/wasted-transport/" class="nav__subset__link canSpeak">Транспортирование отходов</a></li>
                       <li class="nav__subset__item"><a href="/clients/activities-tko/" class="nav__subset__link canSpeak">Деятельность по захоронению отходов</a></li>
-                      <li class="nav__subset__item"><a href="/clients/waste-sorting-activity/" class="nav__subset__link canSpeak">Обработка (сортировка) отходов</a></li>
+                      <li class="nav__subset__item"><a href="/clients/secondary-materials/" class="nav__subset__link canSpeak">Реализация вторичного сырья</a></li>
                     </ul>
                   </div>
                 </div></li>

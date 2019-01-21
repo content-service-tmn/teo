@@ -65,10 +65,10 @@
                           <div class="uk-dropdown nav__subset">
                               <ul>
                                   <li class="nav__subset__item"><a href="/clients/operator-activities/" class="nav__subset__link canSpeak">Деятельность регионального оператора по обращению с ТКО</a></li>
-                                  <li class="nav__subset__item"><a href="/clients/secondary-materials/" class="nav__subset__link canSpeak">Реализация вторичного сырья</a></li>
-                                  <li class="nav__subset__item"><a href="/clients/wasted-transport/" class="nav__subset__link canSpeak">Транспортирование отходов</a></li>
-                                  <li class="nav__subset__item"><a href="/clients/activities-tko/" class="nav__subset__link canSpeak">Деятельность по захоронению отходов</a></li>
-                                  <li class="nav__subset__item"><a href="/clients/waste-sorting-activity/" class="nav__subset__link canSpeak">Обработка (сортировка) отходов</a></li>
+                                <li class="nav__subset__item"><a href="/clients/waste-sorting-activity/" class="nav__subset__link canSpeak">Обработка (сортировка) отходов</a></li>
+                                <li class="nav__subset__item"><a href="/clients/wasted-transport/" class="nav__subset__link canSpeak">Транспортирование отходов</a></li>
+                                <li class="nav__subset__item"><a href="/clients/activities-tko/" class="nav__subset__link canSpeak">Деятельность по захоронению отходов</a></li>
+                                <li class="nav__subset__item"><a href="/clients/secondary-materials/" class="nav__subset__link canSpeak">Реализация вторичного сырья</a></li>
                               </ul>
                           </div>
                       </div></li>
@@ -126,10 +126,10 @@
         <ul class="sidebar__items">
           <li class="sidebar__item canSpeak"><a href="/clients" data-uk-smoothscroll>Клиентам</a></li>
           <li class="sidebar__item canSpeak"><a href="/clients/operator-activities/" data-uk-smoothscroll>Деятельность регионального оператора по обращению с ТКО</a></li>
-          <li class="sidebar__item canSpeak"><a href="/clients/secondary-materials/" data-uk-smoothscroll>Реализация вторичного сырья</a></li>
+          <li class="sidebar__item canSpeak"><a href="/clients/waste-sorting-activity/" data-uk-smoothscroll>Обработка (сортировка) отходов</a></li>
           <li class="sidebar__item canSpeak"><a href="/clients/wasted-transport/" data-uk-smoothscroll>Транспортирование отходов</a></li>
           <li class="sidebar__item canSpeak"><a href="/clients/activities-tko/" data-uk-smoothscroll>Деятельность по захоронению отходов</a></li>
-          <li class="sidebar__item canSpeak"><a href="/clients/waste-sorting-activity/" data-uk-smoothscroll>Обработка (сортировка) отходов</a></li>
+          <li class="sidebar__item canSpeak"><a href="/clients/secondary-materials/" data-uk-smoothscroll>Реализация вторичного сырья</a></li>
         </ul>
         <ul class="sidebar__items">
           <li class="sidebar__item canSpeak"><a href="<?=$pages->get(1)->procurement_url?>" data-uk-smoothscroll>Закупки</a></li>
@@ -301,10 +301,10 @@
             <li class="footer__item"><a href="/clients" class="footer__link">Клиентам</a></li>
             <li class="footer__item"><a href="/clients/operator-activities/" class="footer__link">Деятельность регионального оператора по обращению с ТКО</a>
             </li>
-            <li class="footer__item"><a href="/clients/secondary-materials/" class="footer__link">Реализация вторичного сырья</a></li>
-            <li class="footer__item"><a href="/clients/wasted-transport/" class="footer__link">Транспортирование отходов</a></li>
-            <li class="footer__item"><a href="/clients/activities-tko/" class="footer__link">Деятельность по захоронению отходов</a></li>
             <li class="footer__item"><a href="/clients/waste-sorting-activity/" class="footer__link">Обработка (сортировка) отходов</a></li>
+            <li class="footer__item"><a href="/clients/activities-tko/" class="footer__link">Деятельность по захоронению отходов</a></li>
+            <li class="footer__item"><a href="/clients/wasted-transport/" class="footer__link">Транспортирование отходов</a></li>
+            <li class="footer__item"><a href="/clients/secondary-materials/" class="footer__link">Реализация вторичного сырья</a></li>
           </ul>
         </div>
         <div class="footer__cell">
