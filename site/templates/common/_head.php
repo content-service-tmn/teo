@@ -1,8 +1,17 @@
 <meta charset="UTF-8">
-<title>Document</title>
+<title><?= $page->seo_title ? $page->seo_title : $page->title; ?></title>
+<meta name="description" content="<?= $page->seo_description ? $page->seo_description : "description"; ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--<link rel="stylesheet" type="text/css" href= <?= $config->urls->templates . "assets/css/template.css"?>>-->
 <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,600,700,800,900" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="<?= $config->urls->assets . "favicon/apple-touch-icon.png"?>">
+<link rel="icon" type="image/png" sizes="32x32" href="<?= $config->urls->assets . "favicon/favicon-32x32.png"?>">
+<link rel="icon" type="image/png" sizes="16x16" href="<?= $config->urls->assets . "favicon/favicon-16x16.png"?>">
+<link rel="manifest" href="<?= $config->urls->assets . "favicon/site.webmanifest"?>">
+<link rel="mask-icon" href="<?= $config->urls->assets . "favicon/safari-pinned-tab.svg"?>" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
 <!--<script-->
 <!--        src="https://code.jquery.com/jquery-3.3.1.min.js"-->
 <!--        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="-->
