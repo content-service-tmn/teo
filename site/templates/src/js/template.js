@@ -236,6 +236,7 @@ $(document).ready(function() {
         $("#feedback_" + blockid).slideDown(300);
     });
     $(".canSpeak").mouseenter(function(){
+        console.log(sessionStorage.getItem('isInvalid') == "true");
         if (sessionStorage.getItem('isInvalid') == "true") {
             var msg = new SpeechSynthesisUtterance($(this)[0].innerText);
             say(msg);
@@ -262,15 +263,15 @@ $(document).ready(function() {
     }
 
     var icon_invalid = $('.menu__phone-container__icon');
+    var bottom_icon = $('.invalid_footer');
 
     $(".invalid").click(function () {
         if (sessionStorage.getItem('isInvalid') == "true"){
-            $(this).css("fill","black");
+            $(bottom_icon).css("fill","black");
             icon_invalid.css("box-shadow", "none");
             sessionStorage.setItem('isInvalid', false);
         } else {
-            $(this).css("fill", "#e9ac45");
-
+            $(bottom_icon).css("fill", "#e9ac45");
             if ($(this).find('.menu__phone-container__icon')) {
                 icon_invalid.css("box-shadow", "white 0px 0px 5px 2px");
             }

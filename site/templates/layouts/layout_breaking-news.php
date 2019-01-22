@@ -6,7 +6,7 @@
                                             class="breadcrumbs__link canSpeak"><?= $parent->title ?></a></div>
         <?php endforeach; ?>
     </div>
-    <h2 class="breadcrumbs__heading canSpeak">Срочные новости</h2>
+    <h2 class="breadcrumbs__heading canSpeak">Важные сообщения</h2>
   </div>
 </section>
 

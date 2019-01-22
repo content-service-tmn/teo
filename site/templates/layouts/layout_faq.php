@@ -14,7 +14,7 @@
   <div class="container container_center">
     <div class="faq__grid uk-accordion" data-uk-accordion="{showfirst:false}">
       <?php foreach($page->faq_block as $block): ?>
-          <div class="faq__cell__fulline"><h3><?=$block->text_page_title?></h3></div>
+          <div class="faq__cell__fulline canSpeak"><h3><?=$block->text_page_title?></h3></div>
       <div class="faq__cell">
           <?php foreach ($block->faq_item as $i => $quest): if ($i % 2 == 0): ?>
             <h3 class="uk-accordion-title canSpeak"><?= $quest->repeater_faq_quest ?></h3>

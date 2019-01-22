@@ -22,7 +22,7 @@
             <div class="factories__panel">
               <h3 class="factories__subheading canSpeak"><?=$child->text_page_title?></h3>
               <p class="factories__text canSpeak"><?=$child->text_page_description?></p>
-              <a href="<?=$child->url?>" class="factories__link canSpeak">перейти на страницу завода</a>
+              <a href="<?=$child->url?>" class="factories__link canSpeak">перейти на страницу <?php echo (strpos( $child->text_page_title, "олиго" ) !== false)?"полигона":"завода"?></a>
             </div>
           </div>
         <?php endforeach; ?>

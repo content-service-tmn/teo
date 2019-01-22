@@ -21,7 +21,7 @@
                             <a href="/callback-full/" class="menu__button fixed canSpeak">Обратная связь</a>
                         </div>
                     </div>
-                    <div class="menu__phone-container__right invalid" title="Режим для людей с ограниченными возможностями.
+                    <div class="menu__phone-container__right invalid invalid_header" title="Режим для людей с ограниченными возможностями.
             При активации этого режима, надписи на сайте будут озвучиваться при наведении на них мышкой" style="cursor: pointer">
                         <div class="menu__phone-container__icon">
                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
@@ -39,10 +39,12 @@
                         <a href="/about" class="nav__link canSpeak">о предприятии</a>
                         <div class="uk-dropdown nav__subset">
                             <ul>
-                                <li class="nav__subset__item"><a href="/about/us/" class="nav__subset__link">Общие сведения</a></li>
-                                <li class="nav__subset__item"><a href="/about/management/" class="nav__subset__link">Руководство</a></li>
-                                <li class="nav__subset__item"><a href="/docs/" class="nav__subset__link">Документы</a></li>
-                                <li class="nav__subset__item"><a href="/contacts" class="nav__subset__link">Контакты</a></li>
+                                <li class="nav__subset__item"><a href="/about/us/" class="nav__subset__link canSpeak">Общие сведения</a></li>
+                                <li class="nav__subset__item"><a href="/about/management/" class="nav__subset__link canSpeak">Руководство</a></li>
+                                <li class="nav__subset__item"><a href="/docs/" class="nav__subset__link canSpeak">Документы</a></li>
+                                <li class="nav__subset__item"><a href="/contacts" class="nav__subset__link canSpeak">Контакты</a></li>
+                                <li class="nav__subset__item"><a href="/about/tko-ground/" class="nav__subset__link canSpeak">Полигоны ТКО</a></li>
+                                <li class="nav__subset__item"><a href="/about/garbage-disposal-plants/" class="nav__subset__link canSpeak">Мусоросортировочные заводы</a></li>
                             </ul>
                         </div>
                     </div></li>
@@ -64,13 +66,13 @@
                   <a href="/press-center" class="nav__link canSpeak">пресс-центр</a>
                   <div class="uk-dropdown nav__subset">
                     <ul>
-                      <li class="nav__subset__item"><a href="/press-center#messages" class="nav__subset__link">Срочные сообщения</a></li>
-                      <li class="nav__subset__item"><a href="/press-center/news/" class="nav__subset__link">Новости</a></li>
-                      <li class="nav__subset__item"><a href="/press-center#smi" class="nav__subset__link">СМИ о нас</a></li>
-                      <li class="nav__subset__item"><a href="/press-center/galleries" class="nav__subset__link">Фотогалерея</a></li>
-                      <li class="nav__subset__item"><a href="/press-center/videos" class="nav__subset__link">Видеоматериалы</a></li>
-                      <li class="nav__subset__item"><a href="/press-center/record-request" class="nav__subset__link">Запрос на съемку</a></li>
-                      <li class="nav__subset__item"><a href="/press-center/excursion-request" class="nav__subset__link">Заявка на экскурсию</a></li>
+                      <li class="nav__subset__item"><a href="/press-center#messages" class="nav__subset__link canSpeak">Важные сообщения</a></li>
+                      <li class="nav__subset__item"><a href="/press-center/news/" class="nav__subset__link canSpeak">Новости</a></li>
+                      <li class="nav__subset__item"><a href="/press-center#smi" class="nav__subset__link canSpeak">СМИ о нас</a></li>
+                      <li class="nav__subset__item"><a href="/press-center/galleries" class="nav__subset__link canSpeak">Фотогалерея</a></li>
+                      <li class="nav__subset__item"><a href="/press-center/videos" class="nav__subset__link canSpeak">Видеоматериалы</a></li>
+                      <li class="nav__subset__item"><a href="/press-center/record-request" class="nav__subset__link canSpeak">Запрос на съемку</a></li>
+                      <li class="nav__subset__item"><a href="/press-center/excursion-request" class="nav__subset__link canSpeak">Заявка на экскурсию</a></li>
                     </ul>
                   </div>
                 </div></li>
@@ -109,7 +111,7 @@
                             <a href="/callback-full/" class="menu__button main canSpeak">Обратная связь</a>
                         </div>
                     </div>
-                    <div class="menu__phone-container__right invalid" title="Режим для людей с ограниченными возможностями.
+                    <div class="menu__phone-container__right invalid invalid_header" title="Режим для людей с ограниченными возможностями.
             При активации этого режима, надписи на сайте будут озвучиваться при наведении на них мышкой" style="cursor: pointer">
                         <div class="menu__phone-container__icon main">
                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
@@ -127,10 +129,12 @@
                   <a href="/about" class="nav__link canSpeak">о предприятии</a>
                   <div class="uk-dropdown nav__subset">
                     <ul>
-                      <li class="nav__subset__item"><a href="/about/us/" class="nav__subset__link">Общие сведения</a></li>
-                      <li class="nav__subset__item"><a href="/about/management/" class="nav__subset__link">Руководство</a></li>
-                      <li class="nav__subset__item"><a href="/docs/" class="nav__subset__link">Документы</a></li>
-                      <li class="nav__subset__item"><a href="/contacts" class="nav__subset__link">Контакты</a></li>
+                      <li class="nav__subset__item"><a href="/about/us/" class="nav__subset__link canSpeak">Общие сведения</a></li>
+                      <li class="nav__subset__item"><a href="/about/management/" class="nav__subset__link canSpeak">Руководство</a></li>
+                      <li class="nav__subset__item"><a href="/docs/" class="nav__subset__link canSpeak">Документы</a></li>
+                      <li class="nav__subset__item"><a href="/contacts" class="nav__subset__link" canSpeak>Контакты</a></li>
+                      <li class="nav__subset__item"><a href="/about/tko-ground/" class="nav__subset__link" canSpeak>Полигоны ТКО</a></li>
+                      <li class="nav__subset__item"><a href="/about/garbage-disposal-plants/" class="nav__subset__link" canSpeak>Мусоросортировочные заводы</a></li>
                     </ul>
                   </div>
                 </div></li>
@@ -152,13 +156,13 @@
                   <a href="/press-center" class="nav__link canSpeak">пресс-центр</a>
                   <div class="uk-dropdown nav__subset">
                     <ul>
-                      <li class="nav__subset__item"><a href="/press-center#messages" class="nav__subset__link">Срочные сообщения</a></li>
-                      <li class="nav__subset__item"><a href="/press-center/news/" class="nav__subset__link">Новости</a></li>
-                      <li class="nav__subset__item"><a href="/press-center#smi" class="nav__subset__link">СМИ о нас</a></li>
-                      <li class="nav__subset__item"><a href="/press-center/galleries" class="nav__subset__link">Фотогалерея</a></li>
-                      <li class="nav__subset__item"><a href="/press-center/videos" class="nav__subset__link">Видеоматериалы</a></li>
-                      <li class="nav__subset__item"><a href="/press-center/record-request" class="nav__subset__link">Запрос на съемку</a></li>
-                      <li class="nav__subset__item"><a href="/press-center/excursion-request" class="nav__subset__link">Заявка на экскурсию</a></li>
+                      <li class="nav__subset__item"><a href="/press-center#messages" class="nav__subset__link canSpeak">Важные сообщения</a></li>
+                      <li class="nav__subset__item"><a href="/press-center/news/" class="nav__subset__link canSpeak">Новости</a></li>
+                      <li class="nav__subset__item"><a href="/press-center#smi" class="nav__subset__link canSpeak">СМИ о нас</a></li>
+                      <li class="nav__subset__item"><a href="/press-center/galleries" class="nav__subset__link canSpeak">Фотогалерея</a></li>
+                      <li class="nav__subset__item"><a href="/press-center/videos" class="nav__subset__link canSpeak">Видеоматериалы</a></li>
+                      <li class="nav__subset__item"><a href="/press-center/record-request" class="nav__subset__link canSpeak">Запрос на съемку</a></li>
+                      <li class="nav__subset__item"><a href="/press-center/excursion-request" class="nav__subset__link canSpeak">Заявка на экскурсию</a></li>
                     </ul>
                   </div>
                 </div></li>
@@ -246,19 +250,19 @@
         <h3 class="header__name header__name_ish canSpeak">Ишим</h3>
         <div class="header__content content">
           <h1 class="content__heading canSpeak"><?= $page->home_title_on_map_tyumen ?></h1>
-          <p class="content__text"><?= $page->home_description_under_title_tyumen ?></p>
+          <p class="content__text canSpeak"><?= $page->home_description_under_title_tyumen ?></p>
         </div>
         <div class="header__content content">
           <h1 class="content__heading canSpeak"><?= $page->home_title_on_map_tobolsk ?></h1>
-          <p class="content__text"><?= $page->home_description_under_title_tobolsk ?></p>
+          <p class="content__text canSpeak"><?= $page->home_description_under_title_tobolsk ?></p>
         </div>
         <div class="header__content content">
           <h1 class="content__heading canSpeak"><?= $page->home_title_on_map_ishim ?></h1>
-          <p class="content__text"><?= $page->home_description_under_title_ishim ?></p>
+          <p class="content__text canSpeak"><?= $page->home_description_under_title_ishim ?></p>
         </div>
         <div class="header__content content active">
           <h1 class="content__heading canSpeak"><?= $page->home_title_on_map ?></h1>
-          <p class="content__text"><?= $page->home_description_under_title ?></p>
+          <p class="content__text canSpeak"><?= $page->home_description_under_title ?></p>
         </div>
       </div>
     </div>
@@ -341,7 +345,9 @@
                 <div class="grid__wrapper">
                     <div class="proposal">
                         <h3 class="proposal__heading proposal__heading_center canSpeak">Обнаружили свалку твердых коммунальных отходов?</h3>
-                        <p class="proposal__text"><?= $page->home_saw_dump_description ?></p>
+                        <?php if ($page->home_saw_dump_description!= ""): ?>
+                            <p class="proposal__text"><?= $page->home_saw_dump_description ?></p>
+                        <?php endif; ?>
                         <div class="proposal__grid">
                             <div class="proposal__button proposal__button_home">
                                 <a href="#callback" class="button canSpeak"  data-uk-offcanvas="{mode:'slide'}">сообщить о нарушении!</a>
@@ -385,13 +391,13 @@
             <?php foreach ($page->home_partners as $partner): ?>
               <?php if (!$partner->repeater_partner_isBanner): ?>
                 <li class="uk-width-1-2 uk-width-small-1-3">
-                  <div class="support__image"
-                  style="background-image:url(<?=$partner->repeater_partner_image->url?>"></div>
+                    <a href="<?=$partner->mass_media_about_us_url?>"  target="_blank"><div class="support__image"
+                                            style="background-image:url(<?=$partner->repeater_partner_image->url?>"></div></a>
                 </li>
               <?php else: ?>
                 <li class="uk-width-1-1 uk-width-small-2-3">
-                  <div class="support__image"
-                  style="background-image:url(<?=$partner->repeater_partner_image->url?>"></div>
+                  <a href="<?=$partner->mass_media_about_us_url?>" target="_blank"><div  class="support__image"
+                           style="background-image:url(<?=$partner->repeater_partner_image->url?>"></div></a>
                 </li>
               <?php endif; endforeach; ?>
             </ul>
