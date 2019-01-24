@@ -107,7 +107,7 @@
                                                      style="padding-top: 0">
                                                     <a href="#callback" class="button canSpeak"
                                                        data-uk-offcanvas="{mode:'slide'}"><?= $block->text_page_title ?></a>
-                                                    <div id="callback_source" data-source="dump"></div>
+                                                    <div id="callback_source" data-source="<?=$block->text_page_title?>"></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -124,7 +124,7 @@
                                                      style="padding-top: 0">
                                                     <a href="/callback-full" class="button canSpeak">Подать заявку на
                                                         заключение договора</a>
-                                                    <div id="callback_source" data-source="dump"></div>
+                                                    <div id="callback_source" data-source="dogovor"></div>
                                                 </div>
                                             </div>
                                         </div>
