@@ -35,7 +35,7 @@
                         <div class="textpage_node">
                             <?php if ($block->repeater_matrix_type == 1): ?>
                                 <div class="text__block canSpeak">
-                                    <?= str_replace("<p>", "<p class=\"text__text\">", $block->text_page_text) ?>
+                                    <?= str_replace("<p>", "<p class=\"text__text canSpeak\">", $block->text_page_text) ?>
                                 </div>
                             <?php endif; ?>
 
@@ -190,7 +190,7 @@
                                         <div class="inner-small-contacts uk-grid">
                                             <div class="uk-width-1-2 canSpeak">Телефон:</div>
                                             <div class="uk-width-1-2 canSpeak">
-                                                <?php foreach (explode(",", str_replace(" ", "", $block->vacancy_name)) as $phone): ?>
+                                                <?php foreach (explode(",", $block->vacancy_name) as $phone): ?>
                                                     <p><a href="tel:<?= phoneLink($phone) ?>" class="canSpeak"><?= $phone ?></a>
                                                     </p>
                                                 <?php endforeach; ?>
