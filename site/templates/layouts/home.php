@@ -373,7 +373,7 @@
             <div class="news-block">
               <p class="news-block__date"><?= $pge->text_page_date ?></p>
               <h3 class="news-block__heading canSpeak"><?= $pge->text_page_title ?></h3>
-              <p class="news-block__text canSpeak"><?= $pge->text_page_subtitle ?></p>
+              <p class="news-block__text canSpeak"><?= $pge->text_page_description ?></p>
               <a href="<?= $pge->url ?>" class="news-block__link canSpeak">Подробнее</a>
             </div>
           </div>
@@ -384,7 +384,7 @@
 <section class="support">
   <div class="container container_center">
     <div class="support__container">
-      <h1 class="support__heading canSpeak">при поддержке</h1>
+      <h1 class="support__heading canSpeak">Наши партнеры</h1>
       <div class="uk-slidenav-position support__grid" data-uk-slider="{center:true}">
         <div class="uk-slider-container">
           <ul class="uk-slider uk-grid uk-grid-medium">
