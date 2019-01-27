@@ -11,30 +11,32 @@
 </section>
 
 <section class="document">
-  <div class="container container_center">
-    <div class="document__grid">
-      <div class="document__left">
-        <p>Читайте также:</p>
-        <br>
-        <ul class="document__list">
-            <?php foreach ($page->parent->children("limit=5, sort=-text_page_date") as $pge): ?>
-              <li><a href="<?= $pge->url ?>"
-                     class="document__link <?php if ($pge->id == $page->id) echo "active" ?>"><?= $pge->title ?></a>
-              </li>
-            <?php endforeach; ?>
-        </ul>
-      </div>
-      <div class="document__right">
-        <h2 class="document__heading canSpeak"><?= $page->text_page_title ?></h2>
-        <div class="document__text-block text">
-
-          <h3 class="text__heading canSpeak"><?= $page->text_page_subtitle ?></h3>
-            <?php foreach ($page->text_page_content as $block): ?>
-                <?php if ($block->repeater_matrix_type == 1): ?>
-                    <div class="text__block canSpeak">
-                        <?= str_replace("<p>", "<p class=\"text__text\">", $block->text_page_text) ?>
-                    </div>
-                <?php endif; ?>
+    <div class="container container_center">
+        <div class="document__grid">
+            <div class="document__left">
+                <p class="canSpeak">Читайте также:</p>
+                <br>
+                <ul class="document__list">
+                    <?php foreach ($page->parent->children("limit=5, sort=-text_page_date") as $pge): ?>
+                        <li><a href="<?= $pge->url ?>"
+                               class="document__link canSpeak <?php if ($pge->id == $page->id) echo "active" ?>"><?= $pge->title ?></a>
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
+            </div>
+            <div class="document__right">
+                <h2 class="document__heading canSpeak"><?= $page->text_page_title ?></h2>
+                <div class="document__text-block text">
+                    <?php if ($page->text_page_subtitle != ""): ?>
+                        <h3 class="text__heading canSpeak"><?= $page->text_page_subtitle ?></h3>
+                    <?php endif; ?>
+                    <?php $contactsOnPage = 0; foreach ($page->text_page_content as $block): ?>
+                        <div class="textpage_node">
+                            <?php if ($block->repeater_matrix_type == 1): ?>
+                                <div class="text__block canSpeak">
+                                    <?= str_replace("<p>", "<p class=\"text__text canSpeak\">", $block->text_page_text) ?>
+                                </div>
+                            <?php endif; ?>
 
                 <?php if ($block->repeater_matrix_type == 2): ?>
                      <div class="text__block">
@@ -82,103 +84,121 @@
                    data-uk-lightbox></a>
                 <?php endif; ?>
 
-                <?php if ($block->repeater_matrix_type == 5): ?>
-                <div class="grid__cell grid__cell_big" style="margin-bottom: 60px">
-                  <div class="grid__wrapper">
-                    <div class="proposal">
-                      <div class="proposal__grid">
-                        <div class="proposal__button proposal__button_home">
-                          <a href="#callback" class="button canSpeak"  data-uk-offcanvas="{mode:'slide'}">Подать заявку на заключение договора</a>
-                          <div id="callback_source" data-source="dump"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <?php endif; ?>
+                            <?php if ($block->repeater_matrix_type == 5): ?>
+                                <div class="grid__cell grid__cell_big" style="margin-bottom: 60px">
+                                    <div class="grid__wrapper">
+                                        <div class="proposal">
+                                            <div class="proposal__grid">
+                                                <div class="proposal__button proposal__button_home"
+                                                     style="padding-top: 0">
+                                                    <a href="#callback" class="button canSpeak"
+                                                       data-uk-offcanvas="{mode:'slide'}"><?= $block->text_page_title ?></a>
+                                                    <div id="callback_source" data-source="<?=$block->text_page_title?>"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <?php endif; ?>
 
-                <?php if ($block->repeater_matrix_type == 6): ?>
-                <div class="grid__cell grid__cell_big" style="margin-bottom: 60px">
-                  <div class="grid__wrapper">
-                    <div class="proposal">
-                      <div class="proposal__grid">
-                        <div class="proposal__button proposal__button_home">
-                          <a href="/callback-full" class="button canSpeak">Подать заявку на заключение договора</a>
-                          <div id="callback_source" data-source="dump"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                            <?php if ($block->repeater_matrix_type == 6): ?>
+                                <div class="grid__cell grid__cell_big" style="margin-bottom: 60px">
+                                    <div class="grid__wrapper">
+                                        <div class="proposal">
+                                            <div class="proposal__grid">
+                                                <div class="proposal__button proposal__button_home"
+                                                     style="padding-top: 0">
+                                                    <a href="/callback-full" class="button canSpeak">Подать заявку на
+                                                        заключение договора</a>
+                                                    <div id="callback_source" data-source="dogovor"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-                <?php endif; ?>
-                <?php if ($block->repeater_matrix_type == 7): ?>
-                    <div class="text__block">
-                      <h3 class="canSpeak"><?=$block->files_list_header_title?></h3>
-                        <?=str_replace("<p>", "<p class=\"text__text canSpeak\">", $block->files_list_header_subtitle);?>
-                      <div class="procurements__files text__files">
-                        <?php foreach($block->repeater_files_list_files as $file):?>
-                            <div class="procurements__file">
-                              <div class="document__file">
-                                <p class="document__name"><?=$file->name?></p>
-                                <a href="<?=$file->url?>" class="document__file-link canSpeak">Ознакомиться с документом</a>
-                              </div>
-                            </div>
-                        <?php endforeach; ?>
-                    </div>
-                    </div>
-                <?php endif; ?>
-                <?php if ($block->repeater_matrix_type == 8): ?>
-                    <div class="text__block">
-                <section class="faq" style="padding: 0">
-                  <h3><?=$block->text_page_title?></h3>
-                  <div class="faq__grid uk-accordion" data-uk-accordion="{showfirst:false}">
-                    <?php foreach($block->faq_item as $item):?>
-                      <div class="faq__cell">
-                            <h3 class="uk-accordion-title canSpeak"><?=$item->repeater_faq_quest?></h3>
-                            <div class="uk-accordion-content canSpeak"><?=$item->repeater_faq_answer?></div>
-                      </div>
-                        <?php endforeach; ?>
-                    </div>
-                </section>
-                    </div>
-                <?php endif; ?>
-                <?php if ($block->repeater_matrix_type == 9): ?>
-                <section class="faq" style="padding-top: 0">
-                    <h3 class="canSpeak"><?=$block->text_page_title?></h3>
-                    <div class="faq__grid">
-                        <?php foreach($block->text_page_pagereference as $reference): ?>
-                      <div class="faq__link">
-                        <a href="<?=$reference->url?>"><h3 class="uk-accordion-title canSpeak"><?=$reference->title?></h3></a>
-                      </div>
-                        <?php endforeach; ?>
-                    </div>
-                </section>
-                <?php endif; ?>
-                <?php if ($block->repeater_matrix_type == 10): ?>
-                    <div class="small-contacts">
-                      <h3><?=$block->text_page_title?></h3>
-                      <div class="inner-small-contacts uk-grid">
-                        <div class="uk-width-1-2 canSpeak">Телефоны:</div>
-                        <div class="uk-width-1-2 canSpeak">
-                          <?php foreach(explode(",", str_replace(" ", "", $block->vacancy_name)) as $phone):?>
-                            <p><a href="tel:<?=phoneLink($phone)?>" class=""><?=$phone?></a></p>
-                        <?php endforeach; ?>
+                            <?php endif; ?>
+                            <?php if ($block->repeater_matrix_type == 7): ?>
+                                <div class="text__block">
+                                    <h3 class="canSpeak"><?= $block->files_list_header_title ?></h3>
+                                    <?= str_replace("<p>", "<p class=\"text__text canSpeak\">", $block->files_list_header_subtitle); ?>
+                                    <div class="procurements__files text__files">
+                                        <?php foreach ($block->repeater_files_list_files as $file): ?>
+                                            <div class="procurements__file">
+                                                <div class="document__file_long">
+                                                    <p class="document__name"><?= $file->description ?></p>
+                                                    <a href="<?= $file->url ?>" class="document__file-link canSpeak">Ознакомиться
+                                                        с документом (<?= strtoupper($file->ext) ?>,
+                                                        размер <?= $file->filesizeStr ?>)</a>
+                                                </div>
+                                            </div>
+                                        <?php endforeach; ?>
+                                    </div>
+                                </div>
+                            <?php endif; ?>
+                            <?php if ($block->repeater_matrix_type == 8): ?>
+                                <div class="text__block">
+                                    <section class="faq" style="padding: 0">
+                                        <h3><?= $block->text_page_title ?></h3>
+                                        <div class="faq__grid uk-accordion" data-uk-accordion="{showfirst:false}">
+                                            <?php foreach ($block->faq_item as $item): ?>
+                                                <div class="faq__cell">
+                                                    <h3 class="uk-accordion-title canSpeak"><?= $item->repeater_faq_quest ?></h3>
+                                                    <div class="uk-accordion-content canSpeak"><?= $item->repeater_faq_answer ?></div>
+                                                </div>
+                                            <?php endforeach; ?>
+                                        </div>
+                                    </section>
+                                </div>
+                            <?php endif; ?>
+                            <?php if ($block->repeater_matrix_type == 9): ?>
+                                <section class="faq" style="padding-top: 0">
+                                    <h3 class="canSpeak"><?= $block->text_page_title ?></h3>
+                                    <div class="faq__grid">
+                                        <?php foreach ($block->text_page_pagereference as $reference): ?>
+                                            <div class="faq__link">
+                                                <a href="<?= $reference->url ?>"><h3
+                                                            class="uk-accordion-title canSpeak"><?= $reference->title ?></h3>
+                                                </a>
+                                            </div>
+                                        <?php endforeach; ?>
+                                    </div>
+                                </section>
+                            <?php endif; ?>
+                            <?php if ($block->repeater_matrix_type == 10): $contactsOnPage++; ?>
+                                <div class="small-contacts">
+                                    <?php if ($contactsOnPage == 1): ?>
+                                        <h3 class="canSpeak">Контакты</h3>
+                                    <?php endif; ?>
+                                    <br>
+                                    <h4 style="margin-bottom: 20px" class="canSpeak"><?= $block->text_page_title ?>:</h4>
+                                    <?php if ($block->vacancy_name != ""): ?>
+                                        <div class="inner-small-contacts uk-grid">
+                                            <div class="uk-width-1-2 canSpeak">Телефон:</div>
+                                            <div class="uk-width-1-2 canSpeak">
+                                                <?php foreach (explode(",", $block->vacancy_name) as $phone): ?>
+                                                    <p><a href="tel:<?= phoneLink($phone) ?>" class="canSpeak"><?= $phone ?></a>
+                                                    </p>
+                                                <?php endforeach; ?>
+                                            </div>
+                                        </div>
+                                    <?php endif; ?>
+                                    <?php if ($block->breaking_news_title != ""): ?>
+                                        <div class="inner-small-contacts uk-grid">
+                                            <div class="uk-width-1-2 canSpeak">Email</div>
+                                            <div class="uk-width-1-2 canSpeak">
+                                                <?php foreach (explode(",", str_replace(" ", "", $block->breaking_news_title)) as $mail): ?>
+                                                    <p><a href="mailto:<?= ($mail) ?>" class=""><?= $mail ?></a></p>
+                                                <?php endforeach; ?>
+                                            </div>
+                                        </div>
+                                    <?php endif; ?>
+                                </div>
+                            <?php endif; ?>
                         </div>
-                      </div>
-                      <div class="inner-small-contacts uk-grid">
-                        <div class="uk-width-1-2 canSpeak">Email's</div>
-                        <div class="uk-width-1-2 canSpeak">
-                            <?php foreach(explode(",", str_replace(" ", "", $block->breaking_news_title)) as $mail):?>
-                              <p><a href="mailto:<?=($mail)?>" class=""><?=$mail?></a></p>
-                            <?php endforeach; ?>
-                        </div>
-                      </div>
-                    </div>
-                <?php endif; ?>
-            <?php endforeach; ?>
+                    <?php endforeach; ?>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </section>

@@ -61,7 +61,7 @@
           </div>
       </div>
     </div>
-    <div class="menu menu_violet menu_small">
+    <div class="menu menu_green menu_small">
       <div class="container container_center">
         <div class="menu__grid">
           <div class="menu__grid-left">
@@ -80,10 +80,13 @@
                       <a href="<?=$rootPage?>about" class="nav__link canSpeak">о предприятии</a>
                       <div class="uk-dropdown nav__subset">
                         <ul>
-                          <li class="nav__subset__item"><a href="<?=$rootPage?>about/us/" class="nav__subset__link">Общие сведения</a></li>
-                          <li class="nav__subset__item"><a href="<?=$rootPage?>about/management/" class="nav__subset__link">Руководство</a></li>
-                          <li class="nav__subset__item"><a href="<?=$rootPage?>docs/" class="nav__subset__link">Документы</a></li>
-                          <li class="nav__subset__item"><a href="<?=$rootPage?>contacts" class="nav__subset__link">Контакты</a></li>
+                            <?php  foreach ($pages->get("name=about")->children as $i => $child): ?>
+                                <li class="nav__subset__item"><a href="<?=$child->url?>" class="nav__subset__link canSpeak"><?=$child->title?></a></li>
+                                <?php if ($i==1) echo
+                                    "<li class=\"nav__subset__item\"><a href=\"{$rootPage}docs/\" class=\"nav__subset__link\">Документы</a></li>".
+                                    "<li class=\"nav__subset__item\"><a href=\"{$rootPage}contacts\" class=\"nav__subset__link\">Контакты</a></li>"
+                                ?>
+                            <?php endforeach; ?>
                         </ul>
                       </div>
                     </div></li>
@@ -91,11 +94,9 @@
                       <a href="<?=$rootPage?>clients" class="nav__link canSpeak">клиентам</a>
                       <div class="uk-dropdown nav__subset">
                         <ul>
-                          <li class="nav__subset__item"><a href="<?=$rootPage?>clients/operator-activities/" class="nav__subset__link canSpeak">Деятельность регионального оператора по обращению с ТКО</a></li>
-<!--                          <li class="nav__subset__item"><a href="--><?//=$rootPage?><!--clients/secondary-materials/" class="nav__subset__link canSpeak">Реализация вторичного сырья</a></li>-->
-                          <li class="nav__subset__item"><a href="<?=$rootPage?>clients/wasted-transport/" class="nav__subset__link canSpeak">Транспортирование отходов</a></li>
-                          <li class="nav__subset__item"><a href="<?=$rootPage?>clients/activities-tko/" class="nav__subset__link canSpeak">Деятельность по захоронению ТКО</a></li>
-<!--                          <li class="nav__subset__item"><a href="--><?//=$rootPage?><!--clients/waste-sorting-activity/" class="nav__subset__link canSpeak">Мусоросортировочные заводы и перегрузочные станции</a></li>-->
+                            <?php foreach ($pages->get("name=clients")->children as $child): ?>
+                                <li class="nav__subset__item"><a href="<?=$child->url?>" class="nav__subset__link canSpeak"><?=$child->title?></a></li>
+                            <?php endforeach; ?>
                         </ul>
                       </div>
                     </div></li>
@@ -144,18 +145,20 @@
         </ul>
         <ul class="sidebar__items">
           <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>about" data-uk-smoothscroll>О предприятии</a></li>
-          <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>about/us/" data-uk-smoothscroll>Общие сведения</a></li>
-          <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>about/management/" data-uk-smoothscroll>Руководство</a></li>
-          <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>docs/" data-uk-smoothscroll>Документы</a></li>
-          <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>contacts/" data-uk-smoothscroll>Контакты</a></li>
+            <?php  foreach ($pages->get("name=about")->children as $i => $child): ?>
+                <li class="sidebar__item canSpeak"><a href="<?=$child->url?>" data-uk-smoothscroll><?=$child->title?></a></li>
+                <?php if ($i==1) echo
+                    "<li class=\"sidebar__item canSpeak\"><a href=\"{$rootPage}docs/\" data-uk-smoothscroll>Документы</a></li>".
+                    "<li class=\"sidebar__item canSpeak\"><a href=\"{$rootPage}contacts\" data-uk-smoothscroll>Контакты</a></li>"
+                ?>
+            <?php endforeach; ?>
+
         </ul>
         <ul class="sidebar__items">
           <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>clients" data-uk-smoothscroll>Клиентам</a></li>
-          <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>clients/operator-activities/" data-uk-smoothscroll>Деятельность регионального оператора по обращению с ТКО</a></li>
-<!--          <li class="sidebar__item canSpeak"><a href="--><?//=$rootPage?><!--clients/secondary-materials/" data-uk-smoothscroll>Реализация вторичного сырья</a></li>-->
-          <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>clients/wasted-transport/" data-uk-smoothscroll>Транспортирование отходов</a></li>
-          <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>clients/activities-tko/" data-uk-smoothscroll>Деятельность по захоронению ТКО</a></li>
-<!--          <li class="sidebar__item canSpeak"><a href="--><?//=$rootPage?><!--clients/waste-sorting-activity/" data-uk-smoothscroll>Мусоросортировочные заводы и перегрузочные станции</a></li>-->
+            <?php foreach ($pages->get("name=clients")->children as $child): ?>
+                <li class="sidebar__item canSpeak"><a href="<?=$child->url?>" data-uk-smoothscroll><?=$child->title?></a></li>
+            <?php endforeach; ?>
         </ul>
         <ul class="sidebar__items">
           <li class="sidebar__item canSpeak"><a href="<?=$pages->get(1)->procurement_url?>" data-uk-smoothscroll>Закупки</a></li>
@@ -315,22 +318,21 @@
       <div class="footer__grid">
         <div class="footer__cell">
           <ul class="footer__list">
-            <li class="footer__item"><a href="<?=$rootPage?>about" class="footer__link">О предприятии</a></li>
-            <li class="footer__item"><a href="<?=$rootPage?>about/management" class="footer__link">Руководство</a>
-            </li>
-            <li class="footer__item"><a href="<?=$rootPage?>docs/" class="footer__link">Документы</a></li>
-            <li class="footer__item"><a href="<?=$rootPage?>contacts" class="footer__link">Контакты</a></li>
+              <?php  foreach ($pages->get("name=about")->children as $i => $child): ?>
+                  <li class="footer__item"><a href="<?=$child->url?>" class="footer__link canSpeak"><?=$child->title?></a></li>
+                  <?php if ($i==1) echo
+                      "<li class=\"footer__item\"><a href=\"{$rootPage}docs/\" class=\"footer__link canSpeak\">Документы</a></li>".
+                      "<li class=\"footer__item\"><a href=\"{$rootPage}contacts\" class=\"footer__link canSpeak\">Контакты</a></li>"
+                  ?>
+              <?php endforeach; ?>
           </ul>
         </div>
         <div class="footer__cell">
           <ul class="footer__list">
             <li class="footer__item"><a href="<?=$rootPage?>clients" class="footer__link">Клиентам</a></li>
-            <li class="footer__item"><a href="<?=$rootPage?>clients/operator-activities/" class="footer__link">Деятельность регионального оператора по обращению с ТКО</a>
-            </li>
-<!--            <li class="footer__item"><a href="--><?//=$rootPage?><!--clients/secondary-materials/" class="footer__link">Реализация вторичного сырья</a></li>-->
-            <li class="footer__item"><a href="<?=$rootPage?>clients/wasted-transport/" class="footer__link">Транспортирование отходов</a></li>
-            <li class="footer__item"><a href="<?=$rootPage?>clients/activities-tko/" class="footer__link">Деятельность по захоронению ТКО</a></li>
-<!--            <li class="footer__item"><a href="--><?//=$rootPage?><!--clients/waste-sorting-activity/" class="footer__link">Мусоросортировочные заводы и перегрузочные станции</a></li>-->
+              <?php foreach ($pages->get("name=clients")->children as $child): ?>
+                  <li class="footer__item"><a href="<?=$child->url?>" class="footer__link"><?=$child->title?></a>
+                  <?php endforeach; ?>
           </ul>
         </div>
         <div class="footer__cell">
