@@ -2,12 +2,14 @@
 namespace Processwire;
 $page->setOutputFormatting(false);
 if ($config->ajax) {
-    $smtpName = 'bot@contentservice.agency';
+    $smtpName = 'bot@ecoteo.ru';
     $relative = ["dump" => "Кнопка \"Сообщить о свалке\"", "record" => "Кнопка \"Запрос на съемку\"", "excursion" => "Кнопка \"Заявка на экскурсию\""];
     $m = $mail->new();
     $m->to($page->ajax_email_for_callback);
     $m->from($smtpName)
-        ->fromName("TEO Site");
+        ->fromName("Rifey Site")
+	->subject("Заявка с сайта");
+
     $messageBody = "Новая заявка с сайта: \r\n";
     if (isset($_REQUEST)) {
         if (isset($_REQUEST["data"])) {
@@ -25,7 +27,11 @@ if ($config->ajax) {
                 $message .= ", компания: {$sanitizer->text($data["company"])}.";
             }
             if (isset($data["from"])) {
-                $message .= "\n\tИсточник заявки: " . $relative[$sanitizer->text($data["from"])];
+		$srce = $sanitizer->text($data["from"]);
+		if (isset($relative[$srce])) {
+			$srce = $relative[$srce];
+		}
+                $message .= "\n\tИсточник заявки: " . $srce;
             }
             if (isset($data["quest"])) {
                 $message .= "\n\tВопрос: " . $sanitizer->text($data["quest"]);
@@ -42,7 +48,8 @@ if ($config->ajax) {
             $data = $_REQUEST;
             $message = "";
             foreach ($data as $name => $content){
-                if ($name != "full" && $name != "id" && $name != "it" && strpos($name, "wire") == false && $name[0] != "_"){
+		//bd(strpos($name, "wire"), $name);
+                if ($name != "full" && $name != "id" && $name != "it" && strpos($name, "wire") === false && $name[0] != "_" && strpos($name, "tracy") === false){
                     $message .= $sanitizer->text($name) . ": " . $sanitizer->text($content) . "\r\n";
                 }
                 if ($name == "E-mail"){
