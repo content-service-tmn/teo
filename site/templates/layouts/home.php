@@ -41,13 +41,13 @@ bd($user->language->title); ?>
                       </ul>
                     </div>
                   </div></li>
-                <li class="nav__item canSpeak"><a href="<?=$pages->get(1)->procurement_url?>" class="nav__link">закупки</a></li>
+                <li class="nav__item canSpeak"><a href="<?=$pages->get(1)->procurement_url?>" target="_blank" class="nav__link">закупки</a></li>
                 <li class="nav__item">
                   <div style="position: relative;" data-uk-dropdown>
                     <a href="<?=$rootPage?>press-center" class="nav__link canSpeak">пресс-центр</a>
                     <div class="uk-dropdown nav__subset">
                       <ul>
-                        <li class="nav__subset__item"><a href="<?=$rootPage?>press-center#messages" class="nav__subset__link">Срочные сообщения</a></li>
+                        <li class="nav__subset__item"><a href="<?=$rootPage?>press-center#messages" class="nav__subset__link">Важные сообщения</a></li>
                         <li class="nav__subset__item"><a href="<?=$rootPage?>press-center/news/" class="nav__subset__link">Новости</a></li>
                         <li class="nav__subset__item"><a href="<?=$rootPage?>press-center#smi" class="nav__subset__link">СМИ о нас</a></li>
                         <li class="nav__subset__item"><a href="<?=$rootPage?>press-center/galleries" class="nav__subset__link">Фотогалерея</a></li>

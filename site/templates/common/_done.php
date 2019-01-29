@@ -100,13 +100,13 @@
                         </ul>
                       </div>
                     </div></li>
-                  <li class="nav__item canSpeak"><a href="<?=$pages->get(1)->procurement_url?>" class="nav__link">закупки</a></li>
+                  <li class="nav__item canSpeak"><a href="<?=$pages->get(1)->procurement_url?>" target="_blank" class="nav__link">закупки</a></li>
                   <li class="nav__item">
                     <div style="position: relative;" data-uk-dropdown>
                       <a href="<?=$rootPage?>press-center" class="nav__link canSpeak">пресс-центр</a>
                       <div class="uk-dropdown nav__subset">
                         <ul>
-                          <li class="nav__subset__item"><a href="<?=$rootPage?>press-center#messages" class="nav__subset__link">Срочные сообщения</a></li>
+                          <li class="nav__subset__item"><a href="<?=$rootPage?>press-center#messages" class="nav__subset__link">Важные сообщения</a></li>
                           <li class="nav__subset__item"><a href="<?=$rootPage?>press-center/news/" class="nav__subset__link">Новости</a></li>
                           <li class="nav__subset__item"><a href="<?=$rootPage?>press-center#smi" class="nav__subset__link">СМИ о нас</a></li>
                           <li class="nav__subset__item"><a href="<?=$rootPage?>press-center/galleries" class="nav__subset__link">Фотогалерея</a></li>
@@ -161,12 +161,11 @@
             <?php endforeach; ?>
         </ul>
         <ul class="sidebar__items">
-          <li class="sidebar__item canSpeak"><a href="<?=$pages->get(1)->procurement_url?>" data-uk-smoothscroll>Закупки</a></li>
+          <li class="sidebar__item canSpeak"><a href="<?=$pages->get(1)->procurement_url?>" target="_blank" data-uk-smoothscroll>Закупки</a></li>
         </ul>
         <ul class="sidebar__items">
           <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>press-center/" data-uk-smoothscroll>Пресс-центр</a></li>
-          <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>press-center/breaking-news/" data-uk-smoothscroll>Срочные сообщения</a></li>
-          <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>press-center/news/" data-uk-smoothscroll>Срочные сообщения</a></li>
+          <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>press-center/breaking-news/" data-uk-smoothscroll>Важные сообщения</a></li>
           <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>press-center/news/" data-uk-smoothscroll>Новости</a></li>
           <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>press-center/#smi" data-uk-smoothscroll>СМИ о нас</a></li>
           <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>press-center/galleries/" data-uk-smoothscroll>Фотогалереи</a></li>
@@ -338,7 +337,7 @@
         <div class="footer__cell">
           <ul class="footer__list">
             <li class="footer__item"><a href="<?=$rootPage?>press-center/" class="footer__link">Пресс-центр</a></li>
-            <li class="footer__item"><a href="<?=$rootPage?>press-center/breaking-news/" class="footer__link">Срочные сообщения</a>
+            <li class="footer__item"><a href="<?=$rootPage?>press-center/breaking-news/" class="footer__link">Важные сообщения</a>
             </li>
             <li class="footer__item"><a href="<?=$rootPage?>press-center/news/" class="footer__link">Новости</a></li>
             <li class="footer__item"><a href="<?=$rootPage?>press-center/#smi" class="footer__link">СМИ о нас</a></li>

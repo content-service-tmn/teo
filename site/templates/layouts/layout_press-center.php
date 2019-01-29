@@ -14,7 +14,7 @@
 <section id="messages" class="messages">
   <div class="container container_center">
     <div class="messages__header">
-      <h3 class="messages__heading messages__heading_small canSpeak">Срочные сообщения</h3>
+      <h3 class="messages__heading messages__heading_small canSpeak">Важные сообщения</h3>
       <div class="messages__line"></div>
       <a href="breaking-news" class="messages__button canSpeak">все сообщения</a>
     </div>
@@ -48,7 +48,7 @@
                     <div class="news-block">
                         <p class="news-block__date"><?= $pge->text_page_date ?></p>
                         <h3 class="news-block__heading canSpeak"><?= $pge->text_page_title ?></h3>
-                        <p class="news-block__text canSpeak"><?= $pge->text_page_subtitle ?></p>
+                        <p class="news-block__text canSpeak"><?= $pge->text_page_description ?></p>
                         <a href="<?= $pge->url ?>" class="news-block__link canSpeak">Подробнее</a>
                     </div>
                 </div>
