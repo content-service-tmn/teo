@@ -162,9 +162,11 @@
         <div class="proposal__button">
           <a href="record-request" class="button proposal_request canSpeak" data-source="record">запрос на съемку</a>
         </div>
+          <?php if($pages->find("name=excursion-request")->count > 0):?>
         <div class="proposal__button">
           <a href="excursion-request"  class="button proposal_request canSpeak" data-source="excursion">заявка на экскурсию</a>
         </div>
+          <?php endif;?>
         <div id="callback_source" data-source="dump"></div>
       </div>
     </div>
