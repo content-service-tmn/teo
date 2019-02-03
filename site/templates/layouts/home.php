@@ -53,7 +53,7 @@ bd($user->language->title); ?>
                         <li class="nav__subset__item"><a href="<?=$rootPage?>press-center/galleries" class="nav__subset__link">Фотогалерея</a></li>
                         <li class="nav__subset__item"><a href="<?=$rootPage?>press-center/videos" class="nav__subset__link">Видеоматериалы</a></li>
                         <li class="nav__subset__item"><a href="<?=$rootPage?>press-center/record-request" class="nav__subset__link">Запрос на съемку</a></li>
-                        <li class="nav__subset__item"><a href="<?=$rootPage?>press-center/excursion-request" class="nav__subset__link">Заявка на экскурсию</a></li>
+                        
                       </ul>
                     </div>
                   </div></li>

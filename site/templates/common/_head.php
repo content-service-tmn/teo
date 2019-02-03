@@ -1,5 +1,6 @@
 <meta charset="UTF-8">
-<title>Document</title>
+<title><?= $page->seo_title ? $page->seo_title : $page->title; ?></title>
+<meta name="description" content="<?= $page->seo_description ? $page->seo_description : "description"; ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--<link rel="stylesheet" type="text/css" href= <?= $config->urls->templates . "assets/css/template.css"?>>-->
 <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,600,700,800,900" rel="stylesheet">

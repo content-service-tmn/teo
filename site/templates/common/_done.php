@@ -112,7 +112,7 @@
                           <li class="nav__subset__item"><a href="<?=$rootPage?>press-center/galleries" class="nav__subset__link">Фотогалерея</a></li>
                           <li class="nav__subset__item"><a href="<?=$rootPage?>press-center/videos" class="nav__subset__link">Видеоматериалы</a></li>
                           <li class="nav__subset__item"><a href="<?=$rootPage?>press-center/record-request" class="nav__subset__link">Запрос на съемку</a></li>
-                          <li class="nav__subset__item"><a href="<?=$rootPage?>press-center/excursion-request" class="nav__subset__link">Заявка на экскурсию</a></li>
+                          
                         </ul>
                       </div>
                     </div></li>
@@ -171,7 +171,7 @@
           <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>press-center/galleries/" data-uk-smoothscroll>Фотогалереи</a></li>
           <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>press-center/videos/" data-uk-smoothscroll>Видеоматериалы</a></li>
           <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>press-center/record-request" data-uk-smoothscroll>Запросы на съемку</a></li>
-          <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>press-center/excursion-request" data-uk-smoothscroll>Запросы на экскурсию</a></li>
+          <!--<li class="sidebar__item canSpeak"><a href="<?=$rootPage?>press-center/excursion-request" data-uk-smoothscroll>Запросы на экскурсию</a></li>-->
         </ul>
         <ul class="sidebar__items">
           <li class="sidebar__item canSpeak"><a href="<?=$rootPage?>about/vacancies/" data-uk-smoothscroll>Вакансии</a></li>
@@ -191,7 +191,7 @@
       <a class="uk-offcanvas-close"></a>
       <div class="uk-offcanvas-bar-inner sidebar">
         <a href="" class="sidebar__logo">
-          <img src="<?= $config->urls->templates . 'assets/img/logo.png' ?>" alt="" class="sidebar__logo-img">
+          <img src="<?= $config->urls->templates . 'assets/img/rifey-main.png' ?>" style="margin-left:9%" alt="" class="sidebar__logo-img">
         </a>
         <form id="callback__form" class="form" action="<?=$rootPage?>" method="post">
           <div class="form__element form__element_name">
@@ -236,7 +236,7 @@
       <a class="uk-offcanvas-close"></a>
       <div class="uk-offcanvas-bar-inner sidebar sidebar_big">
         <a href="" class="sidebar__logo">
-          <img src="<?= $config->urls->templates . 'assets/img/logo.png' ?>" alt="" class="sidebar__logo-img">
+          <img src="<?= $config->urls->templates . 'assets/img/rifey-main.png' ?>" alt="" class="sidebar__logo-img">
         </a>
         <form id="question__form" class="form" action="<?=$rootPage?>" method="post">
           <div class="form__element form__element_name">
@@ -344,7 +344,7 @@
             <li class="footer__item"><a href="<?=$rootPage?>press-center/galleries/" class="footer__link">Фотогалерея</a></li>
             <li class="footer__item"><a href="<?=$rootPage?>press-center/videos/" class="footer__link">Видеоматериалы</a></li>
             <li class="footer__item"><a href="<?=$rootPage?>press-center/excursion-request" class="footer__link">Запрос на экскурсию</a></li>
-            <li class="footer__item"><a href="<?=$rootPage?>press-center/record-request" class="footer__link">Запрос на съемку</a></li>
+            
           </ul>
         </div>
         <div class="footer__cell">

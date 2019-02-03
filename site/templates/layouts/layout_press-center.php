@@ -157,7 +157,9 @@
   <div class="container container_center">
     <div class="proposal">
       <h3 class="proposal__heading canSpeak"><?= $page->press_center_bottom_header ?></h3>
+      <?php if ( $page->press_center_bottom_content != ""): ?>
       <p class="proposal__text canSpeak"><?= $page->press_center_bottom_content ?></p>
+      <?php endif; ?>
       <div class="proposal__grid proposal__grid_margin-top">
         <div class="proposal__button">
           <a href="record-request" class="button proposal_request canSpeak" data-source="record">запрос на съемку</a>

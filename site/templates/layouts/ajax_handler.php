@@ -2,7 +2,7 @@
 namespace Processwire;
 $page->setOutputFormatting(false);
 if ($config->ajax) {
-    $smtpName = 'bot@ecoteo.ru';
+    $smtpName = 'rifey@ecotko.ru';
     $relative = ["dump" => "Кнопка \"Сообщить о свалке\"", "record" => "Кнопка \"Запрос на съемку\"", "excursion" => "Кнопка \"Заявка на экскурсию\""];
     $m = $mail->new();
     $m->to($page->ajax_email_for_callback);
@@ -56,14 +56,16 @@ if ($config->ajax) {
                     $mtc = $mail->new();
                     $mtc->to($content);
                     $mtc->from($smtpName)
-                        ->fromName("TEO Site")
+                        ->fromName("Rifey Site")
                         ->subject('Вы оставили заявку с сайта');
-                    $mtc->body("Вы оставили заявку на сайте ТЭО. Ваш номер обращения: ".$data["id"]);
+                    $mtc->body("Вы оставили заявку на сайте ТЭО. Ваш номер обращения: ".$page->request_count);
                     $mtc->send();
                 }
             }
-            $m->subject('Обращение с сайта №'. $data["id"]);
-            $message .= "Номер заявки: " . $data["id"];
+            bd($page->request_count);
+            $m->subject('Обращение с сайта №'. $page->request_count);
+            $message .= "Номер заявки: " . $page->request_count;
+            $page->request_count++;
             $m->body($messageBody . $message);
             if (isset($_FILES["file"])) {
                 $m->attachment($_FILES["file"]["tmp_name"], $_FILES["file"]["name"]);
