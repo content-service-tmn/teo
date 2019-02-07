@@ -2,7 +2,7 @@
 namespace Processwire;
 $page->setOutputFormatting(false);
 if ($config->ajax) {
-    $smtpName = 'bot@ecoteo.ru';
+    $smtpName = 'teo@ecotko.ru';
     $relative = ["dump" => "Кнопка \"Сообщить о свалке\"", "record" => "Кнопка \"Запрос на съемку\"", "excursion" => "Кнопка \"Заявка на экскурсию\""];
     $m = $mail->new();
     $m->to($page->ajax_email_for_callback);

@@ -31,6 +31,12 @@
                   <br>
                   <h3 class="vacancies__subheading">условия</h3>
                     <?=str_replace("<ul>", "<ul class=\"vacancies__list\">", $vacancy->vacancy_conditions)?>
+                    <?php if ($vacancy->repeater_files_list_files->count > 0): $file = $vacancy->repeater_files_list_files->first();?>
+                    <li class="document__file" style="width: 100%; list-style: none">
+                        <p class="document__name canSpeak"><?= $file->description ?></p>
+                        <a href="<?= $file->url ?>" target="_blank" class="document__file-link canSpeak">Ознакомиться с документом (<?=strtoupper($file->ext)?>, размер <?= $file->filesizeStr ?>)</a>
+                    </li>
+                    <?php endif; ?>
                   <p class="vacancies__conclusion">Если вакансия подходит Вам, свяжитесь с нами!</p>
                   <ul class="vacancies__contacts">
                     <li>почта : <a href="mailto: <?=$page->vacancies_email?>"><?=$page->vacancies_email?></a></li>

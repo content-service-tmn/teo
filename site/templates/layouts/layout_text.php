@@ -185,7 +185,7 @@
                                         <h3 class="canSpeak">Контакты</h3>
                                     <?php endif; ?>
                                     <br>
-                                    <h4 style="margin-bottom: 20px" class="canSpeak"><?= $block->text_page_title ?>:</h4>
+                                    <h4 style="margin-bottom: 20px" class="canSpeak"><?= $block->text_page_title ?></h4>
                                     <?php if ($block->vacancy_name != ""): ?>
                                         <div class="inner-small-contacts uk-grid">
                                             <div class="uk-width-1-2 canSpeak">Телефон:</div>
@@ -199,7 +199,7 @@
                                     <?php endif; ?>
                                     <?php if ($block->breaking_news_title != ""): ?>
                                         <div class="inner-small-contacts uk-grid">
-                                            <div class="uk-width-1-2 canSpeak">Email</div>
+                                            <div class="uk-width-1-2 canSpeak">Email:</div>
                                             <div class="uk-width-1-2 canSpeak">
                                                 <?php foreach (explode(",", str_replace(" ", "", $block->breaking_news_title)) as $mail): ?>
                                                     <p><a href="mailto:<?= ($mail) ?>" class=""><?= $mail ?></a></p>
