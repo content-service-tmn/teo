@@ -66,8 +66,10 @@
                                     <?php foreach ($block->text_page_images as $img): ?>
                                         <div class="text__cell">
                                             <img src="<?= $img->url ?>"
+                                                 href="<?= $img->url ?>"
                                                  alt=""
-                                                 class="text__img">
+                                                 class="text__img"
+                                                 data-uk-lightbox>
                                         </div>
                                     <?php endforeach; ?>
                                 </div>
