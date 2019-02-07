@@ -39,27 +39,43 @@
                             <?php endif; ?>
 
                 <?php if ($block->repeater_matrix_type == 2): ?>
-                     <div class="text__block">
-                <div class="uk-slidenav-position support__grid" data-uk-slider="{center:true}">
-                  <div class="uk-slider-container">
-                    <ul class="uk-slider uk-grid uk-grid-medium">
-                        <?php foreach ($block->text_page_images as $img): ?>
-                            <li class="uk-width-1-2 uk-width-small-1-4">
-                              <div class="support__image"
-                                   style="background-image:url(<?=$img->size(300,300,[])->url?>"></div>
-                              <h4 class="canSpeak" style="text-align: center">Заголовок</h4>
-                              <p class="canSpeak" style="text-align: center">Описание</p>
-                            </li>
-                            <?php endforeach; ?>
-                    </ul>
-                  </div>
-                  <a href="" class="support__nav support__nav_left" data-uk-slider-item="previous"></a>
-                  <a href="" class="support__nav support__nav_right" data-uk-slider-item="next"></a>
+                <div class="text__grid">
+                    <?php foreach ($block->text_page_images as $img): ?>
+                      <div class="text__cell">
+                        <img src="<?= $img->url ?>"
+                             href="<?= $img->url ?>"
+                             alt=""
+                             class="text__img"
+                             data-uk-lightbox
+                        >
+                      </div>
+                    <?php endforeach; ?>
                 </div>
-                     </div>
                 <?php endif; ?>
 
-                <?php if ($block->repeater_matrix_type == 3): ?>
+                            <?php if ($block->repeater_matrix_type == 2222): ?>
+                                <div class="text__block">
+                                    <div class="uk-slidenav-position support__grid" data-uk-slider="{center:true}">
+                                        <div class="uk-slider-container">
+                                            <ul class="uk-slider uk-grid uk-grid-medium">
+                                                <?php foreach ($block->text_page_images as $img): ?>
+                                                    <li class="uk-width-1-2 uk-width-small-1-4">
+                                                        <div class="support__image"
+                                                             style="background-image:url(<?=$img->size(300,300,[])->url?>"></div>
+                                                        <h4 class="canSpeak" style="text-align: center">Заголовок</h4>
+                                                        <p class="canSpeak" style="text-align: center">Описание</p>
+                                                    </li>
+                                                <?php endforeach; ?>
+                                            </ul>
+                                        </div>
+                                        <a href="" class="support__nav support__nav_left" data-uk-slider-item="previous"></a>
+                                        <a href="" class="support__nav support__nav_right" data-uk-slider-item="next"></a>
+                                    </div>
+                                </div>
+                            <?php endif; ?>
+
+
+                            <?php if ($block->repeater_matrix_type == 3): ?>
                 <div class="text__slider-wrapper">
                   <div class="uk-slidenav-position text__slider" data-uk-slider="{center:true}">
                     <div class="uk-slider-container">
