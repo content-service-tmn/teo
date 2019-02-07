@@ -79,7 +79,7 @@ bd($user->language->title); ?>
             <div class="item item_main">
               <img src="<?= $config->urls->templates . "assets/svg/chelik1.svg" ?>" alt=""
                    class="item__img item__img_main">
-              <h3 class="item__heading item__heading_left canSpeak">региональный оператор по обращению с тко в свердловской
+              <h3 class="item__heading item__heading_left canSpeak">региональный оператор по обращению с ТКО в Свердловской
                 области (АПО-1)</h3>
               <a href="clients/operator-activities/" class="item__link"></a>
             </div>
