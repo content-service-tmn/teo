@@ -351,7 +351,7 @@ $(document).ready(function() {
         });
         var results = new FormData;
         results.append("full", true);
-        results.append("req_id", new Date().getTime());
+        results.append("req_id", new Date().getTime()/100000);
         if (!hasErr) {
             current_form.find(".feedback_form_item").each(function (num, el) {
                 try {
@@ -376,7 +376,7 @@ $(document).ready(function() {
                 contentType: false,
                 success: function (result) {
                     UIkit.notify({
-                        message: (result == "success") ? 'Ваше сообщение успешно отправлено, номер обращения: ' + results.get("id") + "\nНомер обращения так же продублирован на вашу почту"  : 'Ошибка отправки сообщения',
+                        message: (result == "success") ? 'Ваше сообщение успешно отправлено, номер обращения: ' + results.get("req_id") + "\nНомер обращения так же продублирован на вашу почту"  : 'Ошибка отправки сообщения',
                         status: result,
                         timeout: 6000,
                         pos: 'bottom-center'
