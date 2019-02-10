@@ -68,8 +68,7 @@ bd($user->language->title); ?>
     </div>
   </div>
 </section>
-
-
+<div style="height: 60px; width: 100%; background: white"></div>
 <section class="home">
   <div class="container container_center" style="width: 60vw; padding-top: 20px">
     <div class="grid grid_main">
