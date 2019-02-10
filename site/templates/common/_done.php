@@ -38,19 +38,19 @@
                 <div class="menu__phone-container__right invalid" title="Режим для людей с ограниченными возможностями.
             При активации этого режима, надписи на сайте будут озвучиваться при наведении на них мышкой" style="cursor: pointer">
                         <div class="menu__phone-container__icon">
-                          <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                               width="79.482px" height="79.482px" viewBox="0 0 79.482 79.482" style="enable-background:new 0 0 79.482 79.482;"
-                               xml:space="preserve">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 width="79.482px" height="79.482px" viewBox="0 0 79.482 79.482"
+                                 xml:space="preserve">
 <g>
-  <g>
-    <path d="M79.292,39.155c-0.722-0.997-17.894-24.414-39.552-24.414c-21.657,0-38.83,23.417-39.551,24.414
+    <g>
+        <path d="M79.292,39.155c-0.722-0.997-17.894-24.414-39.552-24.414c-21.657,0-38.83,23.417-39.551,24.414
 			c-0.253,0.35-0.253,0.822,0,1.172c0.721,0.997,17.894,24.414,39.551,24.414c21.658,0,38.83-23.417,39.551-24.414
 			C79.545,39.979,79.545,39.505,79.292,39.155z M39.741,59.243c-10.753,0-19.501-8.748-19.501-19.502
 			c0-10.753,8.748-19.501,19.501-19.501c10.754,0,19.502,8.748,19.502,19.501C59.243,50.495,50.495,59.243,39.741,59.243z"/>
-    <path d="M39.741,22.24c-9.65,0-17.501,7.851-17.501,17.501c0,9.65,7.851,17.502,17.501,17.502c9.65,0,17.502-7.852,17.502-17.502
+        <path d="M39.741,22.24c-9.65,0-17.501,7.851-17.501,17.501c0,9.65,7.851,17.502,17.501,17.502c9.65,0,17.502-7.852,17.502-17.502
 			C57.243,30.091,49.391,22.24,39.741,22.24z M39.741,48.882c-5.049,0-9.141-4.092-9.141-9.141c0-5.048,4.092-9.141,9.141-9.141
 			s9.142,4.093,9.142,9.141C48.882,44.79,44.79,48.882,39.741,48.882z"/>
-  </g>
+    </g>
 </g>
 </svg>
 
@@ -369,7 +369,7 @@
                   <a href="https://wa.me/<?=$pages->get("template=layout_contacts")->contacts_whatsapp?>" target="_blank" class="contacts__social contacts__social_whatsapp"></a>
                 <?php endif; ?>
             </div>
-            <div class="container container_center invalid" title="Режим для людей с ограниченными возможностями.
+            <div class="container container_center invalid invalid_footer" title="Режим для людей с ограниченными возможностями.
             При активации этого режима, надписи на сайте будут озвучиваться при наведении на них мышкой" style="width: 70px; margin-top: 40px; cursor: pointer">
               <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                    width="79.482px" height="79.482px" viewBox="0 0 79.482 79.482" style="enable-background:new 0 0 79.482 79.482;"
