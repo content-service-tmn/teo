@@ -40,7 +40,7 @@
     <a class="uk-offcanvas-close"></a>
     <div class="uk-offcanvas-bar-inner sidebar sidebar_big">
       <a href="" class="sidebar__logo">
-        <img src="http://ecoteo.ru/wp-content/uploads/2015/02/logoteo-350x90.png" alt="" class="sidebar__logo-img">
+        <img src="<?= $config->urls->templates . 'assets/img/logo.png' ?>" alt="" class="sidebar__logo-img">
       </a>
       <form id="question__form" class="form" action="/" method="post">
         <div class="form__element form__element_name">
