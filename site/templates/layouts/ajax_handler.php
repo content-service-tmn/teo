@@ -62,10 +62,8 @@ if ($config->ajax) {
                     $mtc->send();
                 }
             }
-            bd($page->request_count);
-            $m->subject('Обращение с сайта №'. $page->request_count);
-            $message .= "Номер заявки: " . $page->request_count;
-            $page->request_count++;
+            $m->subject('Обращение с сайта №'. $data["req_id"]);
+            $message .= "Номер заявки: " . $data["req_id"];
             $m->body($messageBody . $message);
             if (isset($_FILES["file"])) {
                 $m->attachment($_FILES["file"]["tmp_name"], $_FILES["file"]["name"]);
