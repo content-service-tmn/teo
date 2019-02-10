@@ -268,6 +268,7 @@
     </div>
   </div>
 </section>
+<div style="height: 60px; width: 100%; background: #92c1d6"></div>
 <section class="home">
     <div class="container container_center">
         <div class="grid grid_main">
