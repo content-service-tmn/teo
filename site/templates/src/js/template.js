@@ -127,7 +127,7 @@ $(document).ready(function() {
         email.val("");
 
         $.ajax({
-            url: "/ajax-handler/",
+            url: ajax_address,
             type: 'POST',
             data: {data: data},
             success: function (result) {
@@ -196,7 +196,7 @@ $(document).ready(function() {
         email.val("");
 
         $.ajax({
-            url: "/ajax-handler/",
+            url: ajax_address,
             type: 'POST',
             data: {data: data},
             success: function (result) {
@@ -369,7 +369,7 @@ $(document).ready(function() {
 
             }
             $.ajax({
-                url: "/ajax-handler/",
+                url: ajax_address,
                 type: 'POST',
                 data: results,
                 processData: false,

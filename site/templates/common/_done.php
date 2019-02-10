@@ -406,6 +406,7 @@
       <div class="lang-select">
       <?php
       $lngs = 0;
+      $uL = $user->language;
       foreach($languages as $language) {
 
           // if this page isn't viewable (active) for the language, skip it
@@ -419,6 +420,7 @@
           echo "<li><a class='lang-var' data-lang='".explode("/", $page->url)[1]."' href='$page->url'>$language->title</a></li>";
           $lngs++;
       }
+      $user->language = $uL;
       ?>
           <script>
               var lng_count = <?=$lngs?>;
@@ -426,6 +428,9 @@
       </div>
     </div>
   </div>
+    <script>
+        var ajax_address = "<?=$pages->get("template=ajax_handler")->url?>";
+    </script>
 
   </body>
 

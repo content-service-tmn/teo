@@ -1,6 +1,5 @@
 <?php namespace Processwire;
-$rootPage = $page->url;
-bd($user->language->title); ?>
+$rootPage = $page->url;  ?>
 <section id="menu" class="fixed-menu">
   <div class="menu menu_green menu_small">
     <div class="container container_center">
