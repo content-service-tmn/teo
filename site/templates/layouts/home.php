@@ -6,7 +6,7 @@ $rootPage = $page->url;  ?>
       <div class="menu__grid">
         <div class="menu__grid-left">
           <div class="menu__cell">
-            <p class="city_link"><?=$user->language->title?></p>
+            <p class="city_link canSpeak"><?=$user->language->title?></p>
 
           </div>
 

@@ -58,7 +58,7 @@ if ($config->ajax) {
                     $mtc->from($smtpName)
                         ->fromName("Rifey Site")
                         ->subject('Вы оставили заявку с сайта');
-                    $mtc->body("Вы оставили заявку на сайте РИФЕЙ. Ваш номер обращения: ".$page->request_count);
+                    $mtc->body("Вы оставили заявку на сайте РИФЕЙ. Ваш номер обращения: ".$data["req_id"]);
                     $mtc->send();
                 }
             }

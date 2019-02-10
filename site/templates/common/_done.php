@@ -66,7 +66,7 @@
         <div class="menu__grid">
           <div class="menu__grid-left">
             <div class="menu__cell">
-              <p class="city_link"><?=$user->language->title?></p>
+              <p class="city_link canSpeak"><?=$user->language->title?></p>
 
             </div>
 
@@ -106,12 +106,12 @@
                       <a href="<?=$rootPage?>press-center" class="nav__link canSpeak">пресс-центр</a>
                       <div class="uk-dropdown nav__subset">
                         <ul>
-                          <li class="nav__subset__item"><a href="<?=$rootPage?>press-center#messages" class="nav__subset__link">Важные сообщения</a></li>
-                          <li class="nav__subset__item"><a href="<?=$rootPage?>press-center/news/" class="nav__subset__link">Новости</a></li>
-                          <li class="nav__subset__item"><a href="<?=$rootPage?>press-center#smi" class="nav__subset__link">СМИ о нас</a></li>
-                          <li class="nav__subset__item"><a href="<?=$rootPage?>press-center/galleries" class="nav__subset__link">Фотогалерея</a></li>
-                          <li class="nav__subset__item"><a href="<?=$rootPage?>press-center/videos" class="nav__subset__link">Видеоматериалы</a></li>
-                          <li class="nav__subset__item"><a href="<?=$rootPage?>press-center/record-request" class="nav__subset__link">Запрос на съемку</a></li>
+                          <li class="nav__subset__item"><a href="<?=$rootPage?>press-center#messages" class="nav__subset__link canSpeak">Важные сообщения</a></li>
+                          <li class="nav__subset__item"><a href="<?=$rootPage?>press-center/news/" class="nav__subset__link canSpeak" >Новости</a></li>
+                          <li class="nav__subset__item"><a href="<?=$rootPage?>press-center#smi" class="nav__subset__link canSpeak">СМИ о нас</a></li>
+                          <li class="nav__subset__item"><a href="<?=$rootPage?>press-center/galleries" class="nav__subset__link canSpeak">Фотогалерея</a></li>
+                          <li class="nav__subset__item"><a href="<?=$rootPage?>press-center/videos" class="nav__subset__link canSpeak">Видеоматериалы</a></li>
+                          <li class="nav__subset__item"><a href="<?=$rootPage?>press-center/record-request" class="nav__subset__link canSpeak">Запрос на съемку</a></li>
                           
                         </ul>
                       </div>
@@ -328,22 +328,22 @@
         </div>
         <div class="footer__cell">
           <ul class="footer__list">
-            <li class="footer__item"><a href="<?=$rootPage?>clients" class="footer__link">Клиентам</a></li>
+            <li class="footer__item"><a href="<?=$rootPage?>clients" class="footer__link canSpeak">Клиентам</a></li>
               <?php foreach ($pages->get("name=clients")->children as $child): ?>
-                  <li class="footer__item"><a href="<?=$child->url?>" class="footer__link"><?=$child->title?></a>
+                  <li class="footer__item"><a href="<?=$child->url?>" class="footer__link canSpeak"><?=$child->title?></a>
                   <?php endforeach; ?>
           </ul>
         </div>
         <div class="footer__cell">
           <ul class="footer__list">
-            <li class="footer__item"><a href="<?=$rootPage?>press-center/" class="footer__link">Пресс-центр</a></li>
-            <li class="footer__item"><a href="<?=$rootPage?>press-center/breaking-news/" class="footer__link">Важные сообщения</a>
+            <li class="footer__item"><a href="<?=$rootPage?>press-center/" class="footer__link canSpeak">Пресс-центр</a></li>
+            <li class="footer__item"><a href="<?=$rootPage?>press-center/breaking-news/" class="footer__link canSpeak">Важные сообщения</a>
             </li>
-            <li class="footer__item"><a href="<?=$rootPage?>press-center/news/" class="footer__link">Новости</a></li>
-            <li class="footer__item"><a href="<?=$rootPage?>press-center/#smi" class="footer__link">СМИ о нас</a></li>
-            <li class="footer__item"><a href="<?=$rootPage?>press-center/galleries/" class="footer__link">Фотогалерея</a></li>
-            <li class="footer__item"><a href="<?=$rootPage?>press-center/videos/" class="footer__link">Видеоматериалы</a></li>
-            <li class="footer__item"><a href="<?=$rootPage?>press-center/excursion-request" class="footer__link">Запрос на экскурсию</a></li>
+            <li class="footer__item"><a href="<?=$rootPage?>press-center/news/" class="footer__link canSpeak">Новости</a></li>
+            <li class="footer__item"><a href="<?=$rootPage?>press-center/#smi" class="footer__link canSpeak">СМИ о нас</a></li>
+            <li class="footer__item"><a href="<?=$rootPage?>press-center/galleries/" class="footer__link canSpeak">Фотогалерея</a></li>
+            <li class="footer__item"><a href="<?=$rootPage?>press-center/videos/" class="footer__link canSpeak">Видеоматериалы</a></li>
+            <li class="footer__item"><a href="<?=$rootPage?>press-center/excursion-request" class="footer__link canSpeak">Запрос на экскурсию</a></li>
             
           </ul>
         </div>
@@ -417,7 +417,7 @@
           $user->language = $language;
 
           // output a link to this page in the other language
-          echo "<li><a class='lang-var' data-lang='".explode("/", $page->url)[1]."' href='$page->url'>$language->title</a></li>";
+          echo "<li><a class='lang-var canSpeak' data-lang='".explode("/", $page->url)[1]."' href='$page->url'>$language->title</a></li>";
           $lngs++;
       }
       $user->language = $uL;

@@ -43,7 +43,7 @@
     <a class="uk-offcanvas-close"></a>
     <div class="uk-offcanvas-bar-inner sidebar sidebar_big">
       <a href="" class="sidebar__logo">
-        <img src="<?= $config->urls->templates . 'assets/img/logo.png' ?>" alt="" class="sidebar__logo-img">
+        <img src="<?= $config->urls->templates . 'assets/img/rifey-main.png' ?>" style="margin-left:35%;" alt="" class="sidebar__logo-img">
       </a>
       <form id="question__form" class="form" action="/" method="post">
         <div class="form__element form__element_name">
