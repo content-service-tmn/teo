@@ -17,7 +17,12 @@
         <h3 class="videos__heading"><?=$gallery->title?></h3>
         <div class="videos__grid">
           <?php foreach ($gallery->press_center_videos as $video):?>
-            <div class="videos__cell"><a href="<?=$video->repeater_press_center_video_url?>" class="videos__link" style="background-image:url(<?=getThumbnail($video->repeater_press_center_video_url, "mq")?>)" data-uk-lightbox></a></div>
+            <div class="videos__cell"><a href="<?=$video->repeater_press_center_video_url?>" class="videos__link" style="background-image:url(<?=getThumbnail($video->repeater_press_center_video_url, "mq")?>)" data-uk-lightbox></a>
+            <div class="videos__description">
+                <p><?=$video->text_page_title?></p>
+                <p style="color: grey"><?=$video->text_page_date?></p>
+            </div>
+            </div>
         <?php endforeach; ?>
         </div>
     </div>

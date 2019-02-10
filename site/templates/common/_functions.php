@@ -115,6 +115,7 @@ function getRandomPics($count, $pages)
 function getRandomVideos($count, $pages)
 {
     $urls = [];
+    $objs = [];
     $j = 0;
     while(count($urls) != $count && $j<300) {
         $j++;
@@ -126,10 +127,11 @@ function getRandomVideos($count, $pages)
         foreach ($gallery->press_center_videos as $video) {
             if ($i == $num && !in_array($video->repeater_press_center_video_url, $urls)) {
                 $urls[] = $video->repeater_press_center_video_url;
+                $objs[] = $video;
                 break;
             }
             $i++;
         }
     }
-    return $urls;
+    return $objs;
 }

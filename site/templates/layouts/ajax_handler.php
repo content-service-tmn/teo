@@ -58,12 +58,12 @@ if ($config->ajax) {
                     $mtc->from($smtpName)
                         ->fromName("TEO Site")
                         ->subject('Вы оставили заявку с сайта');
-                    $mtc->body("Вы оставили заявку на сайте ТЭО. Ваш номер обращения: ".$data["id"]);
+                    $mtc->body("Вы оставили заявку на сайте ТЭО. Ваш номер обращения: ".$data["req_id"]);
                     $mtc->send();
                 }
             }
-            $m->subject('Обращение с сайта №'. $data["id"]);
-            $message .= "Номер заявки: " . $data["id"];
+            $m->subject('Обращение с сайта №'. $data["req_id"]);
+            $message .= "Номер заявки: " . $data["req_id"];
             $m->body($messageBody . $message);
             if (isset($_FILES["file"])) {
                 $m->attachment($_FILES["file"]["tmp_name"], $_FILES["file"]["name"]);
