@@ -30,7 +30,7 @@
                     <?php if ($page->text_page_subtitle != ""): ?>
                         <h3 class="text__heading canSpeak"><?= $page->text_page_subtitle ?></h3>
                     <?php endif; ?>
-                    <?php $contactsOnPage = 0; foreach ($page->text_page_content as $block): ?>
+                    <?php $contactsOnPage = 0; foreach ($page->text_page_content as $block): if (!checkLanguage($block->reference_on_language, $user->language)) continue; ?>
                         <div class="textpage_node">
                             <?php if ($block->repeater_matrix_type == 1): ?>
                                 <div class="text__block canSpeak">

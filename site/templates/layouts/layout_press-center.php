@@ -19,7 +19,7 @@
       <a href="breaking-news" class="messages__button canSpeak">все сообщения</a>
     </div>
     <div class="messages__grid">
-        <?php foreach (array_reverse($pages->get("template=layout_breaking-news")->breaking_news->getArray()) as $i => $bn): ?>
+        <?php foreach (array_reverse($pages->get("template=layout_breaking-news")->breaking_news->getArray()) as $i => $bn): if (!checkLanguage($bn->reference_on_language, $user->language)) continue; ?>
           <div class="messages__cell">
             <div class="messages__item">
               <p class="messages__date"><?= $bn->breaking_news_date ?></p>
@@ -83,9 +83,14 @@
         <h3 class="videos__heading canSpeak">видеоматериалы</h3>
         <div class="videos__grid">
             <?php foreach (getRandomVideos(3, $pages) as  $v_url):?>
-            <div class="videos__cell"><a href="<?=$v_url?>" class="videos__link"
+            <div class="videos__cell"><a href="<?=$v_url->repeater_press_center_video_url?>" class="videos__link"
                                          style="background-image:url(<?=getThumbnail($v_url, "mq")?>)"
-                                         data-uk-lightbox></a></div>
+                                         data-uk-lightbox></a>
+                <div class="videos__description">
+                    <p><?=$v_url->text_page_title?></p>
+                    <p style="color: grey"><?=$v_url->text_page_date?></p>
+                </div>
+            </div>
             <?php endforeach;?>
         </div>
         <div class="videos__footer"><a href="<?=$pages->get("template=layout_videos")->url?>" class="videos__more canSpeak">перейти в раздел</a></div>

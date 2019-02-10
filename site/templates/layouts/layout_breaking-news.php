@@ -1,3 +1,4 @@
+<?php namespace Processwire; ?>
 <section class="breadcrumbs">
   <div class="container container_center">
     <div class="breadcrumbs__grid">
@@ -13,7 +14,7 @@
 <section class="messages messages_padding-bottom">
     <div class="container container_center">
         <div class="messages__grid">
-          <?php foreach (array_reverse($page->breaking_news->getArray())  as $bn): ?>
+          <?php foreach (array_reverse($page->breaking_news->getArray())  as $bn): if (!checkLanguage($bn->reference_on_language, $user->language)) continue; ?>
                 <div class="messages__cell">
                     <div class="messages__item">
                         <p class="messages__date"><?= $bn->breaking_news_date ?></p>

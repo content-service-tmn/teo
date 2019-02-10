@@ -405,6 +405,7 @@
       <h3>Выбор региона</h3>
       <div class="lang-select">
       <?php
+      $lngs = 0;
       foreach($languages as $language) {
 
           // if this page isn't viewable (active) for the language, skip it
@@ -416,8 +417,12 @@
 
           // output a link to this page in the other language
           echo "<li><a class='lang-var' data-lang='".explode("/", $page->url)[1]."' href='$page->url'>$language->title</a></li>";
+          $lngs++;
       }
       ?>
+          <script>
+              var lng_count = <?=$lngs?>;
+          </script>
       </div>
     </div>
   </div>

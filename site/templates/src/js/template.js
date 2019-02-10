@@ -1,6 +1,6 @@
 $(document).ready(function() {
     //---------------------- Language select -----------------------//
-    if (false) {
+    if (lng_count > 1) {
         var modal = UIkit.modal("#lang-modal");
         var lang = sessionStorage.getItem('language');
         if (lang == null || lang == "null") {
@@ -15,7 +15,7 @@ $(document).ready(function() {
         });
 
         $(".city_link").click(function () {
-            modal.show();
+                modal.show();
         });
 
     }
