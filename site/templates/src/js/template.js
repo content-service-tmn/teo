@@ -283,15 +283,17 @@ $(document).ready(function() {
     }
 
     var icon_invalid = $('.menu__phone-container__icon');
+    var bottom_icon = $('.invalid_footer');
 
     $(".invalid").click(function () {
+        console.log(sessionStorage.getItem('isInvalid') == "true");
         if (sessionStorage.getItem('isInvalid') == "true"){
-            $(this).css("fill","black");
-            icon_invalid.css("box-shadow", "none");
+            $(bottom_icon).css("fill", "black");
+            $(icon_invalid).css("fill", "#75cb3e");
             sessionStorage.setItem('isInvalid', false);
         } else {
-            $(this).css("fill", "#e9ac45");
-
+            $(bottom_icon).css("fill","orange");
+            $(icon_invalid).css("fill", "orange");
             if ($(this).find('.menu__phone-container__icon')) {
                 icon_invalid.css("box-shadow", "white 0px 0px 5px 2px");
             }
@@ -299,9 +301,11 @@ $(document).ready(function() {
             sessionStorage.setItem('isInvalid', true);
         }
     });
+
+    console.log(sessionStorage.getItem('isInvalid') == "true");
     if (sessionStorage.getItem('isInvalid') == "true"){
-        $(".invalid").css("fill","#e9ac45");
-        icon_invalid.css("box-shadow", "white 0px 0px 5px 2px");
+        $(icon_invalid).css("fill", "orange");
+        $(bottom_icon).css("fill","orange");
     }
 
     changeHeightMainBlock();
