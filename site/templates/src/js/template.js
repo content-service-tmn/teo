@@ -331,7 +331,7 @@ $(document).ready(function() {
         });
         var results = new FormData;
         results.append("full", true);
-        results.append("req_id", Math.trunc(new Date().getTime()/10000000));
+        results.append("req_id", new Date().getTime());
         if (!hasErr) {
             current_form.find(".feedback_form_item").each(function (num, el) {
                 try {
