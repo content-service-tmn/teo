@@ -343,8 +343,9 @@
             <li class="footer__item"><a href="<?=$rootPage?>press-center/#smi" class="footer__link canSpeak">СМИ о нас</a></li>
             <li class="footer__item"><a href="<?=$rootPage?>press-center/galleries/" class="footer__link canSpeak">Фотогалерея</a></li>
             <li class="footer__item"><a href="<?=$rootPage?>press-center/videos/" class="footer__link canSpeak">Видеоматериалы</a></li>
-            <li class="footer__item"><a href="<?=$rootPage?>press-center/excursion-request" class="footer__link canSpeak">Запрос на экскурсию</a></li>
-            
+              <?php if($pages->find("name=excursion-request")->count > 0):?>
+              <li class="footer__item"><a href="<?=$rootPage?>press-center/excursion-request" class="footer__link canSpeak">Запрос на экскурсию</a></li>
+            <?php endif; ?>
           </ul>
         </div>
         <div class="footer__cell">
