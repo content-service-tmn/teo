@@ -1,13 +1,14 @@
 <?php namespace Processwire; ?>
 <section class="breadcrumbs">
-  <div class="container container_center">
-    <div class="breadcrumbs__grid">
-        <?php foreach ($page->parents()->append($page) as $parent): ?>
-          <div class="breadcrumbs__cell"><a href="<?= $parent->url ?>"
-                                            class="breadcrumbs__link canSpeak"><?= ($parent->parent->template != "layout_news")?$parent->title:"Новость" ?></a></div>
-        <?php endforeach; ?>
+    <div class="container container_center">
+        <div class="breadcrumbs__grid">
+            <?php foreach ($page->parents()->append($page) as $parent): ?>
+                <div class="breadcrumbs__cell"><a href="<?= $parent->url ?>"
+                                                  class="breadcrumbs__link canSpeak"><?= ($parent->parent->template != "layout_news") ? $parent->title : "Новость" ?></a>
+                </div>
+            <?php endforeach; ?>
+        </div>
     </div>
-  </div>
 </section>
 
 <section class="document">
@@ -30,7 +31,9 @@
                     <?php if ($page->text_page_subtitle != ""): ?>
                         <h3 class="text__heading canSpeak"><?= $page->text_page_subtitle ?></h3>
                     <?php endif; ?>
-                    <?php $contactsOnPage = 0; foreach ($page->text_page_content as $block): if (!checkLanguage($block->reference_on_language, $user->language)) continue; ?>
+                    <?php $contactsOnPage = 0;
+                    foreach ($page->text_page_content as $block):
+                        if (!checkLanguage($block->reference_on_language, $user->language)) continue; ?>
                         <div class="textpage_node">
                             <?php if ($block->repeater_matrix_type == 1): ?>
                                 <div class="text__block canSpeak">
@@ -38,20 +41,20 @@
                                 </div>
                             <?php endif; ?>
 
-                <?php if ($block->repeater_matrix_type == 2): ?>
-                <div class="text__grid">
-                    <?php foreach ($block->text_page_images as $img): ?>
-                      <div class="text__cell">
-                        <img src="<?= $img->url ?>"
-                             href="<?= $img->url ?>"
-                             alt=""
-                             class="text__img"
-                             data-uk-lightbox
-                        >
-                      </div>
-                    <?php endforeach; ?>
-                </div>
-                <?php endif; ?>
+                            <?php if ($block->repeater_matrix_type == 2): ?>
+                                <div class="text__grid">
+                                    <?php foreach ($block->text_page_images as $img): ?>
+                                        <div class="text__cell">
+                                            <img src="<?= $img->url ?>"
+                                                 href="<?= $img->url ?>"
+                                                 alt=""
+                                                 class="text__img"
+                                                 data-uk-lightbox
+                                            >
+                                        </div>
+                                    <?php endforeach; ?>
+                                </div>
+                            <?php endif; ?>
 
                             <?php if ($block->repeater_matrix_type == 2222): ?>
                                 <div class="text__block">
@@ -61,44 +64,48 @@
                                                 <?php foreach ($block->text_page_images as $img): ?>
                                                     <li class="uk-width-1-2 uk-width-small-1-4">
                                                         <div class="support__image"
-                                                             style="background-image:url(<?=$img->size(300,300,[])->url?>"></div>
+                                                             style="background-image:url(<?= $img->size(300, 300, [])->url ?>"></div>
                                                         <h4 class="canSpeak" style="text-align: center">Заголовок</h4>
                                                         <p class="canSpeak" style="text-align: center">Описание</p>
                                                     </li>
                                                 <?php endforeach; ?>
                                             </ul>
                                         </div>
-                                        <a href="" class="support__nav support__nav_left" data-uk-slider-item="previous"></a>
-                                        <a href="" class="support__nav support__nav_right" data-uk-slider-item="next"></a>
+                                        <a href="" class="support__nav support__nav_left"
+                                           data-uk-slider-item="previous"></a>
+                                        <a href="" class="support__nav support__nav_right"
+                                           data-uk-slider-item="next"></a>
                                     </div>
                                 </div>
                             <?php endif; ?>
 
 
                             <?php if ($block->repeater_matrix_type == 3): ?>
-                <div class="text__slider-wrapper">
-                  <div class="uk-slidenav-position text__slider" data-uk-slider="{center:true}">
-                    <div class="uk-slider-container">
-                      <ul class="uk-slider uk-grid uk-grid-medium">
-                          <?php foreach ($block->text_page_gallery->gallery_images as $img): ?>
-                            <li class="uk-width-small-1-3 uk-width-1-1">
-                              <div class="support__image"
-                                   style="background-image:url(<?= $img->url ?>"></div>
-                            </li>
-                          <?php endforeach; ?>
-                      </ul>
-                    </div>
-                    <a href="" class="support__nav support__nav_left" data-uk-slider-item="previous"></a>
-                    <a href="" class="support__nav support__nav_right" data-uk-slider-item="next"></a>
-                  </div>
-                </div>
-                <?php endif; ?>
+                                <div class="text__slider-wrapper">
+                                    <div class="uk-slidenav-position text__slider" data-uk-slider="{center:true}">
+                                        <div class="uk-slider-container">
+                                            <ul class="uk-slider uk-grid uk-grid-medium">
+                                                <?php foreach ($block->text_page_gallery->gallery_images as $img): ?>
+                                                    <li class="uk-width-small-1-3 uk-width-1-1">
+                                                        <div class="support__image"
+                                                             style="background-image:url(<?= $img->url ?>"></div>
+                                                    </li>
+                                                <?php endforeach; ?>
+                                            </ul>
+                                        </div>
+                                        <a href="" class="support__nav support__nav_left"
+                                           data-uk-slider-item="previous"></a>
+                                        <a href="" class="support__nav support__nav_right"
+                                           data-uk-slider-item="next"></a>
+                                    </div>
+                                </div>
+                            <?php endif; ?>
 
-                <?php if ($block->repeater_matrix_type == 4): ?>
-                <a href="<?=$block->text_page_video_url?>" class="text__video"
-                   style="background-image:url(<?=getThumbnail($block->text_page_video_url, "hq")?>)"
-                   data-uk-lightbox></a>
-                <?php endif; ?>
+                            <?php if ($block->repeater_matrix_type == 4): ?>
+                                <a href="<?= $block->text_page_video_url ?>" class="text__video"
+                                   style="background-image:url(<?= getThumbnail($block->text_page_video_url, "hq") ?>)"
+                                   data-uk-lightbox></a>
+                            <?php endif; ?>
 
                             <?php if ($block->repeater_matrix_type == 5): ?>
                                 <div class="grid__cell grid__cell_big" style="margin-bottom: 60px">
@@ -109,7 +116,8 @@
                                                      style="padding-top: 0">
                                                     <a href="#callback" class="button canSpeak"
                                                        data-uk-offcanvas="{mode:'slide'}"><?= $block->text_page_title ?></a>
-                                                    <div id="callback_source" data-source="<?=$block->text_page_title?>"></div>
+                                                    <div id="callback_source"
+                                                         data-source="<?= $block->text_page_title ?>"></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -187,13 +195,15 @@
                                         <h3 class="canSpeak">Контакты</h3>
                                     <?php endif; ?>
                                     <br>
-                                    <h4 style="margin-bottom: 20px" class="canSpeak"><?= $block->text_page_title ?>:</h4>
+                                    <h4 style="margin-bottom: 20px" class="canSpeak"><?= $block->text_page_title ?>
+                                        :</h4>
                                     <?php if ($block->vacancy_name != ""): ?>
                                         <div class="inner-small-contacts uk-grid">
                                             <div class="uk-width-1-2 canSpeak">Телефон:</div>
                                             <div class="uk-width-1-2 canSpeak">
                                                 <?php foreach (explode(",", $block->vacancy_name) as $phone): ?>
-                                                    <p><a href="tel:<?= phoneLink($phone) ?>" class="canSpeak"><?= $phone ?></a>
+                                                    <p><a href="tel:<?= phoneLink($phone) ?>"
+                                                          class="canSpeak"><?= $phone ?></a>
                                                     </p>
                                                 <?php endforeach; ?>
                                             </div>
@@ -210,6 +220,9 @@
                                         </div>
                                     <?php endif; ?>
                                 </div>
+                            <?php endif; ?>
+                            <?php if ($block->repeater_matrix_type == 11): ?>
+                                <?= $block->text_page_description ?>
                             <?php endif; ?>
                         </div>
                     <?php endforeach; ?>
