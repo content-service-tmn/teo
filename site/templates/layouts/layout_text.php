@@ -211,6 +211,9 @@
                                     <?php endif; ?>
                                 </div>
                             <?php endif; ?>
+                            <?php if ($block->repeater_matrix_type == 11): ?>
+                                <?= $block->text_page_description ?>
+                            <?php endif; ?>
                         </div>
                     <?php endforeach; ?>
                 </div>

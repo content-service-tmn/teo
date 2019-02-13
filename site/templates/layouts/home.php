@@ -39,12 +39,14 @@
                         <a href="/about" class="nav__link canSpeak">о предприятии</a>
                         <div class="uk-dropdown nav__subset">
                             <ul>
-                                <li class="nav__subset__item"><a href="/about/us/" class="nav__subset__link canSpeak">Общие сведения</a></li>
-                                <li class="nav__subset__item"><a href="/about/management/" class="nav__subset__link canSpeak">Руководство</a></li>
-                                <li class="nav__subset__item"><a href="/docs/" class="nav__subset__link canSpeak">Документы</a></li>
-                                <li class="nav__subset__item"><a href="/contacts" class="nav__subset__link canSpeak">Контакты</a></li>
-                                <li class="nav__subset__item"><a href="/about/tko-ground/" class="nav__subset__link canSpeak">Полигоны ТКО</a></li>
-                                <li class="nav__subset__item"><a href="/about/garbage-disposal-plants/" class="nav__subset__link canSpeak">Мусоросортировочные заводы</a></li>
+                                <?php  foreach ($pages->get("name=about")->children as $i => $child): ?>
+                                    <li class="nav__subset__item"><a href="<?=$child->url?>" class="nav__subset__link canSpeak"><?=$child->title?></a></li>
+                                    <?php if ($i==1) echo
+                                        "<li class=\"nav__subset__item\"><a href=\"/docs/\" class=\"nav__subset__link\">Документы</a></li>".
+                                        "<li class=\"nav__subset__item\"><a href=\"/contacts\" class=\"nav__subset__link\">Контакты</a></li>"
+                                    ?>
+                                <?php endforeach; ?>
+
                             </ul>
                         </div>
                     </div></li>
@@ -52,11 +54,11 @@
                         <a href="/clients" class="nav__link canSpeak">клиентам</a>
                         <div class="uk-dropdown nav__subset">
                             <ul>
-                                <li class="nav__subset__item"><a href="/clients/operator-activities/" class="nav__subset__link canSpeak">Деятельность регионального оператора по обращению с ТКО</a></li>
-                              <li class="nav__subset__item"><a href="/clients/waste-sorting-activity/" class="nav__subset__link canSpeak">Обработка (сортировка) отходов</a></li>
-                              <li class="nav__subset__item"><a href="/clients/wasted-transport/" class="nav__subset__link canSpeak">Транспортирование отходов</a></li>
-                              <li class="nav__subset__item"><a href="/clients/activities-tko/" class="nav__subset__link canSpeak">Деятельность по захоронению отходов</a></li>
-                              <li class="nav__subset__item"><a href="/clients/secondary-materials/" class="nav__subset__link canSpeak">Реализация вторичного сырья</a></li>
+                                <?php foreach ($pages->get("name=clients")->children as $child): ?>
+                                    <li class="nav__subset__item"><a href="<?=$child->url?>" class="nav__subset__link canSpeak"><?=$child->title?></a></li>
+                                <?php endforeach; ?>
+
+
                             </ul>
                         </div>
                     </div></li>
@@ -129,12 +131,13 @@
                   <a href="/about" class="nav__link canSpeak">о предприятии</a>
                   <div class="uk-dropdown nav__subset">
                     <ul>
-                      <li class="nav__subset__item"><a href="/about/us/" class="nav__subset__link canSpeak">Общие сведения</a></li>
-                      <li class="nav__subset__item"><a href="/about/management/" class="nav__subset__link canSpeak">Руководство</a></li>
-                      <li class="nav__subset__item"><a href="/docs/" class="nav__subset__link canSpeak">Документы</a></li>
-                      <li class="nav__subset__item"><a href="/contacts" class="nav__subset__link" canSpeak>Контакты</a></li>
-                      <li class="nav__subset__item"><a href="/about/tko-ground/" class="nav__subset__link" canSpeak>Полигоны ТКО</a></li>
-                      <li class="nav__subset__item"><a href="/about/garbage-disposal-plants/" class="nav__subset__link" canSpeak>Мусоросортировочные заводы</a></li>
+                        <?php  foreach ($pages->get("name=about")->children as $i => $child): ?>
+                            <li class="nav__subset__item"><a href="<?=$child->url?>" class="nav__subset__link canSpeak"><?=$child->title?></a></li>
+                            <?php if ($i==1) echo
+                                "<li class=\"nav__subset__item\"><a href=\"/docs/\" class=\"nav__subset__link canSpeak\">Документы</a></li>".
+                                "<li class=\"nav__subset__item\"><a href=\"/contacts\" class=\"nav__subset__link canSpeak\">Контакты</a></li>"
+                            ?>
+                        <?php endforeach; ?>
                     </ul>
                   </div>
                 </div></li>
@@ -142,11 +145,9 @@
                   <a href="/clients" class="nav__link canSpeak">клиентам</a>
                   <div class="uk-dropdown nav__subset">
                     <ul>
-                      <li class="nav__subset__item"><a href="/clients/operator-activities/" class="nav__subset__link canSpeak">Деятельность регионального оператора по обращению с ТКО</a></li>
-                      <li class="nav__subset__item"><a href="/clients/waste-sorting-activity/" class="nav__subset__link canSpeak">Обработка (сортировка) отходов</a></li>
-                      <li class="nav__subset__item"><a href="/clients/wasted-transport/" class="nav__subset__link canSpeak">Транспортирование отходов</a></li>
-                      <li class="nav__subset__item"><a href="/clients/activities-tko/" class="nav__subset__link canSpeak">Деятельность по захоронению отходов</a></li>
-                      <li class="nav__subset__item"><a href="/clients/secondary-materials/" class="nav__subset__link canSpeak">Реализация вторичного сырья</a></li>
+                        <?php foreach ($pages->get("name=clients")->children as $child): ?>
+                            <li class="nav__subset__item"><a href="<?=$child->url?>" class="nav__subset__link canSpeak"><?=$child->title?></a></li>
+                        <?php endforeach; ?>
                     </ul>
                   </div>
                 </div></li>
